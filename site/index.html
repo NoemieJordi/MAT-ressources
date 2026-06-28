@@ -155,6 +155,11 @@
     </div>
 
     <div class="filter-section">
+      <div class="filter-title">Catégorie</div>
+      <div id="filter-categorie"></div>
+    </div>
+
+    <div class="filter-section">
       <div class="filter-title">Niveau</div>
       <div id="filter-niveau"></div>
     </div>
@@ -213,15 +218,35 @@ const THEMES = [
   { code: "FA", label: "Fonctions & Algèbre"  },
   { code: "ES", label: "Espace"               },
   { code: "GM", label: "Grandeurs & Mesures"  },
+  { code: "RS", label: "Recherche & Stratégies"},
   { code: "AU", label: "Autre"                },
 ];
 
-const DIFF_LABELS = { 1: "● Facile", 2: "●● Moyen", 3: "●●● Difficile" };
+const SOUS_CHAPITRES_ORDER = {
+  NO: ["NombresNaturelsDecimaux","NombresRelatifs","NombresRationnels","NombresReels","SituationsAleatoires"],
+  FA: ["Proportionnalite","Fonctions","Diagrammes","CalculLitteral","Equations"],
+  ES: ["FiguresGeometriquesPlanes","RepresentationSolides","TransformationsGeometriques"],
+  GM: ["LignesSurfaces","Theoremes","Solides","DiversMesures"],
+  RS: [],
+  AU: [],
+};
+
+function sortSubs(theme, subs) {
+  const ordre = SOUS_CHAPITRES_ORDER[theme] || [];
+  return [...subs].sort((a, b) => {
+    const ia = ordre.indexOf(a), ib = ordre.indexOf(b);
+    if (ia === -1 && ib === -1) return a.localeCompare(b, "fr");
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  });
+}
 
 let active = {
   theme:        null,
   sous_chapitre: null,
   type:         null,
+  categorie:    null,
   niveau:       null,
   difficulte:   null,
   tags:         new Set(),
@@ -240,6 +265,7 @@ async function init() {
 function buildSidebar() {
   buildTree();
   buildRows("filter-type",       uniq(ALL.map(r => r.type)),                           "type");
+  buildRows("filter-categorie",  uniq(ALL.map(r => r.categorie).filter(Boolean)),      "categorie");
   buildRows("filter-niveau",     uniq(ALL.flatMap(r => r.niveau||[])),                 "niveau");
   buildRows("filter-difficulte", uniq(ALL.map(r => r.difficulte).filter(Boolean)).sort(), "difficulte", DIFF_LABELS);
   buildTags("filter-tags",       uniq(ALL.flatMap(r => r.tags||[])));
@@ -260,7 +286,7 @@ function buildTree() {
   THEMES.forEach(({ code, label }) => {
     if (!subsByTheme[code] && !ALL.some(r => (r.theme||"AU") === code)) return;
 
-    const subs = [...(subsByTheme[code] || [])].sort((a,b) => a.localeCompare(b,"fr"));
+    const subs = sortSubs(code, [...(subsByTheme[code] || [])]);
 
     const themeEl = document.createElement("div");
     themeEl.className = "tree-theme";
@@ -419,7 +445,7 @@ function toggleTag(tag, pill) {
 }
 
 function resetFilters() {
-  active = { theme: null, sous_chapitre: null, type: null, niveau: null, difficulte: null, tags: new Set() };
+  active = { theme: null, sous_chapitre: null, type: null, categorie: null, niveau: null, difficulte: null, tags: new Set() };
   document.querySelectorAll(".filter-row.active, .tag-pill.active, .tree-theme-header.active, .tree-sub.active").forEach(el => {
     el.classList.remove("active");
     el.style.background = el.style.color = el.style.borderLeft = el.style.marginLeft = el.style.fontWeight = "";
@@ -432,7 +458,7 @@ function resetFilters() {
 }
 
 function updateReset() {
-  const has = active.theme || active.sous_chapitre || active.type || active.niveau || active.difficulte || active.tags.size > 0 || searchQuery;
+  const has = active.theme || active.sous_chapitre || active.type || active.categorie || active.niveau || active.difficulte || active.tags.size > 0 || searchQuery;
   document.getElementById("reset-btn").classList.toggle("visible", !!has);
 }
 
@@ -442,6 +468,7 @@ function matches(r) {
   if (active.sous_chapitre && r.sous_chapitre !== active.sous_chapitre)              return false;
   if (!active.sous_chapitre && active.theme && theme !== active.theme)               return false;
   if (active.type       && r.type !== active.type)                                   return false;
+  if (active.categorie  && r.categorie !== active.categorie)                         return false;
   if (active.niveau     && !(r.niveau||[]).includes(active.niveau))                  return false;
   if (active.difficulte && r.difficulte != active.difficulte)                        return false;
   if (active.tags.size  && ![...active.tags].every(t => (r.tags||[]).includes(t)))  return false;
@@ -477,14 +504,18 @@ function render() {
 
     const btnE = r.pdf
       ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">Exercice</button>`
-      : `<button class="btn btn-eleve disabled">Exercice</button>`;
+      : "";
     const btnC = r.corrige_pdf
       ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escHtml(r.titre)} — corrigé')">Corrigé</button>`
-      : `<button class="btn btn-corrige disabled">Corrigé</button>`;
+      : "";
+    const btnL = r.lien
+      ? `<a class="btn btn-corrige" href="${escHtml(r.lien)}" target="_blank">↗ Ouvrir</a>`
+      : "";
 
-    const niveaux = (r.niveau||[]).join(", ");
-    const tags    = (r.tags||[]).map(t => `<span class="row-tag">#${t}</span>`).join("");
-    const diff    = [1,2,3].map(i => `<span class="diff-dot${i<=(r.difficulte||1)?" on":""}"></span>`).join("");
+    const niveaux  = (r.niveau||[]).join(", ");
+    const tags     = (r.tags||[]).map(t => `<span class="row-tag">#${t}</span>`).join("");
+    const diff     = [1,2,3].map(i => `<span class="diff-dot${i<=(r.difficulte||1)?" on":""}"></span>`).join("");
+    const categorie = r.categorie ? `<span class="meta-sep">·</span><span>${escHtml(r.categorie)}</span>` : "";
 
     row.innerHTML = `
       <span class="row-code theme-${escHtml(r.theme||'AU')}">${escHtml(r.type)}</span>
@@ -495,11 +526,12 @@ function render() {
         <div class="row-meta">
           ${r.sous_chapitre ? `<span>${escHtml(r.sous_chapitre)}</span><span class="meta-sep">·</span>` : ""}
           ${niveaux         ? `<span>${niveaux}</span><span class="meta-sep">·</span>` : ""}
-          <span class="diff">${diff}</span>
+          ${r.type !== "RES" ? `<span class="diff">${diff}</span>` : ""}
+          ${categorie}
           ${tags ? `<span class="meta-sep">·</span><span class="row-tags">${tags}</span>` : ""}
         </div>
       </div>
-      <div class="row-actions">${btnE}${btnC}</div>
+      <div class="row-actions">${btnE}${btnC}${btnL}</div>
     `;
     list.appendChild(row);
   });

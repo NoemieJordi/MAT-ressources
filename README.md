@@ -4,16 +4,37 @@ Site de gestion et recherche de ressources mathématiques, compilées automatiqu
 
 ---
 
-## Structure du projet
+## Structure du projet GitHub
 
 ```
 MAT-site/
-├── exercices/              ← tes fichiers .tex (un par ressource)
-│   ├── NO/                 ← optionnel : organiser par thème
-│   ├── FA/
-│   └── ...
+├── exercices/
+│   ├── 01-NO/
+│   │   ├── NombresNaturelsDecimaux/
+│   │   ├── NombresRelatifs/
+│   │   ├── NombresRationnels/
+│   │   ├── NombresReels/
+│   │   └── SituationsAleatoires/
+│   ├── 02-FA/
+│   │   ├── Proportionnalite/
+│   │   ├── Fonctions/
+│   │   ├── Diagrammes/
+│   │   ├── CalculLitteral/
+│   │   └── Equations/
+│   ├── 03-ES/
+│   │   ├── FiguresGeometriquesPlanes/
+│   │   ├── RepresentationSolides/
+│   │   └── TransformationsGeometriques/
+│   ├── 04-GM/
+│   │   ├── LignesSurfaces/
+│   │   ├── Theoremes/
+│   │   ├── Solides/
+│   │   └── DiversMesures/
+│   ├── 05-RS/
+│   └── 06-AU/
 ├── scripts/
-│   └── build.py            ← compile les PDF et génère ressources.json
+│   ├── build.py            ← compile les PDF et génère ressources.json
+│   └── chapitres.py        ← ordre officiel des sous-chapitres
 ├── site/
 │   ├── index.html          ← le site web (filtres + aperçu PDF)
 │   ├── pdf/                ← PDFs élève (générés automatiquement)
@@ -22,6 +43,26 @@ MAT-site/
 ├── .github/workflows/
 │   └── build.yml           ← déploiement automatique sur GitHub Pages
 └── README.md
+```
+
+## Structure du dossier MAT sur le Mac
+
+```
+MAT/
+├── 00-Commun/              ← préambule, figures, polices
+├── 00-RES/                 ← ressources externes (PAS sur GitHub)
+│   ├── NO/
+│   ├── FA/
+│   └── ...
+├── 01-NO/
+│   ├── NombresNaturelsDecimaux/
+│   └── ...
+├── 02-FA/
+├── 03-ES/
+├── 04-GM/
+├── 05-RS/
+├── 06-AU/
+└── MAT-site/               ← ce dépôt GitHub
 ```
 
 ---
@@ -62,12 +103,13 @@ TYPE_THEME-SousChapitre_Titre.tex
 
 Exemples :
 ```
-EX_NO-PrioriteOperations_JeuDePiste.tex
+EX_NO-NombresNaturelsDecimaux_JeuDePiste.tex
 EVAL_FA-Equations_Bilan.tex
-TH_ES-Trigonometrie_Cosinus.tex
+TH_ES-FiguresGeometriquesPlanes_Cosinus.tex
 JEU_NO-NombresRelatifs_BatailleNavale.tex
-PROJ_GM-Aires_MaquetteAppartement.tex
-PLANIF_NO-NombresNaturels_Sequence1.tex
+PROJ_GM-LignesSurfaces_MaquetteAppartement.tex
+PLANIF_NO-NombresNaturelsDecimaux_Sequence1.tex
+RES_NO-NombresNaturelsDecimaux_ManuelVaudois.tex  ← métadonnées seulement
 ```
 
 Règles :
@@ -89,7 +131,7 @@ Ajoute un bloc de métadonnées YAML en commentaire en tête du fichier :
 % titre: Jeu de piste — priorité des opérations
 % theme: NO
 % chapitre: Nombres naturels et décimaux
-% sous_chapitre: Priorité des opérations
+% sous_chapitre: NombresNaturelsDecimaux
 % niveau: [9e]
 % type: EX
 % tags: [jeu, priorité]
@@ -108,14 +150,15 @@ Champs disponibles :
 |-------|---------|-------------|
 | `titre` | Texte libre | Oui |
 | `theme` | `NO` `FA` `ES` `GM` `RS` `AU` | Oui |
-| `chapitre` | Texte libre | Oui |
-| `sous_chapitre` | Texte libre | Oui |
+| `chapitre` | Texte libre (affiché sur le site) | Oui |
+| `sous_chapitre` | Nom du dossier sans accents | Oui |
 | `niveau` | `[9e]` `[10e]` `[9e, 10e]` ... | Oui |
 | `type` | `TH` `EX` `JEU` `PROJ` `REV` `EVAL` `PLANIF` `RES` | Oui |
 | `tags` | `[jeu, simulation, ...]` | Non |
 | `difficulte` | `1` (facile) `2` (moyen) `3` (difficile) | Non |
 | `corrige` | `true` ou `false` | Non (automatique selon le type) |
 | `source` | `latex` (défaut) ou `pdf` | Non |
+| `lien` | URL ou chemin local (pour `RES`) | Non |
 
 Valeur automatique de `corrige` selon le type :
 - Toujours `true` : `EX`, `REV`, `EVAL`
@@ -125,27 +168,28 @@ Valeur automatique de `corrige` selon le type :
 ### 2. Placer le fichier
 
 ```
-MAT-site/exercices/NO-PrioriteOperations/EX_NO-PrioriteOperations_JeuDePiste.tex
+MAT-site/exercices/01-NO/NombresNaturelsDecimaux/EX_NO-NombresNaturelsDecimaux_JeuDePiste.tex
 ```
 
 ---
 
 ## Ajouter une ressource PDF existante (sans .tex)
 
-Place les fichiers dans `exercices/` avec la convention de nommage :
+Place les fichiers dans le bon sous-dossier de `exercices/` :
 
 ```
-EX_NO-PrioriteOperations_JeuDePiste.pdf
-EX_NO-PrioriteOperations_JeuDePiste_corrige.pdf   ← optionnel
+EX_NO-NombresNaturelsDecimaux_JeuDePiste.pdf
+EX_NO-NombresNaturelsDecimaux_JeuDePiste_corrige.pdf   ← optionnel
 ```
 
-Et crée un fichier `.tex` minimaliste avec juste les métadonnées et `source: pdf` :
+Et crée un fichier `.tex` avec les métadonnées et `source: pdf` :
 
 ```latex
 % ---
 % titre: Jeu de piste — priorité des opérations
 % theme: NO
-% sous_chapitre: Priorité des opérations
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: NombresNaturelsDecimaux
 % niveau: [9e]
 % type: EX
 % tags: [jeu]
@@ -154,6 +198,25 @@ Et crée un fichier `.tex` minimaliste avec juste les métadonnées et `source: 
 % source: pdf
 % ---
 ```
+
+---
+
+## Ajouter une ressource externe (RES)
+
+Le fichier lourd reste dans `~/Documents/_Ecole/03-Cycle3/MAT/00-RES/` sur ton Mac (pas sur GitHub). Seul le fichier de métadonnées `.tex` va sur GitHub :
+
+```latex
+% ---
+% titre: Manuel Vaudois — Nombres naturels
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: NombresNaturelsDecimaux
+% type: RES
+% lien: /Users/noemiejordi/Documents/_Ecole/03-Cycle3/MAT/00-RES/NO/ManuelVaudois.pdf
+% ---
+```
+
+Le site affichera un bouton **↗ Ouvrir** qui ouvre le fichier directement depuis iCloud.
 
 ---
 
@@ -181,20 +244,14 @@ python3 -m http.server 8080
 ### Pousser sur GitHub
 
 ```bash
-# Se placer dans le dossier du projet
 cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
 
-# Ajouter les nouveaux fichiers
 git add .
-
-# Créer un commit
-git commit -m "Ajout: EX_NO-PrioriteOperations_JeuDePiste"
-
-# Pousser — GitHub Actions compile et déploie automatiquement
+git commit -m "Ajout: EX_NO-NombresNaturelsDecimaux_JeuDePiste"
 git push
 ```
 
-Le site est mis à jour en ~3-5 minutes après le push.
+Le site est mis à jour en ~5 minutes après le push.
 
 ### Forcer la recompilation complète
 
@@ -202,36 +259,18 @@ Depuis GitHub → Actions → "Compiler LaTeX et déployer le site" → "Run wor
 
 ---
 
-## Premier déploiement sur GitHub
-
-```bash
-cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
-
-git init
-git add .
-git commit -m "Init MAT-site"
-git remote add origin https://github.com/TON-COMPTE/MAT-ressources.git
-git push -u origin main
-```
-
-Puis dans GitHub → Settings → Pages → Source : **GitHub Actions**.
-
-Le site sera accessible à : `https://TON-COMPTE.github.io/MAT-ressources/`
-
----
-
 ## En-tête des PDF
 
-L'en-tête est généré automatiquement par `\header{}{}` dans le template :
+Généré automatiquement par `\header{}{}` dans le template :
 - Ligne de couleur fine (couleur du thème)
 - Titre de la ressource
 
-La couleur est injectée automatiquement par le script selon le champ `theme`.
+La couleur est injectée automatiquement selon le champ `theme`.
 
 ---
 
 ## Notes
 
-- Les fichiers auxiliaires LaTeX (`.aux`, `.log`, `.synctex.gz`) sont ignorés par git (`.gitignore`)
-- Les PDFs compilés sont mis en cache entre les pushs — seuls les fichiers modifiés sont recompilés
-- Les ressources externes volumineuses (`RES`) restent sur le Mac et ne sont pas committées
+- Les fichiers auxiliaires LaTeX (`.aux`, `.log`, `.synctex.gz`) sont ignorés par git
+- Les PDFs sont mis en cache — seuls les fichiers modifiés sont recompilés à chaque push
+- Les ressources externes (`00-RES/`) restent sur le Mac, jamais sur GitHub

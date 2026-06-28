@@ -13,6 +13,8 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
+from chapitres import sort_sous_chapitres
 
 # -----------------------------------------------------------------------
 # Chemins
@@ -80,6 +82,8 @@ def extract_meta(tex_path: Path) -> dict:
         "difficulte":    1,
         "corrige":       None,   # None = déterminé par le type
         "source":        "latex",
+        "lien":          None,
+        "categorie":     None,
     }
     src  = tex_path.read_text(encoding="utf-8")
     bloc = re.search(r'%\s*---\s*\n(.*?)%\s*---', src, re.DOTALL)
@@ -97,6 +101,8 @@ def extract_meta(tex_path: Path) -> dict:
         elif key == "sous_chapitre": meta["sous_chapitre"] = val
         elif key == "type":          meta["type"]          = val.upper()
         elif key == "source":        meta["source"]        = val.lower()
+        elif key == "lien":          meta["lien"]          = val
+        elif key == "categorie":     meta["categorie"]     = val
         elif key == "difficulte":
             try: meta["difficulte"] = int(val)
             except ValueError: pass
@@ -113,6 +119,17 @@ def extract_meta(tex_path: Path) -> dict:
         else:                      meta["corrige"] = False  # TH, JEU — opt-in
 
     return meta
+
+THEMES_ORDER = ["NO", "FA", "ES", "GM", "RS", "AU"]
+ORDRE_THEMES = {code: i for i, code in enumerate(THEMES_ORDER)}
+
+def ORDRE_SC(theme: str, sous_chapitre: str) -> int:
+    from chapitres import ORDRE_SOUS_CHAPITRES
+    ordre = ORDRE_SOUS_CHAPITRES.get(theme, [])
+    try:
+        return ordre.index(sous_chapitre)
+    except ValueError:
+        return len(ordre)
 
 # -----------------------------------------------------------------------
 # Compilation LaTeX
@@ -222,7 +239,12 @@ def main():
         if meta:
             existing[meta["fichier"]] = meta
 
-    ressources = sorted(existing.values(), key=lambda r: (r["theme"], r["sous_chapitre"], r["titre"]))
+    ressources = sorted(existing.values(), key=lambda r: (
+        r["theme"],
+        ORDRE_THEMES.get(r["theme"], 99),
+        ORDRE_SC(r["theme"], r.get("sous_chapitre", "")),
+        r["titre"]
+    ))
     JSON_OUT.write_text(json.dumps(ressources, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n✅ {len(ressources)} ressource(s) → {JSON_OUT}")
 
