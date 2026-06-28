@@ -1,0 +1,79 @@
+name: Compiler LaTeX et déployer le site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      force_full:
+        description: 'Recompiler tous les fichiers (même inchangés)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout (avec historique pour git diff)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Installer TeX Live
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            texlive-full \
+            texlive-lang-french \
+            latexmk \
+            python3
+
+      - name: Restaurer les PDFs existants (cache)
+        uses: actions/cache@v4
+        with:
+          path: |
+            site/pdf/
+            site/corr/
+            site/ressources.json
+          key: pdfs-${{ github.sha }}
+          restore-keys: |
+            pdfs-
+
+      - name: Compiler les exercices
+        run: |
+          if [ "${{ github.event.inputs.force_full }}" = "true" ]; then
+            echo "Mode complet forcé"
+            python3 scripts/build.py
+          else
+            echo "Mode différentiel (fichiers modifiés uniquement)"
+            python3 scripts/build.py --changed
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

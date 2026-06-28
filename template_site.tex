@@ -1,0 +1,241 @@
+\documentclass[11pt]{article}
+
+% -----------------------------------------------------------------------
+% Langue
+% -----------------------------------------------------------------------
+\usepackage[french]{babel}
+
+% -----------------------------------------------------------------------
+% Page
+% -----------------------------------------------------------------------
+\usepackage[a4paper, top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{emptypage}
+\pagestyle{empty}
+
+% -----------------------------------------------------------------------
+% Police (sans fontspec — compatible pdflatex et lualatex)
+% -----------------------------------------------------------------------
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[onehalfspacing]{setspace}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{8pt plus 2pt minus 2pt}
+\usepackage{anyfontsize}
+\usepackage{relsize}
+
+% -----------------------------------------------------------------------
+% Maths
+% -----------------------------------------------------------------------
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb,amsfonts,mathrsfs,stmaryrd}
+\usepackage{bm}
+\usepackage{systeme}
+\usepackage{empheq}
+\usepackage{gensymb,textcomp}
+\usepackage{siunitx}
+\sisetup{
+  exponent-product = \cdot,
+  inter-unit-product = \ensuremath{{}\cdot{}}
+}
+\usepackage{esvect}
+
+% -----------------------------------------------------------------------
+% Tableaux
+% -----------------------------------------------------------------------
+\usepackage{tabularx,hhline}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{booktabs}
+
+% -----------------------------------------------------------------------
+% Listes
+% -----------------------------------------------------------------------
+\usepackage{enumitem}
+\usepackage{tasks}
+
+% -----------------------------------------------------------------------
+% Figures et graphiques
+% -----------------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{pdfpages}
+
+% -----------------------------------------------------------------------
+% TikZ / pgf
+% -----------------------------------------------------------------------
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.14}
+\usetikzlibrary{shapes.arrows, arrows, arrows.meta}
+\usetikzlibrary{shapes, fit, backgrounds}
+\usetikzlibrary{positioning, calc}
+\usetikzlibrary{plotmarks}
+\usepackage{tkz-euclide}
+
+% -----------------------------------------------------------------------
+% Couleurs
+% -----------------------------------------------------------------------
+\usepackage[table]{xcolor}
+\definecolor{gray}{HTML}{C8C8C8}
+\definecolor{hellgray}{HTML}{F4F4F4}
+\definecolor{hellred}{HTML}{fff2e5}
+\definecolor{hellyellow}{HTML}{ffffe5}
+\definecolor{hellgreen}{HTML}{f2ffe5}
+\definecolor{hellpink}{HTML}{ffe5ff}
+\definecolor{helllila}{HTML}{e5e5ff}
+\definecolor{beaublue}{HTML}{e5ffff}
+\definecolor{darkbeaublue}{HTML}{79a3c6}
+\definecolor{ex}{HTML}{fbd8d3}
+\definecolor{corr}{HTML}{6EAC9A}
+\definecolor{math}{HTML}{DE7890}
+\definecolor{vert}{HTML}{034f1b}
+\definecolor{rouge}{HTML}{7e121d}
+\definecolor{text}{HTML}{4d4d4d}
+\definecolor{box}{HTML}{d9d9d9}
+\definecolor{stabiloOrange}{RGB}{250,169,157}
+\definecolor{stabiloVert}{RGB}{155,251,225}
+\definecolor{stabiloJaune}{RGB}{253,223,126}
+\definecolor{stabiloRose}{RGB}{246,165,235}
+\definecolor{stabiloBleu}{RGB}{103,235,250}
+\definecolor{stabiloViolet}{RGB}{206,151,251}
+\definecolor{ceintureJaune}{RGB}{253,255,180}
+\definecolor{ceintureOrange}{RGB}{248,182,168}
+\definecolor{ceintureVerte}{RGB}{215,248,143}
+\definecolor{ceintureBleue}{RGB}{195,239,252}
+\definecolor{ceintureMarron}{RGB}{245,222,179}
+\definecolor{ceintureNoire}{RGB}{204,204,204}
+\definecolor{faire}{RGB}{255,244,247}
+\definecolor{devoir}{RGB}{255,224,235}
+\definecolor{diff}{RGB}{233,255,229}
+\definecolor{eval}{RGB}{255,252,224}
+
+% -----------------------------------------------------------------------
+% tcolorbox
+% -----------------------------------------------------------------------
+\usepackage[listings,skins,breakable]{tcolorbox}
+\tcbuselibrary{raster,skins}
+
+% -----------------------------------------------------------------------
+% Divers
+% -----------------------------------------------------------------------
+\usepackage{multicol}
+\usepackage{dashrule}
+\usepackage{xifthen}
+\usepackage{qrcode}
+\usepackage[pdffitwindow=true, hidelinks]{hyperref}
+
+% -----------------------------------------------------------------------
+% Questions / Réponses
+% -----------------------------------------------------------------------
+\usepackage{etoolbox}
+\providetoggle{question}
+\newcommand{\sol}[2]{\iftoggle{question}{#1}{{\color{stabiloOrange}#2}}}
+
+% -----------------------------------------------------------------------
+% Compteurs
+% -----------------------------------------------------------------------
+\newcounter{Exercice}
+\newcommand{\exercice}{\refstepcounter{Exercice}%
+  {\large\textbf{Exercice \theExercice}} \quad}
+
+\newcounter{Ex}
+\newcommand{\ex}{\refstepcounter{Ex}%
+  {\textbf{Exercice \theEx}} \quad}
+
+\newcounter{Exemple}
+\newcommand{\exemple}{{\large \textbf{Exemple \theExemple}} \quad
+  \stepcounter{Exemple}}
+
+\newcounter{Experience}
+\newcommand{\experience}{{\large \textbf{Expérience \theExperience}} \quad
+  \stepcounter{Experience}}
+
+\newcounter{Fiche}
+\newcommand{\fiche}{{Ex \theFiche{}: } \quad
+  \stepcounter{Fiche}}
+
+% -----------------------------------------------------------------------
+% Commandes exercices
+% -----------------------------------------------------------------------
+\newcommand{\envExercice}[2][]{%
+  \begin{tcolorbox}[colback=ex!30, colframe=ex!80, parbox=false,
+    title={\large\textbf{Exercice}}, fonttitle=\bfseries]
+    #2
+  \end{tcolorbox}
+}
+
+\newcommand{\envExerciceNew}[2][]{%
+  \begin{tcolorbox}[colback=box, colframe=box, parbox=false]
+    \exercice\label{#1}\\#2
+  \end{tcolorbox}
+}
+
+\newcommand{\envExemple}[1]{%
+  \begin{tcolorbox}[colback=hellyellow, colframe=stabiloJaune, parbox=false,
+    title={\large\textbf{Exemple}}, fonttitle=\bfseries]
+    #1
+  \end{tcolorbox}
+}
+
+\newcommand{\envTheorie}[2]{%
+  \begin{tcolorbox}[colback=beaublue, colframe=darkbeaublue, parbox=false]
+    {\large \textbf{#1}} \\#2
+  \end{tcolorbox}
+}
+
+\newcommand{\envTheorieNew}[2]{%
+  \begin{tcolorbox}[colback=box, colframe=box, parbox=false]
+    {\large \textbf{#1}} \\#2
+  \end{tcolorbox}
+}
+
+% -----------------------------------------------------------------------
+% Couleurs des thèmes
+% -----------------------------------------------------------------------
+\definecolor{themeNO}{HTML}{AE0600}
+\definecolor{themeFA}{HTML}{E79840}
+\definecolor{themeES}{HTML}{5698C9}
+\definecolor{themeGM}{HTML}{8CCB30}
+\definecolor{themeRS}{HTML}{6C61A2}
+\definecolor{themeAU}{HTML}{888888}
+
+% Couleur active du thème (redéfinie par le script selon les métadonnées)
+\colorlet{themeColor}{themeAU}
+
+% -----------------------------------------------------------------------
+% Header style C — ligne de couleur fine + titre
+% -----------------------------------------------------------------------
+\newcommand{\header}[2]{%
+  % Ligne de couleur fine en haut
+  {\color{themeColor}\rule{\linewidth}{3pt}}\\[-2pt]
+  {\large\textbf{#2}}
+  \vspace{8pt}
+  \par
+}
+
+% Alias pour compatibilité avec les anciens fichiers
+\newcommand{\headerNdJ}[2]{\header{#1}{#2}}
+
+% -----------------------------------------------------------------------
+% Commandes TOC invisibles (neutralisées pour usage standalone)
+% -----------------------------------------------------------------------
+\newcommand{\invisiblesection}[1]{}
+\newcommand{\invisiblesubsection}[1]{}
+\newcommand{\invisiblesubsubsection}[1]{}
+\newcommand{\invisibleparagraph}[1]{}
+
+% -----------------------------------------------------------------------
+% DOCUMENT — contenu injecté par le script
+% -----------------------------------------------------------------------
+\begin{document}
+\toggletrue{question}   % <-- remplacé par togglefalse pour le corrigé
+%%THEMECOLOR%%
+%%CONTENT%%
+\end{document}

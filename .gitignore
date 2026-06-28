@@ -1,0 +1,18 @@
+# PDFs générés (produits par GitHub Actions)
+site/pdf/
+site/corr/
+site/ressources.json
+
+# Fichiers LaTeX temporaires
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Système
+.DS_Store
