@@ -53,10 +53,10 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.force_full }}" = "true" ]; then
             echo "Mode complet forcé"
-            python3 scripts/build.py
+            python3 scripts/build.py --full
           else
-            echo "Mode différentiel (fichiers modifiés uniquement)"
-            python3 scripts/build.py --changed
+            echo "Mode automatique (fichiers modifiés uniquement)"
+            python3 scripts/build.py
           fi
 
       - name: Setup Pages

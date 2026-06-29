@@ -159,20 +159,31 @@ def make_src(content: str, theme: str, toggle: str) -> str:
 def build_resource(tex_path: Path) -> dict | None:
     stem    = tex_path.stem
     meta    = extract_meta(tex_path)
+    check_meta(meta, tex_path)
     content = tex_path.read_text(encoding="utf-8")
 
     if meta["source"] == "pdf":
-        # Fichier PDF existant — pas de compilation
-        pdf_path  = tex_path.with_suffix(".pdf")
-        corr_path = tex_path.parent / f"{stem}_corrige.pdf"
         import shutil
         pdf_out = corr_out = None
-        if pdf_path.exists():
-            shutil.copy(pdf_path, PDF_DIR / f"{stem}.pdf")
-            pdf_out = f"pdf/{stem}.pdf"
-        if meta["corrige"] and corr_path.exists():
-            shutil.copy(corr_path, CORR_DIR / f"{stem}.pdf")
-            corr_out = f"corr/{stem}.pdf"
+
+        if meta["type"] == "RES":
+            # Pour les RES : le PDF est déposé manuellement dans site/pdf/
+            # On vérifie juste qu'il existe, sans copier
+            if (PDF_DIR / f"{stem}.pdf").exists():
+                pdf_out = f"pdf/{stem}.pdf"
+            if meta["corrige"] and (CORR_DIR / f"{stem}.pdf").exists():
+                corr_out = f"corr/{stem}.pdf"
+        else:
+            # Pour les autres types : le PDF est à côté du .tex
+            pdf_path  = tex_path.with_suffix(".pdf")
+            corr_path = tex_path.parent / f"{stem}_corrige.pdf"
+            if pdf_path.exists():
+                shutil.copy(pdf_path, PDF_DIR / f"{stem}.pdf")
+                pdf_out = f"pdf/{stem}.pdf"
+            if meta["corrige"] and corr_path.exists():
+                shutil.copy(corr_path, CORR_DIR / f"{stem}.pdf")
+                corr_out = f"corr/{stem}.pdf"
+
         meta["pdf"]         = pdf_out
         meta["corrige_pdf"] = corr_out
         meta["fichier"]     = stem
@@ -196,6 +207,38 @@ def build_resource(tex_path: Path) -> dict | None:
     meta["fichier"]     = stem
     return meta
 
+def check_meta(meta: dict, tex_path: Path):
+    """Affiche des avertissements pour les métadonnées incomplètes."""
+    warnings = []
+    if meta["titre"] == tex_path.stem:
+        warnings.append("titre non renseigné")
+    if not meta["sous_chapitre"]:
+        warnings.append("sous_chapitre manquant")
+    if not meta["niveau"] and meta["type"] != "RES":
+        warnings.append("niveau manquant")
+    if not meta["tags"]:
+        warnings.append("tags manquants")
+    if meta["type"] in ("TH", "JEU", "PROJ") and meta["corrige"] is None:
+        warnings.append("corrige non précisé (true/false)")
+    if warnings:
+        print(f"  ⚠️  Métadonnées incomplètes : {', '.join(warnings)}")
+def needs_recompile(tex_path: Path) -> bool:
+    """Retourne True si le .tex est plus récent que son PDF compilé."""
+    stem    = tex_path.stem
+    meta    = extract_meta(tex_path)
+
+    if meta["source"] == "pdf":
+        # Pas de compilation — toujours inclure dans le JSON
+        return True
+
+    pdf = PDF_DIR / f"{stem}.pdf"
+    if not pdf.exists():
+        return True  # Pas encore compilé
+
+    tex_mtime = tex_path.stat().st_mtime
+    pdf_mtime = pdf.stat().st_mtime
+    return tex_mtime > pdf_mtime
+
 # -----------------------------------------------------------------------
 # Fichiers modifiés via git
 # -----------------------------------------------------------------------
@@ -212,17 +255,39 @@ def changed_tex_files() -> list[Path]:
     return files
 
 # -----------------------------------------------------------------------
+# Nettoyage des orphelins
+# -----------------------------------------------------------------------
+def clean_orphans(valid_stems: set[str]):
+    """Supprime les PDFs et entrées JSON dont le .tex n'existe plus."""
+    removed = 0
+    for pdf in list(PDF_DIR.glob("*.pdf")):
+        if pdf.stem not in valid_stems:
+            pdf.unlink()
+            corr = CORR_DIR / pdf.name
+            if corr.exists(): corr.unlink()
+            print(f"  🗑  Orphelin supprimé : {pdf.name}")
+            removed += 1
+    if removed == 0:
+        print("  ✓  Aucun orphelin trouvé")
+
+# -----------------------------------------------------------------------
 # Main
 # -----------------------------------------------------------------------
 def main():
-    only_changed = "--changed" in sys.argv
+    force_full = "--full" in sys.argv
 
-    if only_changed:
-        tex_files = changed_tex_files()
-        print(f"🔍 Mode diff : {len(tex_files)} fichier(s) modifié(s)\n")
-    else:
-        tex_files = sorted(EXERCICES.rglob("*.tex"))
+    all_tex_files = sorted(EXERCICES.rglob("*.tex"))
+
+    if force_full:
+        tex_files = all_tex_files
         print(f"🔍 Mode complet : {len(tex_files)} fichier(s)\n")
+    else:
+        tex_files = [f for f in all_tex_files if needs_recompile(f)]
+        skipped   = len(all_tex_files) - len(tex_files)
+        print(f"🔍 Mode auto : {len(tex_files)} fichier(s) à recompiler, {skipped} inchangé(s)\n")
+
+    # Stems valides = tous les .tex présents dans exercices/
+    all_tex_stems = {p.stem for p in all_tex_files}
 
     # Charge le JSON existant (pour mode diff)
     existing = {}
@@ -238,6 +303,16 @@ def main():
         meta = build_resource(tex_path)
         if meta:
             existing[meta["fichier"]] = meta
+
+    # Supprime les entrées JSON dont le .tex n'existe plus
+    orphan_keys = [k for k in existing if k not in all_tex_stems]
+    for k in orphan_keys:
+        print(f"  🗑  Entrée JSON supprimée : {k}")
+        del existing[k]
+
+    # Supprime les PDFs orphelins
+    print("\n🧹 Nettoyage des PDFs orphelins...")
+    clean_orphans(all_tex_stems)
 
     ressources = sorted(existing.values(), key=lambda r: (
         r["theme"],

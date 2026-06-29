@@ -65,6 +65,8 @@
   .tree-sub::before { content: "–"; margin-right: 7px; color: var(--border); font-size: 0.75rem; }
 
   /* Tags */
+  .tag-famille { padding: 4px 0 2px; }
+  .tag-famille-label { font-size: 0.65rem; color: var(--muted); padding: 2px 14px 4px; font-style: italic; }
   .tags-wrap { padding: 4px 14px 6px; display: flex; flex-wrap: wrap; gap: 5px; }
   .tag-pill { font-size: 0.74rem; padding: 3px 9px; border-radius: 12px; background: var(--bg); border: 1px solid var(--border); color: var(--muted); cursor: pointer; transition: all .1s; }
   .tag-pill:hover { border-color: var(--accent); color: var(--accent); }
@@ -169,9 +171,24 @@
       <div id="filter-difficulte"></div>
     </div>
 
-    <div class="filter-section">
+    <div class="filter-section" id="section-tags">
       <div class="filter-title">Tags</div>
-      <div class="tags-wrap" id="filter-tags"></div>
+      <div id="filter-tags-contenu" class="tag-famille">
+        <div class="tag-famille-label">Contenu</div>
+        <div class="tags-wrap" id="tags-c"></div>
+      </div>
+      <div id="filter-tags-format" class="tag-famille">
+        <div class="tag-famille-label">Format</div>
+        <div class="tags-wrap" id="tags-f"></div>
+      </div>
+      <div id="filter-tags-outil" class="tag-famille">
+        <div class="tag-famille-label">Outil</div>
+        <div class="tags-wrap" id="tags-o"></div>
+      </div>
+      <div id="filter-tags-pedagogie" class="tag-famille">
+        <div class="tag-famille-label">Pédagogie</div>
+        <div class="tags-wrap" id="tags-p"></div>
+      </div>
     </div>
 
     <div class="reset-wrap">
@@ -253,6 +270,8 @@ let active = {
 };
 let searchQuery = "";
 
+const DIFF_LABELS = { 1: "● Facile", 2: "●● Moyen", 3: "●●● Difficile" };
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 async function init() {
   try { const r = await fetch("ressources.json"); ALL = await r.json(); }
@@ -268,7 +287,7 @@ function buildSidebar() {
   buildRows("filter-categorie",  uniq(ALL.map(r => r.categorie).filter(Boolean)),      "categorie");
   buildRows("filter-niveau",     uniq(ALL.flatMap(r => r.niveau||[])),                 "niveau");
   buildRows("filter-difficulte", uniq(ALL.map(r => r.difficulte).filter(Boolean)).sort(), "difficulte", DIFF_LABELS);
-  buildTags("filter-tags",       uniq(ALL.flatMap(r => r.tags||[])));
+  buildTagsFamilles();
 }
 
 function buildTree() {
@@ -414,15 +433,37 @@ function buildRows(containerId, items, key, labels) {
   });
 }
 
-function buildTags(containerId, tags) {
-  const el = document.getElementById(containerId);
-  el.innerHTML = "";
-  tags.forEach(tag => {
-    const pill = document.createElement("span");
-    pill.className = "tag-pill";
-    pill.textContent = tag;
-    pill.onclick = () => toggleTag(tag, pill);
-    el.appendChild(pill);
+const TAG_PREFIXES = { c: "Contenu", f: "Format", o: "Outil", p: "Pédagogie" };
+const TAG_IDS      = { c: "tags-c", f: "tags-f", o: "tags-o", p: "tags-p" };
+
+function tagLabel(tag) {
+  // Retire le préfixe pour l'affichage : "c-fractions" → "fractions"
+  return tag.replace(/^[cfop]-/, "");
+}
+
+function buildTagsFamilles() {
+  // Regroupe les tags par famille
+  const familles = { c: new Set(), f: new Set(), o: new Set(), p: new Set() };
+  ALL.forEach(r => (r.tags||[]).forEach(t => {
+    const prefix = t.match(/^([cfop])-/)?.[1];
+    if (prefix) familles[prefix].add(t);
+  }));
+
+  Object.entries(familles).forEach(([prefix, tags]) => {
+    const el = document.getElementById(TAG_IDS[prefix]);
+    const section = el?.closest(".tag-famille");
+    if (!el) return;
+    el.innerHTML = "";
+    if (tags.size === 0) { if (section) section.style.display = "none"; return; }
+    if (section) section.style.display = "";
+    [...tags].sort((a,b) => tagLabel(a).localeCompare(tagLabel(b), "fr")).forEach(tag => {
+      const pill = document.createElement("span");
+      pill.className = "tag-pill";
+      pill.textContent = tagLabel(tag);
+      pill.dataset.tag = tag;
+      pill.onclick = () => toggleTag(tag, pill);
+      el.appendChild(pill);
+    });
   });
 }
 
@@ -502,18 +543,21 @@ function render() {
     const row  = document.createElement("div");
     row.className = "row";
 
-    const btnE = r.pdf
+    const btnE = (r.pdf && r.type !== "RES")
       ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">Exercice</button>`
       : "";
-    const btnC = r.corrige_pdf
+    const btnR = (r.pdf && r.type === "RES")
+      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">Ressource</button>`
+      : "";
+    const btnC = (r.corrige_pdf && r.type !== "RES")
       ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escHtml(r.titre)} — corrigé')">Corrigé</button>`
       : "";
-    const btnL = r.lien
+    const btnL = (r.lien && r.type === "RES" && !r.pdf)
       ? `<a class="btn btn-corrige" href="${escHtml(r.lien)}" target="_blank">↗ Ouvrir</a>`
       : "";
 
     const niveaux  = (r.niveau||[]).join(", ");
-    const tags     = (r.tags||[]).map(t => `<span class="row-tag">#${t}</span>`).join("");
+    const tags     = (r.tags||[]).map(t => `<span class="row-tag">#${t.replace(/^[cfop]-/, "")}</span>`).join("");
     const diff     = [1,2,3].map(i => `<span class="diff-dot${i<=(r.difficulte||1)?" on":""}"></span>`).join("");
     const categorie = r.categorie ? `<span class="meta-sep">·</span><span>${escHtml(r.categorie)}</span>` : "";
 
@@ -531,7 +575,7 @@ function render() {
           ${tags ? `<span class="meta-sep">·</span><span class="row-tags">${tags}</span>` : ""}
         </div>
       </div>
-      <div class="row-actions">${btnE}${btnC}${btnL}</div>
+      <div class="row-actions">${btnE}${btnR}${btnC}${btnL}</div>
     `;
     list.appendChild(row);
   });
