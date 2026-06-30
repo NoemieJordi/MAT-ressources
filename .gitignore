@@ -1,6 +1,5 @@
-# Fichiers générés localement (pas nécessaire de les committer pour les .tex compilés,
-# mais site/pdf/ et site/corr/ DOIVENT être committés pour les PDFs déposés manuellement)
-site/ressources.json
+# Fichiers générés localement
+# (site/ressources.json est temporairement suivi par git pour faciliter le débogage)
 
 # Fichiers LaTeX temporaires
 *.aux
