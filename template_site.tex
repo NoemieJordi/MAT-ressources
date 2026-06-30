@@ -92,6 +92,21 @@
 \definecolor{stabiloViolet}{RGB}{206,151,251}
 
 % -----------------------------------------------------------------------
+% Couleurs des thèmes
+% -----------------------------------------------------------------------
+\definecolor{themeNO}{HTML}{AE0600}
+\definecolor{themeFA}{HTML}{E79840}
+\definecolor{themeES}{HTML}{5698C9}
+\definecolor{themeGM}{HTML}{8CCB30}
+\definecolor{themeRS}{HTML}{6C61A2}
+\definecolor{themeAU}{HTML}{888888}
+
+% Couleur active du thème (redéfinie par le script selon les métadonnées)
+\colorlet{themeColor}{themeAU}
+
+\newcommand{\colSolution}{\iftoggle{question}{white}{themeColor}}
+
+% -----------------------------------------------------------------------
 % tcolorbox
 % -----------------------------------------------------------------------
 \usepackage[listings,skins,breakable]{tcolorbox}
@@ -107,34 +122,11 @@
 \usepackage[pdffitwindow=true, hidelinks]{hyperref}
 
 % -----------------------------------------------------------------------
-% Questions / Réponses
-% -----------------------------------------------------------------------
-\usepackage{etoolbox}
-\providetoggle{question}
-\newcommand{\sol}[2]{\iftoggle{question}{#1}{{\color{stabiloOrange}#2}}}
-
-% -----------------------------------------------------------------------
 % Compteurs
 % -----------------------------------------------------------------------
 \newcounter{Exercice}
 \newcommand{\exercice}{\refstepcounter{Exercice}%
   {\large\textbf{Exercice \theExercice}} \quad}
-
-\newcounter{Ex}
-\newcommand{\ex}{\refstepcounter{Ex}%
-  {\textbf{Exercice \theEx}} \quad}
-
-\newcounter{Exemple}
-\newcommand{\exemple}{{\large \textbf{Exemple \theExemple}} \quad
-  \stepcounter{Exemple}}
-
-\newcounter{Experience}
-\newcommand{\experience}{{\large \textbf{Expérience \theExperience}} \quad
-  \stepcounter{Experience}}
-
-\newcounter{Fiche}
-\newcommand{\fiche}{{Ex \theFiche{}: } \quad
-  \stepcounter{Fiche}}
 
 % -----------------------------------------------------------------------
 % Commandes exercices
@@ -147,17 +139,11 @@
 }
 
 % -----------------------------------------------------------------------
-% Couleurs des thèmes
+% Questions / Réponses
 % -----------------------------------------------------------------------
-\definecolor{themeNO}{HTML}{AE0600}
-\definecolor{themeFA}{HTML}{E79840}
-\definecolor{themeES}{HTML}{5698C9}
-\definecolor{themeGM}{HTML}{8CCB30}
-\definecolor{themeRS}{HTML}{6C61A2}
-\definecolor{themeAU}{HTML}{888888}
-
-% Couleur active du thème (redéfinie par le script selon les métadonnées)
-\colorlet{themeColor}{themeAU}
+\usepackage{etoolbox}
+\providetoggle{question}
+\newcommand{\sol}[2]{\iftoggle{question}{#1}{{\color{\colSolution}#2}}}
 
 % -----------------------------------------------------------------------
 % Header style C — ligne de couleur fine + titre
