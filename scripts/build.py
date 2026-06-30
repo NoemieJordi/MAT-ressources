@@ -14,7 +14,7 @@ import subprocess
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from chapitres import sort_sous_chapitres
+from chapitres import ordre_chapitre_index, ordre_sous_chapitre_index
 
 # -----------------------------------------------------------------------
 # Chemins
@@ -124,14 +124,6 @@ def extract_meta(tex_path: Path) -> dict:
 
 THEMES_ORDER = ["NO", "FA", "ES", "GM", "RS", "AU"]
 ORDRE_THEMES = {code: i for i, code in enumerate(THEMES_ORDER)}
-
-def ORDRE_SC(theme: str, sous_chapitre: str) -> int:
-    from chapitres import ORDRE_SOUS_CHAPITRES
-    ordre = ORDRE_SOUS_CHAPITRES.get(theme, [])
-    try:
-        return ordre.index(sous_chapitre)
-    except ValueError:
-        return len(ordre)
 
 # -----------------------------------------------------------------------
 # Compilation LaTeX
@@ -303,10 +295,11 @@ def main():
     print("\n🧹 Nettoyage des PDFs orphelins...")
     clean_orphans(all_tex_stems)
 
+    from chapitres import ordre_chapitre_index, ordre_sous_chapitre_index
     ressources = sorted(existing.values(), key=lambda r: (
-        r["theme"],
         ORDRE_THEMES.get(r["theme"], 99),
-        ORDRE_SC(r["theme"], r.get("sous_chapitre", "")),
+        ordre_chapitre_index(r["theme"], r.get("chapitre", "")),
+        ordre_sous_chapitre_index(r.get("chapitre", ""), r.get("sous_chapitre", "")),
         r["titre"]
     ))
     JSON_OUT.write_text(json.dumps(ressources, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -69,6 +69,7 @@ Matériel ou logiciel nécessaire.
 | `o-polydron` | Polydron |
 | `o-geomag` | Geomag |
 | `o-sablier` | Sablier |
+| `o-bombe` | Bombe |
 
 ---
 

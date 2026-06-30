@@ -83,21 +83,6 @@
 % Couleurs
 % -----------------------------------------------------------------------
 \usepackage[table]{xcolor}
-\definecolor{gray}{HTML}{C8C8C8}
-\definecolor{hellgray}{HTML}{F4F4F4}
-\definecolor{hellred}{HTML}{fff2e5}
-\definecolor{hellyellow}{HTML}{ffffe5}
-\definecolor{hellgreen}{HTML}{f2ffe5}
-\definecolor{hellpink}{HTML}{ffe5ff}
-\definecolor{helllila}{HTML}{e5e5ff}
-\definecolor{beaublue}{HTML}{e5ffff}
-\definecolor{darkbeaublue}{HTML}{79a3c6}
-\definecolor{ex}{HTML}{fbd8d3}
-\definecolor{corr}{HTML}{6EAC9A}
-\definecolor{math}{HTML}{DE7890}
-\definecolor{vert}{HTML}{034f1b}
-\definecolor{rouge}{HTML}{7e121d}
-\definecolor{text}{HTML}{4d4d4d}
 \definecolor{box}{HTML}{d9d9d9}
 \definecolor{stabiloOrange}{RGB}{250,169,157}
 \definecolor{stabiloVert}{RGB}{155,251,225}
@@ -105,16 +90,6 @@
 \definecolor{stabiloRose}{RGB}{246,165,235}
 \definecolor{stabiloBleu}{RGB}{103,235,250}
 \definecolor{stabiloViolet}{RGB}{206,151,251}
-\definecolor{ceintureJaune}{RGB}{253,255,180}
-\definecolor{ceintureOrange}{RGB}{248,182,168}
-\definecolor{ceintureVerte}{RGB}{215,248,143}
-\definecolor{ceintureBleue}{RGB}{195,239,252}
-\definecolor{ceintureMarron}{RGB}{245,222,179}
-\definecolor{ceintureNoire}{RGB}{204,204,204}
-\definecolor{faire}{RGB}{255,244,247}
-\definecolor{devoir}{RGB}{255,224,235}
-\definecolor{diff}{RGB}{233,255,229}
-\definecolor{eval}{RGB}{255,252,224}
 
 % -----------------------------------------------------------------------
 % tcolorbox
@@ -168,31 +143,6 @@
   \begin{tcolorbox}[colback=ex!30, colframe=ex!80, parbox=false,
     title={\large\textbf{Exercice}}, fonttitle=\bfseries]
     #2
-  \end{tcolorbox}
-}
-
-\newcommand{\envExerciceNew}[2][]{%
-  \begin{tcolorbox}[colback=box, colframe=box, parbox=false]
-    \exercice\label{#1}\\#2
-  \end{tcolorbox}
-}
-
-\newcommand{\envExemple}[1]{%
-  \begin{tcolorbox}[colback=hellyellow, colframe=stabiloJaune, parbox=false,
-    title={\large\textbf{Exemple}}, fonttitle=\bfseries]
-    #1
-  \end{tcolorbox}
-}
-
-\newcommand{\envTheorie}[2]{%
-  \begin{tcolorbox}[colback=beaublue, colframe=darkbeaublue, parbox=false]
-    {\large \textbf{#1}} \\#2
-  \end{tcolorbox}
-}
-
-\newcommand{\envTheorieNew}[2]{%
-  \begin{tcolorbox}[colback=box, colframe=box, parbox=false]
-    {\large \textbf{#1}} \\#2
   \end{tcolorbox}
 }
 

@@ -60,7 +60,16 @@
   .tree-children { display: none; }
   .tree-children.open { display: block; }
 
-  .tree-sub { display: flex; align-items: center; padding: 5px 14px 5px 28px; cursor: pointer; font-size: 0.81rem; color: var(--muted); transition: background .1s; user-select: none; border-left: 3px solid transparent; }
+  .tree-chap-wrap { display: block; }
+  .tree-chap { display: flex; align-items: center; padding: 6px 14px 6px 22px; cursor: pointer; font-size: 0.83rem; font-weight: 500; color: var(--text); transition: background .1s; user-select: none; border-left: 3px solid transparent; }
+  .tree-chap:hover { background: var(--accent-light); }
+  .tree-chap-label { flex: 1; }
+  .tree-chevron-sm { font-size: 0.6rem; color: var(--muted); transition: transform .15s; flex-shrink: 0; width: 10px; display: inline-block; }
+  .tree-chevron-sm.open { transform: rotate(90deg); }
+  .tree-children-sub { display: none; }
+  .tree-children-sub.open { display: block; }
+
+  .tree-sub { display: flex; align-items: center; padding: 5px 14px 5px 40px; cursor: pointer; font-size: 0.79rem; color: var(--muted); transition: background .1s; user-select: none; border-left: 3px solid transparent; }
   .tree-sub:hover { background: var(--accent-light); color: var(--text); }
   .tree-sub::before { content: "–"; margin-right: 7px; color: var(--border); font-size: 0.75rem; }
 
@@ -101,6 +110,7 @@
   .row-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 0.75rem; color: var(--muted); }
   .meta-sep { color: var(--border); }
   .row-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+  .row-tags-line { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
   .row-tag { font-size: 0.7rem; color: var(--accent); background: var(--accent-light); padding: 1px 6px; border-radius: 8px; }
 
   .diff { display: inline-flex; gap: 3px; align-items: center; }
@@ -240,18 +250,18 @@ const THEMES = [
   { code: "AU", label: "Autre"                },
 ];
 
-const SOUS_CHAPITRES_ORDER = {
-  NO: ["NombresNaturelsDecimaux","NombresRelatifs","NombresRationnels","NombresReels","SituationsAleatoires"],
-  FA: ["Proportionnalite","Fonctions","Diagrammes","CalculLitteral","Equations"],
-  ES: ["FiguresGeometriquesPlanes","RepresentationSolides","TransformationsGeometriques"],
-  GM: ["LignesSurfaces","Theoremes","Solides","DiversMesures"],
-  RS: [],
-  AU: [],
+// Ordre des chapitres et sous-chapitres — doit correspondre à scripts/chapitres.py
+const ORDRE_CHAPITRES = {
+  NO: ["Nombres naturels et décimaux","Nombres relatifs","Nombres rationnels","Nombres réels","Situations aléatoires"],
+  FA: ["Proportionnalité","Fonctions","Diagrammes","Calcul littéral","Équations"],
+  ES: ["Figures géométriques planes","Représentation de solides","Transformations géométriques"],
+  GM: ["Lignes et surfaces","Théorèmes","Solides","Divers mesures"],
+  RS: [], AU: [],
 };
 
-function sortSubs(theme, subs) {
-  const ordre = SOUS_CHAPITRES_ORDER[theme] || [];
-  return [...subs].sort((a, b) => {
+function sortChapitres(theme, chapitres) {
+  const ordre = ORDRE_CHAPITRES[theme] || [];
+  return [...chapitres].sort((a, b) => {
     const ia = ordre.indexOf(a), ib = ordre.indexOf(b);
     if (ia === -1 && ib === -1) return a.localeCompare(b, "fr");
     if (ia === -1) return 1;
@@ -260,8 +270,14 @@ function sortSubs(theme, subs) {
   });
 }
 
+function sortSubsOf(chapitre, subs) {
+  // Sans table d'ordre détaillée côté JS pour chaque chapitre, tri alphabétique
+  return [...subs].sort((a, b) => a.localeCompare(b, "fr"));
+}
+
 let active = {
   theme:        null,
+  chapitre:     null,
   sous_chapitre: null,
   type:         null,
   categorie:    null,
@@ -296,18 +312,20 @@ function buildTree() {
   const container = document.getElementById("tree-chapitres");
   container.innerHTML = "";
 
-  // Recense les sous-chapitres par thème
-  const subsByTheme = {};
+  // Structure : { theme: { chapitre: Set(sous_chapitres) } }
+  const structure = {};
   ALL.forEach(r => {
     const t = r.theme || "AU";
-    if (!subsByTheme[t]) subsByTheme[t] = new Set();
-    if (r.sous_chapitre) subsByTheme[t].add(r.sous_chapitre);
+    const c = r.chapitre || "";
+    if (!structure[t]) structure[t] = {};
+    if (!c) return;
+    if (!structure[t][c]) structure[t][c] = new Set();
+    if (r.sous_chapitre) structure[t][c].add(r.sous_chapitre);
   });
 
   THEMES.forEach(({ code, label }) => {
-    if (!subsByTheme[code] && !ALL.some(r => (r.theme||"AU") === code)) return;
-
-    const subs = sortSubs(code, [...(subsByTheme[code] || [])]);
+    if (!structure[code]) return;
+    const chapitres = sortChapitres(code, Object.keys(structure[code]));
 
     const themeEl = document.createElement("div");
     themeEl.className = "tree-theme";
@@ -316,108 +334,126 @@ function buildTree() {
     const header = document.createElement("div");
     header.className = "tree-theme-header";
     header.innerHTML = `
-      <span class="tree-chevron" id="chev-${code}">▶</span>
+      <span class="tree-chevron" id="chev-t-${code}">▶</span>
       <span class="tree-theme-code theme-code-${code}">${code}</span>
       <span style="flex:1">${label}</span>
     `;
-    header.onclick = () => toggleTheme(code, header);
+    header.onclick = () => toggleLevel("theme", code, null, null, header);
     themeEl.appendChild(header);
 
-    const children = document.createElement("div");
-    children.className = "tree-children";
-    children.id = `children-${code}`;
+    const chapChildren = document.createElement("div");
+    chapChildren.className = "tree-children";
+    chapChildren.id = `children-t-${code}`;
 
-    subs.forEach(sub => {
-      const row = document.createElement("div");
-      row.className = "tree-sub";
-      row.dataset.theme = code;
-      row.dataset.sub   = sub;
-      row.textContent   = sub;
-      row.onclick = (e) => { e.stopPropagation(); toggleSub(code, sub, row); };
-      children.appendChild(row);
+    chapitres.forEach(chap => {
+      const subs = sortSubsOf(chap, [...structure[code][chap]]);
+
+      const chapWrap = document.createElement("div");
+      chapWrap.className = "tree-chap-wrap";
+
+      const chapRow = document.createElement("div");
+      chapRow.className = "tree-chap";
+      chapRow.dataset.theme = code;
+      chapRow.dataset.chap  = chap;
+      chapRow.innerHTML = `
+        <span class="tree-chevron-sm" id="chev-c-${code}-${slug(chap)}">${subs.length ? "▶" : ""}</span>
+        <span class="tree-chap-label">${escHtml2(chap)}</span>
+      `;
+      chapRow.onclick = (e) => { e.stopPropagation(); toggleLevel("chapitre", code, chap, null, chapRow); };
+      chapWrap.appendChild(chapRow);
+
+      const subChildren = document.createElement("div");
+      subChildren.className = "tree-children-sub";
+      subChildren.id = `children-c-${code}-${slug(chap)}`;
+
+      subs.forEach(sub => {
+        const subRow = document.createElement("div");
+        subRow.className = "tree-sub";
+        subRow.dataset.theme = code;
+        subRow.dataset.chap  = chap;
+        subRow.dataset.sub   = sub;
+        subRow.textContent   = sub;
+        subRow.onclick = (e) => { e.stopPropagation(); toggleLevel("sous_chapitre", code, chap, sub, subRow); };
+        subChildren.appendChild(subRow);
+      });
+
+      chapWrap.appendChild(subChildren);
+      chapChildren.appendChild(chapWrap);
     });
 
-    themeEl.appendChild(children);
+    themeEl.appendChild(chapChildren);
     container.appendChild(themeEl);
   });
 }
 
-function toggleTheme(code, header) {
-  const chev     = document.getElementById(`chev-${code}`);
-  const children = document.getElementById(`children-${code}`);
-  const isOpen   = children.classList.contains("open");
+function slug(s) { return s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-zA-Z0-9]/g,""); }
+function escHtml2(s) { return escHtml(s); }
 
-  // Si on clique sur le thème déjà actif → désactive
-  if (active.theme === code && active.sous_chapitre === null) {
-    active.theme = null;
-    header.classList.remove("active");
-    header.style.background = header.style.color = header.style.borderLeft = header.style.marginLeft = "";
-    children.classList.remove("open");
-    chev.classList.remove("open");
-    updateReset(); render(); return;
+function clearActiveTree() {
+  document.querySelectorAll(".tree-theme-header.active, .tree-chap.active, .tree-sub.active").forEach(el => {
+    el.classList.remove("active");
+    el.style.background = el.style.color = el.style.borderLeft = el.style.marginLeft = el.style.fontWeight = "";
+  });
+}
+
+function toggleLevel(level, theme, chapitre, sousChapitre, el) {
+  const c = THEME_COLORS[theme] || THEME_COLORS.AU;
+  const sameTarget =
+    (level === "theme"        && active.theme === theme && !active.chapitre && !active.sous_chapitre) ||
+    (level === "chapitre"     && active.chapitre === chapitre && !active.sous_chapitre) ||
+    (level === "sous_chapitre"&& active.sous_chapitre === sousChapitre);
+
+  // Toggle off si on reclique le même
+  if (sameTarget) {
+    clearActiveTree();
+    active.theme = active.chapitre = active.sous_chapitre = null;
+    document.querySelectorAll(".tree-children.open, .tree-children-sub.open").forEach(x => x.classList.remove("open"));
+    document.querySelectorAll(".tree-chevron.open, .tree-chevron-sm.open").forEach(x => x.classList.remove("open"));
+    updateReset(); render();
+    return;
   }
 
-  // Désactive tout autre thème
-  document.querySelectorAll(".tree-theme-header.active").forEach(h => {
-    h.classList.remove("active");
-    h.style.background = h.style.color = h.style.borderLeft = h.style.marginLeft = "";
-  });
-  document.querySelectorAll(".tree-sub.active").forEach(s => s.classList.remove("active"));
-  document.querySelectorAll(".tree-children.open").forEach(c => { c.classList.remove("open"); });
-  document.querySelectorAll(".tree-chevron.open").forEach(c => c.classList.remove("open"));
+  clearActiveTree();
+  active.theme = theme;
+  active.chapitre = level === "theme" ? null : chapitre;
+  active.sous_chapitre = level === "sous_chapitre" ? sousChapitre : null;
 
-  active.theme         = code;
-  active.sous_chapitre = null;
-  header.classList.add("active");
-  const c = THEME_COLORS[code] || THEME_COLORS.AU;
-  header.style.background   = c.bg;
-  header.style.color        = c.text;
-  header.style.borderLeft   = `3px solid ${c.border}`;
-  header.style.marginLeft   = "-3px";
-  children.classList.add("open");
-  chev.classList.add("open");
+  // Ouvre le thème
+  const themeHeader = document.querySelector(`#theme-${theme} .tree-theme-header`);
+  const themeChev    = document.getElementById(`chev-t-${theme}`);
+  const themeChildren= document.getElementById(`children-t-${theme}`);
+  themeChildren.classList.add("open");
+  themeChev.classList.add("open");
+
+  if (level === "theme") {
+    themeHeader.classList.add("active");
+    themeHeader.style.background = c.bg; themeHeader.style.color = c.text;
+    themeHeader.style.borderLeft = `3px solid ${c.border}`; themeHeader.style.marginLeft = "-3px";
+  } else {
+    // Ouvre le chapitre concerné
+    const chapChev = document.getElementById(`chev-c-${theme}-${slug(chapitre)}`);
+    const chapSubChildren = document.getElementById(`children-c-${theme}-${slug(chapitre)}`);
+    if (chapSubChildren) chapSubChildren.classList.add("open");
+    if (chapChev) chapChev.classList.add("open");
+
+    const chapRow = document.querySelector(`.tree-chap[data-theme="${theme}"][data-chap="${cssEscape(chapitre)}"]`);
+    if (level === "chapitre" && chapRow) {
+      chapRow.classList.add("active");
+      chapRow.style.background = c.bg; chapRow.style.color = c.text;
+      chapRow.style.borderLeft = `3px solid ${c.border}`; chapRow.style.fontWeight = "500";
+    }
+    if (level === "sous_chapitre") {
+      el.classList.add("active");
+      el.style.background = c.bg; el.style.color = c.text;
+      el.style.borderLeft = `3px solid ${c.border}`; el.style.fontWeight = "500";
+    }
+  }
+
   updateReset(); render();
 }
 
-function toggleSub(code, sub, row) {
-  // Si déjà actif → désactive le sous-chapitre (garde le thème)
-  if (active.sous_chapitre === sub && active.theme === code) {
-    active.sous_chapitre = null;
-    row.classList.remove("active");
-    updateReset(); render(); return;
-  }
-
-  // Active le thème parent si pas déjà ouvert
-  const header   = document.querySelector(`#theme-${code} .tree-theme-header`);
-  const children = document.getElementById(`children-${code}`);
-  const chev     = document.getElementById(`chev-${code}`);
-  document.querySelectorAll(".tree-theme-header.active").forEach(h => {
-    h.classList.remove("active");
-    h.style.background = h.style.color = h.style.borderLeft = h.style.marginLeft = "";
-  });
-  document.querySelectorAll(".tree-sub.active").forEach(s => {
-    s.classList.remove("active");
-    s.style.background = s.style.color = s.style.borderLeft = s.style.fontWeight = "";
-  });
-  document.querySelectorAll(".tree-children.open").forEach(c => c.classList.remove("open"));
-  document.querySelectorAll(".tree-chevron.open").forEach(c => c.classList.remove("open"));
-
-  active.theme         = code;
-  active.sous_chapitre = sub;
-  header.classList.add("active");
-  const c = THEME_COLORS[code] || THEME_COLORS.AU;
-  header.style.background = c.bg;
-  header.style.color      = c.text;
-  header.style.borderLeft = `3px solid ${c.border}`;
-  header.style.marginLeft = "-3px";
-  children.classList.add("open");
-  chev.classList.add("open");
-  row.classList.add("active");
-  row.style.background  = c.bg;
-  row.style.color       = c.text;
-  row.style.borderLeft  = `3px solid ${c.border}`;
-  row.style.fontWeight  = "500";
-  updateReset(); render();
+function cssEscape(s) {
+  return s.replace(/["\\]/g, "\\$&");
 }
 
 function buildRows(containerId, items, key, labels) {
@@ -488,7 +524,7 @@ function toggleTag(tag, pill) {
 }
 
 function resetFilters() {
-  active = { theme: null, sous_chapitre: null, type: null, categorie: null, niveau: null, difficulte: null, tags: new Set() };
+  active = { theme: null, chapitre: null, sous_chapitre: null, type: null, categorie: null, niveau: null, difficulte: null, tags: new Set() };
   document.querySelectorAll(".filter-row.active, .tag-pill.active, .tree-theme-header.active, .tree-sub.active").forEach(el => {
     el.classList.remove("active");
     el.style.background = el.style.color = el.style.borderLeft = el.style.marginLeft = el.style.fontWeight = "";
@@ -501,7 +537,7 @@ function resetFilters() {
 }
 
 function updateReset() {
-  const has = active.theme || active.sous_chapitre || active.type || active.categorie || active.niveau || active.difficulte || active.tags.size > 0 || searchQuery;
+  const has = active.theme || active.chapitre || active.sous_chapitre || active.type || active.categorie || active.niveau || active.difficulte || active.tags.size > 0 || searchQuery;
   document.getElementById("reset-btn").classList.toggle("visible", !!has);
 }
 
@@ -509,7 +545,8 @@ function updateReset() {
 function matches(r) {
   const theme = r.theme || "AU";
   if (active.sous_chapitre && r.sous_chapitre !== active.sous_chapitre)              return false;
-  if (!active.sous_chapitre && active.theme && theme !== active.theme)               return false;
+  if (!active.sous_chapitre && active.chapitre && r.chapitre !== active.chapitre)    return false;
+  if (!active.chapitre && active.theme && theme !== active.theme)                    return false;
   if (active.type       && r.type !== active.type)                                   return false;
   if (active.categorie  && r.categorie !== active.categorie)                         return false;
   if (active.niveau     && !(r.niveau||[]).includes(active.niveau))                  return false;
@@ -571,12 +608,13 @@ function render() {
           ${r.source_originale ? `<span class="src-badge" title="Source: ${escHtml(r.source_originale)}">🔧</span>` : ""}
         </div>
         <div class="row-meta">
+          ${r.chapitre      ? `<span>${escHtml(r.chapitre)}</span><span class="meta-sep">·</span>` : ""}
           ${r.sous_chapitre ? `<span>${escHtml(r.sous_chapitre)}</span><span class="meta-sep">·</span>` : ""}
           ${niveaux         ? `<span>${niveaux}</span><span class="meta-sep">·</span>` : ""}
           ${r.type !== "RES" ? `<span class="diff">${diff}</span>` : ""}
           ${categorie}
-          ${tags ? `<span class="meta-sep">·</span><span class="row-tags">${tags}</span>` : ""}
         </div>
+        ${tags ? `<div class="row-tags-line">${tags}</div>` : ""}
       </div>
       <div class="row-actions">${btnE}${btnR}${btnC}${btnL}</div>
     `;
