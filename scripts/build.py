@@ -84,6 +84,7 @@ def extract_meta(tex_path: Path) -> dict:
         "source":        "latex",
         "lien":          None,
         "categorie":     None,
+        "source_originale": None,
     }
     src  = tex_path.read_text(encoding="utf-8")
     bloc = re.search(r'%\s*---\s*\n(.*?)%\s*---', src, re.DOTALL)
@@ -103,6 +104,7 @@ def extract_meta(tex_path: Path) -> dict:
         elif key == "source":        meta["source"]        = val.lower()
         elif key == "lien":          meta["lien"]          = val
         elif key == "categorie":     meta["categorie"]     = val
+        elif key == "source_originale": meta["source_originale"] = val
         elif key == "difficulte":
             try: meta["difficulte"] = int(val)
             except ValueError: pass
@@ -163,26 +165,13 @@ def build_resource(tex_path: Path) -> dict | None:
     content = tex_path.read_text(encoding="utf-8")
 
     if meta["source"] == "pdf":
-        import shutil
+        # Le PDF est déposé manuellement dans site/pdf/ (et corrigé dans site/corr/)
+        # On vérifie juste qu'ils existent, sans copier
         pdf_out = corr_out = None
-
-        if meta["type"] == "RES":
-            # Pour les RES : le PDF est déposé manuellement dans site/pdf/
-            # On vérifie juste qu'il existe, sans copier
-            if (PDF_DIR / f"{stem}.pdf").exists():
-                pdf_out = f"pdf/{stem}.pdf"
-            if meta["corrige"] and (CORR_DIR / f"{stem}.pdf").exists():
-                corr_out = f"corr/{stem}.pdf"
-        else:
-            # Pour les autres types : le PDF est à côté du .tex
-            pdf_path  = tex_path.with_suffix(".pdf")
-            corr_path = tex_path.parent / f"{stem}_corrige.pdf"
-            if pdf_path.exists():
-                shutil.copy(pdf_path, PDF_DIR / f"{stem}.pdf")
-                pdf_out = f"pdf/{stem}.pdf"
-            if meta["corrige"] and corr_path.exists():
-                shutil.copy(corr_path, CORR_DIR / f"{stem}.pdf")
-                corr_out = f"corr/{stem}.pdf"
+        if (PDF_DIR / f"{stem}.pdf").exists():
+            pdf_out = f"pdf/{stem}.pdf"
+        if meta["corrige"] and (CORR_DIR / f"{stem}.pdf").exists():
+            corr_out = f"corr/{stem}.pdf"
 
         meta["pdf"]         = pdf_out
         meta["corrige_pdf"] = corr_out

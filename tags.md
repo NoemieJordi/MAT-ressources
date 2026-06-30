@@ -14,6 +14,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 
 | Tag | Description |
 |-----|-------------|
+| `c-livrets` |   Livrets |
 | `c-fractions` | Fractions |
 | `c-probabilites` | Probabilités |
 | `c-statistiques` | Statistiques |
@@ -42,6 +43,7 @@ Comment la ressource est utilisée en classe.
 | `f-defi` | Défi rapide en début de cours |
 | `f-projet` | Travail sur plusieurs séances |
 | `f-sortie` | Activité hors classe |
+| `f-TICE` | Activité connectée |
 
 ---
 
@@ -53,6 +55,7 @@ Matériel ou logiciel nécessaire.
 |-----|-------------|
 | `o-geogebra` | GeoGebra |
 | `o-calculatrice` | Calculatrice |
+| `o-carteMentale` | Carte mentale |
 | `o-ordinateur` | Ordinateur / tablette |
 | `o-ciseaux` | Ciseaux / découpage |
 | `o-colle` | Colle |
@@ -83,6 +86,7 @@ Intention didactique de la ressource.
 | `p-evaluation-formative` | Évaluation formative |
 | `p-institutionnalisation` | Moment de synthèse / bilan |
 | `p-modelisation` | Modéliser une situation |
+| `p-differentiation` | Activité différenciée selon les niveaux des élèves |
 
 ---
 

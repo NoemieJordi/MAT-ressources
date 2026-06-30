@@ -97,6 +97,7 @@
   .row-titre { font-weight: 600; font-size: 0.95rem; color: var(--text); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
   .row-titre-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .type-badge { font-size: 0.65rem; font-weight: 700; font-family: monospace; padding: 2px 6px; border-radius: 3px; white-space: nowrap; flex-shrink: 0; background: var(--accent-light); color: var(--accent); }
+  .src-badge { font-size: 0.85rem; cursor: help; flex-shrink: 0; opacity: 0.6; }
   .row-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 0.75rem; color: var(--muted); }
   .meta-sep { color: var(--border); }
   .row-tags { display: flex; gap: 4px; flex-wrap: wrap; }
@@ -270,6 +271,7 @@ let active = {
 };
 let searchQuery = "";
 
+const TYPE_LABELS = { TH: "Théorie", EX: "Exercice", JEU: "Jeu", PROJ: "Projet", REV: "Révision", EVAL: "Évaluation", PLANIF: "Planification", RES: "Ressource" };
 const DIFF_LABELS = { 1: "● Facile", 2: "●● Moyen", 3: "●●● Difficile" };
 
 // ── Init ──────────────────────────────────────────────────────────────────────
@@ -543,16 +545,16 @@ function render() {
     const row  = document.createElement("div");
     row.className = "row";
 
-    const btnE = (r.pdf && r.type !== "RES")
-      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">Exercice</button>`
+    const btnE = (r.pdf && r.source !== "pdf")
+      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
       : "";
-    const btnR = (r.pdf && r.type === "RES")
-      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">Ressource</button>`
+    const btnR = (r.pdf && r.source === "pdf")
+      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
       : "";
-    const btnC = (r.corrige_pdf && r.type !== "RES")
+    const btnC = (r.corrige_pdf)
       ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escHtml(r.titre)} — corrigé')">Corrigé</button>`
       : "";
-    const btnL = (r.lien && r.type === "RES" && !r.pdf)
+    const btnL = (r.lien && !r.pdf)
       ? `<a class="btn btn-corrige" href="${escHtml(r.lien)}" target="_blank">↗ Ouvrir</a>`
       : "";
 
@@ -566,6 +568,7 @@ function render() {
       <div class="row-body">
         <div class="row-titre">
           <span class="row-titre-text">${escHtml(r.titre)}</span>
+          ${r.source_originale ? `<span class="src-badge" title="Source: ${escHtml(r.source_originale)}">🔧</span>` : ""}
         </div>
         <div class="row-meta">
           ${r.sous_chapitre ? `<span>${escHtml(r.sous_chapitre)}</span><span class="meta-sep">·</span>` : ""}

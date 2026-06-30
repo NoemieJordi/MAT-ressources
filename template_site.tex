@@ -212,16 +212,13 @@
 % -----------------------------------------------------------------------
 % Header style C — ligne de couleur fine + titre
 % -----------------------------------------------------------------------
-\newcommand{\header}[2]{%
+\newcommand{\header}[1]{%
   % Ligne de couleur fine en haut
   {\color{themeColor}\rule{\linewidth}{3pt}}\\[-2pt]
-  {\large\textbf{#2}}
+  {\large\textbf{#1}}
   \vspace{8pt}
   \par
 }
-
-% Alias pour compatibilité avec les anciens fichiers
-\newcommand{\headerNdJ}[2]{\header{#1}{#2}}
 
 % -----------------------------------------------------------------------
 % Commandes TOC invisibles (neutralisées pour usage standalone)

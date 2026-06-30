@@ -9,6 +9,7 @@ Site de gestion et recherche de ressources mathématiques, compilées automatiqu
 ```
 MAT-site/
 ├── exercices/
+|   ├── 00-RES/
 │   ├── 01-NO/
 │   │   ├── NombresNaturelsDecimaux/
 │   │   ├── NombresRelatifs/
@@ -37,6 +38,7 @@ MAT-site/
 │   └── chapitres.py        ← ordre officiel des sous-chapitres
 ├── site/
 │   ├── index.html          ← le site web (filtres + aperçu PDF)
+|   ├── robots.txt          ← prévient l'indexation google
 │   ├── pdf/                ← PDFs élève (générés automatiquement)
 │   └── corr/               ← PDFs corrigés (générés automatiquement)
 ├── template_site.tex       ← préambule LaTeX commun
@@ -49,19 +51,7 @@ MAT-site/
 
 ```
 MAT/
-├── 00-Commun/              ← préambule, figures, polices
 ├── 00-RES/                 ← ressources externes (PAS sur GitHub)
-│   ├── NO/
-│   ├── FA/
-│   └── ...
-├── 01-NO/
-│   ├── NombresNaturelsDecimaux/
-│   └── ...
-├── 02-FA/
-├── 03-ES/
-├── 04-GM/
-├── 05-RS/
-├── 06-AU/
 └── MAT-site/               ← ce dépôt GitHub
 ```
 
@@ -140,7 +130,7 @@ Ajoute un bloc de métadonnées YAML en commentaire en tête du fichier :
 % ---
 
 % Contenu LaTeX ici (sans \documentclass ni \begin{document})
-\header{}{Jeu de piste — priorité des opérations}
+\header{Jeu de piste — priorité des opérations}
 ...
 ```
 
@@ -158,7 +148,6 @@ Champs disponibles :
 | `difficulte` | `1` (facile) `2` (moyen) `3` (difficile) | Non |
 | `corrige` | `true` ou `false` | Non (automatique selon le type) |
 | `source` | `latex` (défaut) ou `pdf` | Non |
-| `lien` | URL ou chemin local (pour `RES`) | Non |
 
 Valeur automatique de `corrige` selon le type :
 - Toujours `true` : `EX`, `REV`, `EVAL`
@@ -175,7 +164,7 @@ MAT-site/exercices/01-NO/NombresNaturelsDecimaux/EX_NO-NombresNaturelsDecimaux_J
 
 ## Ajouter une ressource PDF existante (sans .tex)
 
-Place les fichiers dans le bon sous-dossier de `exercices/` :
+Place les fichiers dans le dossier site/pdf et/ou site/corr :
 
 ```
 EX_NO-NombresNaturelsDecimaux_JeuDePiste.pdf
@@ -203,20 +192,31 @@ Et crée un fichier `.tex` avec les métadonnées et `source: pdf` :
 
 ## Ajouter une ressource externe (RES)
 
-Le fichier lourd reste dans `~/Documents/_Ecole/03-Cycle3/MAT/00-RES/` sur ton Mac (pas sur GitHub). Seul le fichier de métadonnées `.tex` va sur GitHub :
+Chaque ressource a deux fichier: un fichier pdf dans le dossier site/pdf et un fichier de métadonnées `.tex` dans le dossier exercices/00-RES.
+
+Attention, ces deux fichiers doivent avoir exactement le même nom.
 
 ```latex
 % ---
-% titre: Manuel Vaudois — Nombres naturels
+% titre: Math games: I "can" Order of Operations
 % theme: NO
 % chapitre: Nombres naturels et décimaux
-% sous_chapitre: NombresNaturelsDecimaux
+% sous_chapitre: Priorité des opérations
 % type: RES
-% lien: /Users/noemiejordi/Documents/_Ecole/03-Cycle3/MAT/00-RES/NO/ManuelVaudois.pdf
+% categorie: inspiration
+% tags: [c-priorite]
+% source: pdf
 % ---
 ```
 
-Le site affichera un bouton **↗ Ouvrir** qui ouvre le fichier directement depuis iCloud.
+Catégories possibles: 
+
+| Code | Description |
+|-------|---------|
+| fiche | Document prêt à distribuer aux élèves |
+| inspiration | Idées pour créer tes propres activités |
+| outil | GeoGebra, applis, matériel... |
+| reference | Théorie, documentation pour toi |
 
 ---
 
@@ -225,21 +225,12 @@ Le site affichera un bouton **↗ Ouvrir** qui ouvre le fichier directement depu
 ### Compiler et tester en local
 
 ```bash
-# Se placer dans le dossier du projet
 cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
-
-# Compiler tous les fichiers .tex
 python3 scripts/build.py
-
-# Compiler seulement les fichiers modifiés (mode rapide)
-python3 scripts/build.py --changed
-
-# Lancer le site en local
 cd site
 python3 -m http.server 8080
-# Ouvrir http://localhost:8080 dans le navigateur
-# Quitter avec Ctrl+C
 ```
+Ouvrir http://localhost:8080 dans le navigateur et quitter avec Ctrl+C
 
 ### Pousser sur GitHub
 
@@ -273,4 +264,3 @@ La couleur est injectée automatiquement selon le champ `theme`.
 
 - Les fichiers auxiliaires LaTeX (`.aux`, `.log`, `.synctex.gz`) sont ignorés par git
 - Les PDFs sont mis en cache — seuls les fichiers modifiés sont recompilés à chaque push
-- Les ressources externes (`00-RES/`) restent sur le Mac, jamais sur GitHub
