@@ -1,6 +1,5 @@
-# PDFs générés (produits par GitHub Actions)
-site/pdf/
-site/corr/
+# Fichiers générés localement (pas nécessaire de les committer pour les .tex compilés,
+# mais site/pdf/ et site/corr/ DOIVENT être committés pour les PDFs déposés manuellement)
 site/ressources.json
 
 # Fichiers LaTeX temporaires

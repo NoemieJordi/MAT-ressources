@@ -118,15 +118,16 @@ Ajoute un bloc de métadonnées YAML en commentaire en tête du fichier :
 
 ```latex
 % ---
-% titre: Jeu de piste — priorité des opérations
+% titre: Cartes - livrets 2-15
 % theme: NO
 % chapitre: Nombres naturels et décimaux
-% sous_chapitre: NombresNaturelsDecimaux
+% sous_chapitre: Calcul réfléchi et mental
 % niveau: [9e]
-% type: EX
-% tags: [jeu, priorité]
-% difficulte: 2
-% corrige: true
+% type: JEU
+% tags: [c-livrets]
+% difficulte: 1
+% corrige: false
+% source: latex
 % ---
 
 % Contenu LaTeX ici (sans \documentclass ni \begin{document})
@@ -185,9 +186,9 @@ Et crée un fichier `.tex` avec les métadonnées et `source: pdf` :
 % difficulte: 2
 % corrige: true
 % source: pdf
+% source_originale: 00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_FlashCardsLivret2-15
 % ---
 ```
-
 ---
 
 ## Ajouter une ressource externe (RES)
