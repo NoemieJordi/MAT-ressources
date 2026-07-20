@@ -15,6 +15,9 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | Tag | Description |
 |-----|-------------|
 | `c-livrets` |   Livrets |
+| `c-multiplication` |   Multiplication |
+| `c-division` |   Division |
+| `c-criteres-divisibilite` |   Critères de divisibilité |
 | `c-fractions` | Fractions |
 | `c-probabilites` | Probabilités |
 | `c-statistiques` | Statistiques |

@@ -1,0 +1,174 @@
+% ---
+% titre: Whodunnit? - Les critères de divisibilité
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: Critères de divisibilité
+% niveau: [9e]
+% type: EX
+% tags: [c-criteres-divisibilite, f-individuel, f-groupe,f-maison,f-station,p-entrainement,p-remediation]
+% difficulte: 2
+% source: latex
+% ---
+
+\header{Qui a fait le coup?}
+
+
+Six candidats d'une émission de téléréalité sont sous le choc : leur collègue le moins bien classé a été retrouvé blessé. Avant que la cloche ne sonne, ils doivent résoudre l'énigme :
+Qui est le coupable ? Où s'est-il trouvé en dernier ? Avec quelle méthode a-t-il agi ?
+
+Pour élucider cette affaire, résous les indices dans le tableau ci-dessous et utilise ensuite tes réponses pour démasquer le coupable.
+
+\vfill
+\begin{tabularx}{\linewidth}{|X|X|}
+\hline
+	1&2\\
+	&\\[80pt]
+\hline
+	3&4\\
+	&\\[80pt]
+\hline
+	5&6\\
+	&\\[80pt]
+\hline
+	7&8\\
+	&\\[80pt]
+\hline
+	9&10\\
+	&\\[80pt]
+\hline
+\end{tabularx}
+
+\newpage
+Les trois cases que tu n'auras pas cochées formeront la solution au mystère.
+
+\vspace{20pt}
+\def\arraystretch{1.5}
+\begin{tabularx}{\linewidth}{|X|X|X|}
+\hline
+	\textbf{Qui?}&\textbf{Où?}&\textbf{Comment?}\\
+\hline
+	Dr. Alpha \hfill\Box&Entrée \hfill\Box&Empoisonnement \hfill\Box\\
+\hline
+	Mlle Beta \hfill\Box&Fitness \hfill\Box&Attaque de lion \hfill\Box\\
+\hline
+	Mme Gamma \hfill\Box&Cuisine \hfill\Box&Électrocution \hfill\Box\\
+\hline
+	Professeur Delta \hfill\Box&Bibliothèque \hfill\Box&Chute d'objet \hfill\Box\\
+\hline
+	M. Epsilon \hfill\Box&Cinéma \hfill\Box&Arme à feu \hfill\Box\\
+\hline
+	Coach Omega \hfill\Box&Piscine \hfill\Box&Morsure venimeuse \hfill\Box\\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{40pt}
+Solution:
+
+\sol{\bl{\textwidth}}{M. Epsilon a blessé la victime avec une arme à feu dans le fitness.}
+\newpage
+
+\newcommand{\whodunnit}[3]{
+  % #1 = numéro, #2 = question, #3 = liste de \\ séparée choix & indice
+\begin{minipage}[t][0.3\textheight][c]{\textwidth}
+{\ttfamily\bfseries\Large Indice \#\,#1}
+
+\vspace{10pt}
+\begin{center}#2\end{center}
+\vspace{10pt}
+
+\def\arraystretch{1.5}
+\begin{tabularx}{\linewidth}{lX}
+    #3
+\end{tabularx}
+\def\arraystretch{1}
+\end{minipage}
+}
+
+\whodunnit{1}{Lequel de ces nombres est divisible par 3?}{
+413&La blessure n'a pas été causée par une chute d'objet.\\
+\sol{123}{123}&Le professeur Delta faisait des longueurs à la piscine.\\
+332&La victime n'a pas été attaquée par un lion.\\
+121&Mlle Beta payait ses factures à la bibliothèques.\\
+}
+
+\vfill \hrule\vfill
+
+\whodunnit{2}{Lequel de ces nombres est divisible par 2 et 3, mais pas par 5?}{
+\sol{18}{18}&Ce n'était pas un empoisonnement.\\
+45&La victime n'a pas été mordue par un animal venimeux.\\
+16&Dr. Alpha dansait dans la cuisine.\\
+30&Coach Omega pliait la lessive dans l'entrée.\\
+}
+
+\vfill \hrule\vfill
+
+\whodunnit{3}{Quel chiffre faut-il placer dans la case vide pour que le nombre 138\_\_ soit divisible à la fois par 4 et par 5 ?}{
+5&M. Epsilon regardait un film d'horreur dans le cinéma.\\
+2&La blessure n'a pas été causée par une chute d'objet.\\
+4&Mme Gamma faisait du yoga au fitness.\\
+\sol{0}{0}&La victime n'a pas été mordue par un animal venimeux.\\
+}
+
+\newpage
+
+\whodunnit{4}{Lequel de ces nombres est divisible par 8?}{
+154&La victime n'a pas été attaquée par un lion.\\
+\sol{328}{328}&Coach Omega préparait de la soupe dans la cuisine.\\
+246&La blessure n'a pas été causée par une arme à feu.\\
+510&Professeur Delta jouait aux jeux vidéo dans le cinéma.\\
+}
+
+\vfill \hrule\vfill
+
+\whodunnit{5}{Lequel de ces nombres est divisible par 7 et pas par 6?}{
+126&Mlle Beta écoutait de la musique dans l'entrée.\\
+168&Mr. Epsilon se relaxait près de la piscine.\\
+\sol{280}{280}&La blessure n'a pas été causée par une chute d'objet.\\
+252&La victime n'a pas été électrocutée.\\
+}
+
+\vfill \hrule\vfill
+
+\whodunnit{6}{Lequel de ces nombres est un multiple de 4?}{
+8241&La victime n'a pas été attaquée par un lion.\\
+2814&La victime n'a pas été électrocutée.\\
+\sol{1428}{1428}&Mme Gamma dormait dans le cinéma.\\
+2841&Coach Omega nageait dans la piscine.\\
+}
+
+\newpage
+
+\whodunnit{7}{Quel nombre n'est pas un diviseur de 1260?}{
+9&Mlle Beta faisait des exercices au fitness.\\
+\sol{8}{8}&La victime n'a pas été attaquée par un lion.\\
+5&La blessure n'a pas été causée par une chute d'objet.\\
+6&Mr. Epsilon faisait des problèmes de math dans la bibliothèque.\\
+}
+
+\vfill \hrule\vfill
+
+\whodunnit{8}{Lequel de ces nombres est divisible par 4, mais pas par 8?}{
+24&La victime n'a pas été électrocutée.\\
+16&Mme Gamma soulevait des poids au fitness.\\
+40&La blessure n'a pas été causée par une chute d'objet.\\
+\sol{20}{20}&Mlle Beta parlait au téléphone dans l'entrée.\\
+}
+
+\vfill \hrule\vfill
+
+\whodunnit{9}{Quel chiffre faut-il placer dans la case vide pour que le nombre 4\_258 soit divisible par 9?}{
+6&Dr. Alpha jouait au basketball dans le fitness.\\
+\sol{8}{8}&La victime n'a pas été électrocutée.\\
+5&Mr. Epsilon rangeait des livres dans la bibliothèque.\\
+4&La blessure n'a pas été causée par une arme à feu.\\
+}
+
+\newpage
+
+\whodunnit{10}{Quel chiffre faut-il placer dans la case vide pour que le nombre 2\_2 soit divisible par 6?}{
+9&La blessure n'a pas été causée par une arme à feu.\\
+7&La victime n'a pas été électrocutée.\\
+\sol{5}{5}&Dr. Alpha répondait à ses mails dans la bibliothèque.\\
+3&Mr. Epsilon soulevait des poids au fitness.\\
+}

@@ -585,9 +585,13 @@ function render() {
     const btnE = (r.pdf && r.source !== "pdf")
       ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
       : "";
-    const btnR = (r.pdf && r.source === "pdf")
-      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
-      : "";
+    const isDoc = r.pdf && r.source === "pdf";
+    const isPDF = isDoc && r.pdf.endsWith(".pdf");
+    const btnR  = isDoc
+      ? (isPDF
+      ? `<button class="btn btn-eleve" onclick="openPDF('${r.pdf}','${escHtml(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
+      : `<a class="btn btn-eleve" href="${r.pdf}" download style="text-decoration:none">⬇ ${TYPE_LABELS[r.type] || "Document"}</a>`)
+  : "";
     const btnC = (r.corrige_pdf)
       ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escHtml(r.titre)} — corrigé')">Corrigé</button>`
       : "";

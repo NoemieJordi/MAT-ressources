@@ -49,6 +49,9 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{booktabs}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % -----------------------------------------------------------------------
 % Listes
@@ -120,6 +123,7 @@
 \usepackage{xifthen}
 \usepackage{qrcode}
 \usepackage[pdffitwindow=true, hidelinks]{hyperref}
+\newcommand{\bl}[1]{\underline{\hspace{#1}}}
 
 % -----------------------------------------------------------------------
 % Compteurs

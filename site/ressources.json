@@ -1,6 +1,6 @@
 [
   {
-    "titre": "Carré de multiplication",
+    "titre": "Carrés de multiplication (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Calcul réfléchi et mental",
@@ -22,9 +22,9 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimauxProcedureCalculReflechi_CarreMultiplication.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimauxProcedureCalculReflechi_CarreMultiplication.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimauxProcedureCalculReflechi_CarreMultiplication"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CarreMultiplication.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CarreMultiplication.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CarreMultiplication"
   },
   {
     "titre": "Carte mentale - livrets",
@@ -45,9 +45,9 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
-    "pdf": "pdf/TH_NO-NbNaturelsDecimauxProcedureCalculReflechi_CartesMentalesLivrets.pdf",
+    "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_CartesMentalesLivrets.pdf",
     "corrige_pdf": null,
-    "fichier": "TH_NO-NbNaturelsDecimauxProcedureCalculReflechi_CartesMentalesLivrets"
+    "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_CartesMentalesLivrets"
   },
   {
     "titre": "Cartes - livrets 2-15",
@@ -76,10 +76,36 @@
     "source": "pdf",
     "lien": null,
     "categorie": null,
-    "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_FlashCardsLivret2-15",
-    "pdf": "pdf/JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_FlashCardsLivret2-15.pdf",
+    "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15",
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15.pdf",
     "corrige_pdf": null,
-    "fichier": "JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_FlashCardsLivret2-15"
+    "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15"
+  },
+  {
+    "titre": "Jeu de Pythagore",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "JEU",
+    "tags": [
+      "c-livrets",
+      "f-groupe",
+      "f-station",
+      "p-entrainement",
+      "p-differentiation"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": null,
+    "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore",
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore.pdf",
+    "corrige_pdf": null,
+    "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore"
   },
   {
     "titre": "Labyrinthe livrets",
@@ -103,9 +129,106 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimauxProcedureCalculReflechi_LabyrintheLivrets.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimauxProcedureCalculReflechi_LabyrintheLivrets.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimauxProcedureCalculReflechi_LabyrintheLivrets"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_LabyrintheLivrets.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_LabyrintheLivrets_corrige.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_LabyrintheLivrets"
+  },
+  {
+    "titre": "Livrets (2-16)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-livrets",
+      "c-multiplication",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_Livrets2-16.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_Livrets2-16.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_Livrets2-16"
+  },
+  {
+    "titre": "Livrets - Multi-vitesse",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-livrets"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "pdf": "pdf/RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MultiVitesseAleatoire.xlsx",
+    "corrige_pdf": null,
+    "fichier": "RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MultiVitesseAleatoire"
+  },
+  {
+    "titre": "Math maze - multiplication and division facts",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-livrets"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "pdf": "pdf/RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MathMazeMultiplicationDivisionFacts_MathIsEasy.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MathMazeMultiplicationDivisionFacts_MathIsEasy"
+  },
+  {
+    "titre": "Multiplications et divisions lacunaires (séries A, B et C)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-livrets",
+      "c-multiplication",
+      "c-division",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_SeriesMultiplicationsDivisions.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_SeriesMultiplicationsDivisions.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_SeriesMultiplicationsDivisions"
   },
   {
     "titre": "Prise de contrôle de la table de multiplications",
@@ -131,35 +254,41 @@
     "source": "pdf",
     "lien": null,
     "categorie": null,
-    "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_PriseControleTableMutliplication",
-    "pdf": "pdf/JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_PriseControleTableMutliplication.pdf",
+    "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication",
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication.pdf",
     "corrige_pdf": null,
-    "fichier": "JEU_NO-NbNaturelsDecimauxProcedureCalculReflechi_PriseControleTableMutliplication"
+    "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication"
   },
   {
-    "titre": "Jeu de piste — priorité des opérations",
+    "titre": "Whodunnit? - Les critères de divisibilité",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
-    "sous_chapitre": "Priorité des opérations",
+    "sous_chapitre": "Critères de divisibilité",
     "niveau": [
       "9e"
     ],
-    "type": "JEU",
+    "type": "EX",
     "tags": [
-      "c-priorite-operations",
-      "f-groupe"
+      "c-criteres-divisibilite",
+      "f-individuel",
+      "f-groupe",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
     ],
-    "difficulte": 2,
+    "difficulte": 1,
     "corrige": true,
     "source": "latex",
     "lien": null,
     "categorie": null,
-    "pdf": "pdf/JEU_NO-PrioriteOperations_JeuDePiste.pdf",
-    "corrige_pdf": "corr/JEU_NO-PrioriteOperations_JeuDePiste.pdf",
-    "fichier": "JEU_NO-PrioriteOperations_JeuDePiste"
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite"
   },
   {
-    "titre": "Math games: I \"can\" Order of Operations",
+    "titre": "Math games - I \"can\" Order of Operations",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Priorité des opérations",
@@ -174,8 +303,8 @@
     "lien": null,
     "categorie": "inspiration",
     "source_originale": null,
-    "pdf": "pdf/RES_NO-NombresNaturelsDecimaux-PrioriteOperation_MathGamesICanOrderOfOperation_OneStopTeacherSchop.pdf",
+    "pdf": "pdf/RES_NO-NbNaturelsDecimaux-PrioriteOperations_MathGamesICanOrderOfOperation_OneStopTeacherSchop.pdf",
     "corrige_pdf": null,
-    "fichier": "RES_NO-NombresNaturelsDecimaux-PrioriteOperation_MathGamesICanOrderOfOperation_OneStopTeacherSchop"
+    "fichier": "RES_NO-NbNaturelsDecimaux-PrioriteOperations_MathGamesICanOrderOfOperation_OneStopTeacherSchop"
   }
 ]
