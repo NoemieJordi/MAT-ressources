@@ -56,23 +56,25 @@ Matériel ou logiciel nécessaire.
 
 | Tag | Description |
 |-----|-------------|
-| `o-geogebra` | GeoGebra |
+| `o-bombe` | Bombe |
 | `o-calculatrice` | Calculatrice |
+| `o-cartes` | Cartes |
 | `o-carteMentale` | Carte mentale |
-| `o-ordinateur` | Ordinateur / tablette |
 | `o-ciseaux` | Ciseaux / découpage |
 | `o-colle` | Colle |
-| `o-des` | Dés |
-| `o-cartes` | Cartes |
-| `o-regle` | Règle |
 | `o-compas` | Compas |
-| `o-rapporteur` | Rapporteur |
+| `o-crayon` | Crayon de couleur / coloriage |
 | `o-cubes` | Cubes |
-| `o-jetons` | Jetons |
-| `o-polydron` | Polydron |
+| `o-des` | Dés |
+| `o-geogebra` | GeoGebra |
 | `o-geomag` | Geomag |
+| `o-jetons` | Jetons |
+| `o-ordinateur` | Ordinateur / tablette |
+| `o-polydron` | Polydron |
+| `o-rapporteur` | Rapporteur |
+| `o-regle` | Règle |
 | `o-sablier` | Sablier |
-| `o-bombe` | Bombe |
+
 
 ---
 

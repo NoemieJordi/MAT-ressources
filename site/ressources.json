@@ -108,7 +108,7 @@
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore"
   },
   {
-    "titre": "Labyrinthe livrets",
+    "titre": "Labyrinthe - livrets",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Calcul réfléchi et mental",
@@ -260,7 +260,34 @@
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication"
   },
   {
-    "titre": "Whodunnit? - Les critères de divisibilité",
+    "titre": "Dossier d'exercices - Critères de divisibilité",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Critères de divisibilité",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-criteres-divisibilite",
+      "f-individuel",
+      "f-maison",
+      "p-entrainement",
+      "p-evaluation-formative",
+      "p-institutionnalisation"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_ExercicesRevisions.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_ExercicesRevisions.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_ExercicesRevisions"
+  },
+  {
+    "titre": "Labyrinthe - Critères de divisibilité",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Critères de divisibilité",
@@ -283,12 +310,145 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Labyrinthes.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Labyrinthes.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Labyrinthes"
+  },
+  {
+    "titre": "Mandala - Critères de divisibilité",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Critères de divisibilité",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-criteres-divisibilite",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "o-crayon",
+      "p-entrainement",
+      "p-approfondissement"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Mandala.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Mandala.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Mandala"
+  },
+  {
+    "titre": "Whodunnit? - Les critères de divisibilité",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Critères de divisibilité",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-criteres-divisibilite",
+      "f-individuel",
+      "f-groupe",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite"
   },
   {
-    "titre": "Math games - I \"can\" Order of Operations",
+    "titre": "Calculs de priorités des opérations (séries A, B et C)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-priorite-operations",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations"
+  },
+  {
+    "titre": "Jeu de piste — priorité des opérations",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "9e"
+    ],
+    "type": "JEU",
+    "tags": [
+      "c-priorite-operations",
+      "f-groupe"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste.pdf",
+    "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste.pdf",
+    "fichier": "JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste"
+  },
+  {
+    "titre": "Labyrinthe - priorité des opération",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-priorite-operations",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_Labyrinthes.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_Labyrinthes_corrige.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_Labyrinthes"
+  },
+  {
+    "titre": "Math games - I can Order of Operations",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Priorité des opérations",
@@ -306,5 +466,34 @@
     "pdf": "pdf/RES_NO-NbNaturelsDecimaux-PrioriteOperations_MathGamesICanOrderOfOperation_OneStopTeacherSchop.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbNaturelsDecimaux-PrioriteOperations_MathGamesICanOrderOfOperation_OneStopTeacherSchop"
+  },
+  {
+    "titre": "Whodunnit? - priorité des opérations",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-priorite-operations",
+      "f-individuel",
+      "f-groupe",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_WhoDunnitCriteresPrioriteOperation.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_WhoDunnitCriteresPrioriteOperation.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_WhoDunnitCriteresPrioriteOperation"
   }
 ]

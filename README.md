@@ -2,6 +2,8 @@
 
 Site de gestion et recherche de ressources mathématiques, compilées automatiquement via GitHub Actions et consultables depuis n'importe quel appareil.
 
+site: https://noemiejordi.github.io/MAT-ressources/
+
 ---
 
 ## Structure du projet GitHub
@@ -247,18 +249,27 @@ Le site est mis à jour en ~5 minutes après le push.
 
 ### Forcer la recompilation complète
 
+Depuis le terminal
+```bash
+cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
+python3 scripts/build.py --full
+```
+
 Depuis GitHub → Actions → "Compiler LaTeX et déployer le site" → "Run workflow" → cocher "Recompiler tous les fichiers".
 
 ---
 
-## En-tête des PDF
+## Nouveau token GitHub
 
-Généré automatiquement par `\header{}{}` dans le template :
-- Ligne de couleur fine (couleur du thème)
-- Titre de la ressource
+Si GitHub demande une nouvelle authentification. 
 
-La couleur est injectée automatiquement selon le champ `theme`.
+```bash
+git config --global credential.helper osxkeychain
+cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
+git push
+```
 
+Git demande le nom d'utilisateur (NoemieJordi) et le mot de passe (token). 
 ---
 
 ## Notes

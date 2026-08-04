@@ -10,7 +10,7 @@
 % source: latex
 % ---
 
-\header{Qui a fait le coup?}
+\header{Mystère en chambre close}
 
 
 Six candidats d'une émission de téléréalité sont sous le choc : leur collègue le moins bien classé a été retrouvé blessé. Avant que la cloche ne sonne, ils doivent résoudre l'énigme :
@@ -67,23 +67,6 @@ Solution:
 
 \sol{\bl{\textwidth}}{M. Epsilon a blessé la victime avec une arme à feu dans le fitness.}
 \newpage
-
-\newcommand{\whodunnit}[3]{
-  % #1 = numéro, #2 = question, #3 = liste de \\ séparée choix & indice
-\begin{minipage}[t][0.3\textheight][c]{\textwidth}
-{\ttfamily\bfseries\Large Indice \#\,#1}
-
-\vspace{10pt}
-\begin{center}#2\end{center}
-\vspace{10pt}
-
-\def\arraystretch{1.5}
-\begin{tabularx}{\linewidth}{lX}
-    #3
-\end{tabularx}
-\def\arraystretch{1}
-\end{minipage}
-}
 
 \whodunnit{1}{Lequel de ces nombres est divisible par 3?}{
 413&La blessure n'a pas été causée par une chute d'objet.\\

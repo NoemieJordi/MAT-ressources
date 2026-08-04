@@ -143,6 +143,26 @@
 }
 
 % -----------------------------------------------------------------------
+% Commandes carte indice whodunnit
+% -----------------------------------------------------------------------
+\newcommand{\whodunnit}[3]{
+  % #1 = numéro, #2 = question, #3 = liste de \\ séparée choix & indice
+\begin{minipage}[t][0.3\textheight][c]{\textwidth}
+{\ttfamily\bfseries\Large Indice \#\,#1}
+
+\vspace{10pt}
+\begin{center}#2\end{center}
+\vspace{10pt}
+
+\def\arraystretch{1.5}
+\begin{tabularx}{\linewidth}{lX}
+    #3
+\end{tabularx}
+\def\arraystretch{1}
+\end{minipage}
+}
+
+% -----------------------------------------------------------------------
 % Questions / Réponses
 % -----------------------------------------------------------------------
 \usepackage{etoolbox}
@@ -154,7 +174,7 @@
 % -----------------------------------------------------------------------
 \newcommand{\header}[1]{%
   % Ligne de couleur fine en haut
-  {\color{themeColor}\rule{\linewidth}{3pt}}\\[-2pt]
+  {\color{themeColor}\rule{\linewidth}{3pt}}\\
   {\large\textbf{#1}}
   \vspace{8pt}
   \par
