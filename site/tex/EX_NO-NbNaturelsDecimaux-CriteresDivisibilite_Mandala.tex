@@ -1,0 +1,63 @@
+% ---
+% titre: Mandala - Critères de divisibilité
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: Critères de divisibilité
+% niveau: [10e]
+% type: EX
+% tags: [c-criteres-divisibilite, f-individuel, f-maison, f-station, o-crayon, p-entrainement, p-approfondissement]
+% difficulte: 2
+% source: latex
+% ---
+
+\header{Mandala des critères de divisibilité}
+
+ \vfill
+\begin{center}
+\begin{tikzpicture}[scale=1]
+
+% ---- cercle central ----
+\tkzDefPoints{0/0/O, 0/4/A1, 0/8/B1}
+\tkzDrawCircle[box,line width=0.8pt](O,A1)
+
+% ---- cercles de la rosace (fleur de vie à 8 directions) ----
+\tkzDrawCircle[line width=0.8pt](A1,B1)
+\tkzDefPointBy[rotation=center O angle 45](A1)\tkzGetPoint{A2}\tkzDefPointBy[rotation=center O angle 45](B1)\tkzGetPoint{B2}
+\tkzDrawCircle[line width=0.8pt](A2,B2)
+\tkzDefPointBy[rotation=center O angle 45](A2)\tkzGetPoint{A3}\tkzDefPointBy[rotation=center O angle 45](B2)\tkzGetPoint{B3}
+\tkzDrawCircle[line width=0.8pt](A3,B3)
+\tkzDefPointBy[rotation=center O angle 45](A3)\tkzGetPoint{A4}\tkzDefPointBy[rotation=center O angle 45](B3)\tkzGetPoint{B4}
+\tkzDrawCircle[line width=0.8pt](A4,B4)
+\tkzDefPointBy[rotation=center O angle 45](A4)\tkzGetPoint{A5}\tkzDefPointBy[rotation=center O angle 45](B4)\tkzGetPoint{B5}
+\tkzDrawCircle[line width=0.8pt](A5,B5)
+\tkzDefPointBy[rotation=center O angle 45](A5)\tkzGetPoint{A6}\tkzDefPointBy[rotation=center O angle 45](B5)\tkzGetPoint{B6}
+\tkzDrawCircle[line width=0.8pt](A6,B6)
+\tkzDefPointBy[rotation=center O angle 45](A6)\tkzGetPoint{A7}\tkzDefPointBy[rotation=center O angle 45](B6)\tkzGetPoint{B7}
+\tkzDrawCircle[line width=0.8pt](A7,B7)
+\tkzDefPointBy[rotation=center O angle 45](A7)\tkzGetPoint{A8}\tkzDefPointBy[rotation=center O angle 45](B7)\tkzGetPoint{B8}
+\tkzDrawCircle[line width=0.8pt](A8,B8)
+
+% ---- nombres ----
+ 
+%  \foreach \ang/\numlist in {
+%    90/{902,914,922,926,934,946,962,1066,1126,1238,1394,1766,3454},
+%    45/{903,921,927,933,957,981,993,1143,1551,2337,6339},
+%    0/{904,932,964,976,988,1036,1352,1624,1772},
+%    -45/{905,935,955,965,985,995,1015,2245},
+%    -90/{918,942,966,990,1026,1152,1236,1464},
+%    -135/{910,940,970,980,1030,1150,1270,1300,1900,2260},
+%    180/{912,972,1164,1224,1332,1452,1548},
+%    135/{915,945,1065,1125,1275,1335,1455,1695,1785,2385}
+%  }{
+\end{tikzpicture}
+\end{center}
+ 
+\vfill
+\begin{minipage}{0.48\linewidth}
+Divisible par 4 : \textcolor{green!60!black}{Vert}\\
+Divisible par 5 : \textcolor{blue}{Bleu}
+\end{minipage}
+\begin{minipage}{0.48\linewidth}
+Divisible par 6 : \textcolor{yellow!70!orange}{Jaune}\\
+Divisible par 9 : \textcolor{red}{Rouge}
+\end{minipage}

@@ -221,7 +221,10 @@
   <div class="modal">
     <div class="modal-bar">
       <span class="modal-title" id="modal-title"></span>
-      <a id="modal-dl" href="#" download class="modal-dl">⬇ Télécharger</a>
+      <div style="display:flex;gap:6px;align-items:center;">
+        <a id="modal-dl-pdf" href="#" download class="modal-dl" style="display:none">⬇ .pdf</a>
+        <a id="modal-dl-tex" href="#" download class="modal-dl" style="display:none">⬇ .tex</a>
+      </div>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <iframe id="modal-frame" src=""></iframe>
@@ -583,17 +586,17 @@ function render() {
     row.className = "row";
 
     const btnE = (r.pdf && r.source !== "pdf")
-      ? `<button class="btn btn-eleve"   onclick="openPDF('${r.pdf}','${escJs(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
+      ? `<button class="btn btn-eleve" onclick="openPDF('${r.pdf}','${escJs(r.titre)}','${r.fichier}')">${TYPE_LABELS[r.type] || "Document"}</button>`
       : "";
     const isDoc = r.pdf && r.source === "pdf";
     const isPDF = isDoc && r.pdf.endsWith(".pdf");
     const btnR  = isDoc
       ? (isPDF
-      ? `<button class="btn btn-eleve" onclick="openPDF('${r.pdf}','${escJs(r.titre)}')">${TYPE_LABELS[r.type] || "Document"}</button>`
+      ? `<button class="btn btn-eleve" onclick="openPDF('${r.pdf}','${escJs(r.titre)}',null)">${TYPE_LABELS[r.type] || "Document"}</button>`
       : `<a class="btn btn-eleve" href="${r.pdf}" download style="text-decoration:none">⬇ ${TYPE_LABELS[r.type] || "Document"}</a>`)
-  : "";
+      : "";
     const btnC = (r.corrige_pdf)
-      ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escJs(r.titre)} — corrigé')">Corrigé</button>`
+      ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escJs(r.titre)} — corrigé','${escJs(r.fichier)}')">Corrigé</button>`
       : "";
     const btnL = (r.lien && !r.pdf)
       ? `<a class="btn btn-corrige" href="${escHtml(r.lien)}" target="_blank">↗ Ouvrir</a>`
@@ -627,10 +630,27 @@ function render() {
 }
 
 // ── Modal ─────────────────────────────────────────────────────────────────────
-function openPDF(path, title) {
-  document.getElementById("modal-frame").src  = path;
+function openPDF(path, title, fichier) {
+  document.getElementById("modal-frame").src = path;
   document.getElementById("modal-title").textContent = title;
-  document.getElementById("modal-dl").href    = path;
+
+  const dlPdf = document.getElementById("modal-dl-pdf");
+  const dlTex = document.getElementById("modal-dl-tex");
+
+  // Bouton PDF toujours visible
+  dlPdf.href = path;
+  dlPdf.download = path.includes("corr/") ? `${fichier}_corrige.pdf` : `${fichier}.pdf`;
+  dlPdf.style.display = "";
+
+  // Bouton .tex visible seulement si fichier LaTeX
+  if (fichier) {
+    dlTex.href = `tex/${fichier}.tex`;
+    dlTex.download = path.includes("corr/") ? `${fichier}_corrige.tex` : `${fichier}.tex`;
+    dlTex.style.display = "";
+  } else {
+    dlTex.style.display = "none";
+  }
+
   document.getElementById("modal").classList.add("open");
 }
 function closeModalBg(e) { if (e.target===document.getElementById("modal")) closeModal(); }

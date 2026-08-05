@@ -26,6 +26,9 @@ JSON_OUT  = SITE / "ressources.json"
 PDF_DIR.mkdir(parents=True, exist_ok=True)
 CORR_DIR.mkdir(parents=True, exist_ok=True)
 
+TEX_DIR = SITE / "tex"
+TEX_DIR.mkdir(parents=True, exist_ok=True)
+
 # -----------------------------------------------------------------------
 # Couleurs des thèmes
 # -----------------------------------------------------------------------
@@ -171,6 +174,11 @@ def build_resource(tex_path: Path) -> dict | None:
     meta["pdf"]         = f"pdf/{stem}.pdf"  if ok_eleve else None
     meta["corrige_pdf"] = f"corr/{stem}.pdf" if ok_corr  else None
     meta["fichier"]     = stem
+
+    # Copie le .tex dans site/tex/ pour téléchargement
+    import shutil
+    shutil.copy(tex_path, TEX_DIR / f"{stem}.tex")
+
     return meta
 
 def check_meta(meta: dict, tex_path: Path):
@@ -233,6 +241,12 @@ def clean_orphans(valid_stems: set[str]):
                 corr = CORR_DIR / f"{f.stem}_corrige{ext}"
                 if corr.exists(): corr.unlink()
             print(f"  🗑  Orphelin supprimé : {f.name}")
+            removed += 1
+    # Nettoyage des .tex orphelins dans site/tex/
+    for f in list(TEX_DIR.glob("*.tex")):
+        if f.stem not in valid_stems:
+            f.unlink()
+            print(f"  🗑  .tex orphelin supprimé : {f.name}")
             removed += 1
     if removed == 0:
         print("  ✓  Aucun orphelin trouvé")

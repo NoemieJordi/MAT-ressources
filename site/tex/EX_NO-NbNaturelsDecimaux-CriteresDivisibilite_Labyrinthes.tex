@@ -1,0 +1,515 @@
+% ---
+% titre: Labyrinthe - Critères de divisibilité
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: Critères de divisibilité
+% niveau: [9e]
+% type: EX
+% tags: [c-criteres-divisibilite, f-individuel, f-groupe,f-maison,f-station,p-entrainement,p-remediation]
+% difficulte: 1
+% source: latex
+% ---
+
+\header{Labyrinthe : divisibilité par 2}
+
+Relie les nombres divisibles par 2 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 2 si son dernier chiffre est pair (0, 2, 4, 6 ou 8).
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}3918 & 6095 & 7559 & 1915 & 8319 & 6667 & 8373 & 6587 & 8635 \\
+\hline
+8107 & \cellcolor{\colSolution!20}6754 & 539 & 3289 & 469 & 3089 & 8207 & 6569 & 5617 \\
+\hline
+6535 & 8753 & \cellcolor{\colSolution!20}4468 & 6037 & 8485 & 7575 & 4225 & 4635 & 7889 \\
+\hline
+6989 & 125 & 4591 & \cellcolor{\colSolution!20}4488 & 8295 & 3953 & 6461 & 1585 & 3305 \\
+\hline
+3845 & 2179 & 5441 & \cellcolor{\colSolution!20}3812 & 3511 & 6737 & 4019 &6717 &4073 \\
+\hline
+8611 & 5157 & 9767 & \cellcolor{\colSolution!20}6058 & 6063 & \cellcolor{\colSolution!20}3142 &2371 & \cellcolor{\colSolution!20}1498 & 1529 \\
+\hline
+7745 & 7123 & 801 & 4487 & \cellcolor{\colSolution!20}8192 & 8429 & \cellcolor{\colSolution!20}5640 & 4451 & \cellcolor{\colSolution!20}1466 \\
+\hline
+5405 & 4825 & 6497 & 9085 & 5537 & 7023 & 5225 & 3179 & \cellcolor{\colSolution!20}1578 \\
+\hline
+2441 & 4181 & 5305 & 475 & 2385 & 6899 &5697 & \cellcolor{\colSolution!20}3032 & 3099 \\
+\hline
+6179 & 2177 & 3557 & 9641 & 6971 & 9213 & 7831 &5281 & \cellcolor{themeColor!20}2136 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{14}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 3}
+
+Relie les nombres divisibles par 3 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 3 si la somme de ses chiffres est divisible par 3.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}4044 & 631 & 8947 & 806 & 8074 & 370 & 8984 & 1673 & 3572 \\
+\hline
+\cellcolor{\colSolution!20}9915 & 1892 & 3407 & 6752 & 4804 & 9185 & 5728 & 3428 & 475 \\
+\hline
+2807 & \cellcolor{\colSolution!20}7989 &7117 & 9679 & 2156 & 4405 & 1528 & 2884 & 3307 \\
+\hline
+7427 & 2758 & \cellcolor{\colSolution!20}2727 & 4468 & 3157 & \cellcolor{\colSolution!20}6777 & 739 & 2704 & 5264 \\
+\hline
+6325 & 7108 & 5935 & \cellcolor{\colSolution!20}3492 & \cellcolor{\colSolution!20}1035 & 4075 & \cellcolor{\colSolution!20}5181 & 2761 & 5083 \\
+\hline
+6515 & 6508 & 3701 & 6527 & 1166 & 968 & \cellcolor{\colSolution!20}5184 & 4168 & 9500 \\
+\hline
+2797 & 388 & 6100 & 3044 & 223 & \cellcolor{\colSolution!20}4983 & 5386 & 1199 & 7549 \\
+\hline
+1489 & 5057 & 754 & 7921 & \cellcolor{\colSolution!20}1080 & 3685 & 4358 & 6520 & 6868 \\
+\hline
+1777 & 9173 & 1013 & 7900 & 9134 & \cellcolor{\colSolution!20}3093 & \cellcolor{\colSolution!20}8304 & 5320 & 5215 \\
+\hline
+1309 & 7271 & 4985 & 5437 & 494 & 3550 & 9866 & \cellcolor{\colSolution!20}6150 & \cellcolor{themeColor!20}1317 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{15}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 4}
+
+Relie les nombres divisibles par 4 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 4 si le nombre formé par ses deux derniers chiffres est divisible par 4.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}796 & \cellcolor{\colSolution!20}7836 & 4854 & 6307 & 3042 & 7006 & 4799 & 289 & 4001 \\
+\hline
+1410 &5450 & \cellcolor{\colSolution!20}3208 & 9545 & 9102 & 3270 & 1487 & 8138 & 5977 \\
+\hline
+551 & \cellcolor{\colSolution!20}8708 & 7574 & 7295 & 3566 & 8919 & 306 & 8795 & 9694 \\
+\hline
+3502 & 2409 & \cellcolor{\colSolution!20}7876 & \cellcolor{\colSolution!20}4936 & \cellcolor{\colSolution!20}8624 & \cellcolor{\colSolution!20}7848 & 5690 & 9706 & 7729 \\
+\hline
+4139 & 3750 & 3154 & 8017 & 1037 & 2741 & \cellcolor{\colSolution!20}1064 & 715 & 113 \\
+\hline
+3558 & 291 & 5297 & 3798 & 1469 & 4602 & \cellcolor{\colSolution!20}148 & 4889 & 7106 \\
+\hline
+5161 & 6350 & 2027 & 5254 & 3065 & \cellcolor{\colSolution!20}9924 & 111 & 6330 & 882 \\
+\hline
+5861 & 593 & 2598 & 3907 & 4742 & 1898 & \cellcolor{\colSolution!20}9944 & 989 & 9743 \\
+\hline
+8447 & 926 & 6626 & 1203 & 2562 & 9089 & 1507 & \cellcolor{\colSolution!20}9456 & 3466 \\
+\hline
+8839 & 6237 & 9142 & 2062 & 2050 & 8174 & 126 & 445 & \cellcolor{themeColor!20}512 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{14}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 5}
+
+Relie les nombres divisibles par 5 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 5 si son dernier chiffre est 0 ou 5.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}2050 & 4541 & \cellcolor{\colSolution!20}825 & \cellcolor{\colSolution!20}5345 & 6701 & 2789 & 6187 & 8438 & 867 \\
+\hline
+8776 & \cellcolor{\colSolution!20}2785 & 6194 & 167 & \cellcolor{\colSolution!20}2150 & 8419 & 3786 & 3469 & 8908 \\
+\hline
+5247 & 8584 & 8824 & \cellcolor{\colSolution!20}5265 & 8173 & 9554 & 7503 & 8456 & 8396 \\
+\hline
+8387 & 8464 & \cellcolor{\colSolution!20}7550 & 5266 & 7761 & 5221 & 9556 & 2769 & 5928 \\
+\hline
+9887 & 4633 & 2416 & \cellcolor{\colSolution!20}8445 & 1798 & 2934 & 7116 & 4179 & 1911 \\
+\hline
+7808 & 1862 & 4494 & 3951 & \cellcolor{\colSolution!20}4710 & 1742 & \cellcolor{\colSolution!20}3660 & \cellcolor{\colSolution!20}9005 & 9573 \\
+\hline
+7233 & 7253 & 6047 & 8464 & 6627 & \cellcolor{\colSolution!20}8515 & 6752 & 1427 & \cellcolor{\colSolution!20}3810 \\
+\hline
+1677 & 7538 & 5436 & 2059 & 3311 & 1562 & 4088 & \cellcolor{\colSolution!20}5065 & 8497 \\
+\hline
+6966 & 2551 & 9041 & 9194 & 5649 & 8066 & 3316 & 2621 & \cellcolor{\colSolution!20}1320 \\
+\hline
+853 & 8168 & 5911 & 3512 & 601 & 3459 & 2556 & 8741 & \cellcolor{themeColor!20}8255 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{16}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 6}
+
+Relie les nombres divisibles par 6 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+
+un nombre est divisible par 6 s'il est divisible à la fois par 2 et par 3.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}618 & \cellcolor{\colSolution!20}4302 & 291 & 8047 & 519 & 3281 & 674 & 9215 & 137 \\
+\hline
+4916 & 823 & \cellcolor{\colSolution!20}7590 & 5671 & 289 & 9542 & 671 & 3409 & 812 \\
+\hline
+6173 & 452 & \cellcolor{\colSolution!20}1224 & 719 & 8861 & 235 & 5608 & 167 & 9043 \\
+\hline
+371 & 4825 & 619 & \cellcolor{\colSolution!20}8466 & \cellcolor{\colSolution!20}312 & 803 & 2150 & 947 & 6281 \\
+\hline
+733 & 8192 & 415 & 6047 & 289 & \cellcolor{\colSolution!20}9108 & 574 & 3861 & 928 \\
+\hline
+617 & 4703 & 892 & \cellcolor{\colSolution!20}2634 & \cellcolor{\colSolution!20}546 & 371 & 8254 & 619 & 5732 \\
+\hline
+913 & 6281 & \cellcolor{\colSolution!20}738 & 274 & 8915 & 361 & 5048 & 927 & 6173 \\
+\hline
+419 & 7634 & 855 & \cellcolor{\colSolution!20}6012 & \cellcolor{\colSolution!20}930 & 371 & 8246 & 619 & 9041 \\
+\hline
+803 & 6175 & 943 & 271 & 8564 & \cellcolor{\colSolution!20}1458 & \cellcolor{\colSolution!20}372 & 517 & 3806 \\
+\hline
+619 & 4073 & 856 & 371 & 9248 & 617 & 3491 & \cellcolor{\colSolution!20}8730 & \cellcolor{themeColor!20}204 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{16}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 7}
+
+Relie les nombres divisibles par 7 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 7 si, en doublant son dernier chiffre puis en le soustrayant au nombre restant, on obtient un multiple de 7 (on peut répéter l'opération si besoin).
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}567 & 603 & 4761 & 8594 & 5583 & 1602 & 6184 & 5316 & 6778 \\
+\hline
+9669 & \cellcolor{\colSolution!20}5859 & 8306 & 6562 & 5303 & 7176 & 9826 & 6894 & 6127 \\
+\hline
+8273 & 2598 & \cellcolor{\colSolution!20}3416 & 4544 & 5934 & 1895 & 2413 & 7248 & 4317 \\
+\hline
+7449 & \cellcolor{\colSolution!20}2352 & 1220 & 7435 & 4939 & 8686 & 3271 & 9204 & 9127 \\
+\hline
+6190 & 2803 & \cellcolor{\colSolution!20}2352 & \cellcolor{\colSolution!20}8400 & 3753 & 1565 & 3828 & 3740 & 8888 \\
+\hline
+3618 & 7076 & 4540 & 3558 & \cellcolor{\colSolution!20}8911 & 9175 & 8063 & \cellcolor{\colSolution!20}1169 & 2941 \\
+\hline
+5338 & 6275 & 8074 & 2651 & 3446 & \cellcolor{\colSolution!20}2296 & \cellcolor{\colSolution!20}3339 & 9129 & \cellcolor{\colSolution!20}6692 \\
+\hline
+878 & 6939 & 7013 & 6184 & 2531 & 4418 & 5213 & 8212 & \cellcolor{\colSolution!20}7420 \\
+\hline
+8139 & 4285 & 9752 & 5196 & 9783 & 8154 & 7510 & \cellcolor{\colSolution!20}5586 & 7834 \\
+\hline
+6022 & 2022 & 4436 & 5421 & 538 & 2028 & 9496 & 3370 & \cellcolor{themeColor!20}5873 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{14}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 8}
+
+Relie les nombres divisibles par 8 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 8 si le nombre formé par ses trois derniers chiffres est divisible par 8.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}9720 & 3830 & 9658 & 9769 & 8252 & 587 & 1603 & 6999 & 4809 \\
+\hline
+582 & \cellcolor{\colSolution!20}9488 & 7393 & 9397 & 9089 & 4479 & 2729 & 3289 & 372 \\
+\hline
+7255 & 8836 & \cellcolor{\colSolution!20}8752 & 4985 & 8060 & 1390 & 8603 & 3302 & 6585 \\
+\hline
+5703 & 4466 & \cellcolor{\colSolution!20}1288 & 4447 & 5911 & 3786 & 7453 & 4954 & 3164 \\
+\hline
+7927 & 2506 & \cellcolor{\colSolution!20}2480 & 8473 & 7396 & \cellcolor{\colSolution!20}792 & \cellcolor{\colSolution!20}3016 & \cellcolor{\colSolution!20}8176 & 1123 \\
+\hline
+1930 & 9706 & 851 & \cellcolor{\colSolution!20}8328 & \cellcolor{\colSolution!20}9280 & 5995 & 3206 & 5861 & \cellcolor{\colSolution!20}2440 \\
+\hline
+3956 & 9294 & 2326 & 4465 & 5978 & 2295 & 2235 & 1854 & \cellcolor{\colSolution!20}1528 \\
+\hline
+2062 & 1055 & 3620 & 1106 & 3330 & 7027 & 9762 & \cellcolor{\colSolution!20}4520 & 1644 \\
+\hline
+3871 & 7439 & 4297 & 4821 & 762 & 3939 & 161 & 6362 & \cellcolor{\colSolution!20}8136 \\
+\hline
+4775 & 8577 & 2041 & 8346 & 194 & 2749 & 5995 & 6911 & \cellcolor{themeColor!20}9160 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{15}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 9}
+
+Relie les nombres divisibles par 9 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 9 si la somme de ses chiffres est divisible par 9.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}9252 & \cellcolor{\colSolution!20}3060 & \cellcolor{\colSolution!20}864 & \cellcolor{\colSolution!20}513 & \cellcolor{\colSolution!20}162 & \cellcolor{\colSolution!20}3420 & 2824 & 9125 & 4071 \\
+\hline
+863 & 6262 & 4873 & 2831 & 1178 & 4614 & \cellcolor{\colSolution!20}4743 & 3534 & 2967 \\
+\hline
+3901 & 7247 & 3184 & 5996 & 7130 & 8270 & \cellcolor{\colSolution!20}3132 & 8911 & 3097 \\
+\hline
+3332 & 3764 & 2091 & 9413 & 5916 & 3450 & \cellcolor{\colSolution!20}9891 & 6499 & 295 \\
+\hline
+5348 & 9328 & 1972 & 1569 & 1860 & 4262 & \cellcolor{\colSolution!20}1863 & 4018 & 5434 \\
+\hline
+8598 & 8407 & 7666 & 8554 & 7985 & 4862 & \cellcolor{\colSolution!20}2241 & 6011 & 2812 \\
+\hline
+8674 & 3155 & 968 & 6484 & 9050 & \cellcolor{\colSolution!20}1395 & 7707 & 5497 & 4582 \\
+\hline
+5920 & 2485 & 7203 & 1140 & 3925 & 6554 & \cellcolor{\colSolution!20}9801 & 8993 & 4881 \\
+\hline
+7336 & 2667 & 2937 & 5398 & 940 & 5929 & \cellcolor{\colSolution!20}2439 & 9892 & 6891 \\
+\hline
+4438 & 1621 & 6441 & 1690 & 3855 & 4303 & 8429 & \cellcolor{\colSolution!20}3645 & \cellcolor{themeColor!20}3465 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{16}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 10}
+
+Relie les nombres divisibles par 10 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 10 si son dernier chiffre est 0.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}190 & 8235 & 7668 & 728 & 1778 & 6488 & 6728 & 1568 & 9372 \\
+\hline
+\cellcolor{\colSolution!20}6480 & 9621 & 7307 & 4035 & 8877 & 4301 & 1919 & 1015 & 6304 \\
+\hline
+8815 & \cellcolor{\colSolution!20}9250 & 3801 & 373 & 4357 & 8724 & 7114 & 4572 & 9509 \\
+\hline
+4121 & 7691 & \cellcolor{\colSolution!20}2570 & 4491 & 3412 & 643 & \cellcolor{\colSolution!20}9620 & \cellcolor{\colSolution!20}240 & 6658 \\
+\hline
+9798 & 7159 & 6324 & \cellcolor{\colSolution!20}1560 & 2231 & \cellcolor{\colSolution!20}4670 & 5569 & 8853 & \cellcolor{\colSolution!20}7120 \\
+\hline
+5699 & 6844 & 2223 & 9345 & \cellcolor{\colSolution!20}880 & 6049 & 7164 & \cellcolor{\colSolution!20}8550 & 9977 \\
+\hline
+6427 & 2147 & 7075 & 332 & 4444 & 5451 & \cellcolor{\colSolution!20}520 & 5781 & 9513 \\
+\hline
+7615 & 2778 & 6854 & 6801 & 4268 & 9513 & 7011 & \cellcolor{\colSolution!20}9670 & 6907 \\
+\hline
+4703 & 6494 & 7119 & 956 & 5505 & 5169 & \cellcolor{\colSolution!20}900 & 1835 & 9964 \\
+\hline
+8288 & 9754 & 246 & 944 & 9336 & 5381 & 5809 & \cellcolor{\colSolution!20}690 & \cellcolor{themeColor!20}8110 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{16}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 25}
+
+Relie les nombres divisibles par 25 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 25 si ses deux derniers chiffres forment 00, 25, 50 ou 75.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}500 & 7414 & 1298 & 9165 & 3889 & 8554 & 5906 & 5365 & 8662 \\
+\hline
+\cellcolor{\colSolution!20}4150 & 104 & 7622 & \cellcolor{\colSolution!20}1750 & \cellcolor{\colSolution!20}6875 & 7547 & 2741 & 2269 & 9827 \\
+\hline
+2677 & \cellcolor{\colSolution!20}2700 & \cellcolor{\colSolution!20}2000 & 739 & 2113 & \cellcolor{\colSolution!20}9625 & 2387 & 1208 & 4872 \\
+\hline
+9611 & 7880 & 6405 & 2548 & 7639 & \cellcolor{\colSolution!20}275 & 3228 & 3115 & 8758 \\
+\hline
+6992 & 3168 & 8518 & 3771 & 6330 & \cellcolor{\colSolution!20}3625 & 8985 & \cellcolor{\colSolution!20}6625 & 2226 \\
+\hline
+2829 & 9585 & 6763 & 7167 & 4413 & 820 & \cellcolor{\colSolution!20}6700 & 2623 & \cellcolor{\colSolution!20}2000 \\
+\hline
+2273 & 2073 & 7024 & 5870 & 3940 & 56240 & 7911 & 6469 & \cellcolor{\colSolution!20}3500 \\
+\hline
+6053 & 1377 & 3404 & 8963 & 6820 & 3020 & 7265 & \cellcolor{\colSolution!20}925 & 2829 \\
+\hline
+5189 & 8057 & 4001 & 1980 & 8051 & 581 & 2970 & \cellcolor{\colSolution!20}3725 & 7828 \\
+\hline
+3772 & 1878 & 8676 & 4932 & 6068 & 8306 & 7763 & 6992 & \cellcolor{themeColor!20}3650 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{16}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 50}
+
+Relie les nombres divisibles par 50 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 50 si ses deux derniers chiffres forment 00 ou 50.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}550 & 4747 & 6678 & 1130 & 5170 & 7199 & 6776 & 8519 & 1878 \\
+\hline
+\cellcolor{\colSolution!20}550 & 2204 & \cellcolor{\colSolution!20}8150 & 7549 & 2835 & 7059 & 5492 & 2711 & 7526 \\
+\hline
+1116 & \cellcolor{\colSolution!20}8300 & 2346 & \cellcolor{\colSolution!20}4550 & 2320 & \cellcolor{\colSolution!20}3050 & \cellcolor{\colSolution!20}3100 & 6425 & 8817 \\
+\hline
+7310 & 1026 & 7201 & 1338 & \cellcolor{\colSolution!20}1750 & 4875 & 5840 & \cellcolor{\colSolution!20}950 & 4767 \\
+\hline
+5583 & 9747 & 6503 & 6004 & 5065 & 6259 & \cellcolor{\colSolution!20}2250 & 9347 & 4101 \\
+\hline
+2695 & 3674 & 674 & 7121 & 7410 & 7390 & \cellcolor{\colSolution!20}9300 & 3775 & 3185 \\
+\hline
+2792 & 4869 & 1378 & 1605 & 5502 & 1165 & 8926 & \cellcolor{\colSolution!20}1800 & 3757 \\
+\hline
+346 & 8162 & 7372 & 2356 & 4940 & 1053 & 6821 & 6957 & \cellcolor{\colSolution!20}5550 \\
+\hline
+323 & 8109 & 1953 & 4432 & 9030 & 3202 & 3279 & 1710 & \cellcolor{\colSolution!20}3400 \\
+\hline
+4668 & 4370 & 6582 & 6046 & 768 & 8723 & 9518 & 9742 & \cellcolor{themeColor!20}4550 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{15}
+
+\newpage
+
+\header{Labyrinthe : divisibilité par 100}
+
+Relie les nombres divisibles par 100 du départ (en haut à gauche) jusqu'à l'arrivée (en bas à droite). Tu peux te déplacer horizontalement, verticalement ou en diagonale, à condition que les cases se touchent.
+
+\vspace{\stretch{1}}
+\begin{tcolorbox}[sharp corners, colback=white, colframe=themeColor]%
+\textbf{Rappel:}
+un nombre est divisible par 100 si ses deux derniers chiffres sont 00.
+\end{tcolorbox}
+\vspace{\stretch{2}}
+
+\def\arraystretch{2.7}
+\begin{tabularx}{\linewidth}{*{9}{|>{\centering\arraybackslash}X}|}
+\hline
+\cellcolor{themeColor!20}4700 & \cellcolor{\colSolution!20}4600 & \cellcolor{\colSolution!20}200 & \cellcolor{\colSolution!20}8000 & 5703 & 8022 & 7904 & 2737 & 1123 \\
+\hline
+2750 & 2602 & 4235 & 226 & \cellcolor{\colSolution!20}2500 & 9522 & 9595 & 2219 & 1838 \\
+\hline
+7891 & 4280 & 4995 & \cellcolor{\colSolution!20}2000 & 6865 & 1611 & \cellcolor{\colSolution!20}8400 & 1350 & 9091 \\
+\hline
+3296 & 3917 & 3594 & \cellcolor{\colSolution!20}9900 & 9816 & \cellcolor{\colSolution!20}7300 & 4612 & \cellcolor{\colSolution!20}9200 & 8877 \\
+\hline
+9235 & 9143 & 1544 & 3468 & \cellcolor{\colSolution!20}8200 & 9347 & 4005 & 9469 & \cellcolor{\colSolution!20}7500 \\
+\hline
+5449 & 805 & 7968 & 9553 & 6364 & 8609 & 6270 & \cellcolor{\colSolution!20}2900 & 2687 \\
+\hline
+4446 & 7834 & 1359 & 9767 & 7889 & 7302 & 8793 & \cellcolor{\colSolution!20}7200 & 4673 \\
+\hline
+6075 & 6069 & 4667 & 6453 & 6473 & 4765 & 8242 & \cellcolor{\colSolution!20}8900 & 3332 \\
+\hline
+1681 & 3097 & 6626 & 3539 & 2939 & 2509 & 1730 & 6979 & \cellcolor{\colSolution!20}4700 \\
+\hline
+4395 & 5852 & 2229 & 8577 & 9249 & 3754 & 5383 & 7888 & \cellcolor{themeColor!20}8600 \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\noindent Combien de cases as-tu reliées pour aller du départ à l'arrivée ? \sol{\bl{2cm}}{17}
+ 
