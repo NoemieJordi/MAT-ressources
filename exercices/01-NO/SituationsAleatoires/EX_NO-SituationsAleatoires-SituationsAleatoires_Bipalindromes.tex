@@ -1,0 +1,47 @@
+% ---
+% titre: Bipalindromes
+% theme: NO
+% chapitre: Situations aléatoires
+% sous_chapitre: Explorer les situations aléatoires
+% niveau: [9e,10e,11e]
+% type: EX
+% tags: [c-probabilites,c-combinatoire,f-groupe, f-individuel,f-maison,f-station,p-entrainement,p-remediation]
+% difficulte: 3
+% source: latex
+% ---
+
+\header{Bipalindromes}
+
+\vspace{10pt}
+Au pays des Bipalindromes, toutes les plaques de voitures portent un nombre de six chiffres différents de 0 et chaque nombre est formé de deux palindromes de trois chiffres. Un palindromes est un nombre ou un mot qui se lit de la même manière de droite à gauche et de gauche à droite comme par exemple 121.
+
+Voici des plaques de voitures du pays des Bipalindromes: 121 787 ou 444 242 ou 111 111. Par contre, 131 456 ne convient pas car le deuxième groupe de trois chiffres n'est pas un palindrome. De même, 303 565 ne convient pas car le premier palindrome contient  un 0 qui n'est pas autorisé au pays des Bipalindromes.
+
+
+Combien de numéros de plaques de voitures différents peut-il y avoir au maximum dans ce pays? Explique ta démarche.
+
+\sol{\vfill
+\begin{tikzpicture}
+\draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,16);
+\end{tikzpicture}}{\vspace{50pt}
+nb de numéros de plaques différents: $81 \cdot 81 = 6561$ possibilités
+
+\color{black}\vspace{20pt}
+Pour dénombrer toutes les plaques, il est nécessaire d'organiser la recherche :
+
+Exemple : partir de 111 111, en continuant avec 111 121, 111 131, 111 141 \ldots 111 191, (9 plaques), puis 111 212, 111 222, jusqu’à 111 292 (à nouveau 9 plaques), puis jusqu’à 111 999, ce qui conduit donc à un total de 81 plaques commençant par 111.
+
+Comprendre que, comme chacun des palindromes de la 2e partie du nombre peut figurer également comme première partie du nombre, on a comme solution au problème posé : 81x 81= 6561 plaques différentes.
+
+%
+%Selon les critères déterminés lors de l'analyse a priori :\\
+%\begin{itemize}
+%\item[4pts] Réponse juste (6561) avec explication correcte de la démarche
+%\item[3pts] Réponse juste (6561) avec calcul seul (81 x 81 ou 81$^2$, \ldots) ou explication incomplète
+%\item[2pts] Réponse juste (6561) sans explications ou réponse 6480 = 81x81-81 ou recherche organisée mais erreur de dénombrement
+%\item[1pt] Début de démarche correct (par exemple 81 ou 2x81,\ldots)
+%\item[0pt] Incompréhension du problème
+%\end{itemize}
+
+\vfill
+{\footnotesize\raggedleft \color{gray}Banque de problèmes du RMT: rallyes 13.I.13; catégorie: 7,8,9; domaines: LR; famille: CO, CO/DEN; code: sd244-fr)\par}}

@@ -220,6 +220,7 @@ Catégories possibles:
 | inspiration | Idées pour créer tes propres activités |
 | outil | GeoGebra, applis, matériel... |
 | reference | Théorie, documentation pour toi |
+| Evaluation | Anciens TS et ETA compilés |
 
 ---
 
@@ -229,11 +230,12 @@ Catégories possibles:
 
 ```bash
 cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
-python3 scripts/build.py
+python3 scripts/build.py --preview 
 cd site
 python3 -m http.server 8080
 ```
 Ouvrir http://localhost:8080 dans le navigateur et quitter avec Ctrl+C
+Attention: enlever le --preview si on ne veut pas l'ouverture des pdf modifiés 
 
 ### Pousser sur GitHub
 

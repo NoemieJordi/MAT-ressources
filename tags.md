@@ -14,19 +14,34 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 
 | Tag | Description |
 |-----|-------------|
-| `c-livrets` |   Livrets |
-| `c-multiplication` |   Multiplication |
-| `c-division` |   Division |
+| `c-addition` | Addition |
+| `c-calcul-angles` | Calcul d'angles |
+| `c-combinatoire` | Combinatoire |
 | `c-criteres-divisibilite` |   Critères de divisibilité |
-| `c-fractions` | Fractions |
-| `c-probabilites` | Probabilités |
-| `c-statistiques` | Statistiques |
+| `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
+| `c-division` |   Division |
+| `c-droite-numerique` |   Droite numérique |
 | `c-equations` | Équations |
 | `c-fonctions` | Fonctions |
-| `c-geometrie` | Géométrie |
-| `c-trigonometrie` | Trigonométrie |
+| `c-fractions` | Fractions |
+| `c-livrets` |   Livrets |
+| `c-multiplication` |   Multiplication |
 | `c-nombres-premiers` | Nombres premiers |
+| `c-nombres-relatifs` | Nombres relatifs |
+| `c-operations` | 4 opérations |
+| `c-perimetre` | Calcul de périmètre |
+| `c-ppmc` | ppmc et pgdc |
 | `c-priorite-operations` | Priorité des opérations |
+| `c-probleme` | Problèmes |
+| `c-probabilites` | Probabilités |
+| `c-puissance` | Puissance |
+| `c-racine` | Racine |
+| `c-soustraction` | Soustraction |
+| `c-statistiques` | Statistiques |
+| `c-thales` | Théorème de Thalès |
+| `c-triangles-semblables` | Triangles semblables |
+| `c-trigonometrie` | Trigonométrie |
+| `c-valeur-absolue` | Valeur absolue |
 
 ---
 
@@ -59,7 +74,7 @@ Matériel ou logiciel nécessaire.
 | `o-bombe` | Bombe |
 | `o-calculatrice` | Calculatrice |
 | `o-cartes` | Cartes |
-| `o-carteMentale` | Carte mentale |
+| `o-carte-mentale` | Carte mentale |
 | `o-ciseaux` | Ciseaux / découpage |
 | `o-colle` | Colle |
 | `o-compas` | Compas |
@@ -84,15 +99,18 @@ Intention didactique de la ressource.
 
 | Tag | Description |
 |-----|-------------|
-| `p-remediation` | Remédiation |
 | `p-approfondissement` | Approfondissement |
+| `p-flash-calcul` | Rituel de calcul mental |
 | `p-decouverte` | Découverte / introduction |
+| `p-differentiation` | Activité différenciée selon les niveaux des élèves |
 | `p-entrainement` | Entraînement |
 | `p-evaluation-diagnostique` | Évaluation diagnostique |
 | `p-evaluation-formative` | Évaluation formative |
 | `p-institutionnalisation` | Moment de synthèse / bilan |
 | `p-modelisation` | Modéliser une situation |
-| `p-differentiation` | Activité différenciée selon les niveaux des élèves |
+| `p-question-TS` | Exercice utilisé en TS |
+| `p-remediation` | Remédiation |
+| `p-TS` | TS |
 
 ---
 

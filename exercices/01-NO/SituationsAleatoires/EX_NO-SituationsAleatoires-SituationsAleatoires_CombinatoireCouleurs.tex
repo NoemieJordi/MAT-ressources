@@ -1,0 +1,205 @@
+% ---
+% titre: Couleurs
+% theme: NO
+% chapitre: Situations aléatoires
+% sous_chapitre: Explorer les situations aléatoires
+% niveau: [9e,10e,11e]
+% type: EX
+% tags: [c-probabilites,c-combinatoire,f-groupe, f-individuel,f-maison,f-station,p-entrainement,p-remediation]
+% difficulte: 1
+% source: latex
+% ---
+
+\header{Couleurs}
+
+\begin{itemize}
+\item[a)]Tu disposes d'un crayon rouge et d'un crayon bleu. De combien de façons différentes peux-tu colorier ce bonhomme en utilisant une ou deux de ces couleurs?
+\end{itemize}
+
+\sol{\vfill}{\vspace{30pt}}
+\begin{center}\begin{tikzpicture}
+%----tête----%
+\tkzDefPoints{0/0.25/T1, 0.75/0.25/T2}
+\tkzDrawCircle(T1,T2)
+%----corps----%
+\tkzDefPoints{-0.5/-0.5/C1, 0.5/-0.5/C2,0.5/-2/C3, -0.5/-2/C4}
+\tkzDrawPolygon(C1,C2,C3,C4)
+%----jambes----%
+\tkzDefPoints{-1/-3.5/J1, 1/-3.5/J2}
+\tkzDrawSegments(C4,J1 J1,J2 J2,C3)
+\end{tikzpicture}\end{center}
+
+\sol{\vfill
+\begin{tikzpicture}
+\draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,17);
+\end{tikzpicture}}{\color{black}\vspace{50pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm},
+   level 2/.style={sibling distance=10mm}]
+\node[fill=themeNO!30] {R}
+	child {node[fill=themeNO!30] {R}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		};
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm},
+   level 2/.style={sibling distance=10mm}]
+\node[fill=themeES!30] {B}
+	child {node[fill=themeNO!30] {R}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		};
+\end{tikzpicture}
+
+\vspace{40pt}
+nb de possibilités: $2\cdot4= \textcolor{themeColor}{8}$ \textcolor{themeColor}{possibilités}
+}
+
+\newpage
+\begin{itemize}
+\item[b)]Tu disposes de quatre crayons: un jaune, un rouge, un bleu et un vert. De combien de façons différentes peux-tu colorier ce bonhomme en utilisant une, deux, trois ou quatre de ces couleurs?
+\end{itemize}
+
+\sol{\vfill
+\begin{tikzpicture}
+\draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,23);
+\end{tikzpicture}}{\color{black}\vspace{50pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=40mm},
+   level 2/.style={sibling distance=10mm},]
+\node[fill=themeFA!30] {J}
+	child {node[fill=themeFA!30] {J}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeNO!30] {R}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		};
+\end{tikzpicture}
+
+\vspace{40pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=40mm},
+   level 2/.style={sibling distance=10mm},]
+\node[fill=themeNO!30] {R}
+	child {node[fill=themeFA!30] {J}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeNO!30] {R}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		};
+\end{tikzpicture}
+
+\vspace{40pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=40mm},
+   level 2/.style={sibling distance=10mm},]
+\node[fill=themeES!30] {B}
+	child {node[fill=themeFA!30] {J}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeNO!30] {R}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		};
+\end{tikzpicture}
+
+\vspace{40pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=40mm},
+   level 2/.style={sibling distance=10mm},]
+\node[fill=themeGM!30] {V}
+	child {node[fill=themeFA!30] {J}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeNO!30] {R}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		}
+	child {node[fill=themeES!30] {B}
+		child {node[fill=themeFA!30] {J}}
+		child {node[fill=themeNO!30] {R}}
+		child {node[fill=themeES!30] {B}}
+		child {node[fill=themeGM!30] {V}}
+		};
+\end{tikzpicture}
+
+\vspace{40pt}
+nb de possibilités: $16\cdot4= \textcolor{themeColor}{64}$ \textcolor{themeColor}{possibilités}
+
+\vfill
+{\footnotesize\raggedleft\color{gray}ECR 2019 10VG1 (2ème partie)\par}
+}

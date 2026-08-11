@@ -1,0 +1,138 @@
+\documentclass[%%EXAMOPTIONS%%]{exam}
+
+% -----------------------------------------------------------------------
+% Langue
+% -----------------------------------------------------------------------
+\usepackage[french]{babel}
+
+% -----------------------------------------------------------------------
+% Police
+% -----------------------------------------------------------------------
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% -----------------------------------------------------------------------
+% Maths
+% -----------------------------------------------------------------------
+\usepackage[fleqn]{amsmath}
+\usepackage{amsfonts}
+\usepackage{gensymb,textcomp}
+\usepackage{siunitx}
+\sisetup{
+  exponent-product = \cdot,
+  inter-unit-product = \ensuremath{{}\cdot{}}
+}
+
+% -----------------------------------------------------------------------
+% Tableaux et listes
+% -----------------------------------------------------------------------
+\usepackage{tabularx,hhline}
+\usepackage{tabularray}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{dashrule}
+\newcommand{\bl}[1][]{\ifthenelse{\equal{#1}{}}{\hrulefill}{\underline{\hspace{#1}}}}
+
+% -----------------------------------------------------------------------
+% Figures et graphiques
+% -----------------------------------------------------------------------
+\usepackage{graphicx}
+
+% -----------------------------------------------------------------------
+% TikZ / pgf
+% -----------------------------------------------------------------------
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.14}
+\usetikzlibrary{shapes.arrows, arrows, arrows.meta}
+\usetikzlibrary{shapes, fit, backgrounds}
+\usetikzlibrary{positioning, calc}
+\usetikzlibrary{plotmarks}
+\usepackage{tkz-base}
+\usepackage{tkz-euclide}
+
+% -----------------------------------------------------------------------
+% Couleurs
+% -----------------------------------------------------------------------
+\usepackage[table]{xcolor}
+\definecolor{box}{HTML}{d9d9d9}
+\definecolor{stabiloOrange}{RGB}{250,169,157}
+\definecolor{stabiloVert}{RGB}{155,251,225}
+\definecolor{stabiloJaune}{RGB}{253,223,126}
+\definecolor{stabiloRose}{RGB}{246,165,235}
+\definecolor{stabiloBleu}{RGB}{103,235,250}
+\definecolor{stabiloViolet}{RGB}{206,151,251}
+
+% -----------------------------------------------------------------------
+% tcolorbox
+% -----------------------------------------------------------------------
+\usepackage[listings,skins,breakable]{tcolorbox}
+\tcbuselibrary{raster,skins}
+
+% -----------------------------------------------------------------------
+% Couleurs des thèmes
+% -----------------------------------------------------------------------
+\definecolor{themeNO}{HTML}{AE0600}
+\definecolor{themeFA}{HTML}{E79840}
+\definecolor{themeES}{HTML}{5698C9}
+\definecolor{themeGM}{HTML}{8CCB30}
+\definecolor{themeRS}{HTML}{6C61A2}
+\definecolor{themeAU}{HTML}{888888}
+
+% Couleur active du thème (redéfinie par le script selon les métadonnées)
+\colorlet{themeColor}{themeAU}
+
+% Couleur des solutions
+\newcommand{\colSolution}{\iftoggle{question}{white}{themeColor}}
+
+% -----------------------------------------------------------------------
+% Questions / Réponses
+% -----------------------------------------------------------------------
+\usepackage{etoolbox}
+\providetoggle{question}
+\newcommand{\sol}[2]{\iftoggle{question}{#1}{{\color{\colSolution}#2}}}
+
+% -----------------------------------------------------------------------
+% Mise en page exam
+% -----------------------------------------------------------------------
+\renewcommand{\questionshook}{\setlength{\leftmargin}{0pt}}
+
+% Points
+\pointsinrightmargin
+\pointpoints{pt}{pts}
+\marginpointname{\,\points}
+\bonuspointpoints{pt}{pts}
+\marginbonuspointname{\,\bonuspoints}
+\bonuspointformat{\slshape (\themarginpoints)}
+
+% Lignes de réponse
+\setlength\linefillthickness{0.05pt}
+\setlength\dottedlinefillheight{0.25in}
+\definecolor{FillWithDottedLinesColor}{gray}{0.5}
+
+% Grille
+\setlength{\gridsize}{4mm}
+\setlength{\gridlinewidth}{0.1pt}
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+
+% Solution
+\shadedsolutions
+\renewcommand{\solutiontitle}{\noindent\textbf{Solution:}\par\noindent}
+
+\pagestyle{empty}
+
+
+% -----------------------------------------------------------------------
+% DOCUMENT
+% -----------------------------------------------------------------------
+\begin{document}
+\toggletrue{question}   % <-- remplacé par togglefalse pour le corrigé
+%%THEMECOLOR%%
+\begin{questions}
+%%CONTENT%%
+\end{questions}
+\end{document}

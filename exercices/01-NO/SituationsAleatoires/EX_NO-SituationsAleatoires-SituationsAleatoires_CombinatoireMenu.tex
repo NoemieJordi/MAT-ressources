@@ -1,0 +1,145 @@
+% ---
+% titre: Menus
+% theme: NO
+% chapitre: Situations aléatoires
+% sous_chapitre: Explorer les situations aléatoires
+% niveau: [9e,10e,11e]
+% type: EX
+% tags: [c-probabilites,c-combinatoire,f-groupe, f-individuel,f-maison,f-station,p-entrainement,p-remediation]
+% difficulte: 1
+% source: latex
+% ---
+
+\header{Menus}
+
+Un restaurant propose des menus sur sa carte avec un choix de deux entrées, trois plats principaux et trois desserts. En option, on peut remplacer l'entrée par une boisson parmi un choix de quatre. Mais, dans ce cas, il n'y a plus que deux desserts à disposition.
+
+Combien de menus comprenant une entrée ou une boisson, un plat principal et un dessert peut-on composer ?
+
+\sol{\vfill
+\begin{tikzpicture}
+\draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,18);
+\end{tikzpicture}}{\color{black}\vspace{50pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm,nodes={fill=themeColor!45}},
+   level 2/.style={sibling distance=10mm,nodes={fill=themeColor!30}}]
+\node {E1}
+	child {node {P1}
+		child {node {D1}}
+		child {node {D2}}
+		child {node {D3}}
+		}
+	child {node {P2}
+		child {node {D1}}
+		child {node {D2}}
+		child {node {D3}}
+		}
+	child {node {P3}
+		child {node {D1}}
+		child {node {D2}}
+		child {node {D3}}
+		};
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm,nodes={fill=themeColor!45}},
+   level 2/.style={sibling distance=10mm,nodes={fill=themeColor!30}}]
+\node {E2}
+	child {node {P1}
+		child {node {D1}}
+		child {node {D2}}
+		child {node {D3}}
+		}
+	child {node {P2}
+		child {node {D1}}
+		child {node {D2}}
+		child {node {D3}}
+		}
+	child {node {P3}
+		child {node {D1}}
+		child {node {D2}}
+		child {node {D3}}
+		};
+\end{tikzpicture}
+
+
+\vspace{30pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm,nodes={fill=themeColor!45}},
+   level 2/.style={sibling distance=10mm,nodes={fill=themeColor!30}}]
+\node {B1}
+	child {node {P1}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P2}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P3}
+		child {node {D1}}
+		child {node {D2}}
+		};
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm,nodes={fill=themeColor!45}},
+   level 2/.style={sibling distance=10mm,nodes={fill=themeColor!30}}]
+\node {B2}
+	child {node {P1}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P2}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P3}
+		child {node {D1}}
+		child {node {D2}}
+		};
+\end{tikzpicture}
+
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm,nodes={fill=themeColor!45}},
+   level 2/.style={sibling distance=10mm,nodes={fill=themeColor!30}}]
+\node {B3}
+	child {node {P1}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P2}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P3}
+		child {node {D1}}
+		child {node {D2}}
+		};
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=30mm,nodes={fill=themeColor!45}},
+   level 2/.style={sibling distance=10mm,nodes={fill=themeColor!30}}]
+\node {B4}
+	child {node {P1}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P2}
+		child {node {D1}}
+		child {node {D2}}
+		}
+	child {node {P3}
+		child {node {D1}}
+		child {node {D2}}
+		};
+\end{tikzpicture}
+
+\vspace{40pt}
+
+nb de possibilités: $2\cdot9 + 4 \cdot 6 = 18 + 24 = \textcolor{themeColor}{42}$ \textcolor{themeColor}{possibilités}
+
+\vfill
+{\footnotesize\raggedleft \color{gray}ECR 2015 10VP (2ème partie)\par}
+}

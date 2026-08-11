@@ -1,0 +1,72 @@
+% ---
+% titre: Pile ou face
+% theme: NO
+% chapitre: Situations aléatoires
+% sous_chapitre: Explorer les situations aléatoires
+% niveau: [9e,10e,11e]
+% type: EX
+% tags: [c-probabilites,c-combinatoire,f-groupe, f-individuel,f-maison,f-station,p-entrainement,p-remediation]
+% difficulte: 3
+% source: latex
+% ---
+
+\header{Pile ou face}
+
+\vspace{10pt}
+Quatre pièces de monnaie sont posées sur la table de Julien : une pièce de 20\,centimes, une de 50\,centimes, une pièce de 1\,franc et une de 2\,francs.
+
+En associant à chaque pièce sa face visible, Julien observe que les quatre pièces forment la configuration suivante: (20\,centimes, pile); (50\,centimes, face); (1\,franc, face); (2\,francs, pile).
+
+Julien, avec ces quatre pièces, invente un jeu de \og pile ou face \fg{}: il lance les 4 pièces ensemble, note la configuration obtenue et recommence jusqu'à ce qu'il obtienne deux fois la même configuration.
+
+Combien de fois Julien doit-il lancer les quatre pièces ensemble pour être certain d'obtenir deux fois la même configuration? Justifie ta réponse.
+
+\sol{\vfill
+\begin{tikzpicture}
+\draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,16);
+\end{tikzpicture}}{\vspace{50pt}
+
+Julien doit lancer 17 fois pour être certain d'avoir obtenu deux configurations identiques.
+
+\color{black}
+\vspace{20pt}
+1. Chercher combien on peut faire de configurations différentes: 
+
+2 faces possibles par pièce: $2\cdot2\cdot2\cdot2= \textcolor{themeColor}{16}$ \textcolor{themeColor}{possibilités}
+
+\vspace{20pt}
+\begin{tikzpicture}[level distance=10mm,
+   level 1/.style={sibling distance=40mm},
+   level 2/.style={sibling distance=20mm},
+   level 3/.style={sibling distance=10mm}]
+\node[fill=themeNO!30] {P}
+	child {node[fill=themeNO!30] {P}
+		child {node[fill=themeNO!30] {P}
+			child {node[fill=themeNO!30] {P}}
+			child {node[fill=themeNO!30] {F}}
+			}
+		child {node[fill=themeNO!30] {F}
+			child {node[fill=themeNO!30] {P}}
+			child {node[fill=themeNO!30] {F}}
+			}
+		}
+	child {node[fill=themeNO!30] {F}
+		child {node[fill=themeNO!30] {P}
+			child {node[fill=themeNO!30] {P}}
+			child {node[fill=themeNO!30] {F}}
+			}
+		child {node[fill=themeNO!30] {F}
+			child {node[fill=themeNO!30] {P}}
+			child {node[fill=themeNO!30] {F}}
+			}
+		};
+\end{tikzpicture}
+
+\vspace{20pt}
+2. Comprendre qu'une configuration supplémentaire sera certainement une des 16 précédentes.
+
+3. Conclure par le principe des tiroirs qu'avec 17 lancers, Julien peut être certain d’avoir obtenu deux configurations identiques.
+
+\vfill
+{\footnotesize\raggedleft \color{gray}Banque de problèmes du RMT: rallyes 14.F.16; catégorie: 7,8,9,10; domaines: LR; famille: CO, CO/DEN; code: sd231-fr\par}
+}

@@ -123,7 +123,7 @@
 \usepackage{xifthen}
 \usepackage{qrcode}
 \usepackage[pdffitwindow=true, hidelinks]{hyperref}
-\newcommand{\bl}[1]{\underline{\hspace{#1}}}
+\newcommand{\bl}[1][]{\ifthenelse{\equal{#1}{}}{\hrulefill}{\underline{\hspace{#1}}}}
 
 % -----------------------------------------------------------------------
 % Compteurs

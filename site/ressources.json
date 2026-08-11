@@ -1,5 +1,35 @@
 [
   {
+    "titre": "Calcul flash: 9VP - cycle 1 (semaines 1-6)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-priorite-operations",
+      "c-puissance",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul"
+  },
+  {
     "titre": "Carrés de multiplication (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -22,6 +52,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CarreMultiplication.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CarreMultiplication.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CarreMultiplication"
@@ -36,7 +67,7 @@
     ],
     "type": "TH",
     "tags": [
-      "o-carteMentale",
+      "o-carte-mentale",
       "c-livrets"
     ],
     "difficulte": 1,
@@ -45,6 +76,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_CartesMentalesLivrets.pdf",
     "corrige_pdf": null,
     "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_CartesMentalesLivrets"
@@ -77,6 +109,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15",
+    "template": null,
     "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15.pdf",
     "corrige_pdf": null,
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15"
@@ -103,6 +136,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore",
+    "template": null,
     "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore.pdf",
     "corrige_pdf": null,
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_TablePythagore"
@@ -129,9 +163,34 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_LabyrintheLivrets.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_LabyrintheLivrets_corrige.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_LabyrintheLivrets"
+  },
+  {
+    "titre": "Livre - Les nombres décimaux positifs",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-operations",
+      "c-puissance",
+      "c-racine",
+      "c-priorite-operations"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_NO-NbNaturelsDecimaux-CalculReflechiMental_Livre8eme.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_NO-NbNaturelsDecimaux-CalculReflechiMental_Livre8eme"
   },
   {
     "titre": "Livrets (2-16)",
@@ -157,6 +216,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_Livrets2-16.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_Livrets2-16.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_Livrets2-16"
@@ -177,6 +237,7 @@
     "lien": null,
     "categorie": "inspiration",
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MultiVitesseAleatoire.xlsx",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MultiVitesseAleatoire"
@@ -197,6 +258,7 @@
     "lien": null,
     "categorie": "inspiration",
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MathMazeMultiplicationDivisionFacts_MathIsEasy.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbNaturelsDecimaux-CalculReflechiMental_MathMazeMultiplicationDivisionFacts_MathIsEasy"
@@ -226,6 +288,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_SeriesMultiplicationsDivisions.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_SeriesMultiplicationsDivisions.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_SeriesMultiplicationsDivisions"
@@ -255,6 +318,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication",
+    "template": null,
     "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication.pdf",
     "corrige_pdf": null,
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication"
@@ -282,6 +346,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_ExercicesRevisions.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_ExercicesRevisions.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_ExercicesRevisions"
@@ -310,6 +375,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Labyrinthes.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Labyrinthes.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Labyrinthes"
@@ -338,6 +404,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Mandala.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Mandala.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_Mandala"
@@ -366,6 +433,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite"
@@ -394,6 +462,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations"
@@ -409,16 +478,20 @@
     "type": "JEU",
     "tags": [
       "c-priorite-operations",
-      "f-groupe"
+      "f-groupe",
+      "f-commun",
+      "f-station",
+      "p-entrainement"
     ],
-    "difficulte": 2,
+    "difficulte": 1,
     "corrige": true,
-    "source": "latex",
+    "source": "pdf",
     "lien": null,
     "categorie": null,
-    "source_originale": null,
+    "source_originale": "00-SourcesLaTeX/01-NO/JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste",
+    "template": null,
     "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste.pdf",
-    "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste.pdf",
+    "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste_corrige.pdf",
     "fichier": "JEU_NO-NbNaturelsDecimaux-PrioriteOperations_JeuDePiste"
   },
   {
@@ -443,6 +516,7 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_Labyrinthes.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_Labyrinthes_corrige.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_Labyrinthes"
@@ -463,9 +537,36 @@
     "lien": null,
     "categorie": "inspiration",
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/RES_NO-NbNaturelsDecimaux-PrioriteOperations_MathGamesICanOrderOfOperation_OneStopTeacherSchop.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbNaturelsDecimaux-PrioriteOperations_MathGamesICanOrderOfOperation_OneStopTeacherSchop"
+  },
+  {
+    "titre": "Priorité des opération",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-priorite-operations",
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202608062130.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202608062130.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202608062130"
   },
   {
     "titre": "Whodunnit? - priorité des opérations",
@@ -492,8 +593,411 @@
     "lien": null,
     "categorie": null,
     "source_originale": null,
+    "template": null,
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_WhoDunnitCriteresPrioriteOperation.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_WhoDunnitCriteresPrioriteOperation.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_WhoDunnitCriteresPrioriteOperation"
+  },
+  {
+    "titre": "Livre - Les nombres décimaux relatifs",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-nombres-relatifs",
+      "c-droite-numerique",
+      "c-valeur-absolue",
+      "c-operations",
+      "c-puissance"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_NO-NbRelatifs-ReprsenterComparerEncadrer_Livre8eme.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_NO-NbRelatifs-ReprsenterComparerEncadrer_Livre8eme"
+  },
+  {
+    "titre": "Priorité des puissances",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-operations",
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-AdditionSoustraction_202608080744.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-AdditionSoustraction_202608080744.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202608080744"
+  },
+  {
+    "titre": "Priorité des puissances",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Puissances et racines",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-PuissancesRacines_202608062041.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-PuissancesRacines_202608062041.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-PuissancesRacines_202608062041"
+  },
+  {
+    "titre": "Livre - Les fraction / les nombres rationnels",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "c-ppmc",
+      "c-fractions",
+      "c-nombres-relatifs",
+      "c-operations",
+      "c-puissance"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_NO-NbRationnels-ReprsenterComparerEncadrer_Livre8eme.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_NO-NbRationnels-ReprsenterComparerEncadrer_Livre8eme"
+  },
+  {
+    "titre": "Opérations avec des fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "c-fractions",
+      "c-operations",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-AdditionSoustraction_202608072136.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-AdditionSoustraction_202608072136.pdf",
+    "fichier": "EVAL_NO-NbRationnels-AdditionSoustraction_202608072136"
+  },
+  {
+    "titre": "Révisions d'examen",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-soustraction",
+      "c-multiplication",
+      "c-fractions",
+      "c-operations",
+      "c-probleme",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-Probleme_202608080758.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-Probleme_202608080758.pdf",
+    "fichier": "EVAL_NO-NbRationnels-Probleme_202608080758"
+  },
+  {
+    "titre": "Viticulture",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-soustraction",
+      "c-multiplication",
+      "c-fractions",
+      "c-operations",
+      "c-probleme",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-Probleme_202608080812.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-Probleme_202608080812.pdf",
+    "fichier": "EVAL_NO-NbRationnels-Probleme_202608080812"
+  },
+  {
+    "titre": "Bipalindromes",
+    "theme": "NO",
+    "chapitre": "Situations aléatoires",
+    "sous_chapitre": "Explorer les situations aléatoires",
+    "niveau": [
+      "9e",
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-probabilites",
+      "c-combinatoire",
+      "f-groupe",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-SituationsAleatoires-SituationsAleatoires_Bipalindromes.pdf",
+    "corrige_pdf": "corr/EX_NO-SituationsAleatoires-SituationsAleatoires_Bipalindromes.pdf",
+    "fichier": "EX_NO-SituationsAleatoires-SituationsAleatoires_Bipalindromes"
+  },
+  {
+    "titre": "Couleurs",
+    "theme": "NO",
+    "chapitre": "Situations aléatoires",
+    "sous_chapitre": "Explorer les situations aléatoires",
+    "niveau": [
+      "9e",
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-probabilites",
+      "c-combinatoire",
+      "f-groupe",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-SituationsAleatoires-SituationsAleatoires_CombinatoireCouleurs.pdf",
+    "corrige_pdf": "corr/EX_NO-SituationsAleatoires-SituationsAleatoires_CombinatoireCouleurs.pdf",
+    "fichier": "EX_NO-SituationsAleatoires-SituationsAleatoires_CombinatoireCouleurs"
+  },
+  {
+    "titre": "Menus",
+    "theme": "NO",
+    "chapitre": "Situations aléatoires",
+    "sous_chapitre": "Explorer les situations aléatoires",
+    "niveau": [
+      "9e",
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-probabilites",
+      "c-combinatoire",
+      "f-groupe",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-SituationsAleatoires-SituationsAleatoires_CombinatoireMenu.pdf",
+    "corrige_pdf": "corr/EX_NO-SituationsAleatoires-SituationsAleatoires_CombinatoireMenu.pdf",
+    "fichier": "EX_NO-SituationsAleatoires-SituationsAleatoires_CombinatoireMenu"
+  },
+  {
+    "titre": "Pile ou face",
+    "theme": "NO",
+    "chapitre": "Situations aléatoires",
+    "sous_chapitre": "Explorer les situations aléatoires",
+    "niveau": [
+      "9e",
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-probabilites",
+      "c-combinatoire",
+      "f-groupe",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-SituationsAleatoires-SituationsAleatoires_PileFace.pdf",
+    "corrige_pdf": "corr/EX_NO-SituationsAleatoires-SituationsAleatoires_PileFace.pdf",
+    "fichier": "EX_NO-SituationsAleatoires-SituationsAleatoires_PileFace"
+  },
+  {
+    "titre": "Labyrinthe - probabilité",
+    "theme": "NO",
+    "chapitre": "Situations aléatoires",
+    "sous_chapitre": "Notion de probabilité",
+    "niveau": [
+      "9e",
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-probabilites",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-SituationsAleatoires-Probabilite_Labyrinthe.pdf",
+    "corrige_pdf": "corr/EX_NO-SituationsAleatoires-Probabilite_Labyrinthe_corrige.pdf",
+    "fichier": "EX_NO-SituationsAleatoires-Probabilite_Labyrinthe"
+  },
+  {
+    "titre": "11G1 - TS1 - 20201007",
+    "theme": "NO",
+    "chapitre": "Nombres rééels",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "c-fractions",
+      "c-nombres-relatifs",
+      "c-operations",
+      "c-priorite-operations",
+      "p-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_11G1_TS1_20201007.pdf",
+    "corrige_pdf": "corr/EVAL_11G1_TS1_20201007_corrige.pdf",
+    "fichier": "EVAL_11G1_TS1_20201007"
+  },
+  {
+    "titre": "Triangles semblables",
+    "theme": "ES",
+    "chapitre": "Figures géométriques planes",
+    "sous_chapitre": "Triangles semblables",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-triangles-semblables",
+      "c-thales",
+      "c-calcul-angles",
+      "c-perimetre",
+      "p-question-TS"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719.pdf",
+    "corrige_pdf": "corr/EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719.pdf",
+    "fichier": "EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719"
   }
 ]

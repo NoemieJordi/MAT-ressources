@@ -26,9 +26,6 @@ JSON_OUT  = SITE / "ressources.json"
 PDF_DIR.mkdir(parents=True, exist_ok=True)
 CORR_DIR.mkdir(parents=True, exist_ok=True)
 
-TEX_DIR = SITE / "tex"
-TEX_DIR.mkdir(parents=True, exist_ok=True)
-
 # -----------------------------------------------------------------------
 # Couleurs des thèmes
 # -----------------------------------------------------------------------
@@ -49,9 +46,21 @@ NEVER_CORRIGE  = {"PLANIF", "RES"}
 MANUAL_EXTENSIONS = [".pdf", ".docx", ".xlsx"]
 
 # -----------------------------------------------------------------------
-# Template
+# Templates
 # -----------------------------------------------------------------------
-TEMPLATE_SRC = TEMPLATE.read_text(encoding="utf-8")
+TEMPLATES = {
+    "site": ROOT / "template_site.tex",
+    "eval": ROOT / "template_eval.tex",
+}
+
+def get_template_src(meta: dict) -> str:
+    """Choisit le template selon le type ou le champ 'template' des métadonnées."""
+    tpl_name = meta.get("template") or ("eval" if meta["type"] == "EVAL" else "site")
+    tpl_path = TEMPLATES.get(tpl_name, TEMPLATES["site"])
+    if not tpl_path.exists():
+        print(f"  ⚠️  Template '{tpl_name}' introuvable, utilisation du template par défaut")
+        tpl_path = TEMPLATES["site"]
+    return tpl_path.read_text(encoding="utf-8")
 
 # -----------------------------------------------------------------------
 # Métadonnées
@@ -71,6 +80,7 @@ def extract_meta(tex_path: Path) -> dict:
         "lien":             None,
         "categorie":        None,
         "source_originale": None,
+        "template":         None,
     }
     src  = tex_path.read_text(encoding="utf-8")
     bloc = re.search(r'%\s*---\s*\n(.*?)%\s*---', src, re.DOTALL)
@@ -91,6 +101,7 @@ def extract_meta(tex_path: Path) -> dict:
         elif key == "lien":             meta["lien"]             = val
         elif key == "categorie":        meta["categorie"]        = val
         elif key == "source_originale": meta["source_originale"] = val
+        elif key == "template":         meta["template"]         = val.lower()
         elif key == "difficulte":
             try: meta["difficulte"] = int(val)
             except ValueError: pass
@@ -125,9 +136,12 @@ def compile_latex(tex_src: str, out_dir: Path, stem: str) -> bool:
         if p.exists(): p.unlink()
     return result.returncode == 0
 
-def make_src(content: str, theme: str, toggle: str) -> str:
-    color_cmd = f"\\colorlet{{themeColor}}{{{THEME_COLORS.get(theme, 'themeAU')}}}"
-    return (TEMPLATE_SRC
+def make_src(content: str, theme: str, toggle: str, template_src: str) -> str:
+    color_cmd  = f"\\colorlet{{themeColor}}{{{THEME_COLORS.get(theme, 'themeAU')}}}\n"
+    color_cmd += f"\\colorlet{{SolutionColor}}{{{THEME_COLORS.get(theme, 'themeAU')}!20}}"
+    exam_opts = "addpoints" if toggle == "\\toggletrue{question}" else "addpoints,answers"
+    return (template_src
+        .replace("%%EXAMOPTIONS%%", exam_opts)
         .replace("\\toggletrue{question}   % <-- remplacé par togglefalse pour le corrigé", toggle)
         .replace("%%THEMECOLOR%%", color_cmd)
         .replace("%%CONTENT%%", content))
@@ -159,14 +173,15 @@ def build_resource(tex_path: Path) -> dict | None:
         return meta
 
     # Compilation LaTeX
-    src_eleve = make_src(content, meta["theme"], "\\toggletrue{question}")
+    template_src = get_template_src(meta)
+    src_eleve = make_src(content, meta["theme"], "\\toggletrue{question}", template_src)
     ok_eleve  = compile_latex(src_eleve, PDF_DIR, stem)
     if not ok_eleve:
         print(f"  ⚠️  Échec élève : {stem}")
 
     ok_corr = False
     if meta["corrige"]:
-        src_corr = make_src(content, meta["theme"], "\\togglefalse{question}")
+        src_corr = make_src(content, meta["theme"], "\\togglefalse{question}", template_src)
         ok_corr  = compile_latex(src_corr, CORR_DIR, stem)
         if not ok_corr:
             print(f"  ⚠️  Échec corrigé : {stem}")
@@ -174,11 +189,6 @@ def build_resource(tex_path: Path) -> dict | None:
     meta["pdf"]         = f"pdf/{stem}.pdf"  if ok_eleve else None
     meta["corrige_pdf"] = f"corr/{stem}.pdf" if ok_corr  else None
     meta["fichier"]     = stem
-
-    # Copie le .tex dans site/tex/ pour téléchargement
-    import shutil
-    shutil.copy(tex_path, TEX_DIR / f"{stem}.tex")
-
     return meta
 
 def check_meta(meta: dict, tex_path: Path):
@@ -242,12 +252,6 @@ def clean_orphans(valid_stems: set[str]):
                 if corr.exists(): corr.unlink()
             print(f"  🗑  Orphelin supprimé : {f.name}")
             removed += 1
-    # Nettoyage des .tex orphelins dans site/tex/
-    for f in list(TEX_DIR.glob("*.tex")):
-        if f.stem not in valid_stems:
-            f.unlink()
-            print(f"  🗑  .tex orphelin supprimé : {f.name}")
-            removed += 1
     if removed == 0:
         print("  ✓  Aucun orphelin trouvé")
 
@@ -300,6 +304,17 @@ def main():
     ))
     JSON_OUT.write_text(json.dumps(ressources, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n✅ {len(ressources)} ressource(s) → {JSON_OUT}")
+
+    # Ouvre les PDFs recompilés si --preview
+    if "--preview" in sys.argv:
+        import platform
+        if platform.system() == "Darwin":
+            for tex_path in tex_files:
+                if meta := extract_meta(tex_path):
+                    if meta["source"] != "pdf":
+                        pdf = PDF_DIR / f"{tex_path.stem}.pdf"
+                        if pdf.exists():
+                            subprocess.run(["open", str(pdf)])
 
 if __name__ == "__main__":
     main()

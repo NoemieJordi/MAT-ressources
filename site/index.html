@@ -596,7 +596,7 @@ function render() {
       : `<a class="btn btn-eleve" href="${r.pdf}" download style="text-decoration:none">⬇ ${TYPE_LABELS[r.type] || "Document"}</a>`)
       : "";
     const btnC = (r.corrige_pdf)
-      ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escJs(r.titre)} — corrigé','${escJs(r.fichier)}')">Corrigé</button>`
+      ? `<button class="btn btn-corrige" onclick="openPDF('${r.corrige_pdf}','${escJs(r.titre)} — corrigé','${r.source === "latex" ? escJs(r.fichier) : ""}')">Corrigé</button>`
       : "";
     const btnL = (r.lien && !r.pdf)
       ? `<a class="btn btn-corrige" href="${escHtml(r.lien)}" target="_blank">↗ Ouvrir</a>`
