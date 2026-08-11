@@ -52,11 +52,11 @@ jobs:
       - name: Compiler les exercices
         run: |
           if [ "${{ github.event.inputs.force_full }}" = "true" ]; then
-            echo "Mode complet forcé"
+            echo "Mode complet forcé manuellement"
             python3 scripts/build.py --full
           else
-            echo "Mode automatique (fichiers modifiés uniquement)"
-            python3 scripts/build.py
+            echo "Mode complet (GitHub Actions recompile toujours tout)"
+            python3 scripts/build.py --full
           fi
 
       - name: Setup Pages
