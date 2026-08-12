@@ -1,0 +1,156 @@
+% ---
+% titre: 9P - Nombres naturels et décimaux
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre:
+% niveau: [9e]
+% type: PLANIF
+% tags: []
+% source: latex
+% ---
+
+\header{Nombres naturels et décimaux - Objectifs}
+
+\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{3cm}|X|}
+\hline
+\cellcolor{themeNO!30} Livre & \cellcolor{themeNO!30} Fiches & \cellcolor{themeNO!30} \hfill Aide-mémoire\hfill\null\\
+\hline
+&&Généralité: pp. 24-26\\
+pp. 23-43&pp. 1-38&Nombres naturels: pp. 26-30\\
+&&Nombres décimaux: pp. 35-41\\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\def\arraystretch{1.2}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}Compétences visées & \cellcolor{themeNO!30}Utilité dans la vie de tous les jours \\
+\hline
+Mobiliser les savoirs, savoir-faire et savoir être pour résoudre des problèmes en lien avec les nombres naturels et décimaux.
+&\vspace{-1em}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt, partopsep=0pt, parsep=0pt, label=$\triangleright$]
+    \item Évaluation de la température
+    \item Se repérer entre les étages d'un bâtiment
+    \item Évaluation de prix, de dépenses, du salaire
+\end{itemize} \\
+\hline
+
+Développer des stratégies de recherche afin de résoudre des problèmes.
+&\vspace{-1em}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt, label=$\triangleright$]
+    \item Décomposition d'une tâche en sous-tâches pour réaliser un projet
+    \item Choix stratégique dans l'ordre des tâches à effectuer
+\end{itemize} \\
+\hline
+
+Présenter les solutions afin que les autres puissent s'approprier ma démarche (Explications préalables, grandeur cherchée, unités, calculs, réponse).
+&\vspace{-1em}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt, label=$\triangleright$]
+    \item Collaboration avec d'autres personnes
+    \item Explicitation de sa compréhension d'un sujet
+    \item Argumentation
+\end{itemize} \\
+\hline
+
+Développer des stratégies d'apprentissages afin de s'approprier les savoirs et savoir-faire en jeu et pouvoir les mobiliser en situation.
+&\vspace{-1em}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt, label=$\triangleright$]
+    \item Apprentissage d'une nouvelle activité artistique, sportive ou autre
+    \item Adaptation à un nouvel environnement (monde professionnel, voyage, \ldots)
+\end{itemize} \\
+\hline
+
+Vérifier sa solution ou au moins sa plausibilité.
+&\vspace{-1em}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt, label=$\triangleright$]
+    \item Auto-critique
+    \item Évaluation de la qualité de son travail
+\end{itemize} \\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+% Macro pour un cercle de couleur plein
+\newcommand{\evalcercle}[1]{%
+    \begin{tikzpicture}
+        \filldraw[fill=#1, draw=black, line width=0.4pt] (0,0) circle (0.18cm);
+    \end{tikzpicture}%
+}
+
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{1.1cm}|>{\centering\arraybackslash}p{1.1cm}|>{\centering\arraybackslash}p{1.1cm}|}
+\hline
+\rowcolor{red!80!black}
+\multicolumn{2}{|l|}{\textcolor{white}{\textbf{Objectifs}}} &
+\multicolumn{3}{c|}{\textcolor{white}{\textbf{Auto-évaluation}}} \\
+\rowcolor{red!80!black}
+\multicolumn{2}{|l|}{} &
+\evalcercle{red!70!black} &
+\evalcercle{orange!85!yellow} &
+\evalcercle{green!60!black} \\
+\hline
+ 
+\multirow{6}{=}{Reconnaître et utiliser certaines propriétés des nombres naturels~:
+\begin{itemize}
+    \item \underline{critères} de divisibilité, multiples et diviseurs communs
+    \item ppmc, pgdc, nombres premiers, produit de facteurs.
+\end{itemize}}
+& 1. Maîtriser les livrets jusqu'à 12. & & & \\
+\cline{2-5}
+& 2. Déterminer si un nombre est un nombre premier. & & & \\
+\cline{2-5}
+& 3. Connaître les nombres premiers jusqu'à 23. & & & \\
+\cline{2-5}
+& 4. Déterminer si un nombre est divisible par 2, 3, 4, 5, 6, 9, 10, 25, 50 et 100 à l'aide des critères de divisibilité. & & & \\
+\cline{2-5}
+& 5. Utiliser les critères de divisibilité pour décomposer un nombre en produit de facteurs premiers et pour rechercher un pgdc et ppmc. & & & \\
+\cline{2-5}
+& 6. Trouver le ppmc de plusieurs nombres~:
+\begin{itemize}
+    \item En établissant la liste de leurs multiples et en identifiant le premier multiple commun non nul à ces nombres.
+    \item En utilisant la décomposition en produit de facteurs premiers.
+\end{itemize} & & & \\
+\hline
+ 
+& 7. Trouver le pgdc de plusieurs nombres~:
+\begin{itemize}
+    \item En établissant la liste de leurs diviseurs en identifiant le plus grand diviseur commun non nul de ces nombres.
+    \item En utilisant la décomposition en produit de facteurs premiers.
+\end{itemize} & & & \\
+\hline
+ 
+\multirow{2}{=}{Connaître et utiliser différentes écritures d'un même nombre (y compris sous forme de puissances).}
+& 8. Connaître et savoir utiliser le vocabulaire en lien avec les nombres et les opérations~: chiffre, nombre, nombre naturel, nombre décimal, ordre croissant, décroissant, multiple, diviseur, ppmc, pgdc, nombre premier, terme, facteur, diviseur, dividende, somme, différence, produit, quotient. & & & \\
+\cline{2-5}
+& 9. Écrire et lire des nombres écrits sous forme de puissance (carré ou cube). & & & \\
+\hline
+ 
+\multirow{2}{=}{Connaître et utiliser les priorités des opérations (y compris parenthèses).}
+& 10. Effectuer une chaîne opératoire avec ou sans parenthèses composé d'un mélange d'opérations en respectant les priorités des opérations. & & & \\
+\cline{2-5}
+& 11. Savoir à quoi servent les parenthèses, ce qu'elles signifient et les utiliser quand elles sont indispensables ou lorsqu'elles aident à mieux identifier les différentes parties d'un calcul. & & & \\
+\hline
+ 
+Connaître et utiliser les propriétés des opérations pour organiser et effectuer des calculs de manière efficace et pour donner des estimations~: addition, soustraction, multiplication, division.
+& 12. Mobiliser les propriétés des opérations (commutativité, associativité, distributivité) pour mettre en place des procédures permettant~:
+\begin{itemize}
+    \item \underline{d'effectuer} mentalement un calcul du type~: $27+48$ \textbar\ $57-38$ \textbar\ $100 \cdot 72$ \textbar\ $8{,}4 : 4$ \textbar\ $15 \cdot 40$ \textbar\ $2450 : 100$
+    \item \underline{d'organiser} un calcul pour en trouver le résultat plus facilement sans calculatrice~: $53+21+37+79$ \textbar\ $47 \cdot 8 - 7 \cdot 8$ \textbar\ $3 \cdot 348 + 7 \cdot 348$ \textbar\ $4 \cdot 3{,}2 \cdot 25$
+\end{itemize} & & & \\
+\hline
+ 
+\multirow{2}{=}{\raggedright Connaître et utiliser diverses fonctions de la calculatrice~: quatre opérations de base, parenthèses, mise en mémoire et récupération de valeurs, puissance, racine, \dots\par\smallskip Prendre en compte l'ordre dans lequel la calculatrice effectue les opérations.}
+& 13. Choisir les calculs que l'on doit impérativement faire à l'aide de la calculatrice et effectuer mentalement les autres. & & & \\
+\cline{2-5}
+& 14. Donner le résultat le plus précis possible d'un calcul en utilisant à bon escient les diverses fonctions de la calculatrice. & & & \rule{0pt}{1.7cm}\\
+\hline
+ 
+\end{tabularx}
+
+\newpage
+\header{Nombres naturels et décimaux - Feuille de route}
+
+\newpage
+\header{Nombres naturels et décimaux - Théorie}
