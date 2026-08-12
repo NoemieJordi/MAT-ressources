@@ -23,7 +23,7 @@ pp. 23-43&pp. 1-38&Nombres naturels: pp. 26-30\\
 \end{tabularx}
 \def\arraystretch{1}
 
-\def\arraystretch{1.2}
+\def\arraystretch{1.6}
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
 \hline
 \cellcolor{themeNO!30}Compétences visées & \cellcolor{themeNO!30}Utilité dans la vie de tous les jours \\
@@ -73,86 +73,182 @@ Vérifier sa solution ou au moins sa plausibilité.
 \end{tabularx}
 \def\arraystretch{1}
 
-
+\newpage
+\null
+\vfill
 %---------------
-% Macro pour un cercle de couleur plein
-\newcommand{\evalcercle}[1]{%
-    \begin{tikzpicture}
-        \filldraw[fill=#1, draw=black, line width=0.4pt] (0,0) circle (0.18cm);
-    \end{tikzpicture}%
-}
-
-\renewcommand{\arraystretch}{1.1}
-\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{1.1cm}|>{\centering\arraybackslash}p{1.1cm}|>{\centering\arraybackslash}p{1.1cm}|}
+\def\arraystretch{1.6}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}p{0.8cm}|}
 \hline
-\rowcolor{red!80!black}
-\multicolumn{2}{|l|}{\textcolor{white}{\textbf{Objectifs}}} &
-\multicolumn{3}{c|}{\textcolor{white}{\textbf{Auto-évaluation}}} \\
-\rowcolor{red!80!black}
-\multicolumn{2}{|l|}{} &
-\Smiley &
-\evalcercle{orange!85!yellow} &
-\evalcercle{green!60!black} \\
-\hline
+\rowcolor{themeNO!30}\multicolumn{2}{|l|}{Objectifs} &\multicolumn{3}{c|}{Auto-évaluation} \\
+\rowcolor{themeNO!30}\multicolumn{2}{|l|}{} & \Sadey[1.5]& \Neutrey[1.5] & \Smiley[1.5]  \\\hline
  
-\multirow{6}{=}{Reconnaître et utiliser certaines propriétés des nombres naturels~:
+\multirow{6}{=}{Reconnaître et utiliser certaines propriétés des nombres naturels:
 \begin{itemize}
-    \item \underline{critères} de divisibilité, multiples et diviseurs communs
-    \item ppmc, pgdc, nombres premiers, produit de facteurs.
+    \item critères de divisibilité, multiples et diviseurs communs
+    \item ppmc, pgdc, nombres premiers, produit de facteurs
 \end{itemize}}
-& 1. Maîtriser les livrets jusqu'à 12. & & & \\
+& Maîtriser les livrets jusqu'à 12 & & & \\
 \cline{2-5}
-& 2. Déterminer si un nombre est un nombre premier. & & & \\
+& Déterminer si un nombre est premier & & & \\
 \cline{2-5}
-& 3. Connaître les nombres premiers jusqu'à 23. & & & \\
+& Connaître les nombres premiers jusqu'à 23 & & & \\
 \cline{2-5}
-& 4. Déterminer si un nombre est divisible par 2, 3, 4, 5, 6, 9, 10, 25, 50 et 100 à l'aide des critères de divisibilité. & & & \\
+& Déterminer si un nombre est divisible par 2, 3, 4, 5, 6, 9, 10, 25, 50 et 100 à l'aide des critères de divisibilité & & & \\
 \cline{2-5}
-& 5. Utiliser les critères de divisibilité pour décomposer un nombre en produit de facteurs premiers et pour rechercher un pgdc et ppmc. & & & \\
+& Décomposer un nombre en produit de facteurs premiers& & & \\
 \cline{2-5}
-& 6. Trouver le ppmc de plusieurs nombres~:
-\begin{itemize}
-    \item En établissant la liste de leurs multiples et en identifiant le premier multiple commun non nul à ces nombres.
-    \item En utilisant la décomposition en produit de facteurs premiers.
+& Trouver le ppmc de plusieurs nombres:
+\begin{itemize}[label=$\triangleright$]
+    \item en établissant la liste de leurs multiples
+    \item en utilisant la décomposition en produit de facteurs premiers
+\end{itemize} & & & \\
+\cline{2-5}
+ & Trouver le pgdc de plusieurs nombres:
+\begin{itemize}[label=$\triangleright$]
+    \item en établissant la liste de leurs diviseurs
+    \item en utilisant la décomposition en produit de facteurs premiers
 \end{itemize} & & & \\
 \hline
  
-& 7. Trouver le pgdc de plusieurs nombres~:
-\begin{itemize}
-    \item En établissant la liste de leurs diviseurs en identifiant le plus grand diviseur commun non nul de ces nombres.
-    \item En utilisant la décomposition en produit de facteurs premiers.
+\multirow{2}{=}{Connaître et utiliser différentes écritures d'un même nombre (y compris sous forme de puissances)}
+& Connaître et savoir utiliser le vocabulaire en lien avec les nombres et les opérations && & \\
+\cline{2-5}
+& Écrire et lire des nombres écrits sous forme de puissance (carré ou cube) & & & \\
+\hline
+ 
+\multirow{2}{=}{Connaître et utiliser les priorités des opérations (y compris parenthèses)}
+& Effectuer des calculs en respectant les priorités des opérations. & & & \\
+\cline{2-5}
+& Comprendre le rôle des parenthèses et les utiliser à bon escient dans un calcul& & & \\
+\hline
+ 
+Utiliser les propriétés des opérations (addition, soustraction, multiplication, division) pour calculer efficacement et estimer
+& Mobiliser les propriétés des opérations (commutativité, associativité, distributivité) pour:
+\begin{itemize}[label=$\triangleright$]
+    \item calculer mentalement, ex.~: $57-38$ \textbar\ $15 \cdot 40$
+    \item organiser un calcul pour le simplifier, ex.~: $47 \cdot 8 - 7 \cdot 8$ \textbar\ $4 \cdot 3{,}2 \cdot 25$
 \end{itemize} & & & \\
-\hline
- 
-\multirow{2}{=}{Connaître et utiliser différentes écritures d'un même nombre (y compris sous forme de puissances).}
-& 8. Connaître et savoir utiliser le vocabulaire en lien avec les nombres et les opérations~: chiffre, nombre, nombre naturel, nombre décimal, ordre croissant, décroissant, multiple, diviseur, ppmc, pgdc, nombre premier, terme, facteur, diviseur, dividende, somme, différence, produit, quotient. & & & \\
-\cline{2-5}
-& 9. Écrire et lire des nombres écrits sous forme de puissance (carré ou cube). & & & \\
-\hline
- 
-\multirow{2}{=}{Connaître et utiliser les priorités des opérations (y compris parenthèses).}
-& 10. Effectuer une chaîne opératoire avec ou sans parenthèses composé d'un mélange d'opérations en respectant les priorités des opérations. & & & \\
-\cline{2-5}
-& 11. Savoir à quoi servent les parenthèses, ce qu'elles signifient et les utiliser quand elles sont indispensables ou lorsqu'elles aident à mieux identifier les différentes parties d'un calcul. & & & \\
-\hline
- 
-Connaître et utiliser les propriétés des opérations pour organiser et effectuer des calculs de manière efficace et pour donner des estimations~: addition, soustraction, multiplication, division.
-& 12. Mobiliser les propriétés des opérations (commutativité, associativité, distributivité) pour mettre en place des procédures permettant~:
-\begin{itemize}
-    \item \underline{d'effectuer} mentalement un calcul du type~: $27+48$ \textbar\ $57-38$ \textbar\ $100 \cdot 72$ \textbar\ $8{,}4 : 4$ \textbar\ $15 \cdot 40$ \textbar\ $2450 : 100$
-    \item \underline{d'organiser} un calcul pour en trouver le résultat plus facilement sans calculatrice~: $53+21+37+79$ \textbar\ $47 \cdot 8 - 7 \cdot 8$ \textbar\ $3 \cdot 348 + 7 \cdot 348$ \textbar\ $4 \cdot 3{,}2 \cdot 25$
-\end{itemize} & & & \\
-\hline
- 
-\multirow{2}{=}{\raggedright Connaître et utiliser diverses fonctions de la calculatrice~: quatre opérations de base, parenthèses, mise en mémoire et récupération de valeurs, puissance, racine, \dots\par\smallskip Prendre en compte l'ordre dans lequel la calculatrice effectue les opérations.}
-& 13. Choisir les calculs que l'on doit impérativement faire à l'aide de la calculatrice et effectuer mentalement les autres. & & & \\
-\cline{2-5}
-& 14. Donner le résultat le plus précis possible d'un calcul en utilisant à bon escient les diverses fonctions de la calculatrice. & & & \rule{0pt}{1.7cm}\\
 \hline
  \end{tabularx}
+ \def\arraystretch{1}
+ 
 %------------------------------------------------
 \newpage
 \header{Nombres naturels et décimaux - Feuille de route}
+
+\newcommand{\rref}[1]{\textcolor{themeColor}{#1}}
+ 
+% Case à cocher
+\newcommand{\case}{\raisebox{-0.1ex}{\Large$\square$}}
+ 
+% Marqueurs obligatoire / facultatif (forme, pas seulement couleur)
+\newcommand{\oblig}{\tikz[baseline=-0.5ex]{\fill[themeColor] (0,0) circle (0.09);}}
+\newcommand{\faclt}{\tikz[baseline=-0.5ex]{\draw[gray!70,line width=0.6pt] (0,0) circle (0.09);}}
+ 
+ \vfill
+\begin{tikzpicture}[
+circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum size=11mm, inner sep=0pt},
+  box/.style={rectangle, draw=themeColor!35!white, rounded corners=2pt, fill=themeColor!8!white, inner sep=3mm, text width=14.7cm, align=left, anchor=north west}]
+ 
+% ---------- Étape 1 ----------
+\node[circ, anchor=north] (c1) at (0,0) {1};
+\node[box] (b1) at ($(c1.north)+(1.2cm,0)$) {%
+\textbf{\large Critères de divisibilité}\\[4pt]
+{\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
+\case & \rref{NO 3}       & Fiche, p.\,62 & \oblig \\
+\case & \rref{Problème 3} & VLM, p.\,4    & \oblig \\
+\case & \rref{NO 28}      & Livre, p.\,29 & \oblig \\
+\end{tabularx}}
+};
+ 
+% ---------- Étape 2 ----------
+\coordinate (y2) at ($(b1.south west)+(0,-3mm)$);
+\node[circ, anchor=north] (c2) at (c1 |- y2) {2};
+\node[box] (b2) at (y2) {%
+\textbf{\large Nombres premiers et décomposition}\\[4pt]
+{\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
+\case & \rref{NO 50}         & Livre, p.\,33 & \oblig \\
+\case & \rref{Problème 5 A.} & VLM, p.\,5    & \oblig \\
+\case & Problème 5 B.        & VLM, p.\,5    & \faclt \\
+\case & Problème 5 C.        & VLM, p.\,5    & \faclt \\
+\end{tabularx}}
+};
+ 
+% ---------- Étape 3 ----------
+\coordinate (y3) at ($(b2.south west)+(0,-3mm)$);
+\node[circ, anchor=north] (c3) at (c1 |- y3) {3};
+\node[box] (b3) at (y3) {%
+\textbf{\large PPMC et PGDC}\\[4pt]
+{\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
+\case & \rref{NO 52} & Livre, p.\,33 & \oblig \\
+\case & \rref{NO 53} & Livre, p.\,33 & \oblig \\
+\case & \rref{NO 54} & Livre, p.\,33 & \oblig \\
+\case & \rref{Problème 10 C., H., J.} & VLM, p.\,7-8 & \oblig \\
+\case & Problème 10 Autres           & VLM, p.\,7-8 & \faclt \\
+\end{tabularx}}
+};
+ 
+% ---------- Étape 4 ----------
+\coordinate (y4) at ($(b3.south west)+(0,-3mm)$);
+\node[circ, anchor=north] (c4) at (c1 |- y4) {4};
+\node[box] (b4) at (y4) {%
+\textbf{\large Puissances}\\[4pt]
+{\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
+\case & \rref{NO 62} & Fiche, p.\,21 & \oblig \\
+\case & \rref{NO 63} & Fiche, p.\,21 & \oblig \\
+\case & \rref{NO 64} & Fiche, p.\,22 & \oblig \\
+\end{tabularx}}
+};
+ 
+% ---------- Étape 5 ----------
+\coordinate (y5) at ($(b4.south west)+(0,-3mm)$);
+\node[circ, anchor=north] (c5) at (c1 |- y5) {5};
+\node[box] (b5) at (y5) {%
+\textbf{\large Priorité des opérations}\\[4pt]
+{\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
+\case & \rref{NO 78}  & Fiche, p.\,26 & \oblig \\
+\case & \rref{NO 82}  & Livre, p.\,40 & \oblig \\
+\case & \rref{NO 100} & Fiche, p.\,37 & \oblig \\
+\case & \rref{NO 89}  & Livre, p.\,43 & \oblig \\
+\case & NO 98 & Fiche, p.\,36    & \faclt \\
+\case & NO 99 & Fiche, p.\,37    & \faclt \\
+\case & NO 75 & Fiche, p.\,24    & \faclt \\
+\case & NO 76 & Fiche, p.\,24-25 & \faclt \\
+\end{tabularx}}
+};
+ 
+% ---------- Étape 6 ----------
+\coordinate (y6) at ($(b5.south west)+(0,-3mm)$);
+\node[circ, anchor=north] (c6) at (c1 |- y6) {6};
+\node[box] (b6) at (y6) {%
+\textbf{\large Exercices \guillemotleft\,Défi\,\guillemotright}\\[4pt]
+{\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
+\case & NO 43      & Livre, p.\,32 & \faclt \\
+\case & NO 73      & Livre, p.\,35 & \faclt \\
+\case & NO 60      & Livre, p.\,38 & \faclt \\
+\case & NO 15      & Fiche, p.\,4  & \faclt \\
+\case & NO 51      & Livre, p.\,33 & \faclt \\
+\case & Problème 2 & VLM, p.\,2    & \faclt \\
+\end{tabularx}}
+};
+ 
+% ---------- Ligne de parcours (derrière les cercles) ----------
+\begin{pgfonlayer}{background}
+\draw[themeColor, line width=2pt] (c1) -- (c2) -- (c3) -- (c4) -- (c5) -- (c6);
+\end{pgfonlayer}
+ 
+\end{tikzpicture}
+ 
+ \vfill
+\begin{center}
+\small \case~à faire \qquad \oblig~\rref{obligatoire} \qquad \faclt~facultatif (consolidation / pour aller plus loin)
+\end{center}
+\vspace{1em}
+
+%------------------------------------------------
+\newpage
+\header{Nombres naturels et décimaux - Lexique}
 
 %------------------------------------------------
 \newpage
