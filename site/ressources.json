@@ -60,6 +60,59 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul"
   },
   {
+    "titre": "Calcul flash: 9VP - cycle 1 (semaines 1-6) - théorie",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "TH",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-priorite-operations",
+      "c-puissance",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul.pdf",
+    "corrige_pdf": null,
+    "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul"
+  },
+  {
+    "titre": "Calcul flash: 9VP - cycles 1 à 6 - plannification",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "PLANIF",
+    "tags": [
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/PLANIF_NO-NbNaturelsDecimaux-9VP_FlashCalcul.pdf",
+    "corrige_pdf": null,
+    "fichier": "PLANIF_NO-NbNaturelsDecimaux-9VP_FlashCalcul"
+  },
+  {
     "titre": "Carrés de multiplication (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",

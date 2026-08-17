@@ -127,10 +127,16 @@ ORDRE_THEMES = {code: i for i, code in enumerate(THEMES_ORDER)}
 def compile_latex(tex_src: str, out_dir: Path, stem: str) -> bool:
     tmp = out_dir / f"{stem}.tex"
     tmp.write_text(tex_src, encoding="utf-8")
-    result = subprocess.run(
-        ["lualatex", "--interaction=nonstopmode", f"--output-directory={out_dir}", str(tmp)],
-        capture_output=True, text=True
-    )
+
+    cmd = ["lualatex", "--interaction=nonstopmode", f"--output-directory={out_dir}", str(tmp)]
+
+    # 1re passe : uniquement fonctionnelle (écrit le .aux pour la 2e passe,
+    # p. ex. hauteurs tcolorbox, références croisées), sortie non affichée
+    subprocess.run(cmd, capture_output=True, text=True)
+
+    # 2e passe : celle qui compte, relit le .aux généré ci-dessus
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
     for ext in [".aux", ".log", ".out", ".tex"]:
         p = out_dir / f"{stem}{ext}"
         if p.exists(): p.unlink()
