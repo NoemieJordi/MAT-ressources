@@ -1,0 +1,197 @@
+% ---
+% titre: Calcul flash: 10VG niv1 - cycles 1 à 6 - plannification
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: Calcul réfléchi et mental
+% niveau: [10e]
+% type: PLANIF
+% tags: [p-flash-calcul]
+% source: latex
+% ---
+
+% Carte semaine normale
+% #1 = numéro, #2 = thème, #3 = détail
+\newcommand{\weekcard}[3]{%
+\begin{tcolorbox}[sharp corners,boxrule=0.5pt,colframe=themeColor,colback=white,colbacktitle=themeColor!30,coltitle=black,fonttitle=\small\bfseries,title={Semaine #1},toptitle=2pt,bottomtitle=2pt,top=4pt, bottom=4pt, left=5pt, right=5pt,]
+{\small\textbf{\textcolor{themeColor}{#2}}}\\[2pt]
+{\footnotesize#3}
+\end{tcolorbox}%
+}
+ 
+% Carte flash-mix : fond coloré
+\newcommand{\weekcardmix}[3]{%
+\begin{tcolorbox}[sharp corners,boxrule=0.5pt,colframe=themeColor,colback=themeColor!12,colbacktitle=themeColor!70,coltitle=white,fonttitle=\small\bfseries,title={Semaine #1},toptitle=2pt,bottomtitle=2pt,top=4pt, bottom=4pt, left=5pt, right=5pt,]
+{\small\textbf{\textcolor{themeColor}{#2}}}\\[2pt]
+{\footnotesize#3}
+\end{tcolorbox}%
+}
+
+% Carte semaine sautée (TS ou stage)
+% #1 = numéro, #2 = motif
+\newcommand{\weekskip}[2]{%
+\begin{tcolorbox}[sharp corners, boxrule=0.5pt,colframe=black!20, colback=black!4,colbacktitle=black!15, coltitle=black!50,fonttitle=\small\bfseries,title={Semaine #1},toptitle=2pt, bottomtitle=2pt,top=4pt, bottom=4pt, left=5pt, right=5pt,]
+{\small\textcolor{black!40}{#2}}
+\end{tcolorbox}%
+}
+ 
+\header{Calcul mental: 10VG niv.1 - Cycles 1 à 6}
+ 
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 1 — Nombres relatifs (rappel et consolidation)
+% ════════════════════════════════════════════════════════════════════════════
+\vfill
+
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+ 
+\weekcard{1}{Tables \& calcul mental}{%
+Livrets $\times$ et $\div$\\
+Carrés : $1^2 \to 15^2$}
+%
+\weekcard{2}{Relatifs - droite graduée}{%
+Placer, comparer,\\
+Encadrer}
+%
+\weekcard{3}{Relatifs $+$ et $-$}{%
+$-100$ à $+100$}
+ %
+\weekskip{4}{TS1}
+ %
+\weekcard{5}{Relatifs $\times$ et $\div$}{%
+Règle des signes}
+ %
+\weekcardmix{6}{Flash-mix}{%
+Révisions du cycle 1}
+\end{tcbraster}
+
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 2 — Nombres entiers : divisibilité, PGCD/PPCM, puissances
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+ 
+\weekcard{7}{Priorités sans parenthèses}{%
+Avec relatifs et puissances}
+ %
+ \weekskip{8}{TS2}
+ %
+\weekcard{9}{Critères de divisibilité}{%
+2, 3, 4, 5, 6, 9, 10, 25, 50, 100}
+ %
+\weekcard{10}{Décomposition}{%
+Facteurs premiers}
+ %
+\weekcard{11}{PGCD \& PPCM}{%
+Lien avec la décomposition}
+ %
+\weekcard{12}{Puissances \& carrés}{%
+Base et exposant $\in \mathbb{N}$}
+ %
+\end{tcbraster}
+
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 3 — Racines carrées et cubiques
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+ 
+\weekskip{13}{Stage}
+ %
+\weekskip{14}{TS3}
+ %
+\weekcard{15}{Racines carrées exactes}{%
+$\sqrt{1} \to \sqrt{225}$}
+ %
+\weekcard{16}{Racines carrées - encadrement}{%
+Cas non parfaits, dans $\mathbb{R}_+$}
+ %
+\weekcard{17}{Racines cubiques exactes}{%
+$\sqrt[3]{1} \to \sqrt[3]{125}$}
+ %
+\weekcard{18}{Priorités avec parenthèses}{%
+Puissances, racines, relatifs}
+ 
+\end{tcbraster}
+ 
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 4 — Écritures des nombres et fractions
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+
+\weekcard{19}{Amplifier / simplifier}{%
+Fractions équivalentes}
+ %
+\weekcard{20}{Écritures équivalentes}{%
+Fraction $\leftrightarrow$ décimal $\leftrightarrow$ \%}
+ %
+\weekcard{21}{Fractions $+$ et $-$}{%
+Dénominateurs identiques ou différents}
+ %
+\weekskip{22}{TS4}
+ %
+\weekcard{23}{Fractions $\times$ et $\div$}{%
+Simplification directe}
+ %
+\weekskip{24}{Stage}
+ 
+\end{tcbraster}
+ 
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 5 — Nombres réels et notation scientifique
+% ════════════════════════════════════════════════════════════════════════════
+\newpage
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,] 
+
+\weekcard{25}{Nombres réels - droite graduée}{%
+Comparer, encadrer,\\
+Décimaux et fractions mêlés}
+ %
+\weekcard{26}{Notation scientifique}{%
+Décimale $\to a \cdot 10^n$, $n \in \mathbb{N}$}
+ %
+\weekcard{27}{Notation scientifique}{%
+$a \cdot 10^n \to$ décimale}
+ %
+\weekskip{28}{TS5}
+ %
+\weekcard{29}{Priorités - mix complet}{%
+Fractions, relatifs, puissances}
+ %
+\weekcardmix{30}{Flash-mix}{%
+Révisions des cycles 1-5}
+ 
+\end{tcbraster}
+
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 6 — Révision générale
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,] 
+
+\weekcard{31}{Relatifs \& priorités}{%
+Rappel}
+ %
+\weekcard{32}{Divisibilité \& PGCD/PPCM}{%
+Rappel}
+ %
+\weekcard{33}{Puissances \& racines}{%
+Carrées et cubiques}
+ %
+\weekskip{34}{TS6}
+ %
+\weekcard{35}{Fractions}{%
+Écritures et opérations}
+ %
+\weekcard{36}{Notation scientifique}{%
+Rappel}
+ %
+\weekcard{37}{Priorités}{%
+Mix complet}
+ %
+\weekcardmix{38}{Flash-mix}{%
+Révisions des cycles 1-6}
+ %
+\weekcardmix{39}{Flash-mix}{%
+Révisions des cycles 1-6}
+ 
+\end{tcbraster}
