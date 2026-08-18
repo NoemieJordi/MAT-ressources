@@ -1,5 +1,28 @@
 [
   {
+    "titre": "Calcul flash: 10VG niv.1 - cycles 1 à 6 - plannification",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "PLANIF",
+    "tags": [
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/PLANIF_NO-NbNaturelsDecimaux-10VG1_FlashCalcul.pdf",
+    "corrige_pdf": null,
+    "fichier": "PLANIF_NO-NbNaturelsDecimaux-10VG1_FlashCalcul"
+  },
+  {
     "titre": "Calcul flash: 9VP - cycle 1 (semaines 1-6) - entraînement",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -25,9 +48,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalculDrill.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalculDrill.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalculDrill"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 1 (semaines 1-6) - exercices",
@@ -55,9 +78,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 1 (semaines 1-6) - théorie",
@@ -1076,6 +1099,66 @@
     "pdf": "pdf/EVAL_11G1_TS1_20201007.pdf",
     "corrige_pdf": "corr/EVAL_11G1_TS1_20201007_corrige.pdf",
     "fichier": "EVAL_11G1_TS1_20201007"
+  },
+  {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres entiers et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill"
+  },
+  {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - exercices",
+    "theme": "NO",
+    "chapitre": "Nombres entiers et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
   },
   {
     "titre": "Triangles semblables",
