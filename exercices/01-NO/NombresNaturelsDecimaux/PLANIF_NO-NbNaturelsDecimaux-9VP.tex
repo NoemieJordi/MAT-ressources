@@ -156,7 +156,7 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 \node[box] (b1) at ($(c1.north)+(1.2cm,0)$) {%
 \textbf{\large Critères de divisibilité}\\[4pt]
 {\small\begin{tabularx}{10cm}{cXp{3cm}p{1cm}}
-\case & \rref{NO 3}       & Fiche, p.\,62 & \oblig \\
+\case & \rref{NO 3}       & Fiche, p.\,3 & \oblig \\
 \case & \rref{Problème 3} & VLM, p.\,4    & \oblig \\
 \case & \rref{NO 28}      & Livre, p.\,29 & \oblig \\
 \end{tabularx}}
@@ -247,6 +247,234 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 \vspace{1em}
 
 %------------------------------------------------
+\newtcolorbox{regle}[1]{enhanced, sharp corners, boxrule=0pt, interior hidden, frame hidden,borderline west={2.2pt}{0pt}{themeColor},left=3mm, right=2mm, top=2mm, bottom=2mm,title={\textbf{\textcolor{themeColor}{#1}}}, fonttitle=\bfseries,attach title to upper={\\},}
+\newtcolorbox{astuce}[1]{enhanced, sharp corners, halign=justify, valign=top, colback=white, colframe=themeColor, boxrule=2.2pt, left=3mm, right=2mm, top=2mm, bottom=2mm,title={\textbf{\textcolor{themeColor}{#1}}}, fonttitle=\bfseries\small,attach title to upper={\\},}
+
+\newpage
+\header{Nombres naturels et décimaux - Théorie}
+
+\subsection*{1. Multiplication et puissance}
+
+\begin{regle}{Définition}
+Une \textcolor{themeNO}{multiplication} est une répétition d'additions. Elle se note avec un point médiant $\cdot$.
+\end{regle}
+
+\begin{center}$\underset{5\ fois}{\underbrace{3+3+3+3+3}}=5\cdot 3$\end{center}
+
+\begin{regle}{Définition}
+Une \textcolor{themeNO}{puissance} est une répétition de multiplications. Elle se note avec un exposant.
+\end{regle}
+
+\begin{center}$\underset{5\ fois}{\underbrace{3\cdot 3\cdot 3\cdot 3\cdot3}}=3^{5}$\end{center}
+
+\begin{astuce}{Vocabulaire}
+$3^5$ se lit \og 3 \textcolor{themeNO}{à la puissance} 5 \fg.\\[2pt]
+Lorsqu'un nombre est à la puissance 2, on dit qu'il est au \textcolor{themeNO}{carré}.\\[2pt]
+Lorsqu'un nombre est à la puissance 3, on dit qu'il est au \textcolor{themeNO}{cube}.
+\end{astuce}
+
+\vfill
+\subsection*{2. Priorité des opérations}
+
+Comme les multiplications sont des additions cachées et que les puissances sont des multiplications cachées, les opérations doivent être effectuées dans un certain ordre pour être correctes.
+
+\begin{center}
+$7+5\cdot 2=7+\underset{2\ fois}{\underbrace{5+5}}=17$
+\end{center}
+
+La priorité des opérations respecte le \textcolor{themeNO}{PEMDAS}.
+
+\def\arraystretch{1.6}
+\begin{tabularx}{\linewidth}{|p{2cm}|>{\centering\arraybackslash}p{2cm}|X|}
+\hline
+1ère & \textcolor{themeNO}{P} & Parenthèses\\\hline
+2ème & \textcolor{themeNO}{E} & Exposants (puissances)\\\hline
+3ème & \textcolor{themeNO}{MD} & Multiplications et divisions\\\hline
+4ème & \textcolor{themeNO}{AS} & Additions et soustractions\\\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\newpage
+Exemple :
+
+\vspace{-10pt}\begin{center}$3\cdot 50+\left(10-8\right)^3-16\div4$\end{center}
+
+\vspace{-30pt}\begin{align*}
+3\cdot 50+\left(\textcolor{themeNO}{10-8}\right)^3-16\div4&=&&\text{On résout le contenu des parenthèses (\textcolor{themeNO}{P}).}\\
+3\cdot 50+\textcolor{themeNO}{2^3}-16\div4&=   &&\text{On effectue les exposants (\textcolor{themeNO}{E}).}\\
+\textcolor{themeNO}{3\cdot 50}+8-\textcolor{themeNO}{16\div4}&=&&\text{On effectue multiplications et divisions (\textcolor{themeNO}{MD}) de gauche à droite.}\\
+\textcolor{themeNO}{150+8-4}&=&&\text{On effectue additions et soustractions (\textcolor{themeNO}{AS}) de gauche à droite.}\\
+\textcolor{themeNO}{154}&&&
+\end{align*}
+
+\vfill
+\subsection*{3. Multiples et diviseurs}
+
+\begin{regle}{Définition}
+Un nombre entier $N$ est un \textcolor{themeNO}{multiple} d'un autre nombre entier $n_1$ s'il existe un troisième nombre entier $n_2$ tel que $n_1\cdot n_2=N$.
+\end{regle}
+
+\begin{center}15 est un multiple de 5, car il existe un nombre (3) tel que $5\cdot 3=\underset{multiple}{\underbrace{15}}$\end{center}
+
+\begin{regle}{Définition}
+Un nombre entier $n$ est un \textcolor{themeNO}{diviseur} d'un autre nombre entier $N$ si la division de $N$ par $n$ donne un nombre entier. 
+\end{regle}
+
+\begin{center}12 est un diviseur de 72, car $72\div12=\underset{entier}{\underbrace{6}}$\end{center}
+
+\vfill
+\subsection*{4. Critères de divisibilité }
+
+Il n'est pas toujours facile de déduire si un nombre est divisible par un autre. Voici les critères permettant de savoir si un nombre est divisible par 2, 3, 4, 5, 6, 8, 9, 10, 25, 50 ou 100.
+
+\vspace{10pt}
+\def\arraystretch{1.1}
+\begin{tabularx}{\linewidth}{|c|X|}
+\hline
+Divisible par?&Critère\\\hline
+2&Le nombre est pair, il finit donc par 0,2,4,6,8).\\\hline
+3&La somme des chiffres formant le nombre est divisible par 3.\\\hline
+4&Les deux derniers chiffres du nombre sont divisibles par 4.\\\hline
+5&Le nombre finit par 0 ou 5.\\\hline
+6&Le nombre est simultanément divisible par 2 et 3.\\\hline
+9&La somme des chiffres formant le nombre est divisible par 3.\\\hline
+10&Le nombre finit par 0.\\\hline
+25&Le nombre finit par 00, 25, 50 ou 75.\\\hline
+50&Le nombre finit par 00 ou 50.\\\hline
+100&Le nombre finit par 00.\\\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\newpage
+\subsection*{5. Nombres Premiers}
+
+\begin{regle}{Définition}
+Un nombre premier est un nombre qui n'est divisible que par 1 et par lui-même. Il en existe une infinité.
+\end{regle}
+
+\begin{center}
+23 n'est divisible que par 1 et par 23. C'est donc un nombre premier.\\
+49 est divisible par 7. Ce n'est donc pas un nombre premier.
+\end{center}
+
+\vspace{20pt}\begin{astuce}{Nombres premiers à connaître par coeur}
+\hfill 2 \hfill 3 \hfill 5	 \hfill 7\hfill 11\hfill 13\hfill 17\hfill 19\hfill 23
+\end{astuce}
+
+\vfill
+\subsection*{6. Décomposition en facteurs premiers}
+
+N'importe quel nombre entier peut être écrit comme une multiplication de nombres premiers. Cette multiplication est unique pour chaque nombre.
+
+\begin{center}
+$45=3\cdot 3\cdot 5=3^2\cdot 5$\\
+\end{center}
+
+Pour trouver la décomposition en facteurs premiers d'un nombre, il faut le diviser autant de fois que possible par les nombres premiers dans l'ordre.
+
+\vspace{30pt}
+Exemples: 
+
+\vspace{-5pt}\def\arraystretch{1.7}
+\begin{tabularx}{0.3\linewidth}{R|X}
+ \multicolumn{2}{c}{Décomposition de 2310}\\
+2310&2\\
+1155&3\\
+385&5\\
+77&7\\
+11&11\\
+1&\\
+\multicolumn{2}{c}{$2310=2\cdot3\cdot5\cdot7\cdot11$}\\
+\end{tabularx}
+\hfill
+\begin{tabularx}{0.3\linewidth}{R|X}
+ \multicolumn{2}{c}{Décomposition de 264}\\
+264&2\\
+132&2\\
+66&2\\
+33&3\\
+11&11\\
+1&\\
+\multicolumn{2}{c}{$264=2^3\cdot3\cdot11$}\\
+\end{tabularx}
+\hfill
+\begin{tabularx}{0.3\linewidth}{R|X}
+ \multicolumn{2}{c}{Décomposition de 350}\\
+350&2\\
+175&5\\
+35&5\\
+7&7\\
+1&\\
+&\\
+\multicolumn{2}{c}{$2\cdot5^2\cdot7$}\\
+\end{tabularx}
+\def\arraystretch{1}
+
+\newpage
+\subsection*{7. Plus petit multiple commun (PPMC)}
+
+\begin{regle}{Définition}
+Le \textcolor{themeNO}{plus petit multiple commun} de $n$ entiers non nuls est le plus petit entier strictement positif multiple simultanément de ces $n$ entiers.
+\end{regle}
+
+\begin{center}
+ppmc(45,54) =270
+\end{center}
+
+\vspace{40pt}
+Pour déterminer le ppmc de deux nombres, il existe deux méthodes.
+
+\vspace{20pt}
+La \textcolor{themeNO}{méthode de la liste} consiste à lister les multiples de chacun des nombres jusqu'à trouver un nombre qui apparaît dans chacune des listes.
+
+$M\left(45\right)=\left\{45, 90, 135, 180, 225, 270, 315, 360, 405, \ldots \right\}$\\
+$M\left(54\right)=\left\{54, 108, 162, 216, 270, 324, 378, 432, \ldots \right\}$\\
+ppmc$(45,54) =270$
+
+
+\vspace{20pt}
+La \textcolor{themeNO}{méthode de la décomposition en facteurs premiers} consiste à déterminer la décomposition en facteurs premiers de chaque nombre et pour chaque facteur, prendre sa plus grande puissance.
+
+$45=3^{2}\cdot 5$ \quad\quad et \quad\quad $54=2\cdot 3^3$
+
+Les facteurs présents sont 2, 3 et 5. Pour chaque facteur, nous prenons la plus grande puissance.
+
+$2\cdot 3^3\cdot 5=270$\\
+ppmc$(45,54) =270$
+
+\newpage
+\subsection*{8.  Plus grand diviseur commun (PGDC)}
+
+\begin{regle}{Définition}
+Le \textcolor{themeNO}{plus grand diviseur commun} de deux nombres entiers non nuls est le plus grand nombre entier qui divise ces deux nombres en même temps sans laisser de reste.
+\end{regle}
+
+\begin{center}
+pgdc(24,60) =12
+\end{center}
+
+\vspace{40pt}
+Pour déterminer le pgdc de deux nombres, il existe deux méthodes.
+
+\vspace{20pt}
+La \textcolor{themeNO}{méthode de la liste} consiste à lister les diviseurs de chacun des nombres et choisir le plus grand nombre qui apparaît dans les deux listes.
+
+$D\left(24\right)=\left\{1, 2, 3, 4, 6, 8, 12, 24\right\}$\\
+$D\left(60\right)=\left\{1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60\right\}$\\
+pgdc$(24,60) =12$
+
+\vspace{20pt}
+La \textcolor{themeNO}{méthode de la décomposition en facteurs premiers} consiste à déterminer la décomposition en facteurs premiers de chaque nombre et pour chaque facteur présent dans les deux décompositions, prendre sa plus petite puissance si elle existe.
+
+$24=2^3\cdot 3$ \quad\quad et \quad\quad $60=2^{2}\cdot 3\cdot 5$
+
+Les seuls facteurs présents dans les deux décompositions sont 2 et 3. Pour chaque facteur présent dans les deux décompositions, nous prenons la plus petite puissance.
+
+$2^2\cdot 3=12$\\
+pgdc$(24,60) =12$
+
+
+%------------------------------------------------
 \newpage
 \header{Nombres naturels et décimaux - Lexique}
 
@@ -257,7 +485,8 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
   left=3mm, right=2mm, top=2mm, bottom=2mm,
 }
  
-\begin{tcbraster}[raster columns=2, raster equal height, raster valign=top,raster column skip=3mm, raster row skip=3mm]
+ \vfill
+\begin{tcbraster}[raster columns=2, raster equal height, raster valign=top,raster column skip=2mm, raster row skip=2mm]
 \begin{terme}
 \textbf{\large Addition}\\[2pt]
 {\small Opération qui consiste à réunir deux nombres (les termes) pour obtenir leur somme.}
@@ -383,9 +612,3 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 {\small Chacun des nombres que l'on additionne.}
 \end{terme}
 \end{tcbraster}
-
-
-
-%------------------------------------------------
-\newpage
-\header{Nombres naturels et décimaux - Théorie}
