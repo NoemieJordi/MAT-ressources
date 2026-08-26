@@ -1161,6 +1161,33 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
   },
   {
+    "titre": "Loto du crible d'Eratosthene",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et decimaux",
+    "sous_chapitre": "Nombres premiers",
+    "niveau": [
+      "9"
+    ],
+    "type": "JEU",
+    "tags": [
+      "c-nombres-premiers",
+      "c-multiples",
+      "f-commun",
+      "p-decouverte",
+      "p-institutionnalisation"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "creation originale",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
+    "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
+    "fichier": "JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene"
+  },
+  {
     "titre": "Triangles semblables",
     "theme": "ES",
     "chapitre": "Figures géométriques planes",
