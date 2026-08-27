@@ -243,7 +243,7 @@ Attention: enlever le --preview si on ne veut pas l'ouverture des pdf modifiés
 cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
 
 git add .
-git commit -m "Ajout: EX_NO-NombresNaturelsDecimaux_JeuDePiste"
+git commit -m "Ajout: Crible Eratosthène"
 git push
 ```
 
