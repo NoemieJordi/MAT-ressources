@@ -1,5 +1,65 @@
 [
   {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill"
+  },
+  {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - exercices",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
+  },
+  {
     "titre": "Calcul flash: 10VG niv.1 - cycles 1 à 6 - plannification",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -134,6 +194,35 @@
     "pdf": "pdf/PLANIF_NO-NbNaturelsDecimaux-9VP_FlashCalcul.pdf",
     "corrige_pdf": null,
     "fichier": "PLANIF_NO-NbNaturelsDecimaux-9VP_FlashCalcul"
+  },
+  {
+    "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10VG"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-decimaux",
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "f-individuel",
+      "p-entrainement"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "claude",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux"
   },
   {
     "titre": "Carrés de multiplication (séries A, B et C)",
@@ -545,6 +634,33 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite"
   },
   {
+    "titre": "Loto du crible d'Ératosthène",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Nombres premiers",
+    "niveau": [
+      "9"
+    ],
+    "type": "JEU",
+    "tags": [
+      "c-nombres-premiers",
+      "c-multiples",
+      "f-commun",
+      "p-decouverte",
+      "p-institutionnalisation"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "creation originale",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
+    "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
+    "fichier": "JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene"
+  },
+  {
     "titre": "Calculs de priorités des opérations (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -572,35 +688,6 @@
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations"
-  },
-  {
-    "titre": "Calculs de priorités des opérations (séries A, B et C)",
-    "theme": "NO",
-    "chapitre": "Nombres naturels et décimaux",
-    "sous_chapitre": "Priorité des opérations",
-    "niveau": [
-      "10e",
-      "11e"
-    ],
-    "type": "EX",
-    "tags": [
-      "c-priorite-operations",
-      "f-individuel",
-      "f-maison",
-      "f-station",
-      "p-entrainement",
-      "p-remediation"
-    ],
-    "difficulte": 3,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EX_NO-NbRelatifs-AdditionSoustraction_VLMAdditionSoustraction.pdf",
-    "corrige_pdf": "corr/EX_NO-NbRelatifs-AdditionSoustraction_VLMAdditionSoustraction.pdf",
-    "fichier": "EX_NO-NbRelatifs-AdditionSoustraction_VLMAdditionSoustraction"
   },
   {
     "titre": "Jeu de piste — priorité des opérations",
@@ -778,6 +865,41 @@
     "pdf": "pdf/RES_NO-NbRelatifs-ReprsenterComparerEncadrer_Livre8eme.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbRelatifs-ReprsenterComparerEncadrer_Livre8eme"
+  },
+  {
+    "titre": "Calculer avec des nombres relatifs",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "9e",
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-addition",
+      "c-division",
+      "c-multiplication",
+      "c-operations",
+      "c-soustraction",
+      "c-nombres-relatifs",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbRelatifs-AdditionSoustraction_QuatreOperations.pdf",
+    "corrige_pdf": "corr/EX_NO-NbRelatifs-AdditionSoustraction_QuatreOperations.pdf",
+    "fichier": "EX_NO-NbRelatifs-AdditionSoustraction_QuatreOperations"
   },
   {
     "titre": "Priorité des puissances",
@@ -1128,122 +1250,6 @@
     "pdf": "pdf/EVAL_11G1_TS1_20201007.pdf",
     "corrige_pdf": "corr/EVAL_11G1_TS1_20201007_corrige.pdf",
     "fichier": "EVAL_11G1_TS1_20201007"
-  },
-  {
-    "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - entraînement",
-    "theme": "NO",
-    "chapitre": "Nombres entiers et décimaux",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EX",
-    "tags": [
-      "c-division",
-      "c-livrets",
-      "c-multiplication",
-      "c-operations",
-      "c-doubles-moities",
-      "c-puissances-10",
-      "f-individuel",
-      "p-flash-calcul"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill"
-  },
-  {
-    "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - exercices",
-    "theme": "NO",
-    "chapitre": "Nombres entiers et décimaux",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EX",
-    "tags": [
-      "c-division",
-      "c-livrets",
-      "c-multiplication",
-      "c-operations",
-      "c-doubles-moities",
-      "c-puissances-10",
-      "f-individuel",
-      "p-flash-calcul"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
-  },
-  {
-    "titre": "Calculs decimaux a poser en colonne (séries A, B et C)",
-    "theme": "NO",
-    "chapitre": "Nombres naturels et decimaux",
-    "sous_chapitre": "Calcul reflechi et mental",
-    "niveau": [
-      "10VG"
-    ],
-    "type": "EX",
-    "tags": [
-      "c-decimaux",
-      "c-addition",
-      "c-soustraction",
-      "c-multiplication",
-      "c-division",
-      "f-individuel",
-      "p-entrainement"
-    ],
-    "difficulte": 2,
-    "corrige": true,
-    "source": "claude",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux"
-  },
-  {
-    "titre": "Loto du crible d'Eratosthene",
-    "theme": "NO",
-    "chapitre": "Nombres naturels et decimaux",
-    "sous_chapitre": "Nombres premiers",
-    "niveau": [
-      "9"
-    ],
-    "type": "JEU",
-    "tags": [
-      "c-nombres-premiers",
-      "c-multiples",
-      "f-commun",
-      "p-decouverte",
-      "p-institutionnalisation"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "creation originale",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
-    "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
-    "fichier": "JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene"
   },
   {
     "titre": "Triangles semblables",
