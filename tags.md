@@ -19,6 +19,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-combinatoire` | Combinatoire |
 | `c-criteres-divisibilite` |   Critères de divisibilité |
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
+| `c-decimaux` |   Nombres décimaux |
 | `c-division` |   Division |
 | `c-droite-numerique` |   Droite numérique |
 | `c-equations` | Équations |

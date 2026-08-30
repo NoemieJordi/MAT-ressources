@@ -574,6 +574,35 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-PrioriteOperations_PrioriteOperations"
   },
   {
+    "titre": "Calculs de priorités des opérations (séries A, B et C)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e",
+      "11e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-priorite-operations",
+      "f-individuel",
+      "f-maison",
+      "f-station",
+      "p-entrainement",
+      "p-remediation"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbRelatifs-AdditionSoustraction_VLMAdditionSoustraction.pdf",
+    "corrige_pdf": "corr/EX_NO-NbRelatifs-AdditionSoustraction_VLMAdditionSoustraction.pdf",
+    "fichier": "EX_NO-NbRelatifs-AdditionSoustraction_VLMAdditionSoustraction"
+  },
+  {
     "titre": "Jeu de piste — priorité des opérations",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -1159,6 +1188,35 @@
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
+  },
+  {
+    "titre": "Calculs decimaux a poser en colonne (séries A, B et C)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et decimaux",
+    "sous_chapitre": "Calcul reflechi et mental",
+    "niveau": [
+      "10VG"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-decimaux",
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "f-individuel",
+      "p-entrainement"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "claude",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux"
   },
   {
     "titre": "Loto du crible d'Eratosthene",
