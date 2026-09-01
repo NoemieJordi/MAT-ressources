@@ -1,0 +1,166 @@
+% ---
+% titre: Triangles semblables
+% theme: ES
+% chapitre: Figures géométriques planes
+% sous_chapitre: Triangles semblables
+% niveau: [11e]
+% type: EVAL
+% tags: [c-triangles-semblables, c-thales, c-calcul-angles,c-perimetre,p-question-TS]
+% difficulte: 3
+% corrige: true
+% ---
+
+\question
+Soit la figure ci-dessous où
+
+\begin{itemize}[label=$\triangleright$]
+\item $BDEF$ est un trapèze.
+\item $AB = 980\,m$; $BC = 490\,m$; $CD = 686\,m$ $BD = 784\,m$
+\end{itemize}
+
+\vfill
+%schéma
+	\begin{center}
+	\begin{tikzpicture}[scale=0.9]
+	%cercle Omega
+	\tkzDefPoints{0/0/O,0/3/Z}
+	\tkzDrawCircle[line width=1](O,Z)
+	%point A
+	\tkzDefPointOnCircle[R = center O angle 180 radius 3cm]]\tkzGetPoint{A}
+	\tkzDrawPoints[shape=cross](A)\tkzLabelPoint[left](A){$A$}
+	%point B
+	\tkzDefPointOnCircle[R = center O angle 0 radius 3cm]]\tkzGetPoint{B}	
+	\tkzDrawPoints[shape=cross](B)\tkzLabelPoint[above right](B){$B$}
+	%point C
+	\tkzDefPointOnCircle[R = center O angle 100 radius 3cm]]\tkzGetPoint{C}
+	\tkzDrawPoints[shape=cross](C)\tkzLabelPoint[above](C){$C$}
+	%point E
+	\tkzDefPointOnCircle[R = center O angle 230 radius 3cm]]\tkzGetPoint{E}	
+	\tkzDrawPoints[shape=cross](E)\tkzLabelPoint[below left](E){$E$}
+	%point D
+	\tkzInterLL(A,B)(C,E)\tkzGetPoint{D}
+	\tkzDrawPoints[shape=cross](D)\tkzLabelPoint[above left = 4pt](D){$D$}
+	%point F
+	\tkzDefLine[parallel=through E](A,B) \tkzGetPoint{X}
+	\tkzInterLL(C,B)(E,X)\tkzGetPoint{F}
+	\tkzDrawPoints[shape=cross](F)\tkzLabelPoint[below right](F){$F$}
+	%Segements
+	\tkzDrawSegments(A,B C,F C,E A,E E,F)
+	\end{tikzpicture}
+	\end{center}
+
+\vfill
+\begin{parts}
+\part[3]
+Démontre que les triangles $CDB$ et $ADE$ sont semblables. Justifie ton raisonnement.
+
+\vspace{10pt}
+	{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[230pt]
+	$\widehat{EAB} = \widehat{ECB}$, car angles inscrits regardant le même arc \hfill \textbf{(1pt)}
+	
+	\vspace{5pt}
+	$\widehat{ADE} = \widehat{BDC}$, car angles opposés par le sommet \hfill \textbf{(1pt)}
+	
+	\vspace{5pt}
+	Les triangles $CDB$ et $ADE$ sont semblables, car deux triangles sont semblables si deux angles sont égaux. \hfill \textbf{(1pt)}
+	\end{solutionorgrid}
+
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{Oui, les triangles $CDB$ et $ADE$ sont semblables.}
+\end{tcolorbox}	
+
+\newpage
+\part[4]
+Calcule la longueur de $DE$.
+
+\vspace{10pt}
+	{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[200pt]
+	Comme $CDB$ et $ADE$ sont semblables: 
+	
+	\vspace{10pt}
+	$\dfrac{BC}{AE} = \dfrac{BD}{DE} = \dfrac{CD}{AD}$ \hfill \textbf{(1pt)}
+	
+	\vspace{10pt}
+	$BD = 784\,m$ ; $CD = 686\,m$ ; $AD = 980 - 784 = 196\,m$ \hfill \textbf{(1pt)}%%%%%%%%%%%%%
+	
+	\vspace{5pt}
+	$\dfrac{784}{DE} = \dfrac{686}{196}$ \hfill \textbf{(1pt)}
+	
+	\vspace{5pt}
+	$DE = \dfrac{784 \cdot 196}{686} = 224\,m$ \hfill \textbf{(1pt)}
+	\end{solutionorgrid}
+
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{$DE$ vaut 224\,m.}
+\end{tcolorbox}	
+
+\vfill
+\part[2]
+Démontre que les triangles $CDB$ et $CEF$ sont semblables.
+
+\vspace{10pt}
+	{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[200pt]
+	Démontrer que les triangles $CDB$ et $CEF$ sont semblables:
+	
+	\vspace{10pt}
+	$\widehat{DCB} = \widehat{ECF}$, car même angle
+	
+	\vspace{5pt}
+	$\widehat{FEC} = \widehat{BDC}$, car correspondants et $EF // AB$ \hfill \textbf{(1pt)}
+	
+	\vspace{5pt}
+	Les triangles $CDB$ et $CEF$ sont semblables, car deux triangles sont semblables si deux angles sont égaux. \hfill \textbf{(1pt)}
+	\end{solutionorgrid}
+	
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{Oui, les triangles $CDB$ et $CEF$ sont semblables.}
+\end{tcolorbox}	
+
+\newpage
+\part[6]
+Calcule le périmètre du trapèze $BDEF$.
+
+\textit{Si tu n'as pas trouvé la réponse précédente, prend $DE = 200\,m$.}
+
+\vspace{10pt}
+	{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[500pt]
+
+	Comme $CDB$ et $CEF$ sont semblables: 
+	
+	\vspace{10pt}
+	$\dfrac{CD}{CE} = \dfrac{BC}{CF} = \dfrac{BD}{EF}$ \hfill \textbf{(1pt)}
+	
+	\vspace{10pt}
+	$BD = 784\,m$ ; $CD = 686\,m$ ; $BC = 490\,m$ ; $CE = 686 + 224 = 910\,m$ 
+	
+	\vspace{5pt}
+	$\dfrac{686}{910} = \dfrac{490}{CF} = \dfrac{784}{EF}$ \hfill \textbf{(1pt)}
+	
+	\vspace{5pt}
+	$CF = \dfrac{490 \cdot 910}{686} = 650\,m$ \hfill \textbf{(1pt)}
+	
+	\vspace{5pt}
+	$BF = 650 - 490 = 160\,m$ \hfill \textbf{(1pt)}
+	
+	\vspace{10pt}
+	$EF = \dfrac{784 \cdot 910}{686} = 1040\,m$ \hfill \textbf{(1pt)}
+	
+	\vspace{20pt}
+	Périmètre du trapèze: 
+	
+	\vspace{5pt}
+	$P = BD + DE + EF + BF = 784 + 224 + 1040 + 160 = 2208\,m$ \hfill \textbf{(1pt)}
+	\end{solutionorgrid}
+
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{Le périmètre du trapèze vaut 2208\,m.}
+\end{tcolorbox}		
+\end{parts}

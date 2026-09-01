@@ -1,0 +1,205 @@
+% ---
+% titre: Calcul flash: 10VG niv.1 - cycles 1 à 6 - plannification
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: Calcul réfléchi et mental
+% niveau: [10e]
+% type: PLANIF
+% tags: [p-flash-calcul]
+% source: latex
+% ---
+
+% Carte semaine normale
+% #1 = numéro, #2 = thème, #3 = détail
+\newcommand{\weekcard}[3]{%
+\begin{tcolorbox}[sharp corners,boxrule=0.5pt,colframe=themeColor,colback=white,colbacktitle=themeColor!30,coltitle=black,fonttitle=\small\bfseries,title={Semaine #1},toptitle=2pt,bottomtitle=2pt,top=4pt, bottom=4pt, left=5pt, right=5pt,]
+{\small\textbf{\textcolor{themeColor}{#2}}}\\[2pt]
+{\footnotesize#3}
+\end{tcolorbox}%
+}
+ 
+% Carte flash-mix : fond coloré
+\newcommand{\weekcardmix}[3]{%
+\begin{tcolorbox}[sharp corners,boxrule=0.5pt,colframe=themeColor,colback=themeColor!12,colbacktitle=themeColor!70,coltitle=white,fonttitle=\small\bfseries,title={Semaine #1},toptitle=2pt,bottomtitle=2pt,top=4pt, bottom=4pt, left=5pt, right=5pt,]
+{\small\textbf{\textcolor{themeColor}{#2}}}\\[2pt]
+{\footnotesize#3}
+\end{tcolorbox}%
+}
+
+% Carte semaine sautée (TS ou stage)
+% #1 = numéro, #2 = motif
+\newcommand{\weekskip}[2]{%
+\begin{tcolorbox}[sharp corners, boxrule=0.5pt,colframe=black!20, colback=black!4,colbacktitle=black!15, coltitle=black!50,fonttitle=\small\bfseries,title={Semaine #1},toptitle=2pt, bottomtitle=2pt,top=4pt, bottom=4pt, left=5pt, right=5pt,]
+{\small\textcolor{black!40}{#2}}
+\end{tcolorbox}%
+}
+ 
+\header{Calcul mental: 10VG niv.1 - Cycles 1 à 6}
+ 
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 1 — Livrets et astuces de calcul mental
+% ════════════════════════════════════════════════════════════════════════════
+\vfill
+
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+ 
+\weekcard{1}{Livrets \& tables}{%
+$\times$ et $\div$ jusqu'à $12\times12$\\
+Carrés : $1^2 \to 12^2$}
+%
+\weekcard{2}{Doubles \& moitiés}{%
+$\times 2$, $\div 2$, $\times 0{,}5$, $\div 0{,}5$}
+%
+\weekcard{3}{$\times\div$ par 10, 100, 1000}{%
+Déplacer la virgule\\
+Nbre de zéros = nbre de rangs}
+ %
+\weekskip{4}{TS1}
+ %
+\weekcard{5}{Astuces $\times$5, $\times$9, $\times$11, $\times$25}{%
+$\times 5 = \times 10 \div 2$ \quad $\times 25 = \times 100 \div 4$\\
+$\times 9 = \times 10 - n$ \quad $\times 11 = \times 10 + n$}
+ %
+\weekcardmix{6}{Flash-mix}{%
+Révisions du cycle 1}
+\end{tcbraster}
+
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 2 — Nombres relatifs
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+ 
+\weekcard{7}{Relatifs - droite graduée}{%
+Placer, comparer,\\
+Encadrer}
+ %
+ \weekskip{8}{TS2}
+ %
+\weekcard{9}{Relatifs $+$ et $-$}{%
+$-100$ à $+100$}
+ %
+\weekcard{10}{Relatifs $\times$ et $\div$}{%
+Règle des signes}
+ %
+\weekcard{11}{Priorités avec parenthèses}{%
+Parenthèses $\to$ puissances $\to$ $\times\div$ $\to$ $+-$\\
+Avec relatifs}
+ %
+\weekcardmix{12}{Flash-mix}{%
+Révisions du cycle 2}
+ %
+\end{tcbraster}
+
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 3 — Nombres entiers : divisibilité, PGCD/PPCM, puissances
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+ 
+\weekskip{13}{Stage}
+ %
+\weekskip{14}{TS3}
+ %
+\weekcard{15}{Critères de divisibilité}{%
+2, 3, 4, 5, 6, 9, 10, 25, 50, 100}
+ %
+\weekcard{16}{Décomposition, PGCD \& PPCM}{%
+Facteurs premiers\\
+Lien avec PGCD/PPCM}
+ %
+\weekcard{17}{Puissances \& carrés}{%
+Base et exposant $\in \mathbb{N}$}
+ %
+\weekcardmix{18}{Flash-mix}{%
+Révisions du cycle 3}
+ 
+\end{tcbraster}
+ 
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 4 — Fractions
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,]
+
+\weekcard{19}{Écritures équivalentes}{%
+Amplifier / simplifier\\
+Fraction $\leftrightarrow$ décimal $\leftrightarrow$ \%}
+ %
+\weekcard{20}{Fractions $+$ et $-$}{%
+Dénominateurs identiques ou différents}
+ %
+\weekcard{21}{Fractions $\times$ et $\div$}{%
+Simplification directe}
+ %
+\weekskip{22}{TS4}
+ %
+\weekcardmix{23}{Flash-mix}{%
+Révisions du cycle 4}
+ %
+\weekskip{24}{Stage}
+ 
+\end{tcbraster}
+ 
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 5 — Nombres réels et notation scientifique
+% ════════════════════════════════════════════════════════════════════════════
+\newpage
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,] 
+
+\weekcard{25}{Nombres réels - droite graduée}{%
+Comparer, encadrer,\\
+Décimaux et fractions mêlés}
+ %
+\weekcard{26}{Racines carrées \& cubiques}{%
+$\sqrt{1} \to \sqrt{225}$ \quad $\sqrt[3]{1} \to \sqrt[3]{125}$\\
+Valeurs exactes}
+ %
+\weekcard{27}{Notation scientifique}{%
+Décimale $\leftrightarrow a \cdot 10^n$, $n \in \mathbb{N}$}
+ %
+\weekskip{28}{TS5}
+ %
+\weekcard{29}{Priorités - mix complet}{%
+Fractions, relatifs, puissances, racines}
+ %
+\weekcardmix{30}{Flash-mix}{%
+Révisions du cycle 5}
+ 
+\end{tcbraster}
+
+% ════════════════════════════════════════════════════════════════════════════
+% CYCLE 6 — Révision générale
+% ════════════════════════════════════════════════════════════════════════════
+\vspace{10pt}
+\begin{tcbraster}[raster columns=3,raster equal height,raster column skip=5pt,raster row skip=5pt,] 
+
+\weekcard{31}{Astuces de calcul mental}{%
+Doubles, moitiés, $\times\div$10/100/1000\\
+$\times$5, $\times$9, $\times$11, $\times$25}
+ %
+\weekcard{32}{Relatifs}{%
+Droite graduée\\
+$+-$ et $\times\div$}
+ %
+\weekcard{33}{Divisibilité \& PGCD/PPCM}{%
+Rappel}
+ %
+\weekskip{34}{TS6}
+ %
+\weekcard{35}{Puissances \& carrés}{%
+Rappel}
+ %
+\weekcard{36}{Racines carrées \& cubiques}{%
+Rappel}
+ %
+\weekcard{37}{Fractions}{%
+Écritures et opérations}
+ %
+\weekcard{38}{Notation scientifique \& priorités}{%
+Rappel - mix complet}
+ %
+\weekcardmix{39}{Flash-mix}{%
+Révisions des cycles 1-6}
+ 
+\end{tcbraster}

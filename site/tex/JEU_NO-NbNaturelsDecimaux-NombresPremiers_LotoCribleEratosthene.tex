@@ -1,0 +1,138 @@
+% ---
+% titre: Loto du crible d'Ératosthène
+% theme: NO
+% type: JEU
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: Nombres premiers
+% niveau: 9e
+% difficulte: 1
+% corrige: oui
+% tags: c-nombres-premiers, c-multiples, f-commun, p-decouverte, p-institutionnalisation
+% source: creation originale
+% ---
+
+% ============================================================
+% FICHE ENSEIGNANT-E
+% ============================================================
+
+\section*{Loto du crible d'Eratosthène --- Fiche enseignant\textperiodcentered e}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Objectif, fonttitle=\bfseries]
+Faire découvrir les nombres premiers et le principe du crible d'Ératosthène à travers un jeu de type loto, sans annoncer la règle à l'avance : ce sont les élèves qui, en comparant leurs grilles à la fin, découvrent que le \og tirage aléatoire\fg{} ne l'était pas.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Matériel, fonttitle=\bfseries]
+\begin{itemize}
+\item Une grille par élève, à choisir parmi les variantes A, B, C ci-dessous (mêmes nombres de 1 à 100, mise en page différente) --- \textbf{répartir les variantes dans la classe de manière mélangée}, de sorte que deux voisin\textperiodcentered es directs n'aient si possible pas la même variante.
+\item Un sac ou une boîte opaque contenant des papiers numérotés (voir \emph{ordre des tirages} ci-dessous) --- ou simplement une liste que l'enseignant\textperiodcentered e annonce à voix haute sans montrer de sac.
+\item Deux crayons de couleur par élève (une couleur pour entourer un survivant, une couleur pour rayer un multiple).
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Règle annoncée aux élèves, fonttitle=\bfseries]
+\begin{enumerate}
+\item Je tire un nombre.
+\item S'il n'est pas encore rayé sur votre grille, entourez-le en vert : c'est un \og survivant\fg.
+\item Rayez ensuite en rouge tous ses multiples sur la grille (jusqu'à 100), s'ils ne le sont pas déjà.
+\item Si le nombre tiré est déjà rayé, il ne se passe rien --- attendez le tirage suivant.
+\end{enumerate}
+Ne pas préciser que seuls des nombres premiers seront tirés.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Ordre exact des tirages, fonttitle=\bfseries]
+\begin{tabularx}{\linewidth}{c c X}
+\textbf{\#} & \textbf{Tirage} & \textbf{Ce qu'il se passe} \\ \hline
+1 & 2 & Premier survivant. Rayer tous les multiples de 2 (50 nombres). \\
+2 & 3 & Survivant. Rayer les multiples de 3 non déjà rayés. \\
+3 & 9 \emph{(leurre)} & Déjà rayé par le tirage précédent --- rien de nouveau. Bon moment pour demander \og pourquoi personne ne bouge ?\fg \\
+4 & 5 & Survivant. Rayer les multiples de 5 restants. \\
+5 & 7 & Survivant. Rayer les multiples de 7 restants (peu de nouvelles cases). \\
+6 & 11 \emph{(question, pas un vrai tirage)} & Demander : \og si je tire 11, est-ce que ça va encore rayer des cases ?\fg{} Faire vérifier : $11\times2, 11\times3,\dots$ sont déjà tous rayés en dessous de 100. \\
+\end{tabularx}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Moment de bascule --- critère d'arrêt, fonttitle=\bfseries]
+Faire chercher pourquoi 11 (et tout nombre premier supérieur) ne peut plus rien éliminer de nouveau en dessous de 100 : tout multiple de 11 inférieur à 100 s'écrit $11 \times k$ avec $k \le 9$, donc $k$ a déjà été
+traité (2, 3, 5 ou 7 le divise, ou $k=1$ redonne 11 lui-même). Amener ensuite l'idée générale : on peut s'arrêter dès que le nombre tiré dépasse $\sqrt{100}=10$.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Révélation finale, fonttitle=\bfseries]
+\og Comparez la liste de vos nombres entourés en vert avec votre
+voisin\textperiodcentered e.\fg{} Même si les grilles ont des formes différentes, la liste des survivants est identique pour toute la classe : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+67, 71, 73, 79, 83, 89, 97. Ce n'était pas un vrai loto aléatoire --- ce sont les nombres premiers, définis par une propriété fixe et non par le hasard du tirage. Institutionnaliser ensuite la définition de nombre premier et le principe du crible d'Ératosthène.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=themeColor, title=Points de vigilance, fonttitle=\bfseries]
+\begin{itemize}
+\item Clarifier avant de commencer que \textbf{1 n'est ni premier ni composé} : il reste entouré en gris ou simplement ignoré, pour éviter les grilles bloquées sur ce cas particulier.
+\item Garder un rythme soutenu entre les tirages (1--2 minutes max) pour ne pas perdre l'effet ludique pendant que les élèves plus lent\textperiodcentered es terminent de rayer.
+\item Répartir vraiment les 3 variantes de grille dans la classe, sinon des élèves voisin\textperiodcentered es risquent de repérer la coïncidence trop tôt en regardant la feuille du voisin.
+\end{itemize}
+\end{tcolorbox}
+
+\clearpage
+
+% ============================================================
+% GRILLE ELEVE --- VARIANTE A (grille classique 10x10)
+% ============================================================
+\header{Loto du crible d'Ératosthène }
+
+Le nombre annoncé a survécu jusqu'ici ? Entoure-le en vert, c'est un survivant ! Puis élimine (raye en rouge) tous ses multiples.
+
+\vfill
+\begin{center}
+\begin{tikzpicture}[x=1.5cm,y=1.5cm]
+\foreach \n in {1,...,100}{
+  \pgfmathtruncatemacro{\col}{mod(\n-1,10)}
+  \pgfmathtruncatemacro{\row}{9-int((\n-1)/10)}
+  \draw[draw=themeColor, thin] (\col,\row) rectangle ++(1,1);
+  \node[font=\small] at (\col+0.5,\row+0.5) {\n};
+}
+\end{tikzpicture}
+\end{center}
+\vfill
+
+\newpage
+% ============================================================
+% GRILLE ELEVE --- VARIANTE B (meme grille, presentee en losange)
+% ============================================================
+\header{Loto du crible d'Ératosthène }
+
+Le nombre annoncé a survécu jusqu'ici ? Entoure-le en vert, c'est un survivant ! Puis élimine (raye en rouge) tous ses multiples.
+
+
+\vfill
+\begin{center}
+\begin{tikzpicture}[x=1.2cm,y=1.2cm]
+\begin{scope}[rotate=45]
+\foreach \n in {1,...,100}{
+  \pgfmathtruncatemacro{\col}{mod(\n-1,10)}
+  \pgfmathtruncatemacro{\row}{9-int((\n-1)/10)}
+  \draw[draw=themeColor, thin] (\col,\row) rectangle ++(1,1);
+  \node[font=\small] at (\col+0.5,\row+0.5) {\n};
+}
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\vfill
+
+\newpage
+% ============================================================
+% GRILLE ELEVE --- VARIANTE C (meme grille, format 5x20 en cercles)
+% ============================================================
+\header{Loto du crible d'Ératosthène }
+
+Le nombre annoncé a survécu jusqu'ici ? Entoure-le en vert, c'est un survivant ! Puis élimine (raye en rouge) tous ses multiples.
+
+\vfill
+\begin{center}
+\begin{tikzpicture}[x=3cm,y=1cm]
+\foreach \n in {1,...,100}{
+  \pgfmathtruncatemacro{\col}{mod(\n-1,5)}
+  \pgfmathtruncatemacro{\row}{19-int((\n-1)/5)}
+  \draw[draw=themeColor, thin] (\col,\row) circle (0.42);
+  \node[font=\small] at (\col,\row) {\n};
+}
+\end{tikzpicture}
+\end{center}
+\vfill
