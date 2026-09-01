@@ -196,16 +196,47 @@
     "fichier": "PLANIF_NO-NbNaturelsDecimaux-9VP_FlashCalcul"
   },
   {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-division",
+      "c-multiplication",
+      "c-operations",
+      "c-soustraction",
+      "c-nombres-decimaux",
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609011723.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609011723.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609011723"
+  },
+  {
     "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Calcul réfléchi et mental",
     "niveau": [
-      "10VG"
+      "10e"
     ],
     "type": "EX",
     "tags": [
-      "c-decimaux",
+      "c-nombres-decimaux",
       "c-addition",
       "c-soustraction",
       "c-multiplication",
@@ -639,7 +670,7 @@
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Nombres premiers",
     "niveau": [
-      "9"
+      "9e"
     ],
     "type": "JEU",
     "tags": [
