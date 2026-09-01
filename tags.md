@@ -55,6 +55,7 @@ Comment la ressource est utilisée en classe.
 | `f-groupe` | Travail en groupe |
 | `f-individuel` | Travail individuel |
 | `f-commun` | Activité avec toute la classe |
+| `f-corrige` | Corrigé autonome |
 | `f-maison` | Travail à la maison |
 | `f-station` | Travail en station |
 | `f-oral` | Activité orale |
@@ -100,6 +101,7 @@ Intention didactique de la ressource.
 
 | Tag | Description |
 |-----|-------------|
+| `p-auto-correction` | Corrigé autonome |
 | `p-approfondissement` | Approfondissement |
 | `p-flash-calcul` | Rituel de calcul mental |
 | `p-decouverte` | Découverte / introduction |

@@ -842,6 +842,36 @@
     "fichier": "PLANIF_NO-NbNaturelsDecimaux-9VP"
   },
   {
+    "titre": "9p - Nombres naturels et décimaux - Corrigés (réponses seules)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "",
+    "niveau": [
+      "9e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-criteres-divisibilite",
+      "c-decomposition-facteurs-premiers",
+      "c-nombres-premiers",
+      "c-ppmc",
+      "c-puissances",
+      "c-priorite-operations",
+      "f-corrige",
+      "p-auto-correction"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_NO-NbNaturelsDecimaux-9VP_CorrigesReponsesSeules.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_NO-NbNaturelsDecimaux-9VP_CorrigesReponsesSeules"
+  },
+  {
     "titre": "Livre - Les nombres décimaux relatifs",
     "theme": "NO",
     "chapitre": "Nombres relatifs",
