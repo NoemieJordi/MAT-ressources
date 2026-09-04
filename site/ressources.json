@@ -211,8 +211,6 @@
       "c-operations",
       "c-soustraction",
       "c-nombres-decimaux",
-      "c-puissance",
-      "c-racine",
       "p-question-TS"
     ],
     "difficulte": 1,
@@ -923,9 +921,35 @@
     "categorie": "inspiration",
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/RES_NO-NbRelatifs-ReprsenterComparerEncadrer_Livre8eme.pdf",
+    "pdf": null,
     "corrige_pdf": null,
-    "fichier": "RES_NO-NbRelatifs-ReprsenterComparerEncadrer_Livre8eme"
+    "fichier": "RES_NO-NbRelatifs-RepresenterComparerEncadrer_Livre8eme"
+  },
+  {
+    "titre": "Addition et soustraction en chaîne de nombres relatifs",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-soustraction",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-AdditionSoustraction_202609020743.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-AdditionSoustraction_202609020743.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202609020743"
   },
   {
     "titre": "Calculer avec des nombres relatifs",
@@ -963,7 +987,59 @@
     "fichier": "EX_NO-NbRelatifs-AdditionSoustraction_QuatreOperations"
   },
   {
-    "titre": "Priorité des puissances",
+    "titre": "Problème de nombres relatifs - la vie de Platon",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-soustraction",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-AdditionSoustraction_202609031008.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-AdditionSoustraction_202609031008.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202609031008"
+  },
+  {
+    "titre": "Problème de nombres relatifs - les passagers du bus",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-soustraction",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-AdditionSoustraction_202609021439.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-AdditionSoustraction_202609021439.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202609021439"
+  },
+  {
+    "titre": "Quatre opérations avec les nombres relatifs",
     "theme": "NO",
     "chapitre": "Nombres relatifs",
     "sous_chapitre": "Addition et soustraction",
@@ -992,6 +1068,64 @@
     "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202608080744"
   },
   {
+    "titre": "Quatre opérations avec les nombres relatifs",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-operations",
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-AdditionSoustraction_202609020730.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-AdditionSoustraction_202609020730.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202609020730"
+  },
+  {
+    "titre": "Quatre opérations avec les nombres relatifs",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-operations",
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-AdditionSoustraction_202609021539.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-AdditionSoustraction_202609021539.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-AdditionSoustraction_202609021539"
+  },
+  {
     "titre": "Priorité des puissances",
     "theme": "NO",
     "chapitre": "Nombres relatifs",
@@ -1015,6 +1149,33 @@
     "pdf": "pdf/EVAL_NO-NbRelatifs-PuissancesRacines_202608062041.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbRelatifs-PuissancesRacines_202608062041.pdf",
     "fichier": "EVAL_NO-NbRelatifs-PuissancesRacines_202608062041"
+  },
+  {
+    "titre": "Priorité des opération",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-priorite-operations",
+      "c-puissance",
+      "c-racine",
+      "c-nombres-relatifs",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRelatifs-PrioriteOperations_202609030941.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRelatifs-PrioriteOperations_202609030941.pdf",
+    "fichier": "EVAL_NO-NbRelatifs-PrioriteOperations_202609030941"
   },
   {
     "titre": "Livre - Les fraction / les nombres rationnels",
@@ -1311,6 +1472,82 @@
     "pdf": "pdf/EVAL_11G1_TS1_20201007.pdf",
     "corrige_pdf": "corr/EVAL_11G1_TS1_20201007_corrige.pdf",
     "fichier": "EVAL_11G1_TS1_20201007"
+  },
+  {
+    "titre": "Puissances et racines",
+    "theme": "NO",
+    "chapitre": "Puissances et racines",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432"
+  },
+  {
+    "titre": "Problème de proportionnalité- la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "c-multiplication",
+      "c-division",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalité-ResoudreProblemes_202609021554.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalité-ResoudreProblemes_202609021554.pdf",
+    "fichier": "EVAL_FA-Proportionnalité-ResoudreProblemes_202609021554"
+  },
+  {
+    "titre": "Problème de proportionnalité- les séances de cinéma",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalité-ResoudreProblemes_202609031038.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalité-ResoudreProblemes_202609031038.pdf",
+    "fichier": "EVAL_FA-Proportionnalité-ResoudreProblemes_202609031038"
   },
   {
     "titre": "Triangles semblables",

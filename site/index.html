@@ -547,7 +547,7 @@ function updateReset() {
 // ── Filtrage ──────────────────────────────────────────────────────────────────
 function matches(r) {
   const theme = r.theme || "AU";
-  if (active.sous_chapitre && r.sous_chapitre !== active.sous_chapitre)              return false;
+  if (active.sous_chapitre && (r.sous_chapitre !== active.sous_chapitre || r.chapitre !== active.chapitre)) return false;
   if (!active.sous_chapitre && active.chapitre && r.chapitre !== active.chapitre)    return false;
   if (!active.chapitre && active.theme && theme !== active.theme)                    return false;
   if (active.type       && r.type !== active.type)                                   return false;

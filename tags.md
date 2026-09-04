@@ -19,7 +19,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-combinatoire` | Combinatoire |
 | `c-criteres-divisibilite` |   Critères de divisibilité |
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
-| `c-decimaux` |   Nombres décimaux |
+| `c-nombres-decimaux` |   Nombres décimaux |
 | `c-division` |   Division |
 | `c-droite-numerique` |   Droite numérique |
 | `c-equations` | Équations |
@@ -35,6 +35,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-priorite-operations` | Priorité des opérations |
 | `c-probleme` | Problèmes |
 | `c-probabilites` | Probabilités |
+| `c-proportionnalite` | Proportionnalité |
 | `c-puissance` | Puissance |
 | `c-racine` | Racine |
 | `c-soustraction` | Soustraction |

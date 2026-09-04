@@ -36,6 +36,9 @@
 \usepackage{multicol}
 \usepackage{dashrule}
 \newcommand{\bl}[1][]{\ifthenelse{\equal{#1}{}}{\hrulefill}{\underline{\hspace{#1}}}}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % -----------------------------------------------------------------------
 % Figures et graphiques
