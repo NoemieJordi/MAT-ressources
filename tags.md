@@ -20,12 +20,14 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-criteres-divisibilite` |   Critères de divisibilité |
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
 | `c-nombres-decimaux` |   Nombres décimaux |
+| `c-diviseur` |   Diviseurs |
 | `c-division` |   Division |
 | `c-droite-numerique` |   Droite numérique |
 | `c-equations` | Équations |
 | `c-fonctions` | Fonctions |
 | `c-fractions` | Fractions |
 | `c-livrets` |   Livrets |
+| `c-multiple` |   Multiples |
 | `c-multiplication` |   Multiplication |
 | `c-nombres-premiers` | Nombres premiers |
 | `c-nombres-relatifs` | Nombres relatifs |
@@ -74,6 +76,7 @@ Matériel ou logiciel nécessaire.
 
 | Tag | Description |
 |-----|-------------|
+| `o-affiche` | Affiche |
 | `o-bombe` | Bombe |
 | `o-calculatrice` | Calculatrice |
 | `o-cartes` | Cartes |

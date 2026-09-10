@@ -1,0 +1,171 @@
+% ---
+% titre: Calcul mental
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: PPMC et PGDC
+% niveau: [9e]
+% type: EVAL
+% tags: [c-nombres-premiers, c-decomposition-facteurs-premiers, c-multiple, c-diviseur, c-ppmc,  p-question-TS]
+% difficulte: 1
+% corrige: true
+% ---
+
+\question
+Détermine:
+
+\begin{parts} 
+\vspace{10pt}\part[3]
+le ppmc de 16 et 40
+
+\vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[110pt]
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		16&2\\
+		8&2\\
+		4&2\\
+		2&2\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		40&2\\
+		20&2\\
+		10&2\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$16 = 2^4$ \quad / \quad $40 = 2^3 \cdot 5$
+		
+		ppmc(16;40) $= 2^4 \cdot 5 = 80$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de multiples
+		
+		1pt pour le ppmc
+		\end{minipage}%
+	\end{solutionorgrid}
+
+\vspace{10pt}\part[3]
+le ppmc de 39 et 21
+
+\vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[110pt]
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		39&3\\
+		13&13\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		21&3\\
+		7&7\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$39 = 3 \cdot 13$ \quad / \quad $21 = 3 \cdot 7$
+		
+		ppmc(39;21) $= 3 \cdot 7 \cdot 13 = 273$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de multiples
+		
+		1pt pour le ppmc
+		\end{minipage}%
+	\end{solutionorgrid}
+
+\vspace{10pt}\part[3]
+le pgdc de 12 et 14
+
+\vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[110pt]
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		12&2\\
+		6&2\\
+		3&3\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		14&2\\
+		7&7\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$12 = 2^2 \cdot 3$ \quad / \quad $14 = 2 \cdot 7$
+		
+		pgdc(12;14) $= 2$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de diviseurs
+		
+		1pt pour le ppmc
+		\end{minipage}%
+	\end{solutionorgrid}
+
+\vspace{10pt}\part[3]
+le pgdc de 120 et 225
+
+\vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[110pt]
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		120&2\\
+		60&2\\
+		30&2\\
+		15&3\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		225&3\\
+		75&3\\
+		25&5\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$120 = 2^3 \cdot 3 \cdot 5$ \quad / \quad $225 = 3^2 \cdot 5^2$
+		
+		pgdc(120;225) $= 3 \cdot 5 = 15$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de diviseurs
+		
+		1pt pour le ppmc
+		\end{minipage}%
+	\end{solutionorgrid}
+\end{parts}
+

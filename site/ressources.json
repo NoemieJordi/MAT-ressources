@@ -1,5 +1,57 @@
 [
   {
+    "titre": "9P - ETA1 (exercice) - 20260910",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-diviseur",
+      "c-multiple",
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "c-ppmc",
+      "p-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_9P_ETA1ex_20260910.pdf",
+    "corrige_pdf": "corr/EVAL_9P_ETA1ex_20260910_corrige.pdf",
+    "fichier": "EVAL_9P_ETA1ex_20260910"
+  },
+  {
+    "titre": "9P - ETA1 - 20200914",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-diviseur",
+      "c-multiple",
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "c-ppmc",
+      "p-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_9P_ETA1_20230914.pdf",
+    "corrige_pdf": "corr/EVAL_9P_ETA1_20230914_corrige.pdf",
+    "fichier": "EVAL_9P_ETA1_20230914"
+  },
+  {
     "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - entraînement",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -223,6 +275,30 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609011723.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609011723.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609011723"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-livrets",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609091544.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609091544.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609091544"
   },
   {
     "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
@@ -548,6 +624,54 @@
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_PriseControleTableMutliplication"
   },
   {
+    "titre": "Affiche - critères de divisibilité",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Critères de divisibilité",
+    "niveau": [
+      "9e"
+    ],
+    "type": "TH",
+    "tags": [
+      "o-affiche",
+      "c-criteres-divisibilite"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_AffichesCriteresDivisibilite.pdf",
+    "corrige_pdf": null,
+    "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_AffichesCriteresDivisibilite"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Critères de divisibilité",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CriteresDivisibilite_202609091714.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CriteresDivisibilite_202609091714.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CriteresDivisibilite_202609091714"
+  },
+  {
     "titre": "Dossier d'exercices - Critères de divisibilité",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -663,6 +787,80 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite"
   },
   {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Multiples et diviseurs",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-diviseur",
+      "c-multiple",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-MultiplesDiviseurs_202609091555.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-MultiplesDiviseurs_202609091555.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-MultiplesDiviseurs_202609091555"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Nombres premiers",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609091654.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609091654.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609091654"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Nombres premiers",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609100633.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609100633.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609100633"
+  },
+  {
     "titre": "Loto du crible d'Ératosthène",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -688,6 +886,34 @@
     "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
     "corrige_pdf": "corr/JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene.pdf",
     "fichier": "JEU_NO-NbNaturelsDecimaux-NombresPremiers_LotoCribleEratosthene"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "PPMC et PGDC",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "c-multiple",
+      "c-diviseur",
+      "c-ppmc",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609100705.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609100705.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609100705"
   },
   {
     "titre": "Calculs de priorités des opérations (séries A, B et C)",
@@ -820,6 +1046,30 @@
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202608062130"
   },
   {
+    "titre": "Priorité des opération",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-priorite-operations",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609100950.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609100950.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609100950"
+  },
+  {
     "titre": "Whodunnit? - priorité des opérations",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -871,7 +1121,7 @@
     "fichier": "PLANIF_NO-NbNaturelsDecimaux-9VP"
   },
   {
-    "titre": "9p - Nombres naturels et décimaux - Corrigés (réponses seules)",
+    "titre": "9P - Nombres naturels et décimaux - Corrigés (réponses seules)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "",
@@ -1449,7 +1699,7 @@
   {
     "titre": "11G1 - TS1 - 20201007",
     "theme": "NO",
-    "chapitre": "Nombres rééels",
+    "chapitre": "Nombres rééls",
     "sous_chapitre": "Calcul réfléchi et mental",
     "niveau": [],
     "type": "RES",
@@ -1521,9 +1771,33 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalité-ResoudreProblemes_202609021554.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalité-ResoudreProblemes_202609021554.pdf",
-    "fichier": "EVAL_FA-Proportionnalité-ResoudreProblemes_202609021554"
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554"
+  },
+  {
+    "titre": "Problème de proportionnalité- les séances de cinéma",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609031038.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609031038.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609031038"
   },
   {
     "titre": "Problème de proportionnalité- les séances de cinéma",
@@ -1545,9 +1819,30 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalité-ResoudreProblemes_202609031038.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalité-ResoudreProblemes_202609031038.pdf",
-    "fichier": "EVAL_FA-Proportionnalité-ResoudreProblemes_202609031038"
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609061205.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609061205.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609061205"
+  },
+  {
+    "titre": "10G2 - Proportionnalité et diagrammes",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "",
+    "niveau": [
+      "10e"
+    ],
+    "type": "PLANIF",
+    "tags": [],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/PLANIF_FA-ProportionnaliteDiagrammes-10VG2.pdf",
+    "corrige_pdf": null,
+    "fichier": "PLANIF_FA-ProportionnaliteDiagrammes-10VG2"
   },
   {
     "titre": "Triangles semblables",
