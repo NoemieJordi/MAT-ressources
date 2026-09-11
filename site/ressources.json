@@ -1832,7 +1832,13 @@
       "10e"
     ],
     "type": "PLANIF",
-    "tags": [],
+    "tags": [
+      "c-proportionnalite",
+      "c-pente",
+      "c-echelle",
+      "c-diagrammes",
+      "c-lecture-donnees"
+    ],
     "difficulte": 1,
     "corrige": false,
     "source": "latex",
