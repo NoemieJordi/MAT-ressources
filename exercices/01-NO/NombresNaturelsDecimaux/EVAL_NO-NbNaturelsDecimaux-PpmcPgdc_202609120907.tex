@@ -1,0 +1,93 @@
+% ---
+% titre: Calcul mental
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: PPMC et PGDC
+% niveau: [9e]
+% type: EVAL
+% tags: [c-nombres-premiers, c-decomposition-facteurs-premiers, p-question-TS]
+% difficulte: 1
+% corrige: true
+% ---
+
+\question
+Détermine:
+
+\begin{parts} 
+
+\vspace{20pt}\part[6]
+le ppmc et le pgdc de 18 et 30 par la méthode de la liste.
+
+\vspace{20pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[160pt]
+		M$(18)$ = $\{18; 36; 54; 72; 90; 108; 126; \ldots\}$
+		
+		M$(30)$ = $\{30; 60; 90; 120; \ldots\}$
+		
+		\vspace{10pt}
+		ppmc(18;30) $= 90$
+		
+		\vspace{10pt}
+		\textbf{1pt} pour  chaque liste de multiples
+		
+		\textbf{1pt} pour le ppmc
+		
+		\vspace{20pt}
+		D$(18)$ = $\{1; 2; 3; 6; 9; 18\}$
+		
+		D$(30)$ = $\{1; 2; 3; 5; 6; 10; 15; 30\}$
+		
+		\vspace{10pt}
+		pgdc(18;30) $= 6$
+		
+		\vspace{10pt}
+		\textbf{1pt} pour chaque liste de diviseurs
+		
+		\textbf{1pt} pour le pgdc
+	\end{solutionorgrid}
+
+\vspace{20pt}\part[4]
+le ppmc et le pgdc de 88 et 132 par la méthode de la décomposition en facteurs premiers.
+
+\vspace{20pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[160pt]
+		\begin{minipage}[t]{0.12\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		88&2\\
+		44&2\\
+		22&2\\
+		11&11\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.12\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		132&2\\
+		66&2\\
+		33&3\\
+		11&11\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.7\linewidth}
+		\vspace{0pt}
+		$88 = 2^3 \cdot 11$ \quad / \quad $132 = 2^2 \cdot 3 \cdot 11$
+		
+		\vspace{10pt}
+		ppmc(88;132) $= 2^3\cdot 3 \cdot 11 = 264$
+		
+		\vspace{10pt}
+		pgdc(88;132) $= 2^2\cdot 11 = 44$
+				
+		\vspace{10pt}
+		\textbf{1pt} pour chaque décomposition
+		
+		\textbf{1pt} pour le ppmc et  \textbf{1pt} pour le pgdc
+		\end{minipage}%
+	\end{solutionorgrid}
+\end{parts}
+
