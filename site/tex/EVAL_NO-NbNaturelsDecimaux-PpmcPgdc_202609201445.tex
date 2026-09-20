@@ -1,0 +1,44 @@
+% ---
+% titre: Problème de ppmc - trois bateaux de la CGN
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: PPMC et PGDC
+% niveau: [9e]
+% type: EVAL
+% tags: [c-ppmc, p-question-TS]
+% difficulte: 1
+% corrige: true
+% ---
+
+\question[7]
+Trois bateaux de la CGN quittent le port d'Ouchy à 7h00 du matin, chacun pour effectuer son propre trajet en boucle (toujours le même trajet, différent de celui des deux autres). Dès qu'un bateau termine son trajet, il repart aussitôt pour un nouveau tour identique — et ce, sans interruption jusqu'à minuit au plus tard. Le Rhône met 40 minutes par trajet, Le Simplon 30 minutes, et Le Savoie 50 minutes.
+
+\vspace{10pt}À quelle heure les trois bateaux se retrouveront-ils à nouveau ensemble au port d'Ouchy ?
+
+\vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[220pt]
+	Décomposition en facteurs premiers :
+	
+	$40 = 2^3\cdot 5$ \hfill \textbf{1pt} (-0.5pt par erreur)
+	
+	$30 = 2\cdot 3\cdot 5$ \hfill \textbf{1pt} (-0.5pt par erreur)
+	
+	$50 = 2\cdot 5^2$ \hfill \textbf{1pt} (-0.5pt par erreur)
+
+	\vspace{10pt}
+	PPMC$(40\,;\,30\,;\,50) = 2^3\cdot 3\cdot 5^2 = 600$ minutes \hfill \textbf{0,5pt} pour le calcul et \textbf{0,5pt} pour la réponse
+
+	\vspace{10pt}
+	Conversion en heures : $600 : 60 = 10$ heures \hfill \textbf{0,5pt} pour le calcul et \textbf{0,5pt} pour la réponse
+	
+	\vspace{10pt}
+	Heure de la rencontre : $7\text{h}00 + 10\text{h}00 = 17\text{h}00$  \hfill \textbf{0,5pt} pour le calcul et \textbf{0,5pt} pour la réponse
+	
+	\vspace{10pt}
+	Vérification: $7\text{h}00 + 20\text{h}00 = 3\text{h}00$, ce qui est après minuit  \hfill \textbf{0,5pt}
+	\end{solutionorgrid}
+	
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{Les trois bateaux seront à nouveau tous ensemble au port d'Ouchy à 17h00. \textbf{(0.5pt)}}
+\end{tcolorbox}
