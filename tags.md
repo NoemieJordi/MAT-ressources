@@ -14,9 +14,11 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 
 | Tag | Description |
 |-----|-------------|
+| `c-aire` | Calcul d'aire |
 | `c-addition` | Addition |
 | `c-calcul-angles` | Calcul d'angles |
 | `c-combinatoire` | Combinatoire |
+| `c-conversion-unite` | Conversion d'unités |
 | `c-criteres-divisibilite` |   Critères de divisibilité |
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
 | `c-nombres-decimaux` |   Nombres décimaux |

@@ -1,0 +1,148 @@
+% ---
+% titre: Calculs de ppmc et pgdc
+% theme: NO
+% chapitre: Nombres naturels et décimaux
+% sous_chapitre: PPMC et PGDC
+% niveau: [9e]
+% type: EVAL
+% tags: [c-ppmc, p-question-TS]
+% difficulte: 1
+% corrige: true
+% ---
+
+\question
+Détermine:
+
+\begin{parts}
+
+\vspace{20pt}\part[3]
+le ppmc de 14 et 40.
+
+\vspace{20pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[130pt]
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		14&2\\
+		7&7\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.1\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		40&2\\
+		20&2\\
+		10&2\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$14 = 2 \cdot 7$ \quad / \quad $40 = 2^3 \cdot 5$
+		
+		ppmc(14;40) $= 2^3 \cdot 5 \cdot 7 = 280$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de multiples
+		
+		1pt pour le ppmc
+		\end{minipage}%
+	\end{solutionorgrid}
+
+\vspace{20pt}\part[3]
+le pgdc de 144 et 270.
+
+\vspace{20pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[130pt]
+		\begin{minipage}[t]{0.15\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		144&2\\
+		72&2\\
+		36&2\\
+		18&2\\
+		9&3\\
+		3&3\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.15\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		270&2\\
+		135&3\\
+		45&3\\
+		15&3\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$144 = 2^4 \cdot 3^2$ \quad / \quad $270 = 2 \cdot 3^3 \cdot 5$
+		
+		pgdc(144;270) $= 2 \cdot 3^2  = 18$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de diviseurs
+		
+		1pt pour le pgdc
+		\end{minipage}
+	\end{solutionorgrid}
+	
+\vspace{20pt}\part[4]
+le ppmc de 45, 75 et 100.
+
+\vspace{20pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+	\begin{solutionorgrid}[150pt]
+		\begin{minipage}[t]{0.13\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		45&3\\
+		15&3\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.13\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		75&3\\
+		25&5\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.13\linewidth}
+		\vspace{0pt}
+		\begin{tabularx}{\linewidth}{>{\raggedleft\arraybackslash}X|X}
+		100&2\\
+		50&2\\
+		25&5\\
+		5&5\\
+		1&\\
+		\end{tabularx}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.6\linewidth}
+		\vspace{0pt}
+		$45 = 3^2 \cdot 5$ \quad / \quad $75 = 3 \cdot 5^2$ \quad / \quad $100 = 2^2 \cdot 5^2$
+		
+		pgdc(45;75;100) $= 2^2 \cdot 3^2 \cdot 5^2  = 900$
+		
+		\vspace{20pt}
+		1pt pour chaque décomposition ou liste de multiples
+		
+		1pt pour le ppmc
+		\end{minipage}
+	\end{solutionorgrid}
+\end{parts}
+
