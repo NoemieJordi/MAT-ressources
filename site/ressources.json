@@ -1522,7 +1522,17 @@
       "9e"
     ],
     "type": "PLANIF",
-    "tags": [],
+    "tags": [
+      "c-criteres-divisibilite",
+      "c-decomposition-facteurs-premiers",
+      "c-diviseur",
+      "c-livrets",
+      "c-multiple",
+      "c-nombres-premiers",
+      "c-ppmc",
+      "c-priorite-operations",
+      "c-puissance"
+    ],
     "difficulte": 1,
     "corrige": false,
     "source": "latex",
@@ -1530,7 +1540,7 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/PLANIF_NO-NbNaturelsDecimaux-9VP.pdf",
+    "pdf": null,
     "corrige_pdf": null,
     "fichier": "PLANIF_NO-NbNaturelsDecimaux-9VP"
   },
@@ -2414,6 +2424,33 @@
     "pdf": "pdf/PLANIF_GM-LignesSurfaces-9VP.pdf",
     "corrige_pdf": null,
     "fichier": "PLANIF_GM-LignesSurfaces-9VP"
+  },
+  {
+    "titre": "9P - Lignes et surfaces - Corrigés (réponses seules)",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "",
+    "niveau": [
+      "9e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-conversion-unite",
+      "c-perimetre",
+      "c-aire",
+      "f-corrige",
+      "p-auto-correction"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_GM-LignesSurfaces-9VP_CorrigesReponsesSeules.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_GM-LignesSurfaces-9VP_CorrigesReponsesSeules"
   },
   {
     "titre": "Conversion d'unités",
