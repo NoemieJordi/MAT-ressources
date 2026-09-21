@@ -195,7 +195,7 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 
 %------------------------------------------------
 \newpage
-\header{Nombres naturels et décimaux - Théorie}
+\header{Lignes et surfaces - Théorie}
 
 \subsection*{1. Unités de mesure}
 
@@ -544,14 +544,15 @@ Deux figures peuvent avoir la même aire sans avoir le même périmètre, et inv
 \vfill
 \subsection*{6. Périmètre et aire des figures usuelles}
 
-\subsubsection*{Carré}
+\textcolor{themeColor}{Carré}
 
 \begin{minipage}[c]{0.45\linewidth}
 \begin{center}
-\begin{tikzpicture}[scale=1.3]
-    \draw[themeColor, thick] (0,0) rectangle (1.5,1.5);
-    \node[themeColor, above] at (0.75,1.5) {$c$};
-    \node[themeColor, left] at (0,0.75) {$c$};
+\begin{tikzpicture}[scale=1]
+	\tkzDefPoints{0/0/A,1.5/0/B, 1.5/1.5/C,0/1.5/D}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzLabelSegment[above,pos=.5](C,D){$c$}
+	\tkzLabelSegment[left,pos=.5](A,D){$c$}
 \end{tikzpicture}
 \end{center}
 \end{minipage}
@@ -566,15 +567,16 @@ A &= c\cdot c = c^2
 \vspace{4pt}
 {\small $c$ : mesure du côté}
 
-\vspace{20pt}
-\subsubsection*{Rectangle}
+\vspace{30pt}
+\textcolor{themeColor}{Rectangle}
 
 \begin{minipage}[c]{0.45\linewidth}
 \begin{center}
-\begin{tikzpicture}[scale=1.3]
-    \draw[themeColor, thick] (0,0) rectangle (2,1.2);
-    \node[themeColor, above] at (1,1.2) {$L$};
-    \node[themeColor, left] at (0,0.6) {$\ell$};
+\begin{tikzpicture}[scale=1]
+	\tkzDefPoints{0/0/A,2/0/B, 2/1/C,0/1/D}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzLabelSegment[above,pos=.5](C,D){$L$}
+	\tkzLabelSegment[left,pos=.5](A,D){$\ell$}
 \end{tikzpicture}
 \end{center}
 \end{minipage}
@@ -587,49 +589,22 @@ A &= L\cdot \ell
 \end{minipage}
 
 \vspace{4pt}
-{\small $L$ : mesure de la longueur \quad $\ell$ : mesure de la largeur}
+{\small $L$ : mesure de la longueur\\
+$\ell$ : mesure de la largeur}
 
 \newpage
-\subsubsection*{Triangle}
+\textcolor{themeColor}{Parallélogramme}
 
 \begin{minipage}[c]{0.45\linewidth}
 \begin{center}
 \begin{tikzpicture}[scale=1.3]
-    \coordinate (A) at (0,0);
-    \coordinate (B) at (2.2,0);
-    \coordinate (C) at (0.8,1.6);
-    \draw[themeColor, thick] (A) -- (B) -- (C) -- cycle;
-    \draw[themeColor, dashed] (C) -- (0.8,0);
-    \node[themeColor, below] at (1.1,0) {$b_1$};
-    \node[themeColor, right] at (0.85,0.8) {$h_1$};
-\end{tikzpicture}
-\end{center}
-\end{minipage}
-\hfill
-\begin{minipage}[c]{0.5\linewidth}
-\begin{align*}
-P &= b_1+b_2+b_3\\[6pt]
-A &= \frac{b_1\cdot h_1}{2}=\frac{b_2\cdot h_2}{2}=\frac{b_3\cdot h_3}{2}
-\end{align*}
-\end{minipage}
-
-\vspace{4pt}
-{\small $b_1, b_2, b_3$ : mesure des côtés \quad $h_1, h_2, h_3$ : mesure des hauteurs correspondantes}
-
-\vspace{20pt}
-\subsubsection*{Parallélogramme}
-
-\begin{minipage}[c]{0.45\linewidth}
-\begin{center}
-\begin{tikzpicture}[scale=1.3]
-    \coordinate (A) at (0,0);
-    \coordinate (B) at (2.2,0);
-    \coordinate (C) at (2.8,1.2);
-    \coordinate (D) at (0.6,1.2);
-    \draw[themeColor, thick] (A) -- (B) -- (C) -- (D) -- cycle;
-    \draw[themeColor, dashed] (D) -- (0.6,0);
-    \node[themeColor, below] at (1.1,0) {$b_1$};
-    \node[themeColor, left] at (0.6,0.6) {$h_1$};
+	\tkzDefPoints{0/0/A,3/0/B, 3.5/1.5/C,0.5/1.5/D}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzDefLine[perpendicular=through C](A,B)\tkzGetPoint{h1}\tkzInterLL(A,B)(C,h1)\tkzGetPoint{c}
+	\tkzDefLine[orthogonal=through B](D,A)\tkzGetPoint{h2}\tkzInterLL(A,D)(B,h2)\tkzGetPoint{b}
+	\tkzDrawSegment[dashed](C,c)\tkzDrawSegment[dashed](B,b)
+	\tkzLabelSegment[right,pos=.5](C,c){$h_1$}\tkzLabelSegment[above right,pos=.5](B,b){$h_2$}
+	\tkzLabelSegment[below,pos=.5](A,B){$b_1$}\tkzLabelSegment[left,pos=.5](A,D){$b_2$}
 \end{tikzpicture}
 \end{center}
 \end{minipage}
@@ -642,26 +617,20 @@ A &= b_1\cdot h_1 = b_2\cdot h_2
 \end{minipage}
 
 \vspace{4pt}
-{\small $b_1, b_2$ : mesure des côtés \quad $h_1, h_2$ : mesure des hauteurs correspondantes}
+{\small $b_1, b_2$ : mesure des côtés\\
+$h_1, h_2$ : mesure des hauteurs correspondantes}
 
-\newpage
-\subsubsection*{Losange}
+\vfill
+\textcolor{themeColor}{Losange}
 
 \begin{minipage}[c]{0.45\linewidth}
 \begin{center}
 \begin{tikzpicture}[scale=1.3]
-    \coordinate (A) at (0,0.8);
-    \coordinate (B) at (1.4,0);
-    \coordinate (C) at (2.8,0.8);
-    \coordinate (D) at (1.4,1.6);
-    \draw[themeColor, thick] (A) -- (B) -- (C) -- (D) -- cycle;
-    \draw[themeColor, dashed] (A) -- (C);
-    \draw[themeColor, dashed] (B) -- (D);
-    \node[themeColor, above] at (2.1,1.2) {$c$};
-    \node[themeColor, below] at (1.4,0.75) {$D$};
-    \node[themeColor, right] at (2.1,1.2) {};
-    \node[themeColor] at (1.4,-0.25) {};
-    \node[themeColor, left] at (0.7,1.0) {$d$};
+	\tkzDefPoints{0/0/A,2/-1/B, 4/0/C,2/1/D}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzLabelSegment[below left,pos=.5](A,B){$c$}
+	\tkzDrawSegment[dashed,dim={$D$,50pt,midway,above=6pt},dim fence style/.append style={draw=none}](A,C)
+	\tkzDrawSegment[dashed,dim={$d$,90pt,midway,left=6pt},dim fence style/.append style={draw=none}](B,D)
 \end{tikzpicture}
 \end{center}
 \end{minipage}
@@ -674,25 +643,22 @@ A &= \frac{D\cdot d}{2}
 \end{minipage}
 
 \vspace{4pt}
-{\small $c$ : mesure du côté \quad $D$ : mesure de la grande diagonale \quad $d$ : mesure de la petite diagonale}
+{\small $c$ : mesure du côté\\
+$D$ : mesure de la grande diagonale\\
+$d$ : mesure de la petite diagonale}
 
-\vspace{20pt}
-\subsubsection*{Trapèze}
+\vfill
+\textcolor{themeColor}{Trapèze}
 
 \begin{minipage}[c]{0.45\linewidth}
 \begin{center}
 \begin{tikzpicture}[scale=1.3]
-    \coordinate (A) at (0,0);
-    \coordinate (B) at (2.6,0);
-    \coordinate (C) at (2,1.3);
-    \coordinate (D) at (0.6,1.3);
-    \draw[themeColor, thick] (A) -- (B) -- (C) -- (D) -- cycle;
-    \draw[themeColor, dashed] (D) -- (0.6,0);
-    \node[themeColor, below] at (1.3,0) {$B$};
-    \node[themeColor, above] at (1.3,1.3) {$b$};
-    \node[themeColor, left] at (0.6,0.65) {$h$};
-    \node[themeColor, left] at (0.3,0.65) {$c_1$};
-    \node[themeColor, right] at (2.3,0.65) {$c_2$};
+	\tkzDefPoints{0/0/A,4/0/B, 3/2/C,2/2/D}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzLabelSegment[below,pos=.5](A,B){$B$}\tkzLabelSegment[above,pos=.5](C,D){$b$}
+	\tkzLabelSegment[left,pos=.5](A,D){$c_1$}\tkzLabelSegment[right,pos=.5](B,C){$c_2$}
+	\tkzDefLine[perpendicular=through D](A,B)\tkzGetPoint{h1}\tkzInterLL(A,B)(D,h1)\tkzGetPoint{d}
+	\tkzDrawSegment[dashed](D,d)\tkzLabelSegment[right,pos=.5](D,d){$h$}
 \end{tikzpicture}
 \end{center}
 \end{minipage}
@@ -705,143 +671,267 @@ A &= \frac{(B+b)\cdot h}{2} = \frac{(B+b)}{2}\cdot h
 \end{minipage}
 
 \vspace{4pt}
-{\small $B$ : mesure de la grande base \quad $b$ : mesure de la petite base \quad $h$ : mesure de la hauteur}
-%
-%%------------------------------------------------
-%\newpage
-%\header{Nombres naturels et décimaux - Lexique}
-%
-%\newtcolorbox{terme}{%
-%  enhanced, sharp corners, boxrule=0pt, colback=themeColor!6!white,
-%  colframe=themeColor!6!white,
-%  borderline west={2.2pt}{0pt}{themeColor},
-%  left=3mm, right=2mm, top=2mm, bottom=2mm,
-%}
-% 
-% \vfill
-%\begin{tcbraster}[raster columns=2, raster equal height, raster valign=top,raster column skip=2mm, raster row skip=2mm]
-%\begin{terme}
-%\textbf{\large Addition}\\[2pt]
-%{\small Opération qui consiste à réunir deux nombres (les termes) pour obtenir leur somme.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Arrondi}\\[2pt]
-%{\small Valeur approchée d'un nombre, obtenue en supprimant les derniers chiffres selon une règle donnée.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Associativité}\\[2pt]
-%{\small Propriété permettant de regrouper les termes ou facteurs d'une opération sans changer le résultat.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Chiffre}\\[2pt]
-%{\small Symbole utilisé pour écrire un nombre (0 à 9 dans le système décimal).}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Commutativité}\\[2pt]
-%{\small Propriété permettant d'échanger l'ordre des termes ou facteurs d'une opération sans changer le résultat.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Différence}\\[2pt]
-%{\small Résultat d'une soustraction.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Distributivité}\\[2pt]
-%{\small Propriété qui permet de multiplier une somme ou une différence en multipliant chaque terme séparément.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Dividende}\\[2pt]
-%{\small Nombre que l'on divise dans une division.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Diviseur}\\[2pt]
-%{\small Nombre par lequel on divise ; nombre qui divise un autre nombre sans reste.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Diviseur commun}\\[2pt]
-%{\small Nombre qui divise à la fois plusieurs nombres donnés.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Division}\\[2pt]
-%{\small Opération qui permet de partager un nombre (le dividende) en parts égales.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Élément neutre}\\[2pt]
-%{\small Nombre qui, utilisé dans une opération, ne change pas le résultat (0 pour l'addition, 1 pour la multiplication).}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Exposant}\\[2pt]
-%{\small Nombre placé en haut à droite d'un autre indiquant combien de fois celui-ci est multiplié par lui-même.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Facteur}\\[2pt]
-%{\small Chacun des nombres que l'on multiplie entre eux.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Nombre}\\[2pt]
-%{\small Notion mathématique servant à compter, mesurer ou repérer.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Nombre naturel}\\[2pt]
-%{\small Nombre entier positif ou nul (0, 1, 2, 3, \ldots).}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Nombre décimal}\\[2pt]
-%{\small Nombre qui peut s'écrire avec une virgule (partie entière et partie décimale).}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Nombre premier}\\[2pt]
-%{\small Nombre naturel supérieur à 1 qui n'a que deux diviseurs~: 1 et lui-même.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Multiple}\\[2pt]
-%{\small Résultat de la multiplication d'un nombre par un nombre naturel.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Multiple commun}\\[2pt]
-%{\small Nombre qui est multiple de plusieurs nombres donnés à la fois.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Multiplication}\\[2pt]
-%{\small Opération qui permet de calculer le produit de deux ou plusieurs facteurs.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Ordre décroissant}\\[2pt]
-%{\small Rangement des nombres du plus grand au plus petit.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Ordre croissant}\\[2pt]
-%{\small Rangement des nombres du plus petit au plus grand.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Pgdc}\\[2pt]
-%{\small Plus grand diviseur commun à plusieurs nombres.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Ppmc}\\[2pt]
-%{\small Plus petit multiple commun (non nul) à plusieurs nombres.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Produit}\\[2pt]
-%{\small Résultat d'une multiplication.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Puissance}\\[2pt]
-%{\small Écriture qui représente la multiplication répétée d'un même facteur.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Quotient}\\[2pt]
-%{\small Résultat d'une division.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Somme}\\[2pt]
-%{\small Résultat d'une addition.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Soustraction}\\[2pt]
-%{\small Opération qui permet de calculer la différence entre deux nombres.}
-%\end{terme}
-%\begin{terme}
-%\textbf{\large Terme}\\[2pt]
-%{\small Chacun des nombres que l'on additionne.}
-%\end{terme}
-%\end{tcbraster}
+{\small $B$ : mesure de la grande base \\
+$b$ : mesure de la petite base\\
+$h$ : mesure de la hauteur}
+
+\vfill
+\textcolor{themeColor}{Triangle}
+
+\begin{minipage}[c]{0.45\linewidth}
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+	\tkzDefPoints{0/0/A,4/0/B, 3/2/C}
+	\tkzDrawPolygon(A,B,C)
+	\tkzLabelSegment[above left,pos=.5](A,C){$b_1$}\tkzLabelSegment[below,pos=.5](A,B){$b_3$}\tkzLabelSegment[above right,pos=.5](B,C){$b_2$}
+	\tkzDefLine[perpendicular=through B](A,C)\tkzGetPoint{h1}\tkzInterLL(A,C)(B,h1)\tkzGetPoint{b}
+	\tkzDrawSegment[dashed,dim={$h_1$,-50pt,midway,above right=6pt},dim fence style/.append style={draw=none}](B,b)
+	\tkzDefLine[perpendicular=through A](B,C)\tkzGetPoint{h2}\tkzInterLL(B,C)(A,h2)\tkzGetPoint{a}
+	\tkzDrawSegment[dashed,dim={$h_2$,50pt,midway,below=6pt},dim fence style/.append style={draw=none}](A,a)
+	\tkzDefLine[perpendicular=through C](A,B)\tkzGetPoint{h3}\tkzInterLL(A,B)(C,h3)\tkzGetPoint{c}
+	\tkzDrawSegment[dashed,dim={$h_3$,-140pt,midway,left=6pt},dim fence style/.append style={draw=none}](C,c)
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.5\linewidth}
+\begin{align*}
+P &= b_1+b_2+b_3\\[6pt]
+A &= \frac{b_1\cdot h_1}{2}=\frac{b_2\cdot h_2}{2}=\frac{b_3\cdot h_3}{2}
+\end{align*}
+\end{minipage}
+
+\vspace{4pt}
+{\small $b_1, b_2, b_3$ : mesure des bases\\
+$h_1, h_2, h_3$ : mesure des hauteurs correspondantes}
+
+\newpage
+\subsection*{7. Périmètre et aire de figures complexes}
+
+N'importe quelle figure peut être décomposée en plusieurs figures usuelles.
+
+\vspace{15pt}
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+    \def\forme{(0,0) -- (2,0) -- (2,1) -- (1.3,1) -- (1.3,1.8) -- (0,1.8) -- cycle}
+
+    % Figure complexe
+    \begin{scope}
+        \draw[themeColor, ultra thick] \forme;
+        \node[themeColor, below] at (1,-0.4) {\small Figure complexe};
+    \end{scope}
+
+    \node at (3,0.9) {\Large $=$};
+
+    % Rectangle 1 (partie haute-gauche)
+    \begin{scope}[xshift=3.7cm]
+        \draw[themeColor, ultra thick] (0,0) rectangle (1.3,1.8);
+        \node[themeColor, below] at (0.65,-0.4) {\small Rectangle 1};
+    \end{scope}
+
+    \node at (5.6,0.9) {\Large $+$};
+
+    % Rectangle 2 (partie basse-droite)
+    \begin{scope}[xshift=6cm]
+        \draw[themeColor, ultra thick] (0,0) rectangle (0.7,1);
+        \node[themeColor, below] at (0.35,-0.4) {\small Rectangle 2};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\vfill
+\subsubsection*{Aire}
+
+\begin{regle}{Règle}
+L'\textcolor{themeColor}{aire} d'une figure complexe est la \textbf{combinaison des aires} des figures usuelles qui la composent (par addition ou soustraction).
+\end{regle}
+
+\vspace{15pt}
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+    \def\forme{(0,0) -- (2,0) -- (2,1) -- (1.3,1) -- (1.3,1.8) -- (0,1.8) -- cycle}
+
+    \begin{scope}
+        \filldraw[themeColor!15, pattern=north east lines, pattern color=themeColor] \forme;
+        \draw[themeColor, thick] \forme;
+        \node[themeColor, fill=white, inner sep=2pt] at (1,0.5) {\small $A$};
+    \end{scope}
+
+    \node at (3,0.9) {\Large $=$};
+
+    \begin{scope}[xshift=3.7cm]
+        \filldraw[themeColor!15, pattern=north east lines, pattern color=themeColor] (0,0) rectangle (1.3,1.8);
+        \draw[themeColor, thick] (0,0) rectangle (1.3,1.8);
+        \node[themeColor, fill=white, inner sep=2pt] at (0.65,0.9) {\small $A_1$};
+    \end{scope}
+
+    \node at (5.6,0.9) {\Large $+$};
+
+    \begin{scope}[xshift=6cm]
+        \filldraw[themeColor!15, pattern=north east lines, pattern color=themeColor] (0,0) rectangle (0.7,1);
+        \draw[themeColor, thick] (0,0) rectangle (0.7,1);
+        \node[themeColor, fill=white, inner sep=2pt] at (0.35,0.5) {\small $A_2$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+$A = A_1 + A_2$
+\end{center}
+
+\vfill
+\subsubsection*{Périmètre}
+
+\begin{regle}{Règle}
+Pour calculer le périmètre d'une figure complexe, il suffit d'\textbf{additionner les longueurs des segments} qui forment son contour.
+\end{regle}
+
+\vspace{15pt}
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+    \def\forme{(0,0) -- (2,0) -- (2,1) -- (1.3,1) -- (1.3,1.8) -- (0,1.8) -- cycle}
+
+    \begin{scope}
+        \draw[themeColor, ultra thick] \forme;
+        \node[themeColor, fill=white, inner sep=2pt] at (1,0.5) {\small $P$};
+    \end{scope}
+
+    \node at (3,0.9) {\Large $\neq$};
+
+    \begin{scope}[xshift=3.7cm]
+        \draw[themeColor, ultra thick] (0,0) rectangle (1.3,1.8);
+        \node[themeColor, fill=white, inner sep=2pt] at (0.65,0.9) {\small $P_1$};
+    \end{scope}
+
+    \node at (5.6,0.9) {\Large $+$};
+
+    \begin{scope}[xshift=6cm]
+        \draw[themeColor, ultra thick] (0,0) rectangle (0.7,1);
+        \node[themeColor, fill=white, inner sep=2pt] at (0.35,0.5) {\small $P_2$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\vspace{10pt}
+\begin{astuce}{Attention}
+Le \textcolor{themeColor}{périmètre} d'une figure complexe n'est \textbf{pas} la combinaison des périmètres des figures usuelles qui la composent.
+\end{astuce}
+
+%------------------------------------------------
+\newpage
+\header{Lignes et surfaces - Lexique}
+
+\newtcolorbox{terme}{%
+  enhanced, sharp corners, boxrule=0pt, colback=themeColor!6!white,
+  colframe=themeColor!6!white,
+  borderline west={2.2pt}{0pt}{themeColor},
+  left=3mm, right=2mm, top=2mm, bottom=2mm,
+}
+
+ \vfill
+\begin{tcbraster}[raster columns=2, raster equal height, raster valign=top,raster column skip=2mm, raster row skip=2mm]
+\begin{terme}
+\textbf{\large Aire}\\[2pt]
+{\small Surface intérieure d'une figure. Notée $A$, exprimée en mètre-carré [m$^2$].}
+\end{terme}
+\begin{terme}
+\textbf{\large Base}\\[2pt]
+{\small Côté d'une figure servant de référence pour calculer une hauteur correspondante.}
+\end{terme}
+\begin{terme}
+\textbf{\large Carré}\\[2pt]
+{\small Quadrilatère ayant 4 côtés isométriques et 4 angles droits.}
+\end{terme}
+\begin{terme}
+\textbf{\large Conversion d'unité}\\[2pt]
+{\small Passage d'une unité de mesure à une autre pour exprimer la même grandeur.}
+\end{terme}
+\begin{terme}
+\textbf{\large Côté}\\[2pt]
+{\small Segment qui forme le contour d'une figure.}
+\end{terme}
+\begin{terme}
+\textbf{\large Diagonale}\\[2pt]
+{\small Segment reliant deux sommets non consécutifs d'un polygone.}
+\end{terme}
+\begin{terme}
+\textbf{\large Distance}\\[2pt]
+{\small Longueur en ligne droite entre deux points. Exprimée en mètre [m].}
+\end{terme}
+\begin{terme}
+\textbf{\large Figure complexe}\\[2pt]
+{\small Figure qui peut être décomposée en plusieurs figures usuelles.}
+\end{terme}
+\begin{terme}
+\textbf{\large Figure usuelle}\\[2pt]
+{\small Figure de base : carré, rectangle, triangle, parallélogramme, losange ou trapèze.}
+\end{terme}
+\begin{terme}
+\textbf{\large Grandeur}\\[2pt]
+{\small Ce que l'on peut mesurer, par exemple une longueur, une aire, une masse ou un temps.}
+\end{terme}
+\begin{terme}
+\textbf{\large Hauteur}\\[2pt]
+{\small Segment perpendiculaire à une base, reliant celle-ci à un sommet opposé.}
+\end{terme}
+\begin{terme}
+\textbf{\large Longueur}\\[2pt]
+{\small Mesure d'une distance selon une direction donnée.}
+\end{terme}
+\begin{terme}
+\textbf{\large Losange}\\[2pt]
+{\small Quadrilatère ayant 4 côtés isométriques.}
+\end{terme}
+\begin{terme}
+\textbf{\large Parallèle}\\[2pt]
+{\small Se dit de deux droites (ou segments) qui ne se croisent jamais, aussi loin qu'on les prolonge.}
+\end{terme}
+\begin{terme}
+\textbf{\large Parallélogramme}\\[2pt]
+{\small Quadrilatère dont les côtés opposés sont parallèles deux à deux.}
+\end{terme}
+\begin{terme}
+\textbf{\large Périmètre}\\[2pt]
+{\small Longueur totale du contour d'une figure. Noté $P$, exprimé en mètre [m].}
+\end{terme}
+\begin{terme}
+\textbf{\large Perpendiculaire}\\[2pt]
+{\small Se dit de deux droites (ou segments) qui se croisent en formant un angle droit.}
+\end{terme}
+\begin{terme}
+\textbf{\large Polygone}\\[2pt]
+{\small Figure plane fermée, délimitée par des segments de droite appelés côtés.}
+\end{terme}
+\begin{terme}
+\textbf{\large Préfixe}\\[2pt]
+{\small Petit mot ajouté devant une unité pour en indiquer la taille (kilo-, centi-, \ldots).}
+\end{terme}
+\begin{terme}
+\textbf{\large Quadrilatère}\\[2pt]
+{\small Polygone ayant 4 côtés.}
+\end{terme}
+\begin{terme}
+\textbf{\large Rectangle}\\[2pt]
+{\small Quadrilatère ayant 4 angles droits.}
+\end{terme}
+\begin{terme}
+\textbf{\large Sommet}\\[2pt]
+{\small Point où se rencontrent deux côtés d'un polygone.}
+\end{terme}
+\begin{terme}
+\textbf{\large Surface}\\[2pt]
+{\small Espace en deux dimensions. Exprimée en mètre-carré [m$^2$].}
+\end{terme}
+\begin{terme}
+\textbf{\large Trapèze}\\[2pt]
+{\small Quadrilatère ayant une seule paire de côtés parallèles.}
+\end{terme}
+\begin{terme}
+\textbf{\large Triangle}\\[2pt]
+{\small Polygone à 3 côtés.}
+\end{terme}
+\begin{terme}
+\textbf{\large Unité de mesure}\\[2pt]
+{\small Grandeur de référence permettant de comparer des quantités.}
+\end{terme}
+\end{tcbraster}
