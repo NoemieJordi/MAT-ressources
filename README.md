@@ -219,8 +219,9 @@ Catégories possibles:
 | fiche | Document prêt à distribuer aux élèves |
 | inspiration | Idées pour créer tes propres activités |
 | outil | GeoGebra, applis, matériel... |
-| reference | Théorie, documentation pour toi |
-| Evaluation | Anciens TS et ETA compilés |
+| référence | Théorie, documentation pour toi |
+| évaluation | Anciens TS et ETA compilés |
+| corrigés | Corrigés par chapitre |
 
 ---
 
