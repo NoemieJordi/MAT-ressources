@@ -6,7 +6,7 @@
 % niveau: [9e]
 % type: PLANIF
 % tags: [c-criteres-divisibilite,c-decomposition-facteurs-premiers,c-diviseur,c-livrets,c-multiple,c-nombres-premiers,c-ppmc,c-priorite-operations,c-puissance]
-% source: latex
+% source: latex 
 % ---
 
 \header{Nombres naturels et décimaux - Objectifs}
@@ -141,7 +141,7 @@ Utiliser les propriétés des opérations (addition, soustraction, multiplicatio
  
 % Case à cocher
 \newcommand{\case}{\raisebox{-0.1ex}{\Large$\square$}}
- 
+
 % Marqueurs obligatoire / facultatif (forme, pas seulement couleur)
 \newcommand{\oblig}{\tikz[baseline=-0.5ex]{\fill[themeColor] (0,0) circle (0.09);}}
 \newcommand{\faclt}{\tikz[baseline=-0.5ex]{\draw[gray!70,line width=0.6pt] (0,0) circle (0.09);}}
@@ -149,7 +149,7 @@ Utiliser les propriétés des opérations (addition, soustraction, multiplicatio
  \vfill
 \begin{tikzpicture}[
 circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum size=11mm, inner sep=0pt},
-  box/.style={rectangle, draw=themeColor!35!white, rounded corners=2pt, fill=themeColor!8!white, inner sep=3mm, text width=14.7cm, align=left, anchor=north west}]
+ box/.style={rectangle, draw=themeColor!35!white, rounded corners=2pt, fill=themeColor!8!white, inner sep=3mm, text width=14.7cm, align=left, anchor=north west}]
  
 % ---------- Étape 1 ----------
 \node[circ, anchor=north] (c1) at (0,0) {1};
@@ -239,7 +239,7 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 \end{pgfonlayer}
  
 \end{tikzpicture}
- 
+
  \vfill
 \begin{center}
 \small \case~à faire \qquad \oblig~\rref{obligatoire} \qquad \faclt~facultatif (consolidation / pour aller plus loin)
@@ -247,9 +247,6 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 \vspace{1em}
 
 %------------------------------------------------
-\newtcolorbox{regle}[1]{enhanced, sharp corners, boxrule=0pt, interior hidden, frame hidden,borderline west={2.2pt}{0pt}{themeColor},left=3mm, right=2mm, top=2mm, bottom=2mm,title={\textbf{\textcolor{themeColor}{#1}}}, fonttitle=\bfseries,attach title to upper={\\},}
-\newtcolorbox{astuce}[1]{enhanced, sharp corners, halign=justify, valign=top, colback=white, colframe=themeColor, boxrule=2.2pt, left=3mm, right=2mm, top=2mm, bottom=2mm,title={\textbf{\textcolor{themeColor}{#1}}}, fonttitle=\bfseries\small,attach title to upper={\\},}
-
 \newpage
 \header{Nombres naturels et décimaux - Théorie}
 
