@@ -51,8 +51,8 @@
     "categorie": "évaluation",
     "source_originale": null,
     "template": null,
-    "pdf": null,
-    "corrige_pdf": null,
+    "pdf": "pdf/EVAL_9P_ETA1_20260923.pdf",
+    "corrige_pdf": "corr/EVAL_9P_ETA1_20260923_corrige.pdf",
     "fichier": "EVAL_9P_ETA1_20260923"
   },
   {
@@ -451,6 +451,30 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609171735.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609171735.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609171735"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-livrets",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609230634.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609230634.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609230634"
   },
   {
     "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
@@ -858,6 +882,30 @@
     "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_AffichesCriteresDivisibilite"
   },
   {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Critères de divisibilité",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-criteres-divisibilite",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CriteresDivisibilite_202609230636.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CriteresDivisibilite_202609230636.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CriteresDivisibilite_202609230636"
+  },
+  {
     "titre": "Dossier d'exercices - Critères de divisibilité",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -953,7 +1001,7 @@
     ],
     "type": "EVAL",
     "tags": [
-      "cc-criteres-divisibilite",
+      "c-criteres-divisibilite",
       "p-question-TS"
     ],
     "difficulte": 1,
@@ -1043,6 +1091,31 @@
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CriteresDivisibilite_WhoDunnitCriteresDivisibilite"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Multiples et diviseurs",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-diviseur",
+      "c-multiple",
+      "p-question-TS"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-MultiplesDiviseurs_202609230638.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-MultiplesDiviseurs_202609230638.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-MultiplesDiviseurs_202609230638"
   },
   {
     "titre": "Liste de diviseurs",
@@ -1140,9 +1213,58 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_20260909201045.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_20260909201045.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-NombresPremiers_20260909201045"
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609201045.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609201045.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609201045"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Nombres premiers",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609230640.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609230640.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609230640"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Nombres premiers",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609230642.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609230642.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-NombresPremiers_202609230642"
   },
   {
     "titre": "Décomposition en produit de facteurs premiers",
@@ -1273,6 +1395,31 @@
     "pdf": "pdf/TH_NO-NbNaturelsDecimaux-PpmcPgdc_UnOuAutre.pdf",
     "corrige_pdf": null,
     "fichier": "TH_NO-NbNaturelsDecimaux-PpmcPgdc_UnOuAutre"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "PPMC et PGDC",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609230644.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609230644.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609230644"
   },
   {
     "titre": "Calculs de ppmc et pgdc",
@@ -1551,6 +1698,30 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609201138.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609201138.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609201138"
+  },
+  {
+    "titre": "Priorité des opération",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "11e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-priorite-operations",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609230446.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609230446.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609230446"
   },
   {
     "titre": "Whodunnit? - priorité des opérations",
@@ -2341,6 +2512,31 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743"
+  },
+  {
+    "titre": "Puissances et racines",
+    "theme": "NO",
+    "chapitre": "Puissances et racines",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648"
   },
   {
     "titre": "Problème de proportionnalité - la vente de pâtisserie",
