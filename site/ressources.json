@@ -28,6 +28,34 @@
     "fichier": "EVAL_9P_ETA1ex_20260910"
   },
   {
+    "titre": "9P - ETA1 (rattrapage) - 202609123",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-diviseur",
+      "c-multiple",
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "c-ppmc",
+      "p-TS"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": null,
+    "corrige_pdf": null,
+    "fichier": "EVAL_9P_ETA1_20260923"
+  },
+  {
     "titre": "9P - ETA1 - 20230914",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -282,9 +310,42 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul.pdf",
+    "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul1-6.pdf",
     "corrige_pdf": null,
-    "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul"
+    "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul1-6"
+  },
+  {
+    "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - théorie",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "TH",
+    "tags": [
+      "c-nombres-decimaux",
+      "c-droite-numerique",
+      "c-operations",
+      "c-addition",
+      "c-soustraction",
+      "c-criteres-divisibilite",
+      "c-decomposition-facteurs-premiers",
+      "c-nombres-premiers",
+      "c-ppmc",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul7-12.pdf",
+    "corrige_pdf": null,
+    "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul7-12"
   },
   {
     "titre": "Calcul flash: 9VP - cycles 1 à 6 - plannification",
@@ -421,7 +482,7 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental_CalculsColonneDecimaux"
   },
   {
-    "titre": "Calculs décimaux à poser en colonne: drill",
+    "titre": "Calculs décimaux à poser en colonne - entraînement",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
     "sous_chapitre": "Calcul réfléchi et mental",
