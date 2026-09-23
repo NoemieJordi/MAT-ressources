@@ -477,6 +477,35 @@
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609230634"
   },
   {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-division",
+      "c-multiplication",
+      "c-operations",
+      "c-soustraction",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": null,
+    "corrige_pdf": null,
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549"
+  },
+  {
     "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -2063,6 +2092,37 @@
     "pdf": "pdf/EVAL_NO-NbRelatifs-PuissancesRacines_202608062041.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbRelatifs-PuissancesRacines_202608062041.pdf",
     "fichier": "EVAL_NO-NbRelatifs-PuissancesRacines_202608062041"
+  },
+  {
+    "titre": "10G2 - TS1 - 20230908",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-nombres-decimaux",
+      "c-nombres-relatifs",
+      "c-racine",
+      "c-puissance",
+      "c-proportionnalite",
+      "c-operations",
+      "c-priorite-operations",
+      "c-probleme",
+      "p-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_10G2_TS1_20260908.pdf",
+    "corrige_pdf": "corr/EVAL_10G2_TS1_20260908_corrige.pdf",
+    "fichier": "EVAL_10G2_TS1_20260908"
   },
   {
     "titre": "Priorité des opération",
