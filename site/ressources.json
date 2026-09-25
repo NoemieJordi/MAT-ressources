@@ -501,8 +501,8 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": null,
-    "corrige_pdf": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549"
   },
   {
@@ -2626,6 +2626,151 @@
     "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554"
   },
   {
+    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146"
+  },
+  {
+    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156"
+  },
+  {
+    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241307.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241307.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241307"
+  },
+  {
+    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241310.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241310.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241310"
+  },
+  {
+    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322"
+  },
+  {
+    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": null,
+    "corrige_pdf": null,
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241326"
+  },
+  {
     "titre": "Problème de proportionnalité - les séances de cinéma",
     "theme": "FA",
     "chapitre": "Proportionnalité",
@@ -2696,7 +2841,7 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/PLANIF_FA-ProportionnaliteDiagrammes-10VG2.pdf",
+    "pdf": null,
     "corrige_pdf": null,
     "fichier": "PLANIF_FA-ProportionnaliteDiagrammes-10VG2"
   },
