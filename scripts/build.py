@@ -6,6 +6,7 @@ build.py — compile les .tex en PDF (élève + corrigé) et génère ressources
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -21,12 +22,11 @@ TEMPLATE  = ROOT / "template_site.tex"
 SITE      = ROOT / "site"
 PDF_DIR   = SITE / "pdf"
 CORR_DIR  = SITE / "corr"
+TEX_DIR   = SITE / "tex"
 JSON_OUT  = SITE / "ressources.json"
 
 PDF_DIR.mkdir(parents=True, exist_ok=True)
 CORR_DIR.mkdir(parents=True, exist_ok=True)
-
-TEX_DIR = SITE / "tex"
 TEX_DIR.mkdir(parents=True, exist_ok=True)
 
 # -----------------------------------------------------------------------
@@ -127,18 +127,23 @@ ORDRE_THEMES = {code: i for i, code in enumerate(THEMES_ORDER)}
 # -----------------------------------------------------------------------
 # Compilation LaTeX
 # -----------------------------------------------------------------------
-def compile_latex(tex_src: str, out_dir: Path, stem: str) -> bool:
+def compile_latex(tex_src: str, out_dir: Path, stem: str, img_dir: Path | None = None) -> bool:
     tmp = out_dir / f"{stem}.tex"
     tmp.write_text(tex_src, encoding="utf-8")
 
     cmd = ["lualatex", "--interaction=nonstopmode", f"--output-directory={out_dir}", str(tmp)]
 
-    # 1re passe : uniquement fonctionnelle (écrit le .aux pour la 2e passe,
-    # p. ex. hauteurs tcolorbox, références croisées), sortie non affichée
-    subprocess.run(cmd, capture_output=True, text=True)
+    # Ajoute le dossier des images dans TEXINPUTS
+    env = os.environ.copy()
+    if img_dir and img_dir.exists():
+        existing = env.get("TEXINPUTS", "")
+        env["TEXINPUTS"] = f"{img_dir}:{existing}"
 
-    # 2e passe : celle qui compte, relit le .aux généré ci-dessus
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    # 1re passe (pour .aux, tcolorbox, références croisées)
+    subprocess.run(cmd, capture_output=True, text=True, env=env)
+
+    # 2e passe (celle qui compte)
+    result = subprocess.run(cmd, capture_output=True, text=True, env=env)
 
     for ext in [".aux", ".log", ".out", ".tex"]:
         p = out_dir / f"{stem}{ext}"
@@ -181,17 +186,20 @@ def build_resource(tex_path: Path) -> dict | None:
         meta["fichier"]     = stem
         return meta
 
+    # Dossier des images = même dossier que le .tex source
+    img_dir = tex_path.parent
+
     # Compilation LaTeX
     template_src = get_template_src(meta)
     src_eleve = make_src(content, meta["theme"], "\\toggletrue{question}", template_src)
-    ok_eleve  = compile_latex(src_eleve, PDF_DIR, stem)
+    ok_eleve  = compile_latex(src_eleve, PDF_DIR, stem, img_dir)
     if not ok_eleve:
         print(f"  ⚠️  Échec élève : {stem}")
 
     ok_corr = False
     if meta["corrige"]:
         src_corr = make_src(content, meta["theme"], "\\togglefalse{question}", template_src)
-        ok_corr  = compile_latex(src_corr, CORR_DIR, stem)
+        ok_corr  = compile_latex(src_corr, CORR_DIR, stem, img_dir)
         if not ok_corr:
             print(f"  ⚠️  Échec corrigé : {stem}")
 
@@ -200,7 +208,6 @@ def build_resource(tex_path: Path) -> dict | None:
     meta["fichier"]     = stem
 
     # Copie le .tex source dans site/tex/ pour téléchargement
-    import shutil
     shutil.copy(tex_path, TEX_DIR / f"{stem}.tex")
 
     return meta

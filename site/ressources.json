@@ -2635,7 +2635,7 @@
       "proportionnalite",
       "p-question-TS"
     ],
-    "difficulte": 1,
+    "difficulte": 2,
     "corrige": true,
     "source": "latex",
     "lien": null,
@@ -2659,7 +2659,7 @@
       "proportionnalite",
       "p-question-TS"
     ],
-    "difficulte": 1,
+    "difficulte": 3,
     "corrige": true,
     "source": "latex",
     "lien": null,
