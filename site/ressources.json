@@ -2599,59 +2599,7 @@
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648"
   },
   {
-    "titre": "Problème de proportionnalité - la vente de pâtisserie",
-    "theme": "FA",
-    "chapitre": "Proportionnalité",
-    "sous_chapitre": "Résoudre des problèmes",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "proportionnalite",
-      "c-multiplication",
-      "c-division",
-      "c-nombres-decimaux",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554.pdf",
-    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554"
-  },
-  {
-    "titre": "Problème de proportionnalité - la vente de pâtisserie",
-    "theme": "FA",
-    "chapitre": "Proportionnalité",
-    "sous_chapitre": "Résoudre des problèmes",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "proportionnalite",
-      "c-nombres-decimaux",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146.pdf",
-    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146"
-  },
-  {
-    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "titre": "Problème d'échelle - distance entre deux villes",
     "theme": "FA",
     "chapitre": "Proportionnalité",
     "sous_chapitre": "Résoudre des problèmes",
@@ -2670,12 +2618,36 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156.pdf",
-    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156"
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322"
   },
   {
-    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "titre": "Problème d'échelle - la carte de la Suisse",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241326.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241326.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241326"
+  },
+  {
+    "titre": "Problème de proportionnalité - la provision de sucre",
     "theme": "FA",
     "chapitre": "Proportionnalité",
     "sous_chapitre": "Résoudre des problèmes",
@@ -2709,9 +2681,36 @@
     "type": "EVAL",
     "tags": [
       "proportionnalite",
+      "c-multiplication",
+      "c-division",
+      "c-nombres-decimaux",
       "p-question-TS"
     ],
     "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609021554"
+  },
+  {
+    "titre": "Problème de proportionnalité - le remplissage de bassin",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 3,
     "corrige": true,
     "source": "latex",
     "lien": null,
@@ -2723,7 +2722,7 @@
     "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241310"
   },
   {
-    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "titre": "Problème de proportionnalité - les barquettes de fraises",
     "theme": "FA",
     "chapitre": "Proportionnalité",
     "sous_chapitre": "Résoudre des problèmes",
@@ -2733,6 +2732,7 @@
     "type": "EVAL",
     "tags": [
       "proportionnalite",
+      "c-nombres-decimaux",
       "p-question-TS"
     ],
     "difficulte": 1,
@@ -2742,12 +2742,12 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322.pdf",
-    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241322"
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241146"
   },
   {
-    "titre": "Problème de proportionnalité - la vente de pâtisserie",
+    "titre": "Problème de proportionnalité - les pains au chocolat",
     "theme": "FA",
     "chapitre": "Proportionnalité",
     "sous_chapitre": "Résoudre des problèmes",
@@ -2766,9 +2766,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": null,
-    "corrige_pdf": null,
-    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241326"
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609241156"
   },
   {
     "titre": "Problème de proportionnalité - les séances de cinéma",

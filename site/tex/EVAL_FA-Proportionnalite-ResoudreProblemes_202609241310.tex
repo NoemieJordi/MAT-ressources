@@ -1,26 +1,57 @@
 % ---
-% titre: Problème de proportionnalité - la vente de pâtisserie
+% titre: Problème de proportionnalité - le remplissage de bassin
 % theme: FA
 % chapitre: Proportionnalité
 % sous_chapitre: Résoudre des problèmes
 % niveau: [10e]
 % type: EVAL
 % tags: [proportionnalite, p-question-TS]
-% difficulte: 1
+% difficulte: 3
 % corrige: true
 % ---
 
-\question[5]
+\question[4]
 Un robinet qui débite 18 litres à la minute met 28 heures pour remplir un bassin. Quel temps mettrait-il si son débit était de 42 litres à la minute ?
 
 \vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
-\begin{solutionorgrid}[140pt]
-  \textbf{(1.5pt)}
+\begin{solutionorgrid}[300pt]
+
+\vspace{5pt}
+Conversion d'unité de temps: 28 heures = $28 \cdot 60 = 1680$ minutes \hfill\textbf{(0,5pt)}
+
+\vspace{5pt}
+\def\arraystretch{1.5}
+\begin{tabularx}{0.5\textwidth}{l|C|C|}
+Temps [min]&1&1680\\
+\hline
+Volume [l]&18&\\
+\end{tabularx}
+\def\arraystretch{1}
+
+\hfill\textbf{(0,5pt)} pour la construction du tableau
+
+\vspace{15pt}$18 \cdot 1680 : 1 = 30\,240$\,l \hfill calcul \textbf{(0,5pt)} et réponse \textbf{(0,5pt)}
+
+\vspace{20pt}
+\def\arraystretch{1.5}
+\begin{tabularx}{0.5\textwidth}{l|C|C|}
+Temps [min]&1&\\
+\hline
+Volume [l]&42&30\,240\\
+\end{tabularx}
+\def\arraystretch{1}
+
+\hfill\textbf{(0,5pt)} pour la construction du tableau
+
+\vspace{15pt}$30\,240 \cdot 1 : 42 = 720$\,min \hfill calcul \textbf{(0,5pt)} et réponse \textbf{(0,5pt)}
+
+\vspace{5pt}
+Conversion d'unité de temps: 720 minutes = $720 \cdot 60 = 12$ heures
 \end{solutionorgrid}
 
 \begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
 Réponse: 
-\sol{\vspace{20pt}}{\textbf{(0.5pt)}}
+\sol{\vspace{20pt}}{Le bassin mettrai 12 heures à se remplir. \textbf{(0,5pt)}}
 \end{tcolorbox}
 
 
