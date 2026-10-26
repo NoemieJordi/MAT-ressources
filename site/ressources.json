@@ -202,6 +202,66 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
   },
   {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 2 (semaines 7-12) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill-Cycle2"
+  },
+  {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 2 (semaines 7-12) - exercices",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul-Cycle2"
+  },
+  {
     "titre": "Calcul flash: 10VG niv.1 - cycles 1 à 6 - plannification",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -313,6 +373,66 @@
     "pdf": "pdf/TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul1-6.pdf",
     "corrige_pdf": null,
     "fichier": "TH_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCalcul1-6"
+  },
+  {
+    "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-priorite-operations",
+      "c-puissance",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill-Cycle2"
+  },
+  {
+    "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - exercices",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-priorite-operations",
+      "c-puissance",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul-Cycle2"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - théorie",
@@ -504,6 +624,35 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609231549"
+  },
+  {
+    "titre": "Calcul mental",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-division",
+      "c-multiplication",
+      "c-operations",
+      "c-soustraction",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609271658.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609271658.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609271658"
   },
   {
     "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
@@ -1107,6 +1256,7 @@
       "f-groupe",
       "f-maison",
       "f-station",
+      "o-cartesDecoupées",
       "p-entrainement",
       "p-remediation"
     ],
@@ -1844,6 +1994,80 @@
     "fichier": "RES_NO-NbNaturelsDecimaux-9VP_CorrigesReponsesSeules"
   },
   {
+    "titre": "Lexique - Qui suis-je ? (consignes)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "",
+    "niveau": [
+      "9VP"
+    ],
+    "type": "JEU",
+    "tags": [
+      "p-lexique",
+      "p-vocabulaire",
+      "p-repetition-espacee",
+      "f-jeu-regles"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-Consignes.pdf",
+    "corrige_pdf": null,
+    "fichier": "JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-Consignes"
+  },
+  {
+    "titre": "Lexique - Qui suis-je ? (feuille élève)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "",
+    "niveau": [
+      "9e"
+    ],
+    "type": "JEU",
+    "tags": [
+      "c-vocabulaire",
+      "p-entrainement"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheEleves.pdf",
+    "corrige_pdf": null,
+    "fichier": "JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheEleves"
+  },
+  {
+    "titre": "Lexique - Qui suis-je ? (fiches de tirage)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "",
+    "niveau": [
+      "9e"
+    ],
+    "type": "JEU",
+    "tags": [
+      "c-vocabulaire",
+      "p-entrainement"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheTirage.pdf",
+    "corrige_pdf": null,
+    "fichier": "JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheTirage"
+  },
+  {
     "titre": "Livre - Les nombres décimaux relatifs",
     "theme": "NO",
     "chapitre": "Nombres relatifs",
@@ -2152,6 +2376,31 @@
     "fichier": "EVAL_NO-NbRelatifs-PrioriteOperations_202609030941"
   },
   {
+    "titre": "Priorité des opération",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-priorite-operations",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609271710.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609271710.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609271710"
+  },
+  {
     "titre": "Livre - Les fraction / les nombres rationnels",
     "theme": "NO",
     "chapitre": "Nombres rationnels",
@@ -2262,6 +2511,33 @@
     "pdf": "pdf/EVAL_NO-NbRationnels-Probleme_202608080812.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbRationnels-Probleme_202608080812.pdf",
     "fichier": "EVAL_NO-NbRationnels-Probleme_202608080812"
+  },
+  {
+    "titre": "Droite numérique (placer, comparer, encadrer)",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Placer, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-droite-numerique",
+      "c-encadrement",
+      "c-comparaison",
+      "f-individuel",
+      "p-diagnostic"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique.pdf",
+    "corrige_pdf": "corr/EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique.pdf",
+    "fichier": "EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique"
   },
   {
     "titre": "Bipalindromes",
@@ -2550,6 +2826,33 @@
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756"
   },
   {
+    "titre": "Fractions: 10H - Amplifier (dossier d'autonomie)",
+    "theme": "NO",
+    "chapitre": "Fractions",
+    "sous_chapitre": "Amplifier",
+    "niveau": [
+      "10e"
+    ],
+    "type": "TH-EX",
+    "tags": [
+      "c-fractions",
+      "c-amplifier",
+      "c-fractions-equivalentes",
+      "f-individuel",
+      "p-autonomie"
+    ],
+    "difficulte": 2,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie.pdf",
+    "corrige_pdf": null,
+    "fichier": "EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie"
+  },
+  {
     "titre": "Puissances et racines",
     "theme": "NO",
     "chapitre": "Puissances et racines",
@@ -2597,6 +2900,67 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648"
+  },
+  {
+    "titre": "10G1 - ETA1 - 20260924",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-addition",
+      "c-division",
+      "c-multiplication",
+      "c-operations",
+      "c-probleme",
+      "c-proportionnalite",
+      "c-soustraction",
+      "p-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_10G1_ETA1_20260924.pdf",
+    "corrige_pdf": "corr/EVAL_10G1_ETA1_20260924_corrige.pdf",
+    "fichier": "EVAL_10G1_ETA1_20260924"
+  },
+  {
+    "titre": "10G2 - ETA1 - 20260924",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-addition",
+      "c-division",
+      "c-echelle",
+      "c-multiplication",
+      "c-operations",
+      "c-probleme",
+      "c-proportionnalite",
+      "c-soustraction",
+      "p-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_10G2_ETA1_20260924.pdf",
+    "corrige_pdf": "corr/EVAL_10G2_ETA1_20260924_corrige.pdf",
+    "fichier": "EVAL_10G2_ETA1_20260924"
   },
   {
     "titre": "Problème d'échelle - distance entre deux villes",
@@ -2731,8 +3095,7 @@
     ],
     "type": "EVAL",
     "tags": [
-      "proportionnalite",
-      "c-nombres-decimaux",
+      "c-proportionnalite",
       "p-question-TS"
     ],
     "difficulte": 1,
@@ -2844,6 +3207,184 @@
     "pdf": null,
     "corrige_pdf": null,
     "fichier": "PLANIF_FA-ProportionnaliteDiagrammes-10VG2"
+  },
+  {
+    "titre": "Recette de crêpes (tableau de proportionnalité, quatrième proportionnelle)",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes de proportionnalité",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031"
+  },
+  {
+    "titre": "Recette de crêpes (tableau de proportionnalité, quatrième proportionnelle)",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes de proportionnalité",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302100.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302100.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609302100"
+  },
+  {
+    "titre": "Reconnaître une situation de proportionnalité (tableaux et situations)",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Reconnaître une situation",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-proportionnalite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ProprieteProportionnalite_202609301823.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ProprieteProportionnalite_202609301823.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ProprieteProportionnalite_202609301823"
+  },
+  {
+    "titre": "Échelle (carte, plan, modèle réduit)",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Échelle",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-proportionnalite",
+      "c-echelle",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302107.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302107.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609302107"
+  },
+  {
+    "titre": "Les messageries utilisées par les jeunes en Suisse (lecture d'un diagramme en barres)",
+    "theme": "FA",
+    "chapitre": "Diagrammes",
+    "sous_chapitre": "Lire, interpréter et réaliser",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-diagramme-colonnes",
+      "c-lecture-diagramme",
+      "c-addition",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "zhaw psychologie des médias, étude james 2024",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Diagrammes-LireDiagrammes_202609301715.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Diagrammes-LireDiagrammes_202609301715.pdf",
+    "fichier": "EVAL_FA-Diagrammes-LireDiagrammes_202609301715"
+  },
+  {
+    "titre": "Réseaux sociaux des jeunes en Suisse (construction d'un diagramme en colonne)",
+    "theme": "FA",
+    "chapitre": "Diagrammes",
+    "sous_chapitre": "Lire, interpréter et réaliser",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-diagramme-colonnes",
+      "c-proportionnalite",
+      "c-echelle",
+      "o-regle",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "jamesfocus 2025 (zhaw), données james 2024",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Diagrammes-RealiserDiagrammes_202609301622.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Diagrammes-RealiserDiagrammes_202609301622.pdf",
+    "fichier": "EVAL_FA-Diagrammes-RealiserDiagrammes_202609301622"
+  },
+  {
+    "titre": "Températures moyennes en Suisse (diagramme cartésien)",
+    "theme": "FA",
+    "chapitre": "Diagrammes",
+    "sous_chapitre": "Lire, interpréter et réaliser",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-diagramme-cartesien",
+      "c-construction-diagramme",
+      "c-proportionnalite",
+      "f-individuel",
+      "o-regle",
+      "p-entrainement"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_FA-Diagrammes-RealiserDiagrammes_DiagrammeCartesienTemperature.pdf",
+    "corrige_pdf": "corr/EX_FA-Diagrammes-RealiserDiagrammes_DiagrammeCartesienTemperature.pdf",
+    "fichier": "EX_FA-Diagrammes-RealiserDiagrammes_DiagrammeCartesienTemperature"
   },
   {
     "titre": "Triangles semblables",
