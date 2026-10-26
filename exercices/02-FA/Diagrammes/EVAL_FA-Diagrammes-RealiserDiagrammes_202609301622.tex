@@ -1,0 +1,81 @@
+% ---
+% titre: Réseaux sociaux des jeunes en Suisse (construction d'un diagramme en colonne)
+% theme: FA
+% chapitre: Diagrammes
+% sous_chapitre: Lire, interpréter et réaliser
+% niveau: [10e]
+% type: EVAL
+% tags: [c-diagramme-colonnes,c-proportionnalite,c-echelle,o-regle,p-question-TS]
+% difficulte: 1
+% corrige: true
+% source: JAMESfocus 2025 (ZHAW), données JAMES 2024
+% ---
+
+\question[6]
+L'étude suisse JAMES (2024) a interrogé plus de 1\,000 jeunes de 12 à 19 ans sur leur fréquence d'utilisation des réseaux sociaux. Le tableau ci-dessous indique la part d'entre eux qui se rend sur chaque plateforme plusieurs fois par semaine.
+
+\vspace{20pt}\def\arraystretch{2}
+\begin{center}Part des jeunes utilisant chaque plateforme\end{center}
+\begin{tabularx}{\linewidth}{|*{7}{>{\centering\arraybackslash}X|}}
+\hline
+\rowcolor{gray!20}\textbf{Instagram} & \textbf{TikTok} & \textbf{BeReal} & \textbf{Pinterest} & \textbf{X/Twitter} & \textbf{Reddit} & \textbf{Facebook}\\
+\hline
+83\,\% & 69\,\% & 32\,\% & 26\,\% & 8\,\% & 5\,\% & 4\,\%\\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}\textbf{Représente ces données par un diagramme en colonnes. Complète-le précisément.}
+
+
+\vspace{50pt}
+Titre du diagramme :\quad \sol{\rule{0.75\linewidth}{0.4pt}}{Réseaux sociaux utilisés plusieurs fois par semaine par les jeunes en Suisse \textbf{(0.5pt)}}
+
+\vfill{\footnotesize\raggedleft Espace pour ton diagramme (au crayon et à la règle)\par}
+
+\begin{center}
+\begin{tikzpicture}
+  % correction dans le calque d'arrière-plan : les axes restent toujours noirs par-dessus
+  \begin{pgfonlayer}{background}
+    \begin{scope}[color=\colSolution]
+      \foreach \i/\nom/\v in {0/Instagram/83, 1/TikTok/69, 2/BeReal/32, 3/Pinterest/26, 4/X\slash Twitter/8, 5/Reddit/5, 6/Facebook/4}{
+        % colonne
+        \fill[\colSolution!15] (2.35+1.9*\i,1) rectangle (3.55+1.9*\i,1+\v/10);
+        \draw[thick] (2.35+1.9*\i,1) rectangle (3.55+1.9*\i,1+\v/10);
+        % zone de tolérance : hauteur exacte à plus ou moins 1 mm (1 cm = 10 %)
+        \fill[\colSolution!50] (2.35+1.9*\i,1+\v/10-0.1) rectangle (3.55+1.9*\i,1+\v/10+0.1);
+        \node[font=\scriptsize] at (2.95+1.9*\i,0.6) {\nom};
+      }
+    \end{scope}
+  \end{pgfonlayer}
+  % axes (origine en (2,1) ; 1 cm = 10 %)
+  \draw[thick, ->] (2,1) -- (2,10.6);
+  \draw[thick, ->] (2,1) -- (16,1);
+  \node[anchor=west, font=\small] at (2.2,10.5) {Part des jeunes (\%)};
+  \node[font=\small] at (15,0.0) {Plateformes};
+  % graduations : traits tous les 0,5 cm, valeurs tous les 1 cm
+  \foreach \p in {0,10,...,90}{
+    \draw[thick] (1.85,1+\p/10) -- (2.15,1+\p/10);
+    \node[left, font=\small] at (1.8,1+\p/10) {\p};
+  }
+  \foreach \p in {5,15,...,85}{
+    \draw (1.92,1+\p/10) -- (2.08,1+\p/10);
+  }
+\end{tikzpicture}
+\end{center}
+
+\newpage{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[180pt]
+
+\textbf{1\,pt} pour le nom des plateformes sous les colonnes (ou dans les colonnes)\\
+\textbf{0,5\,pt} pour les colonnes de même largeur, régulièrement espacées, au crayon et à la règle
+
+\vspace{10pt}
+\textbf{4\,pts} si les extrémités supérieures des sept colonnes sont dans les zones grisées\\
+\textbf{3\,pts} si les extrémités supérieures de cinq ou six colonnes sont dans les zones grisées\\
+\textbf{2\,pts} si les extrémité supérieure de trois ou quatre colonnes sont dans les zones grisées\\
+\textbf{1\,pt} si les extrémité supérieure de une ou deux colonnes sont dans les zones grisées
+
+\vspace{10pt}
+Déduire 1 pt en présence d’un diagramme cartésien (le tracé des colonnes est manquant).
+\end{solutionorgrid}

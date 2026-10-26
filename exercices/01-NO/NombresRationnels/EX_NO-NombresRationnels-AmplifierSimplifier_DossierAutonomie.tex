@@ -1,0 +1,1738 @@
+% ---
+% titre: Fractions: 10H - Amplifier (dossier d'autonomie)
+% theme: NO
+% chapitre: Fractions
+% sous_chapitre: Amplifier
+% niveau: [10e]
+% type: TH-EX
+% tags: [c-fractions, c-amplifier, c-fractions-equivalentes, f-individuel, p-autonomie]
+% difficulte: 2
+% source: latex
+% ---
+
+
+% Raccourci local pour les cases à compléter (n'écrase rien si déjà défini)
+\providecommand{\Case}{\,\fbox{\rule{0pt}{2.1ex}\hspace{0.7cm}}\,}
+\providecommand{\CaseC}{\,\fbox{\rule{0pt}{2.1ex}\hspace{0.4cm}}\,}
+% Encadré « guidé » : le premier (et parfois le deuxième) item de chaque exercice est guidé
+\providecommand{\ItemGuide}[1]{\vspace{4pt}\par\noindent\fcolorbox{themeNO}{themeNO!10}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\vspace{2pt}#1\vspace{2pt}}}\par\vspace{6pt}}
+\providecommand{\FA}[2]{\dfrac{\vphantom{\CaseC}#1}{\vphantom{\CaseC}#2}}
+
+% Compteur d'exercices (numérotation automatique)
+\ifcsname c@cptexo\endcsname\else\newcounter{cptexo}\fi
+\setcounter{cptexo}{0}
+\providecommand{\Exo}[2]{\refstepcounter{cptexo}\label{#1}\textbf{Exercice \thecptexo.} #2}
+
+\header{Amplifier et simplifier une fraction}
+
+\setcounter{section}{1}
+%-----------------------------------------------------------------------
+\subsection{Amplifier une fraction}\label{sec:AmplifierFraction}
+
+
+\begin{regle}{Définition}
+\textcolor{themeColor}{Amplifier} une fraction, c'est multiplier son numérateur \textbf{et} son dénominateur par le même nombre (différent de 0). La fraction change d'écriture, mais pas de valeur.
+
+\[\dfrac{2}{3}=\dfrac{2 \cdot 4}{3 \cdot 4}=\dfrac{8}{12}\]
+\end{regle}
+
+\vspace{20pt}
+\begin{astuce}{Stratégie}
+Pour trouver le facteur, on regarde les dénominateurs et on se demande :
+
+\vspace{5pt}
+{\centering\textit{\og $5$ fois combien font $20$ ?\fg{}} Ici $5 \cdot 4 = 20$, le facteur est $4$.\par}
+
+\vspace{5pt}
+On multiplie alors le numérateur par $4$ aussi.
+\end{astuce}
+
+\vspace{20pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Fraction de départ} & \cellcolor{themeNO!30}\textbf{Facteur} & \cellcolor{themeNO!30}\textbf{Fraction amplifiée} \\\hline
+$\dfrac{2}{5}$ & $\cdot\, 3$ & $\dfrac{2 \cdot 3}{5 \cdot 3}=\dfrac{6}{15}$ \\\hline
+$\dfrac{3}{4}$ & $\cdot\, 2$ & $\dfrac{3 \cdot 2}{4 \cdot 2}=\dfrac{6}{8}$ \\\hline
+$\dfrac{1}{6}$ & $\cdot\, 10$ & $\dfrac{1 \cdot 10}{6 \cdot 10}=\dfrac{10}{60}$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+
+\Exo{ex:amp-1}{Amplifie chaque fraction par le facteur indiqué.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{5}$ par $3$ \quad $\Longrightarrow$ \quad $\FA{2}{5}=\FA{2 \cdot \textcolor{themeColor}{3}}{5 \cdot \textcolor{themeColor}{3}}=\FA{\textcolor{themeColor}{6}}{\textcolor{themeColor}{15}}$
+\item $\FA{3}{4}$ par $2$ \quad $\Longrightarrow$ \quad $\FA{3}{4}=\FA{3 \cdot \CaseC}{4 \cdot \textcolor{themeColor}{2}}=\FA{\CaseC}{\textcolor{themeColor}{8}}$
+\item $\FA{5}{7}$ par $4$ \quad $\Longrightarrow$ \quad $\FA{5}{7}=\FA{5 \cdot \textcolor{themeColor}{4}}{7 \cdot \CaseC}=\FA{\textcolor{themeColor}{20}}{\CaseC}$
+\item $\FA{7}{9}$ par $5$ \quad $\Longrightarrow$ \quad $\FA{7}{9}=\FA{7 \cdot \CaseC}{9 \cdot \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{4}{3}$ par $6$ \quad $\Longrightarrow$
+\item $\FA{1}{6}$ par $10$ \quad $\Longrightarrow$
+\item $\FA{5}{6}$ par $3$ \quad $\Longrightarrow$
+\item $\FA{2}{9}$ par $7$ \quad $\Longrightarrow$
+\item $\FA{3}{10}$ par $4$ \quad $\Longrightarrow$
+\item $\FA{8}{5}$ par $5$ \quad $\Longrightarrow$
+\item $\FA{1}{12}$ par $8$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\newpage
+\Exo{ex:amp-2}{Complète le numérateur. Pour trouver le facteur, regarde les deux dénominateurs et demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{astuce}{Rappel}
+Le \textcolor{themeColor}{dénominateur} est le nombre du bas de la fraction. Il indique en combien de parts égales le tout est partagé.
+\end{astuce}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}=\FA{\CaseC}{10}$ \quad $\Longrightarrow$ \quad $\FA{1}{2}=\FA{1 \cdot \textcolor{themeColor}{5}}{2 \cdot \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{5}}{10}$
+\item $\FA{3}{4}=\FA{\CaseC}{12}$ \quad $\Longrightarrow$ \quad $\FA{3}{4}=\FA{3 \cdot \CaseC}{4 \cdot \textcolor{themeColor}{3}}=\FA{\CaseC}{12}$
+\item $\FA{5}{6}=\FA{\CaseC}{18}$ \quad $\Longrightarrow$ \quad $\FA{5}{6}=\FA{5 \cdot \CaseC}{6 \cdot \CaseC}=\FA{\CaseC}{18}$
+\item $\FA{2}{3}=\FA{\CaseC}{9}$ \quad $\Longrightarrow$
+\item $\FA{1}{5}=\FA{\CaseC}{20}$ \quad $\Longrightarrow$
+\item $\FA{4}{7}=\FA{\CaseC}{21}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}=\FA{\CaseC}{40}$ \quad $\Longrightarrow$
+\item $\FA{2}{9}=\FA{\CaseC}{36}$ \quad $\Longrightarrow$
+\item $\FA{7}{10}=\FA{\CaseC}{30}$ \quad $\Longrightarrow$
+\item $\FA{5}{3}=\FA{\CaseC}{12}$ \quad $\Longrightarrow$
+\item $\FA{6}{11}=\FA{\CaseC}{44}$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\newpage
+\Exo{ex:amp-3}{Complète le dénominateur. Pour trouver le facteur, regarde les deux numérateurs et demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{astuce}{Rappel}
+Le \textcolor{themeColor}{numérateur} est le nombre du haut : il indique combien de parts on prend.
+\end{astuce}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{5}=\FA{8}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{2}{5}=\FA{2 \cdot \textcolor{themeColor}{4}}{5 \cdot \textcolor{themeColor}{4}}=\FA{8}{\textcolor{themeColor}{20}}$
+\item $\FA{1}{3}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{1}{3}=\FA{1 \cdot \textcolor{themeColor}{4}}{3 \cdot \CaseC}=\FA{4}{\CaseC}$
+\item $\FA{3}{8}=\FA{9}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{3}{8}=\FA{3 \cdot \CaseC}{8 \cdot \CaseC}=\FA{9}{\CaseC}$
+\item $\FA{5}{2}=\FA{15}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{7}{10}=\FA{21}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{2}{9}=\FA{6}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{4}{5}=\FA{12}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{3}{7}=\FA{18}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}=\FA{20}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{9}{4}=\FA{27}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{1}{8}=\FA{7}{\CaseC}$ \quad $\Longrightarrow$
+\end{enumerate}
+
+%-----------------------------------------------------------------------
+\vspace{10pt}
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je cherche le facteur}
+
+\Exo{ex:amp-4}{Complète. Pour trouver le facteur, regarde les deux nombres connus qui sont au même niveau (en haut ou en bas) et demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{5}{8}=\FA{\CaseC}{24}$ \quad $\Longrightarrow$ \quad $\FA{5}{8}=\FA{5 \cdot \textcolor{themeColor}{3}}{8 \cdot \textcolor{themeColor}{3}}=\FA{\textcolor{themeColor}{15}}{24}$
+\item $\FA{7}{3}=\FA{49}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{7}{3}=\FA{7 \cdot \textcolor{themeColor}{7}}{3 \cdot \CaseC}=\FA{49}{\CaseC}$
+\item $\FA{3}{11}=\FA{\CaseC}{55}$ \quad $\Longrightarrow$ \quad $\FA{3}{11}=\FA{3 \cdot \CaseC}{11 \cdot \CaseC}=\FA{\CaseC}{55}$
+\item $\FA{5}{6}=\FA{35}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{4}{9}=\FA{\CaseC}{63}$ \quad $\Longrightarrow$
+\item $\FA{9}{10}=\FA{\CaseC}{70}$ \quad $\Longrightarrow$
+\item $\FA{11}{4}=\FA{77}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{6}{13}=\FA{\CaseC}{78}$ \quad $\Longrightarrow$
+\item $\FA{2}{15}=\FA{\CaseC}{90}$ \quad $\Longrightarrow$
+\item $\FA{8}{5}=\FA{56}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{3}{14}=\FA{\CaseC}{84}$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\newpage
+\Exo{ex:amp-5}{Complète.\\[5pt] Attention : la fraction de départ n'est pas toujours à gauche du signe $=$. C'est celle dont les deux nombres sont connus. Pour trouver le facteur, demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{\CaseC}{20}=\FA{3}{4}$ \quad $\Longrightarrow$ \quad $\FA{3}{4}=\FA{3 \cdot \textcolor{themeColor}{5}}{4 \cdot \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{15}}{20}$
+\item $\FA{14}{\CaseC}=\FA{2}{3}$ \quad $\Longrightarrow$ \quad $\FA{2}{3}=\FA{2 \cdot \textcolor{themeColor}{7}}{3 \cdot \CaseC}=\FA{14}{\CaseC}$
+\item $\FA{\CaseC}{45}=\FA{4}{5}$ \quad $\Longrightarrow$ \quad $\FA{4}{5}=\FA{4 \cdot \CaseC}{5 \cdot \CaseC}=\FA{\CaseC}{45}$
+\item $\FA{18}{\CaseC}=\FA{3}{7}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{36}=\FA{7}{9}$ \quad $\Longrightarrow$
+\item $\FA{40}{\CaseC}=\FA{5}{6}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{56}=\FA{3}{8}$ \quad $\Longrightarrow$
+\item $\FA{27}{\CaseC}=\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{60}=\FA{7}{12}$ \quad $\Longrightarrow$
+\item $\FA{64}{\CaseC}=\FA{8}{3}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{72}=\FA{5}{9}$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\newpage
+\Exo{ex:amp-6}{Complète le tableau. Si le facteur est donné, calcule la fraction amplifiée. Si la fraction amplifiée est donnée, cherche le facteur : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30} & \cellcolor{themeNO!30}\textbf{Fraction de départ} & \cellcolor{themeNO!30}\textbf{Facteur} & \cellcolor{themeNO!30}\textbf{Fraction amplifiée} \\\hline
+a) & $\FA{3}{8}$ & $\cdot\, \textcolor{themeColor}{5}$ & $\FA{3 \cdot \textcolor{themeColor}{5}}{8 \cdot \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{15}}{\textcolor{themeColor}{40}}$ \\\hline
+b) & $\FA{5}{7}$ & $\cdot\, 3$ & $\FA{5 \cdot 3}{7 \cdot \CaseC}=\FA{\CaseC}{\CaseC}$ \\\hline
+c) & $\FA{4}{9}$ & $\cdot\, 2$ & $\FA{4 \cdot \CaseC}{9 \cdot \CaseC}=\FA{\CaseC}{\CaseC}$ \\\hline
+d) & $\FA{2}{9}$ & $\cdot\, \textcolor{themeColor}{6}$ & $\FA{12}{54}$ \\\hline
+e) & $\FA{4}{5}$ & $5 \cdot \CaseC = 35$, donc $\cdot\, \CaseC$ & $\FA{28}{35}$ \\\hline
+f) & $\FA{6}{11}$ & $\cdot\, 4$ & \\\hline
+g) & $\FA{3}{10}$ & & $\FA{21}{70}$ \\\hline
+h) & $\FA{7}{6}$ & $\cdot\, 3$ & \\\hline
+i) & $\FA{5}{8}$ & & $\FA{45}{72}$ \\\hline
+j) & $\FA{2}{13}$ & $\cdot\, 6$ & \\\hline
+k) & $\FA{9}{4}$ & & $\FA{63}{28}$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\newpage
+\Exo{ex:amp-7}{La deuxième fraction est-elle une amplification de la première ? Cherche le facteur, vérifie qu'il est le même en haut et en bas, puis réponds par oui ou non.}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{7}$ et $\FA{12}{28}$ \quad $\Longrightarrow$ \quad $7 \cdot \textcolor{themeColor}{4}=28$ \quad et \quad $3 \cdot \textcolor{themeColor}{4}=12$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{5}{6}$ et $\FA{15}{20}$ \quad $\Longrightarrow$ \quad $5 \cdot \textcolor{themeColor}{3}=15$ \quad et \quad $6 \cdot \CaseC=\CaseC \ne 20$ \quad : \quad \Case
+\item $\FA{2}{9}$ et $\FA{8}{36}$ \quad $\Longrightarrow$ \quad $9 \cdot \CaseC=36$ \quad et \quad $2 \cdot \CaseC=\CaseC$ \quad : \quad \Case
+\item $\FA{4}{5}$ et $\FA{9}{10}$ \quad $\Longrightarrow$
+\item $\FA{7}{4}$ et $\FA{63}{36}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}$ et $\FA{15}{40}$ \quad $\Longrightarrow$
+\item $\FA{2}{5}$ et $\FA{6}{20}$ \quad $\Longrightarrow$
+\item $\FA{6}{7}$ et $\FA{30}{35}$ \quad $\Longrightarrow$
+\item $\FA{4}{9}$ et $\FA{12}{36}$ \quad $\Longrightarrow$
+\item $\FA{5}{12}$ et $\FA{20}{48}$ \quad $\Longrightarrow$
+\item $\FA{3}{4}$ et $\FA{12}{18}$ \quad $\Longrightarrow$
+\end{enumerate}
+
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+
+\Exo{ex:amp-8}{Amplifie la fraction pour obtenir ce qui est demandé.}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{4}$ pour obtenir le dénominateur $60$ \quad $\Longrightarrow$
+\item $\FA{3}{4}$ pour obtenir le numérateur $36$ \quad $\Longrightarrow$
+\item $\FA{2}{5}$ pour obtenir le dénominateur $35$ \quad $\Longrightarrow$
+\item $\FA{7}{6}$ pour obtenir le numérateur $84$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\bigskip
+\Exo{ex:amp-9}{Écris des fractions égales à $\dfrac{2}{5}$ en l'amplifiant par le facteur indiqué.}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item facteur $2$ \quad $\Longrightarrow$
+\item facteur $3$ \quad $\Longrightarrow$
+\item facteur $4$ \quad $\Longrightarrow$
+\item facteur $5$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\bigskip
+\Exo{ex:amp-10}{Écris toutes les fractions égales à $\dfrac{3}{7}$, obtenues en amplifiant, dont le dénominateur est compris entre $10$ et $50$.}
+
+\bigskip\medskip
+\Exo{ex:amp-11}{Amplifie les deux fractions pour qu'elles aient le même dénominateur (celui qui est indiqué).}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}$ et $\FA{1}{3}$ \quad (dénominateur $6$) \quad $\Longrightarrow$
+\item $\FA{3}{4}$ et $\FA{5}{6}$ \quad (dénominateur $12$) \quad $\Longrightarrow$
+\item $\FA{2}{5}$ et $\FA{3}{10}$ \quad (dénominateur $10$) \quad $\Longrightarrow$
+\end{enumerate}
+
+\bigskip
+\Exo{ex:amp-12}{Karim écrit : $\dfrac{3}{5}=\dfrac{7}{9}$, car \og j'ai ajouté $4$ en haut et en bas\fg{}.}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux.
+\item Écris une fraction égale à $\dfrac{3}{5}$ de dénominateur $15$.
+\end{enumerate}
+
+\bigskip
+\Exo{ex:amp-13}{Défi : trouve la fraction.}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Elle est obtenue en amplifiant $\dfrac{5}{6}$ et la somme de son numérateur et de son dénominateur vaut $44$.
+\item Elle est obtenue en amplifiant $\dfrac{3}{8}$ et la somme de son numérateur et de son dénominateur vaut $55$.
+\end{enumerate}
+
+
+%-----------------------------------------------------------------------
+\subsection{Simplifier une fraction}
+ 
+\begin{regle}{Définition}
+\textcolor{themeColor}{Simplifier} une fraction, c'est diviser son numérateur \textbf{et} son dénominateur par un même diviseur commun (différent de 0). La fraction change d'écriture, mais pas de valeur.
+\[\dfrac{12}{18}=\dfrac{12 : 6}{18 : 6}=\dfrac{2}{3}\]
+\end{regle}
+ 
+\vspace{20pt}
+\begin{astuce}{Stratégie}
+Pour trouver le diviseur, on regarde les dénominateurs et on se demande :
+ 
+\vspace{5pt}
+{\centering\textit{\og $4$ fois combien font $20$ ?\fg{}} Ici $4 \cdot 5 = 20$, le diviseur est $5$.\par}
+ 
+\vspace{5pt}
+On divise alors le numérateur par $5$ aussi.
+\end{astuce}
+ 
+\vspace{20pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Fraction de départ} & \cellcolor{themeNO!30}\textbf{Diviseur} & \cellcolor{themeNO!30}\textbf{Fraction simplifiée} \\\hline
+$\dfrac{6}{8}$ & $:\, 2$ & $\dfrac{6 : 2}{8 : 2}=\dfrac{3}{4}$ \\\hline
+$\dfrac{12}{15}$ & $:\, 3$ & $\dfrac{12 : 3}{15 : 3}=\dfrac{4}{5}$ \\\hline
+$\dfrac{20}{30}$ & $:\, 10$ & $\dfrac{20 : 10}{30 : 10}=\dfrac{2}{3}$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:simp-1}{Simplifie chaque fraction par le diviseur indiqué.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{6}{8}$ par $2$ \quad $\Longrightarrow$ \quad $\FA{6}{8}=\FA{6 : \textcolor{themeColor}{2}}{8 : \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{4}}$
+\item $\FA{12}{15}$ par $3$ \quad $\Longrightarrow$ \quad $\FA{12}{15}=\FA{12 : \CaseC}{15 : \textcolor{themeColor}{3}}=\FA{\CaseC}{\textcolor{themeColor}{5}}$
+\item $\FA{20}{30}$ par $10$ \quad $\Longrightarrow$ \quad $\FA{20}{30}=\FA{20 : \textcolor{themeColor}{10}}{30 : \CaseC}=\FA{\textcolor{themeColor}{2}}{\CaseC}$
+\item $\FA{18}{27}$ par $9$ \quad $\Longrightarrow$ \quad $\FA{18}{27}=\FA{18 : \CaseC}{27 : \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{16}{40}$ par $8$ \quad $\Longrightarrow$
+\item $\FA{24}{36}$ par $12$ \quad $\Longrightarrow$
+\item $\FA{10}{25}$ par $5$ \quad $\Longrightarrow$
+\item $\FA{14}{21}$ par $7$ \quad $\Longrightarrow$
+\item $\FA{28}{32}$ par $4$ \quad $\Longrightarrow$
+\item $\FA{45}{60}$ par $15$ \quad $\Longrightarrow$
+\item $\FA{63}{81}$ par $9$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:simp-2}{Complète le numérateur. Pour trouver le diviseur, regarde les deux dénominateurs et demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{astuce}{Rappel}
+Le \textcolor{themeColor}{numérateur} est le nombre du haut : il indique combien de parts on prend.
+\end{astuce}
+  
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{4}{6}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$ \quad $\FA{4}{6}=\FA{4 : \textcolor{themeColor}{2}}{6 : \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{2}}{3}$
+\item $\FA{6}{8}=\FA{\CaseC}{4}$ \quad $\Longrightarrow$ \quad $\FA{6}{8}=\FA{6 : \CaseC}{8 : \textcolor{themeColor}{2}}=\FA{\CaseC}{4}$
+\item $\FA{9}{12}=\FA{\CaseC}{4}$ \quad $\Longrightarrow$ \quad $\FA{9}{12}=\FA{9 : \CaseC}{12 : \CaseC}=\FA{\CaseC}{4}$
+\item $\FA{10}{15}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$
+\item $\FA{8}{20}=\FA{\CaseC}{5}$ \quad $\Longrightarrow$
+\item $\FA{12}{18}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$
+\item $\FA{15}{25}=\FA{\CaseC}{5}$ \quad $\Longrightarrow$
+\item $\FA{14}{16}=\FA{\CaseC}{8}$ \quad $\Longrightarrow$
+\item $\FA{21}{24}=\FA{\CaseC}{8}$ \quad $\Longrightarrow$
+\item $\FA{20}{32}=\FA{\CaseC}{8}$ \quad $\Longrightarrow$
+\item $\FA{18}{30}=\FA{\CaseC}{5}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:simp-3}{Complète le dénominateur. Pour trouver le diviseur, regarde les deux numérateurs et demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{astuce}{Rappel}
+Le \textcolor{themeColor}{dénominateur} est le nombre du bas de la fraction. Il indique en combien de parts égales le tout est partagé.
+\end{astuce}
+  
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{6}{9}=\FA{2}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{6}{9}=\FA{6 : \textcolor{themeColor}{3}}{9 : \textcolor{themeColor}{3}}=\FA{2}{\textcolor{themeColor}{3}}$
+\item $\FA{8}{12}=\FA{2}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{8}{12}=\FA{8 : \textcolor{themeColor}{4}}{12 : \CaseC}=\FA{2}{\CaseC}$
+\item $\FA{10}{14}=\FA{5}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{10}{14}=\FA{10 : \CaseC}{14 : \CaseC}=\FA{5}{\CaseC}$
+\item $\FA{12}{20}=\FA{3}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{15}{18}=\FA{5}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{16}{24}=\FA{2}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{18}{21}=\FA{6}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{20}{45}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{24}{32}=\FA{3}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{28}{35}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{30}{42}=\FA{5}{\CaseC}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\vspace{10pt}
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je cherche le diviseur}
+ 
+\Exo{ex:simp-4}{Complète. Pour trouver le diviseur, regarde les deux nombres connus qui sont au même niveau (en haut ou en bas) et demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+
+\begin{astuce}{Astuce}
+Simplifier est l'opération inverse d'amplifier : comme $3 \cdot 4 = 12$, on a $12 : 4 = 3$.
+\end{astuce}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{15}{24}=\FA{\CaseC}{8}$ \quad $\Longrightarrow$ \quad $\FA{15}{24}=\FA{15 : \textcolor{themeColor}{3}}{24 : \textcolor{themeColor}{3}}=\FA{\textcolor{themeColor}{5}}{8}$
+\item $\FA{49}{21}=\FA{7}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{49}{21}=\FA{49 : \textcolor{themeColor}{7}}{21 : \CaseC}=\FA{7}{\CaseC}$
+\item $\FA{45}{55}=\FA{\CaseC}{11}$ \quad $\Longrightarrow$ \quad $\FA{45}{55}=\FA{45 : \CaseC}{55 : \CaseC}=\FA{\CaseC}{11}$
+\item $\FA{35}{42}=\FA{5}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{28}{63}=\FA{\CaseC}{9}$ \quad $\Longrightarrow$
+\item $\FA{63}{70}=\FA{\CaseC}{10}$ \quad $\Longrightarrow$
+\item $\FA{77}{28}=\FA{11}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{36}{78}=\FA{\CaseC}{13}$ \quad $\Longrightarrow$
+\item $\FA{30}{90}=\FA{\CaseC}{15}$ \quad $\Longrightarrow$
+\item $\FA{56}{40}=\FA{7}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{84}{36}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:simp-5}{Complète.\\[5pt] Attention : la fraction de départ n'est pas toujours à gauche du signe $=$. C'est celle dont les deux nombres sont connus. Pour trouver le diviseur, demande-toi : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{\CaseC}{4}=\FA{15}{20}$ \quad $\Longrightarrow$ \quad $\FA{15}{20}=\FA{15 : \textcolor{themeColor}{5}}{20 : \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{3}}{4}$
+\item $\FA{2}{\CaseC}=\FA{14}{21}$ \quad $\Longrightarrow$ \quad $\FA{14}{21}=\FA{14 : \textcolor{themeColor}{7}}{21 : \CaseC}=\FA{2}{\CaseC}$
+\item $\FA{\CaseC}{5}=\FA{36}{45}$ \quad $\Longrightarrow$ \quad $\FA{36}{45}=\FA{36 : \CaseC}{45 : \CaseC}=\FA{\CaseC}{5}$
+\item $\FA{3}{\CaseC}=\FA{18}{42}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{9}=\FA{28}{36}$ \quad $\Longrightarrow$
+\item $\FA{5}{\CaseC}=\FA{40}{48}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{8}=\FA{21}{56}$ \quad $\Longrightarrow$
+\item $\FA{3}{\CaseC}=\FA{27}{45}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{12}=\FA{35}{60}$ \quad $\Longrightarrow$
+\item $\FA{8}{\CaseC}=\FA{64}{24}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{9}=\FA{45}{81}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:simp-6}{Complète le tableau. Si le diviseur est donné, calcule la fraction simplifiée. Si la fraction simplifiée est donnée, cherche le diviseur : \og $\ldots$ fois combien font $\ldots$ ?\fg{}}
+ 
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30} & \cellcolor{themeNO!30}\textbf{Fraction de départ} & \cellcolor{themeNO!30}\textbf{Diviseur} & \cellcolor{themeNO!30}\textbf{Fraction simplifiée} \\\hline
+a) & $\FA{12}{18}$ & $:\, \textcolor{themeColor}{6}$ & $\FA{12 : \textcolor{themeColor}{6}}{18 : \textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{3}}$ \\\hline
+b) & $\FA{20}{35}$ & $:\, 5$ & $\FA{20 : 5}{35 : \CaseC}=\FA{\CaseC}{\CaseC}$ \\\hline
+c) & $\FA{24}{30}$ & $:\, 6$ & $\FA{24 : \CaseC}{30 : \CaseC}=\FA{\CaseC}{\CaseC}$ \\\hline
+d) & $\FA{18}{30}$ & $:\, \textcolor{themeColor}{6}$ & $\FA{3}{5}$ \\\hline
+e) & $\FA{28}{35}$ & $35 : \CaseC = 5$, donc $:\, \CaseC$ & $\FA{4}{5}$ \\\hline
+f) & $\FA{33}{44}$ & $:\, 11$ & \\\hline
+g) & $\FA{40}{56}$ & & $\FA{5}{7}$ \\\hline
+h) & $\FA{27}{36}$ & $:\, 9$ & \\\hline
+i) & $\FA{48}{60}$ & & $\FA{4}{5}$ \\\hline
+j) & $\FA{52}{65}$ & $:\, 13$ & \\\hline
+k) & $\FA{63}{72}$ & & $\FA{7}{8}$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+\newpage
+\Exo{ex:simp-7}{La deuxième fraction est-elle une simplification de la première ? Cherche le diviseur, vérifie qu'il est le même en haut et en bas, puis réponds par oui ou non.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{28}$ et $\FA{3}{7}$ \quad $\Longrightarrow$ \quad $28 : \textcolor{themeColor}{4}=7$ \quad et \quad $12 : \textcolor{themeColor}{4}=3$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{20}{24}$ et $\FA{5}{8}$ \quad $\Longrightarrow$ \quad $20 : \textcolor{themeColor}{4}=5$ \quad et \quad $24 : \CaseC=\CaseC \ne 8$ \quad : \quad \Case
+\item $\FA{36}{45}$ et $\FA{4}{5}$ \quad $\Longrightarrow$ \quad $45 : \CaseC=5$ \quad et \quad $36 : \CaseC=\CaseC$ \quad : \quad \Case
+\item $\FA{18}{30}$ et $\FA{3}{6}$ \quad $\Longrightarrow$
+\item $\FA{56}{63}$ et $\FA{8}{9}$ \quad $\Longrightarrow$
+\item $\FA{24}{40}$ et $\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{20}{35}$ et $\FA{3}{7}$ \quad $\Longrightarrow$
+\item $\FA{42}{48}$ et $\FA{7}{8}$ \quad $\Longrightarrow$
+\item $\FA{27}{45}$ et $\FA{3}{6}$ \quad $\Longrightarrow$
+\item $\FA{40}{72}$ et $\FA{5}{9}$ \quad $\Longrightarrow$
+\item $\FA{30}{45}$ et $\FA{4}{9}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:simp-8}{Simplifie la fraction pour obtenir ce qui est demandé.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{45}{60}$ pour obtenir le dénominateur $4$ \quad $\Longrightarrow$
+\item $\FA{36}{48}$ pour obtenir le numérateur $3$ \quad $\Longrightarrow$
+\item $\FA{14}{35}$ pour obtenir le dénominateur $5$ \quad $\Longrightarrow$
+\item $\FA{84}{72}$ pour obtenir le numérateur $7$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:simp-9}{Écris des fractions égales à $\dfrac{24}{36}$ en la simplifiant par le diviseur indiqué.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item diviseur $2$ \quad $\Longrightarrow$
+\item diviseur $3$ \quad $\Longrightarrow$
+\item diviseur $4$ \quad $\Longrightarrow$
+\item diviseur $6$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:simp-10}{Écris toutes les fractions égales à $\dfrac{36}{60}$, obtenues en simplifiant par un diviseur commun de $36$ et $60$ (autre que $1$).}
+ 
+\bigskip\medskip
+\Exo{ex:simp-11}{Simplifie les deux fractions pour qu'elles aient le même dénominateur (celui qui est indiqué).}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{10}{12}$ et $\FA{9}{18}$ \quad (dénominateur $6$) \quad $\Longrightarrow$
+\item $\FA{12}{16}$ et $\FA{10}{20}$ \quad (dénominateur $4$) \quad $\Longrightarrow$
+\item $\FA{20}{50}$ et $\FA{6}{10}$ \quad (dénominateur $10$) \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:simp-12}{Léa écrit : $\dfrac{6}{9}=\dfrac{3}{6}$, car \og j'ai enlevé $3$ en haut et en bas\fg{}.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux.
+\item Écris une fraction égale à $\dfrac{6}{9}$ de dénominateur $3$.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:simp-13}{Défi : trouve la fraction.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Elle est obtenue en simplifiant $\dfrac{20}{24}$ et la somme de son numérateur et de son dénominateur vaut $11$.
+\item Elle est obtenue en simplifiant $\dfrac{36}{48}$ et la somme de son numérateur et de son dénominateur vaut $7$.
+\end{enumerate}
+%-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+\subsection{Fractions irréductibles}
+ 
+\begin{regle}{Définition}
+Une fraction est \textcolor{themeColor}{irréductible} quand on ne peut plus la simplifier : le seul diviseur commun de son numérateur et de son dénominateur est $1$.
+\[\dfrac{6}{8}=\dfrac{6 : 2}{8 : 2}=\dfrac{3}{4}\]
+$\dfrac{6}{8}$ n'est pas irréductible (on peut diviser par $2$), alors que $\dfrac{3}{4}$ est irréductible.
+\end{regle}
+ 
+\vspace{15pt}
+\begin{astuce}{Stratégie}
+Pour rendre une fraction irréductible :
+ 
+\vspace{5pt}
+\textbf{1.} Cherche un diviseur commun du numérateur et du dénominateur (autre que $1$).\\
+\textbf{2.} Simplifie par ce diviseur.\\
+\textbf{3.} Recommence jusqu'à ce qu'il n'y ait plus de diviseur commun.
+ 
+\vspace{5pt}
+Si tu divises directement par le plus grand diviseur commun (\textcolor{themeColor}{PGCD}), une seule étape suffit.\\
+\textit{Exemple :} le PGCD de $36$ et $60$ est $12$, donc $\dfrac{36}{60}=\dfrac{36 : 12}{60 : 12}=\dfrac{3}{5}$.
+\end{astuce}
+ 
+\vspace{15pt}
+\begin{astuce}{Rappel}
+Un nombre est divisible par :\\
+$2$ si son dernier chiffre est $0$, $2$, $4$, $6$ ou $8$ ; \quad $5$ si son dernier chiffre est $0$ ou $5$ ; \quad $10$ s'il finit par $0$ ;\\
+$3$ si la somme de ses chiffres est divisible par $3$ ; \quad $9$ si la somme de ses chiffres est divisible par $9$.
+\end{astuce}
+ 
+\vspace{15pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Fraction} & \cellcolor{themeNO!30}\textbf{Diviseurs communs (autres que 1)} & \cellcolor{themeNO!30}\textbf{Irréductible ?} \\\hline
+$\dfrac{6}{8}$ & $2$ & non \\\hline
+$\dfrac{7}{9}$ & aucun & oui \\\hline
+$\dfrac{12}{18}$ & $2$, $3$ et $6$ & non \\\hline
+$\dfrac{15}{28}$ & aucun & oui \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:irr-1}{Cette fraction est-elle irréductible ? Cherche un diviseur commun du numérateur et du dénominateur (autre que $1$).}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{6}{8}$ \quad $\Longrightarrow$ \quad diviseur commun : $\textcolor{themeColor}{2}$ \quad : \quad \textcolor{themeColor}{non}
+\item $\FA{7}{9}$ \quad $\Longrightarrow$ \quad diviseur commun : \textcolor{themeColor}{aucun} \quad : \quad \Case
+\item $\FA{10}{15}$ \quad $\Longrightarrow$ \quad diviseur commun : \CaseC \quad : \quad \Case
+\item $\FA{9}{14}$ \quad $\Longrightarrow$
+\item $\FA{12}{18}$ \quad $\Longrightarrow$
+\item $\FA{11}{22}$ \quad $\Longrightarrow$
+\item $\FA{13}{20}$ \quad $\Longrightarrow$
+\item $\FA{21}{35}$ \quad $\Longrightarrow$
+\item $\FA{16}{27}$ \quad $\Longrightarrow$
+\item $\FA{18}{24}$ \quad $\Longrightarrow$
+\item $\FA{25}{36}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:irr-2}{Simplifie la fraction par le diviseur indiqué. La fraction obtenue est-elle irréductible ?}
+ 
+\begin{astuce}{Rappel}
+Une fraction simplifiée n'est pas toujours irréductible : on regarde s'il reste un diviseur commun (autre que $1$).
+\end{astuce}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{20}$ par $4$ \quad $\Longrightarrow$ \quad $\FA{12 : \textcolor{themeColor}{4}}{20 : \textcolor{themeColor}{4}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{5}}$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{18}{24}$ par $3$ \quad $\Longrightarrow$ \quad $\FA{18 : \textcolor{themeColor}{3}}{24 : \CaseC}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{30}{45}$ par $5$ \quad $\Longrightarrow$ \quad $\FA{30 : \CaseC}{45 : \CaseC}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{16}{24}$ par $8$ \quad $\Longrightarrow$
+\item $\FA{24}{40}$ par $2$ \quad $\Longrightarrow$
+\item $\FA{28}{35}$ par $7$ \quad $\Longrightarrow$
+\item $\FA{36}{48}$ par $6$ \quad $\Longrightarrow$
+\item $\FA{20}{50}$ par $10$ \quad $\Longrightarrow$
+\item $\FA{42}{56}$ par $7$ \quad $\Longrightarrow$
+\item $\FA{45}{75}$ par $15$ \quad $\Longrightarrow$
+\item $\FA{33}{55}$ par $11$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:irr-3}{Rends la fraction irréductible en deux étapes, avec les diviseurs indiqués.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{36}{60}$ par $2$ puis $6$ \quad $\Longrightarrow$ \quad $\FA{36 : \textcolor{themeColor}{2}}{60 : \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{18}}{\textcolor{themeColor}{30}}=\FA{18 : \textcolor{themeColor}{6}}{30 : \textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{5}}$
+\item $\FA{48}{72}$ par $4$ puis $6$ \quad $\Longrightarrow$ \quad $\FA{48 : \textcolor{themeColor}{4}}{72 : \textcolor{themeColor}{4}}=\FA{\CaseC}{\CaseC}=\FA{\CaseC : \textcolor{themeColor}{6}}{\CaseC : \textcolor{themeColor}{6}}=\FA{\CaseC}{\CaseC}$
+\item $\FA{90}{120}$ par $10$ puis $3$ \quad $\Longrightarrow$ \quad $\FA{90 : \CaseC}{120 : \CaseC}=\FA{\CaseC}{\CaseC}=\FA{\CaseC : \CaseC}{\CaseC : \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{40}{100}$ par $4$ puis $5$ \quad $\Longrightarrow$
+\item $\FA{60}{84}$ par $2$ puis $6$ \quad $\Longrightarrow$
+\item $\FA{72}{96}$ par $4$ puis $6$ \quad $\Longrightarrow$
+\item $\FA{50}{80}$ par $5$ puis $2$ \quad $\Longrightarrow$
+\item $\FA{54}{90}$ par $6$ puis $3$ \quad $\Longrightarrow$
+\item $\FA{84}{108}$ par $2$ puis $6$ \quad $\Longrightarrow$
+\item $\FA{45}{105}$ par $5$ puis $3$ \quad $\Longrightarrow$
+\item $\FA{64}{96}$ par $8$ puis $4$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\vspace{10pt}
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je vais jusqu'au bout}
+ 
+\Exo{ex:irr-4}{Rends la fraction irréductible. Cherche un diviseur commun, simplifie, et recommence si c'est nécessaire.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{18}{24}$ \quad $\Longrightarrow$ \quad $\FA{18}{24}=\FA{18 : \textcolor{themeColor}{6}}{24 : \textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{4}}$
+\item $\FA{30}{45}$ \quad $\Longrightarrow$ \quad $\FA{30}{45}=\FA{30 : \textcolor{themeColor}{15}}{45 : \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{42}{56}$ \quad $\Longrightarrow$ \quad $\FA{42}{56}=\FA{42 : \CaseC}{56 : \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{54}{90}$ \quad $\Longrightarrow$
+\item $\FA{63}{84}$ \quad $\Longrightarrow$
+\item $\FA{35}{49}$ \quad $\Longrightarrow$
+\item $\FA{17}{51}$ \quad $\Longrightarrow$
+\item $\FA{48}{64}$ \quad $\Longrightarrow$
+\item $\FA{45}{75}$ \quad $\Longrightarrow$
+\item $\FA{56}{72}$ \quad $\Longrightarrow$
+\item $\FA{90}{135}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:irr-5}{Rends la fraction irréductible.\\[5pt] Attention : certaines fractions sont déjà irréductibles. Dans ce cas, écris-le.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{36}{45}$ \quad $\Longrightarrow$ \quad $\FA{36}{45}=\FA{36 : \textcolor{themeColor}{9}}{45 : \textcolor{themeColor}{9}}=\FA{\textcolor{themeColor}{4}}{\textcolor{themeColor}{5}}$
+\item $\FA{19}{38}$ \quad $\Longrightarrow$ \quad $\FA{19}{38}=\FA{19 : \textcolor{themeColor}{19}}{38 : \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{28}{49}$ \quad $\Longrightarrow$ \quad $\FA{28}{49}=\FA{28 : \CaseC}{49 : \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{25}{40}$ \quad $\Longrightarrow$
+\item $\FA{29}{31}$ \quad $\Longrightarrow$
+\item $\FA{48}{60}$ \quad $\Longrightarrow$
+\item $\FA{33}{77}$ \quad $\Longrightarrow$
+\item $\FA{51}{68}$ \quad $\Longrightarrow$
+\item $\FA{35}{54}$ \quad $\Longrightarrow$
+\item $\FA{72}{90}$ \quad $\Longrightarrow$
+\item $\FA{39}{52}$ \quad $\Longrightarrow$
+\end{enumerate}
+
+\newpage
+\Exo{ex:irr-7}{La deuxième fraction est-elle la forme irréductible de la première ? Vérifie que le diviseur est le même en haut et en bas, puis que la deuxième fraction ne peut plus être simplifiée. Réponds par oui ou non.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{18}$ et $\FA{2}{3}$ \quad $\Longrightarrow$ \quad $12 : \textcolor{themeColor}{6}=2$ \quad et \quad $18 : \textcolor{themeColor}{6}=3$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{20}{30}$ et $\FA{4}{6}$ \quad $\Longrightarrow$ \quad $20 : \textcolor{themeColor}{5}=4$ \quad et \quad $30 : \textcolor{themeColor}{5}=6$ \quad mais \quad $\FA{4}{6}$ se simplifie par \CaseC \quad : \quad \Case
+\item $\FA{15}{35}$ et $\FA{3}{7}$ \quad $\Longrightarrow$ \quad $35 : \CaseC=7$ \quad et \quad $15 : \CaseC=\CaseC$ \quad : \quad \Case
+\item $\FA{24}{40}$ et $\FA{6}{10}$ \quad $\Longrightarrow$
+\item $\FA{18}{45}$ et $\FA{2}{5}$ \quad $\Longrightarrow$
+\item $\FA{30}{50}$ et $\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{28}{42}$ et $\FA{4}{6}$ \quad $\Longrightarrow$
+\item $\FA{16}{40}$ et $\FA{2}{5}$ \quad $\Longrightarrow$
+\item $\FA{36}{54}$ et $\FA{6}{9}$ \quad $\Longrightarrow$
+\item $\FA{25}{60}$ et $\FA{5}{12}$ \quad $\Longrightarrow$
+\item $\FA{48}{72}$ et $\FA{3}{4}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:irr-8}{Rends la fraction irréductible.}
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{84}{126}$ \quad $\Longrightarrow$
+\item $\FA{210}{330}$ \quad $\Longrightarrow$
+\item $\FA{105}{135}$ \quad $\Longrightarrow$
+\item $\FA{91}{119}$ \quad $\Longrightarrow$
+\item $\FA{132}{156}$ \quad $\Longrightarrow$
+\item $\FA{144}{180}$ \quad $\Longrightarrow$
+\item $\FA{117}{143}$ \quad $\Longrightarrow$
+\item $\FA{252}{336}$ \quad $\Longrightarrow$
+\item $\FA{153}{221}$ \quad $\Longrightarrow$
+\item $\FA{231}{315}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+
+\bigskip
+\Exo{ex:irr-11}{Écris la fraction irréductible qui correspond à chaque situation.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Dans une classe de $28$ élèves, $12$ élèves pratiquent un sport.
+\item Sur $45$ questions, Léa en a réussi $36$.
+\item Sur un parcours de $60$ km, Sam en a déjà fait $45$.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:irr-12}{Max simplifie $\dfrac{18}{24}$ par $2$ et obtient $\dfrac{9}{12}$. Il écrit : \og c'est fini, la fraction est irréductible\fg{}.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux.
+\item Rends $\dfrac{18}{24}$ irréductible.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:irr-13}{Défi : trouve la fraction.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Son numérateur est $20$ et sa forme irréductible est $\dfrac{4}{7}$.
+\item Sa forme irréductible est $\dfrac{3}{4}$ et la somme de son numérateur et de son dénominateur vaut $63$.
+\end{enumerate}
+
+%-----------------------------------------------------------------------
+\subsection{Chaînes de fractions égales}
+ 
+\begin{regle}{Définition}
+Une \textcolor{themeColor}{chaîne de fractions égales} est une suite de fractions qui ont toutes la même valeur. On passe d'une fraction à l'autre en amplifiant ou en simplifiant.
+\[\dfrac{2}{3}=\dfrac{6}{9}=\dfrac{12}{18}=\dfrac{24}{36}\]
+\end{regle}
+ 
+\vspace{15pt}
+\begin{astuce}{Stratégie}
+Pour compléter une chaîne de fractions égales :
+ 
+\vspace{5pt}
+\textbf{1.} Repère la fraction complète (numérateur et dénominateur connus).\\
+\textbf{2.} Compare chaque fraction à compléter avec la fraction complète (pas avec sa voisine) : \textit{\og $\ldots$ fois combien font $\ldots$ ?\fg{}}\\
+\textbf{3.} Selon le cas, on amplifie ($\cdot$) ou on simplifie ($:$).
+ 
+\vspace{5pt}
+\textit{Exemple :} pour $\dfrac{2}{3}=\dfrac{6}{\Case}$, on compare $2$ et $6$ : $2 \cdot 3 = 6$, donc $3 \cdot 3 = 9$.
+\end{astuce}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:chn-1}{Complète la chaîne de fractions égales. Compare chaque fraction à compléter avec la première fraction.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}=\FA{3}{\CaseC}=\FA{\CaseC}{10}$ \quad $\Longrightarrow$ \quad $\FA{1 \cdot \textcolor{themeColor}{3}}{2 \cdot \textcolor{themeColor}{3}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{6}}$ \quad et \quad $\FA{1 \cdot \textcolor{themeColor}{5}}{2 \cdot \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{5}}{\textcolor{themeColor}{10}}$
+\item $\FA{2}{3}=\FA{\CaseC}{9}=\FA{8}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{2 \cdot \textcolor{themeColor}{3}}{3 \cdot \textcolor{themeColor}{3}}=\FA{\CaseC}{9}$ \quad et \quad $\FA{2 \cdot \CaseC}{3 \cdot \CaseC}=\FA{8}{\CaseC}$
+\item $\FA{3}{4}=\FA{9}{\CaseC}=\FA{\CaseC}{16}$ \quad $\Longrightarrow$ \quad $\FA{3 \cdot \CaseC}{4 \cdot \CaseC}=\FA{9}{\CaseC}$ \quad et \quad $\FA{3 \cdot \CaseC}{4 \cdot \CaseC}=\FA{\CaseC}{16}$
+\item $\FA{2}{5}=\FA{\CaseC}{10}=\FA{6}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}=\FA{15}{\CaseC}=\FA{\CaseC}{12}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}=\FA{\CaseC}{16}=\FA{12}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{4}{7}=\FA{8}{\CaseC}=\FA{\CaseC}{28}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}=\FA{\CaseC}{18}=\FA{15}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{7}{10}=\FA{14}{\CaseC}=\FA{\CaseC}{50}$ \quad $\Longrightarrow$
+\item $\FA{3}{5}=\FA{\CaseC}{15}=\FA{12}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{2}{9}=\FA{6}{\CaseC}=\FA{\CaseC}{45}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:chn-2}{Complète la chaîne de fractions égales. Cette fois, on simplifie à partir de la première fraction.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{18}=\FA{6}{\CaseC}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$ \quad $\FA{12 : \textcolor{themeColor}{2}}{18 : \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{6}}{\textcolor{themeColor}{9}}$ \quad et \quad $\FA{12 : \textcolor{themeColor}{6}}{18 : \textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{3}}$
+\item $\FA{20}{30}=\FA{10}{\CaseC}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$ \quad $\FA{20 : \textcolor{themeColor}{2}}{30 : \textcolor{themeColor}{2}}=\FA{10}{\CaseC}$ \quad et \quad $\FA{20 : \CaseC}{30 : \CaseC}=\FA{\CaseC}{3}$
+\item $\FA{16}{24}=\FA{\CaseC}{12}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{16 : \CaseC}{24 : \CaseC}=\FA{\CaseC}{12}$ \quad et \quad $\FA{16 : \CaseC}{24 : \CaseC}=\FA{4}{\CaseC}$
+\item $\FA{30}{45}=\FA{\CaseC}{9}=\FA{2}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{36}{60}=\FA{18}{\CaseC}=\FA{\CaseC}{5}$ \quad $\Longrightarrow$
+\item $\FA{48}{72}=\FA{\CaseC}{18}=\FA{8}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{40}{100}=\FA{\CaseC}{50}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{27}{45}=\FA{9}{\CaseC}=\FA{\CaseC}{5}$ \quad $\Longrightarrow$
+\item $\FA{56}{84}=\FA{\CaseC}{12}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{45}{60}=\FA{15}{\CaseC}=\FA{\CaseC}{4}$ \quad $\Longrightarrow$
+\item $\FA{72}{90}=\FA{\CaseC}{10}=\FA{4}{\CaseC}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:chn-3}{Complète la chaîne de fractions égales. À partir de la première fraction, il faut simplifier pour l'une et amplifier pour l'autre.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{18}=\FA{2}{\CaseC}=\FA{24}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{12 : \textcolor{themeColor}{6}}{18 : \textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{3}}$ \quad et \quad $\FA{12 \cdot \textcolor{themeColor}{2}}{18 \cdot \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{24}}{\textcolor{themeColor}{36}}$
+\item $\FA{20}{30}=\FA{4}{\CaseC}=\FA{\CaseC}{60}$ \quad $\Longrightarrow$ \quad $\FA{20 : \textcolor{themeColor}{5}}{30 : \textcolor{themeColor}{5}}=\FA{4}{\CaseC}$ \quad et \quad $\FA{20 \cdot \CaseC}{30 \cdot \CaseC}=\FA{\CaseC}{60}$
+\item $\FA{18}{24}=\FA{\CaseC}{4}=\FA{54}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{18 : \CaseC}{24 : \CaseC}=\FA{\CaseC}{4}$ \quad et \quad $\FA{18 \cdot \CaseC}{24 \cdot \CaseC}=\FA{54}{\CaseC}$
+\item $\FA{8}{12}=\FA{\CaseC}{3}=\FA{24}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{30}{45}=\FA{2}{\CaseC}=\FA{\CaseC}{90}$ \quad $\Longrightarrow$
+\item $\FA{16}{24}=\FA{4}{\CaseC}=\FA{\CaseC}{72}$ \quad $\Longrightarrow$
+\item $\FA{24}{36}=\FA{\CaseC}{3}=\FA{48}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{10}{25}=\FA{2}{\CaseC}=\FA{\CaseC}{100}$ \quad $\Longrightarrow$
+\item $\FA{21}{28}=\FA{\CaseC}{4}=\FA{63}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{36}{48}=\FA{3}{\CaseC}=\FA{\CaseC}{96}$ \quad $\Longrightarrow$
+\item $\FA{15}{20}=\FA{\CaseC}{4}=\FA{45}{\CaseC}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je cherche la fraction complète}
+ 
+\Exo{ex:chn-4}{Complète la chaîne de fractions égales. La fraction complète est au milieu : compare les autres fractions avec elle.}
+ 
+\begin{astuce}{Rappel}
+Pour aller vers une fraction plus petite, on simplifie ($:$). Pour aller vers une fraction plus grande, on amplifie ($\cdot$).
+\end{astuce}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{6}{\CaseC}=\FA{12}{18}=\FA{\CaseC}{3}$ \quad $\Longrightarrow$ \quad $\FA{12 : \textcolor{themeColor}{2}}{18 : \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{6}}{\textcolor{themeColor}{9}}$ \quad et \quad $\FA{12 : \textcolor{themeColor}{6}}{18 : \textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{3}}$
+\item $\FA{\CaseC}{10}=\FA{12}{30}=\FA{6}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{12 : \textcolor{themeColor}{3}}{30 : \textcolor{themeColor}{3}}=\FA{\CaseC}{10}$ \quad et \quad $\FA{12 : \CaseC}{30 : \CaseC}=\FA{6}{\CaseC}$
+\item $\FA{2}{\CaseC}=\FA{8}{20}=\FA{\CaseC}{40}$ \quad $\Longrightarrow$ \quad $\FA{8 : \CaseC}{20 : \CaseC}=\FA{2}{\CaseC}$ \quad et \quad $\FA{8 \cdot \CaseC}{20 \cdot \CaseC}=\FA{\CaseC}{40}$
+\item $\FA{\CaseC}{5}=\FA{15}{25}=\FA{45}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{2}{\CaseC}=\FA{14}{21}=\FA{\CaseC}{63}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{4}=\FA{9}{12}=\FA{27}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{5}{\CaseC}=\FA{20}{32}=\FA{\CaseC}{64}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{3}=\FA{18}{27}=\FA{54}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{2}{\CaseC}=\FA{16}{40}=\FA{\CaseC}{80}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{9}=\FA{25}{45}=\FA{50}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{3}{\CaseC}=\FA{21}{28}=\FA{\CaseC}{56}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:chn-5}{Complète la chaîne de fractions égales.\\[5pt] Attention : la fraction complète est maintenant la dernière. Compare les autres fractions avec elle.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{\CaseC}{4}=\FA{45}{\CaseC}=\FA{15}{20}$ \quad $\Longrightarrow$ \quad $\FA{15 : \textcolor{themeColor}{5}}{20 : \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{4}}$ \quad et \quad $\FA{15 \cdot \textcolor{themeColor}{3}}{20 \cdot \textcolor{themeColor}{3}}=\FA{\textcolor{themeColor}{45}}{\textcolor{themeColor}{60}}$
+\item $\FA{2}{\CaseC}=\FA{28}{\CaseC}=\FA{14}{21}$ \quad $\Longrightarrow$ \quad $\FA{14 : \textcolor{themeColor}{7}}{21 : \textcolor{themeColor}{7}}=\FA{2}{\CaseC}$ \quad et \quad $\FA{14 \cdot \CaseC}{21 \cdot \CaseC}=\FA{28}{\CaseC}$
+\item $\FA{\CaseC}{5}=\FA{72}{\CaseC}=\FA{36}{45}$ \quad $\Longrightarrow$ \quad $\FA{36 : \CaseC}{45 : \CaseC}=\FA{\CaseC}{5}$ \quad et \quad $\FA{36 \cdot \CaseC}{45 \cdot \CaseC}=\FA{72}{\CaseC}$
+\item $\FA{3}{\CaseC}=\FA{\CaseC}{14}=\FA{18}{42}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{9}=\FA{56}{\CaseC}=\FA{28}{36}$ \quad $\Longrightarrow$
+\item $\FA{5}{\CaseC}=\FA{\CaseC}{24}=\FA{40}{48}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{8}=\FA{42}{\CaseC}=\FA{21}{56}$ \quad $\Longrightarrow$
+\item $\FA{4}{\CaseC}=\FA{12}{\CaseC}=\FA{24}{30}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{11}=\FA{30}{\CaseC}=\FA{15}{55}$ \quad $\Longrightarrow$
+\item $\FA{7}{\CaseC}=\FA{14}{\CaseC}=\FA{35}{45}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{6}=\FA{25}{\CaseC}=\FA{50}{60}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:chn-6}{Dans chaque chaîne, une seule fraction n'est pas égale aux autres. Compare chaque fraction avec la première pour trouver l'intrus, puis corrige-le en changeant un seul nombre.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{3}=\FA{6}{9}=\FA{10}{15}=\FA{12}{20}$ \quad $\Longrightarrow$ \quad intrus : $\FA{\textcolor{themeColor}{12}}{\textcolor{themeColor}{20}}$ \quad correction : $\FA{12}{\textcolor{themeColor}{18}}$
+\item $\FA{3}{4}=\FA{6}{8}=\FA{9}{12}=\FA{12}{15}$ \quad $\Longrightarrow$ \quad intrus : $\FA{\textcolor{themeColor}{12}}{\textcolor{themeColor}{15}}$ \quad correction : $\FA{12}{\CaseC}$
+\item $\FA{1}{5}=\FA{2}{10}=\FA{4}{20}=\FA{5}{30}$ \quad $\Longrightarrow$ \quad intrus : $\FA{\CaseC}{\CaseC}$ \quad correction : $\FA{\CaseC}{\CaseC}$
+\item $\FA{5}{6}=\FA{10}{12}=\FA{15}{18}=\FA{20}{22}$ \quad $\Longrightarrow$
+\item $\FA{2}{7}=\FA{4}{14}=\FA{8}{28}=\FA{10}{36}$ \quad $\Longrightarrow$
+\item $\FA{3}{5}=\FA{6}{10}=\FA{12}{20}=\FA{15}{24}$ \quad $\Longrightarrow$
+\item $\FA{4}{9}=\FA{8}{18}=\FA{12}{28}=\FA{16}{36}$ \quad $\Longrightarrow$
+\item $\FA{7}{8}=\FA{14}{16}=\FA{21}{24}=\FA{28}{36}$ \quad $\Longrightarrow$
+\item $\FA{2}{9}=\FA{6}{27}=\FA{10}{45}=\FA{14}{64}$ \quad $\Longrightarrow$
+\item $\FA{5}{12}=\FA{10}{24}=\FA{20}{48}=\FA{30}{70}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}=\FA{9}{24}=\FA{15}{40}=\FA{21}{54}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:chn-7}{Complète la chaîne de fractions égales. Repère d'abord la fraction complète : elle n'est pas toujours au même endroit.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{5}=\FA{12}{\CaseC}=\FA{\CaseC}{25}$ \quad $\Longrightarrow$ \quad $\FA{3 \cdot \textcolor{themeColor}{4}}{5 \cdot \textcolor{themeColor}{4}}=\FA{\textcolor{themeColor}{12}}{\textcolor{themeColor}{20}}$ \quad et \quad $\FA{3 \cdot \textcolor{themeColor}{5}}{5 \cdot \textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{15}}{\textcolor{themeColor}{25}}$
+\item $\FA{\CaseC}{8}=\FA{9}{24}=\FA{18}{\CaseC}$ \quad $\Longrightarrow$ \quad $\FA{9 : \textcolor{themeColor}{3}}{24 : \textcolor{themeColor}{3}}=\FA{\CaseC}{8}$ \quad et \quad $\FA{9 \cdot \CaseC}{24 \cdot \CaseC}=\FA{18}{\CaseC}$
+\item $\FA{\CaseC}{7}=\FA{\CaseC}{70}=\FA{20}{35}$ \quad $\Longrightarrow$ \quad $\FA{20 : \CaseC}{35 : \CaseC}=\FA{\CaseC}{7}$ \quad et \quad $\FA{20 \cdot \CaseC}{35 \cdot \CaseC}=\FA{\CaseC}{70}$
+\item $\FA{6}{9}=\FA{\CaseC}{3}=\FA{18}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{5}=\FA{6}{15}=\FA{18}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{3}=\FA{\CaseC}{6}=\FA{8}{12}$ \quad $\Longrightarrow$
+\item $\FA{4}{10}=\FA{\CaseC}{5}=\FA{20}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{3}{\CaseC}=\FA{18}{24}=\FA{\CaseC}{8}$ \quad $\Longrightarrow$
+\item $\FA{3}{\CaseC}=\FA{\CaseC}{70}=\FA{21}{35}$ \quad $\Longrightarrow$
+\item $\FA{5}{8}=\FA{\CaseC}{16}=\FA{20}{\CaseC}$ \quad $\Longrightarrow$
+\item $\FA{4}{\CaseC}=\FA{28}{35}=\FA{56}{\CaseC}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:chn-8}{Complète les chaînes de fractions égales. La première fraction est complète.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{3}=\FA{6}{\CaseC}=\FA{\CaseC}{18}=\FA{24}{\CaseC}$
+\item $\FA{5}{4}=\FA{\CaseC}{8}=\FA{25}{\CaseC}=\FA{\CaseC}{48}$
+\item $\FA{3}{7}=\FA{\CaseC}{14}=\FA{9}{\CaseC}=\FA{15}{\CaseC}=\FA{\CaseC}{70}$
+\item $\FA{3}{8}=\FA{\CaseC}{16}=\FA{15}{\CaseC}=\FA{\CaseC}{64}$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:chn-9}{Complète les chaînes de fractions égales. Commence par simplifier la fraction complète.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{\CaseC}{5}=\FA{12}{20}=\FA{18}{\CaseC}=\FA{\CaseC}{45}$
+\item $\FA{40}{60}=\FA{\CaseC}{3}=\FA{10}{\CaseC}=\FA{\CaseC}{30}$
+\item $\FA{\CaseC}{4}=\FA{15}{20}=\FA{21}{\CaseC}=\FA{\CaseC}{36}$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:chn-10}{Écris une chaîne de quatre fractions égales dont la première est irréductible et la dernière est $\dfrac{24}{36}$.}
+ 
+\bigskip\medskip
+\Exo{ex:chn-11}{Voici six fractions : $\dfrac{6}{8}$ \quad $\dfrac{10}{15}$ \quad $\dfrac{9}{12}$ \quad $\dfrac{4}{6}$ \quad $\dfrac{3}{4}$ \quad $\dfrac{20}{30}$. Range-les dans deux chaînes de fractions égales.}
+ 
+\bigskip
+\Exo{ex:chn-12}{Tom complète une chaîne : $\dfrac{2}{5}=\dfrac{4}{7}=\dfrac{6}{9}=\dfrac{8}{11}$. Il explique : \og j'ai ajouté $2$ en haut et en bas à chaque fois\fg{}.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux.
+\item Complète correctement la chaîne : $\FA{2}{5}=\FA{4}{\CaseC}=\FA{6}{\CaseC}=\FA{8}{\CaseC}$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:chn-13}{Défi : complète la chaîne de trois fractions égales.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Elle commence par $\dfrac{3}{5}$, le numérateur de la deuxième fraction est $12$ et le dénominateur de la troisième est $35$.
+\item Elle commence par $\dfrac{2}{7}$ et les dénominateurs sont $14$, $28$ et $70$.
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\subsection{Additionner et soustraire : même dénominateur}
+ 
+\begin{regle}{Définition}
+Pour \textcolor{themeColor}{additionner} ou \textcolor{themeColor}{soustraire} des fractions qui ont le \textbf{même dénominateur}, on additionne (ou on soustrait) les numérateurs et on \textbf{garde le dénominateur}.
+\[\dfrac{3}{8}+\dfrac{2}{8}=\dfrac{3+2}{8}=\dfrac{5}{8} \qquad\qquad \dfrac{7}{9}-\dfrac{4}{9}=\dfrac{7-4}{9}=\dfrac{3}{9}=\dfrac{1}{3}\]
+\end{regle}
+ 
+\vspace{20pt}
+\begin{astuce}{Stratégie}
+Pense en parts :
+ 
+\vspace{5pt}
+{\centering\textit{$3$ huitièmes $+$ $2$ huitièmes $=$ $5$ huitièmes.}\par}
+ 
+\vspace{5pt}
+Le dénominateur dit de quelles parts on parle : il ne change pas. À la fin, simplifie le résultat si c'est possible.
+\end{astuce}
+ 
+\vspace{20pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Numérateurs} & \cellcolor{themeNO!30}\textbf{Résultat} \\\hline
+$\dfrac{3}{8}+\dfrac{2}{8}$ & $3+2=5$ & $\dfrac{5}{8}$ \\\hline
+$\dfrac{7}{9}-\dfrac{4}{9}$ & $7-4=3$ & $\dfrac{3}{9}=\dfrac{1}{3}$ \\\hline
+$\dfrac{5}{12}+\dfrac{1}{12}$ & $5+1=6$ & $\dfrac{6}{12}=\dfrac{1}{2}$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:asm-1}{Calcule la somme. Le résultat est déjà irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{8}+\FA{2}{8}$ \quad $\Longrightarrow$ \quad $\FA{3 + 2}{8}=\FA{\textcolor{themeColor}{5}}{\textcolor{themeColor}{8}}$
+\item $\FA{4}{9}+\FA{3}{9}$ \quad $\Longrightarrow$ \quad $\FA{4 + 3}{\textcolor{themeColor}{9}}=\FA{\CaseC}{\textcolor{themeColor}{9}}$
+\item $\FA{1}{5}+\FA{2}{5}$ \quad $\Longrightarrow$ \quad $\FA{1 + 2}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{2}{7}+\FA{3}{7}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC + \CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{1}{9}+\FA{4}{9}$ \quad $\Longrightarrow$
+\item $\FA{3}{11}+\FA{4}{11}$ \quad $\Longrightarrow$
+\item $\FA{2}{12}+\FA{5}{12}$ \quad $\Longrightarrow$
+\item $\FA{3}{10}+\FA{6}{10}$ \quad $\Longrightarrow$
+\item $\FA{2}{13}+\FA{4}{13}$ \quad $\Longrightarrow$
+\item $\FA{4}{15}+\FA{9}{15}$ \quad $\Longrightarrow$
+\item $\FA{6}{14}+\FA{3}{14}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asm-2}{Calcule la différence. Le résultat est déjà irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{5}{8}-\FA{2}{8}$ \quad $\Longrightarrow$ \quad $\FA{5 - 2}{8}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{8}}$
+\item $\FA{7}{9}-\FA{3}{9}$ \quad $\Longrightarrow$ \quad $\FA{7 - 3}{\textcolor{themeColor}{9}}=\FA{\CaseC}{\textcolor{themeColor}{9}}$
+\item $\FA{4}{5}-\FA{1}{5}$ \quad $\Longrightarrow$ \quad $\FA{4 - 1}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{6}{7}-\FA{2}{7}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC - \CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{8}{11}-\FA{3}{11}$ \quad $\Longrightarrow$
+\item $\FA{9}{10}-\FA{2}{10}$ \quad $\Longrightarrow$
+\item $\FA{8}{9}-\FA{1}{9}$ \quad $\Longrightarrow$
+\item $\FA{10}{13}-\FA{3}{13}$ \quad $\Longrightarrow$
+\item $\FA{11}{12}-\FA{4}{12}$ \quad $\Longrightarrow$
+\item $\FA{13}{15}-\FA{6}{15}$ \quad $\Longrightarrow$
+\item $\FA{13}{14}-\FA{2}{14}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asm-3}{Complète le numérateur manquant. Le dénominateur ne change pas.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{7}+\FA{\CaseC}{7}=\FA{6}{7}$ \quad $\Longrightarrow$ \quad $2 + \textcolor{themeColor}{4} = 6$
+\item $\FA{3}{9}+\FA{\CaseC}{9}=\FA{8}{9}$ \quad $\Longrightarrow$ \quad $3 + \CaseC = 8$
+\item $\FA{\CaseC}{10}+\FA{3}{10}=\FA{9}{10}$ \quad $\Longrightarrow$ \quad $\CaseC + 3 = 9$
+\item $\FA{9}{11}-\FA{\CaseC}{11}=\FA{4}{11}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{8}-\FA{3}{8}=\FA{2}{8}$ \quad $\Longrightarrow$
+\item $\FA{4}{13}+\FA{\CaseC}{13}=\FA{11}{13}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{12}+\FA{7}{12}=\FA{11}{12}$ \quad $\Longrightarrow$
+\item $\FA{10}{15}-\FA{\CaseC}{15}=\FA{6}{15}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{14}-\FA{5}{14}=\FA{7}{14}$ \quad $\Longrightarrow$
+\item $\FA{5}{16}+\FA{\CaseC}{16}=\FA{13}{16}$ \quad $\Longrightarrow$
+\item $\FA{12}{17}-\FA{\CaseC}{17}=\FA{9}{17}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je simplifie et je dépasse $1$}
+ 
+\Exo{ex:asm-4}{Calcule et rends le résultat irréductible. Quand le résultat est un nombre entier, écris-le comme un nombre entier.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{5}{12}+\FA{1}{12}$ \quad $\Longrightarrow$ \quad $\FA{5 + 1}{12}=\FA{\textcolor{themeColor}{6}}{\textcolor{themeColor}{12}}=\FA{\textcolor{themeColor}{1}}{\textcolor{themeColor}{2}}$
+\item $\FA{7}{10}+\FA{8}{10}$ \quad $\Longrightarrow$ \quad $\FA{7 + 8}{\textcolor{themeColor}{10}}=\FA{\CaseC}{\textcolor{themeColor}{10}}=\FA{\CaseC}{\CaseC}$
+\item $\FA{11}{15}-\FA{2}{15}$ \quad $\Longrightarrow$ \quad $\FA{11 - 2}{\CaseC}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{13}{6}-\FA{5}{6}$ \quad $\Longrightarrow$
+\item $\FA{9}{14}+\FA{5}{14}$ \quad $\Longrightarrow$
+\item $\FA{7}{12}+\FA{11}{12}$ \quad $\Longrightarrow$
+\item $\FA{17}{20}-\FA{7}{20}$ \quad $\Longrightarrow$
+\item $\FA{19}{9}-\FA{4}{9}$ \quad $\Longrightarrow$
+\item $\FA{11}{18}+\FA{7}{18}$ \quad $\Longrightarrow$
+\item $\FA{23}{24}-\FA{5}{24}$ \quad $\Longrightarrow$
+\item $\FA{13}{16}+\FA{7}{16}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asm-5}{Écris l'entier sous la forme d'une fraction de même dénominateur, puis calcule.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $1-\FA{3}{7}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{7}}{\textcolor{themeColor}{7}}-\FA{3}{7}=\FA{\textcolor{themeColor}{4}}{\textcolor{themeColor}{7}}$
+\item $2+\FA{3}{5}$ \quad $\Longrightarrow$ \quad $\FA{10}{\textcolor{themeColor}{5}}+\FA{3}{\textcolor{themeColor}{5}}=\FA{\CaseC}{\textcolor{themeColor}{5}}$
+\item $\FA{5}{4}-1$ \quad $\Longrightarrow$ \quad $\FA{5}{4}-\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $1-\FA{2}{9}$ \quad $\Longrightarrow$
+\item $3+\FA{1}{4}$ \quad $\Longrightarrow$
+\item $\FA{7}{3}-2$ \quad $\Longrightarrow$
+\item $1-\FA{5}{12}$ \quad $\Longrightarrow$
+\item $4+\FA{2}{5}$ \quad $\Longrightarrow$
+\item $\FA{11}{6}-1$ \quad $\Longrightarrow$
+\item $2-\FA{3}{8}$ \quad $\Longrightarrow$
+\item $\FA{9}{5}-1$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asm-6}{Complète le tableau. Dans chaque calcul, l'opération est toujours la même. Donne le résultat sous forme de fraction irréductible (ou d'un nombre entier).}
+ 
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}p{6.3cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30} & \cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Numérateurs} & \cellcolor{themeNO!30}\textbf{Résultat irréductible} \\\hline
+a) & $\FA{2}{9}+\FA{4}{9}+\FA{1}{9}$ & $2 + 4 + 1=\textcolor{themeColor}{7}$ & $\FA{\textcolor{themeColor}{7}}{\textcolor{themeColor}{9}}$ \\\hline
+b) & $\FA{3}{11}+\FA{5}{11}+\FA{2}{11}$ & $3 + 5 + 2=\CaseC$ & $\FA{\CaseC}{11}$ \\\hline
+c) & $\FA{11}{12}-\FA{5}{12}-\FA{2}{12}$ & $11 - 5 - 2=\CaseC$ & $\FA{\CaseC}{12}=\FA{\CaseC}{\CaseC}$ \\\hline
+d) & $\FA{1}{8}+\FA{3}{8}+\FA{2}{8}$ &  &  \\\hline
+e) & $\FA{13}{15}-\FA{4}{15}-\FA{3}{15}$ &  &  \\\hline
+f) & $\FA{2}{7}+\FA{1}{7}+\FA{3}{7}$ &  &  \\\hline
+g) & $\FA{17}{20}-\FA{6}{20}-\FA{3}{20}$ &  &  \\\hline
+h) & $\FA{4}{9}+\FA{2}{9}+\FA{3}{9}$ &  &  \\\hline
+i) & $\FA{15}{16}-\FA{5}{16}-\FA{2}{16}$ &  &  \\\hline
+j) & $\FA{5}{14}+\FA{3}{14}+\FA{4}{14}$ &  &  \\\hline
+k) & $\FA{19}{21}-\FA{7}{21}-\FA{5}{21}$ &  &  \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+\newpage
+\Exo{ex:asm-7}{Le calcul est-il correct ? Réponds par oui ou non. Rappel : on garde le dénominateur.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{5}+\FA{1}{5}=\FA{3}{5}$ \quad $\Longrightarrow$ \quad $2 + 1 = \textcolor{themeColor}{3}$ \quad et \quad le dénominateur reste $\textcolor{themeColor}{5}$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{3}{8}+\FA{2}{8}=\FA{5}{16}$ \quad $\Longrightarrow$ \quad $3 + 2 = \textcolor{themeColor}{5}$ \quad et \quad le dénominateur reste $\CaseC$ \quad : \quad \Case
+\item $\FA{7}{9}-\FA{4}{9}=\FA{3}{9}$ \quad $\Longrightarrow$ \quad $7 - 4 = \CaseC$ \quad et \quad le dénominateur reste $\CaseC$ \quad : \quad \Case
+\item $\FA{4}{7}+\FA{2}{7}=\FA{6}{14}$ \quad $\Longrightarrow$
+\item $\FA{9}{10}-\FA{3}{10}=\FA{6}{10}$ \quad $\Longrightarrow$
+\item $\FA{5}{12}+\FA{4}{12}=\FA{9}{24}$ \quad $\Longrightarrow$
+\item $\FA{8}{11}-\FA{5}{11}=\FA{3}{11}$ \quad $\Longrightarrow$
+\item $\FA{3}{13}+\FA{6}{13}=\FA{9}{26}$ \quad $\Longrightarrow$
+\item $\FA{11}{15}-\FA{4}{15}=\FA{7}{15}$ \quad $\Longrightarrow$
+\item $\FA{6}{17}+\FA{8}{17}=\FA{14}{34}$ \quad $\Longrightarrow$
+\item $\FA{12}{19}-\FA{7}{19}=\FA{5}{19}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:asm-8}{Calcule et donne le résultat sous forme de fraction irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{13}{18}+\FA{11}{18}$ \quad $\Longrightarrow$
+\item $\FA{23}{30}-\FA{11}{30}$ \quad $\Longrightarrow$
+\item $\FA{17}{24}+\FA{13}{24}$ \quad $\Longrightarrow$
+\item $\FA{29}{36}-\FA{5}{36}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asm-9}{Trouve le nombre manquant.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{7}{15}+\FA{\CaseC}{15}=\FA{22}{15}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{20}-\FA{9}{20}=\FA{3}{4}$ \quad $\Longrightarrow$
+\item $\FA{19}{24}-\FA{\CaseC}{24}=\FA{1}{3}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asm-10}{Réponds par une fraction irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Léa lit $\dfrac{3}{8}$ d'un livre le lundi et $\dfrac{2}{8}$ le mardi. Quelle fraction du livre a-t-elle lue ? Quelle fraction lui reste-t-il à lire ?
+\item Une recette demande $\dfrac{5}{12}$ L de lait et $\dfrac{4}{12}$ L de crème. Quel volume de liquide faut-il en tout ?
+\item Un réservoir est rempli aux $\dfrac{11}{12}$. On utilise $\dfrac{5}{12}$ du réservoir. Quelle fraction du réservoir reste-t-il ?
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asm-11}{Sam écrit : $\dfrac{2}{9}+\dfrac{5}{9}=\dfrac{7}{18}$, car \og j'ai aussi additionné les dénominateurs\fg{}.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux.
+\item Donne le bon résultat.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asm-12}{Écris deux fractions de dénominateur $15$ (plusieurs réponses sont possibles) :}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item dont la somme est $\dfrac{11}{15}$.
+\item dont la différence est $\dfrac{4}{15}$.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asm-13}{Défi : trouve la fraction.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Quelle fraction de dénominateur $12$ faut-il ajouter à $\dfrac{5}{12}$ pour obtenir $1$ ?
+\item Trois fractions identiques de dénominateur $7$ ont pour somme $\dfrac{6}{7}$. Quelle est cette fraction ?
+\end{enumerate}
+
+%-----------------------------------------------------------------------
+\subsection{Additionner et soustraire : dénominateurs différents}
+ 
+\begin{regle}{Définition}
+On ne peut additionner ou soustraire que des fractions de même dénominateur. Sinon, on \textcolor{themeColor}{amplifie} les fractions pour obtenir un \textbf{dénominateur commun} : un multiple commun des deux dénominateurs.
+\[\dfrac{1}{2}+\dfrac{1}{3}=\dfrac{1 \cdot 3}{2 \cdot 3}+\dfrac{1 \cdot 2}{3 \cdot 2}=\dfrac{3}{6}+\dfrac{2}{6}=\dfrac{5}{6}\]
+\end{regle}
+ 
+\vspace{20pt}
+\begin{astuce}{Stratégie}
+Pour calculer avec des dénominateurs différents :
+ 
+\vspace{5pt}
+\textbf{1.} Cherche un dénominateur commun (le plus petit possible) en listant les multiples des deux dénominateurs.\\
+\textbf{2.} Amplifie chaque fraction pour obtenir ce dénominateur.\\
+\textbf{3.} Additionne ou soustrais les numérateurs, et garde le dénominateur.\\
+\textbf{4.} Simplifie le résultat si c'est possible.
+ 
+\vspace{5pt}
+\textit{Exemple :} pour $\dfrac{3}{4}-\dfrac{1}{6}$, les multiples de $4$ sont $4$, $8$, $12$ et ceux de $6$ sont $6$, $12$ : le dénominateur commun est $12$.
+\end{astuce}
+ 
+\vspace{20pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Dénominateur commun} & \cellcolor{themeNO!30}\textbf{Résultat} \\\hline
+$\dfrac{1}{2}+\dfrac{1}{4}$ & $4$ & $\dfrac{3}{4}$ \\\hline
+$\dfrac{1}{2}+\dfrac{1}{3}$ & $6$ & $\dfrac{5}{6}$ \\\hline
+$\dfrac{3}{4}-\dfrac{1}{6}$ & $12$ & $\dfrac{7}{12}$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:asd-1}{Calcule la somme. Un des deux dénominateurs est un multiple de l'autre : amplifie l'une des deux fractions.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}+\FA{1}{4}$ \quad $\Longrightarrow$ \quad $\FA{1 \cdot \textcolor{themeColor}{2}}{2 \cdot \textcolor{themeColor}{2}}+\FA{1}{4}=\FA{\textcolor{themeColor}{3}}{4}$
+\item $\FA{1}{3}+\FA{2}{9}$ \quad $\Longrightarrow$ \quad $\FA{1 \cdot \textcolor{themeColor}{3}}{3 \cdot \textcolor{themeColor}{3}}+\FA{2}{9}=\FA{\CaseC}{9}$
+\item $\FA{2}{5}+\FA{3}{10}$ \quad $\Longrightarrow$ \quad $\FA{2 \cdot \CaseC}{5 \cdot \CaseC}+\FA{3}{10}=\FA{\CaseC}{10}$
+\item $\FA{1}{4}+\FA{3}{8}$ \quad $\Longrightarrow$
+\item $\FA{2}{3}+\FA{1}{9}$ \quad $\Longrightarrow$
+\item $\FA{3}{5}+\FA{3}{10}$ \quad $\Longrightarrow$
+\item $\FA{1}{6}+\FA{5}{12}$ \quad $\Longrightarrow$
+\item $\FA{1}{2}+\FA{5}{12}$ \quad $\Longrightarrow$
+\item $\FA{2}{7}+\FA{1}{14}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}+\FA{1}{18}$ \quad $\Longrightarrow$
+\item $\FA{1}{5}+\FA{1}{15}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asd-2}{Calcule la différence. Un des deux dénominateurs est un multiple de l'autre : amplifie l'une des deux fractions.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{7}{10}-\FA{2}{5}$ \quad $\Longrightarrow$ \quad $\FA{7}{10}-\FA{2 \cdot \textcolor{themeColor}{2}}{5 \cdot \textcolor{themeColor}{2}}=\FA{\textcolor{themeColor}{3}}{10}$
+\item $\FA{3}{4}-\FA{1}{8}$ \quad $\Longrightarrow$ \quad $\FA{3 \cdot \textcolor{themeColor}{2}}{4 \cdot \textcolor{themeColor}{2}}-\FA{1}{8}=\FA{\CaseC}{8}$
+\item $\FA{8}{9}-\FA{2}{3}$ \quad $\Longrightarrow$ \quad $\FA{8}{9}-\FA{2 \cdot \CaseC}{3 \cdot \CaseC}=\FA{\CaseC}{9}$
+\item $\FA{9}{10}-\FA{1}{5}$ \quad $\Longrightarrow$
+\item $\FA{7}{8}-\FA{3}{4}$ \quad $\Longrightarrow$
+\item $\FA{11}{12}-\FA{1}{3}$ \quad $\Longrightarrow$
+\item $\FA{2}{3}-\FA{1}{9}$ \quad $\Longrightarrow$
+\item $\FA{4}{5}-\FA{1}{15}$ \quad $\Longrightarrow$
+\item $\FA{5}{7}-\FA{1}{14}$ \quad $\Longrightarrow$
+\item $\FA{8}{9}-\FA{5}{18}$ \quad $\Longrightarrow$
+\item $\FA{7}{12}-\FA{1}{2}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asd-3}{Amplifie les deux fractions pour qu'elles aient le dénominateur commun indiqué, puis calcule.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}+\FA{1}{3}$ \quad (dénominateur $6$) \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{6}}+\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{5}}{\textcolor{themeColor}{6}}$
+\item $\FA{1}{4}+\FA{1}{6}$ \quad (dénominateur $12$) \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{12}}+\FA{\CaseC}{\textcolor{themeColor}{12}}=\FA{\CaseC}{\textcolor{themeColor}{12}}$
+\item $\FA{1}{3}+\FA{1}{5}$ \quad (dénominateur $15$) \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}+\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{1}{2}+\FA{1}{5}$ \quad (dénominateur $10$) \quad $\Longrightarrow$
+\item $\FA{3}{4}+\FA{1}{6}$ \quad (dénominateur $12$) \quad $\Longrightarrow$
+\item $\FA{2}{3}-\FA{1}{4}$ \quad (dénominateur $12$) \quad $\Longrightarrow$
+\item $\FA{1}{2}-\FA{1}{3}$ \quad (dénominateur $6$) \quad $\Longrightarrow$
+\item $\FA{3}{4}-\FA{1}{5}$ \quad (dénominateur $20$) \quad $\Longrightarrow$
+\item $\FA{5}{6}-\FA{3}{4}$ \quad (dénominateur $12$) \quad $\Longrightarrow$
+\item $\FA{2}{5}+\FA{1}{3}$ \quad (dénominateur $15$) \quad $\Longrightarrow$
+\item $\FA{4}{5}-\FA{1}{2}$ \quad (dénominateur $10$) \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je cherche le dénominateur commun}
+ 
+\Exo{ex:asd-4}{Calcule la somme. Cherche d'abord un dénominateur commun : liste les multiples des deux dénominateurs.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{4}+\FA{1}{5}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{15}}{\textcolor{themeColor}{20}}+\FA{\textcolor{themeColor}{4}}{\textcolor{themeColor}{20}}=\FA{\textcolor{themeColor}{19}}{\textcolor{themeColor}{20}}$
+\item $\FA{2}{3}+\FA{1}{4}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\textcolor{themeColor}{12}}+\FA{\CaseC}{\textcolor{themeColor}{12}}=\FA{\CaseC}{\textcolor{themeColor}{12}}$
+\item $\FA{1}{6}+\FA{2}{5}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}+\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{5}{6}+\FA{1}{4}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}+\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{2}{9}+\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{4}{5}+\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{3}{10}+\FA{2}{15}$ \quad $\Longrightarrow$
+\item $\FA{5}{12}+\FA{3}{8}$ \quad $\Longrightarrow$
+\item $\FA{1}{4}+\FA{3}{10}$ \quad $\Longrightarrow$
+\item $\FA{7}{15}+\FA{1}{6}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asd-5}{Calcule la différence. Cherche d'abord un dénominateur commun : liste les multiples des deux dénominateurs.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{3}-\FA{1}{4}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{8}}{\textcolor{themeColor}{12}}-\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{12}}=\FA{\textcolor{themeColor}{5}}{\textcolor{themeColor}{12}}$
+\item $\FA{3}{4}-\FA{2}{5}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\textcolor{themeColor}{20}}-\FA{\CaseC}{\textcolor{themeColor}{20}}=\FA{\CaseC}{\textcolor{themeColor}{20}}$
+\item $\FA{7}{8}-\FA{1}{3}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}-\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{5}{6}-\FA{2}{5}$ \quad $\Longrightarrow$
+\item $\FA{3}{4}-\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{4}{5}-\FA{1}{4}$ \quad $\Longrightarrow$
+\item $\FA{7}{9}-\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{5}{8}-\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{11}{12}-\FA{5}{8}$ \quad $\Longrightarrow$
+\item $\FA{9}{10}-\FA{2}{15}$ \quad $\Longrightarrow$
+\item $\FA{7}{10}-\FA{2}{15}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:asd-6}{Complète le tableau. Donne le résultat sous forme de fraction irréductible.}
+ 
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30} & \cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Dénominateur commun} & \cellcolor{themeNO!30}\textbf{Résultat irréductible} \\\hline
+a) & $\FA{1}{6}+\FA{1}{3}$ & $\textcolor{themeColor}{6}$ & $\FA{\textcolor{themeColor}{1}}{\textcolor{themeColor}{2}}$ \\\hline
+b) & $\FA{3}{4}-\FA{1}{12}$ & $12$ & $\FA{\CaseC}{\CaseC}$ \\\hline
+c) & $\FA{1}{10}+\FA{2}{5}$ & $\CaseC$ & $\FA{\CaseC}{\CaseC}$ \\\hline
+d) & $\FA{5}{6}-\FA{1}{4}$ &  &  \\\hline
+e) & $\FA{3}{8}+\FA{1}{4}$ &  &  \\\hline
+f) & $\FA{7}{10}+\FA{1}{6}$ &  &  \\\hline
+g) & $\FA{5}{6}+\FA{3}{4}$ &  &  \\\hline
+h) & $\FA{7}{12}-\FA{1}{3}$ &  &  \\\hline
+i) & $\FA{11}{15}-\FA{1}{5}$ &  &  \\\hline
+j) & $\FA{3}{10}+\FA{7}{15}$ &  &  \\\hline
+k) & $\FA{7}{9}+\FA{5}{6}$ &  &  \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+\newpage
+\Exo{ex:asd-7}{Le calcul est-il correct ? Réponds par oui ou non. Attention : on ne peut pas additionner ou soustraire les dénominateurs.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}+\FA{1}{3}=\FA{5}{6}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{6}}+\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{6}}=\FA{\textcolor{themeColor}{5}}{\textcolor{themeColor}{6}}$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{1}{4}+\FA{1}{5}=\FA{2}{9}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{5}}{\textcolor{themeColor}{20}}+\FA{\textcolor{themeColor}{4}}{\textcolor{themeColor}{20}}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{2}{3}-\FA{1}{4}=\FA{5}{12}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}-\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{3}{5}+\FA{1}{2}=\FA{4}{7}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}-\FA{1}{3}=\FA{1}{2}$ \quad $\Longrightarrow$
+\item $\FA{3}{4}-\FA{1}{2}=\FA{2}{2}$ \quad $\Longrightarrow$
+\item $\FA{2}{5}+\FA{3}{10}=\FA{5}{15}$ \quad $\Longrightarrow$
+\item $\FA{7}{8}-\FA{1}{4}=\FA{5}{8}$ \quad $\Longrightarrow$
+\item $\FA{1}{6}+\FA{3}{4}=\FA{11}{12}$ \quad $\Longrightarrow$
+\item $\FA{4}{5}-\FA{1}{3}=\FA{3}{2}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}+\FA{1}{6}=\FA{13}{18}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:asd-8}{Calcule et donne le résultat sous forme de fraction irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{4}+\FA{5}{6}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}+\FA{7}{10}$ \quad $\Longrightarrow$
+\item $\FA{11}{12}-\FA{5}{18}$ \quad $\Longrightarrow$
+\item $\FA{4}{15}+\FA{3}{10}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asd-9}{Trouve le plus petit dénominateur commun des deux fractions.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{4}\text{ et }\FA{1}{6}$ \quad $\Longrightarrow$
+\item $\FA{1}{6}\text{ et }\FA{1}{15}$ \quad $\Longrightarrow$
+\item $\FA{1}{8}\text{ et }\FA{1}{12}$ \quad $\Longrightarrow$
+\item $\FA{1}{9}\text{ et }\FA{1}{12}$ \quad $\Longrightarrow$
+\item $\FA{1}{10}\text{ et }\FA{1}{25}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asd-10}{Réponds par une fraction irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Une recette demande $\dfrac{2}{3}$ L de lait et $\dfrac{3}{4}$ L de crème. Quel volume de liquide faut-il en tout ?
+\item Léa lit $\dfrac{3}{8}$ d'un livre le lundi et $\dfrac{1}{4}$ le mardi. Quelle fraction du livre a-t-elle lue ? Quelle fraction lui reste-t-il à lire ?
+\item Dans un jardin, $\dfrac{1}{2}$ de la surface est plantée de carottes et $\dfrac{1}{3}$ de pommes de terre. Quelle fraction du jardin est plantée ? Quelle fraction reste libre ?
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asd-11}{Sam écrit : $\dfrac{1}{2}+\dfrac{1}{3}=\dfrac{2}{5}$, car \og j'ai additionné les numérateurs et les dénominateurs\fg{}.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux (indice : compare $\dfrac{2}{5}$ à $\dfrac{1}{2}$).
+\item Donne le bon résultat.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asd-12}{Trouve le nombre manquant.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}+\FA{\CaseC}{6}=\FA{5}{6}$ \quad $\Longrightarrow$
+\item $\FA{3}{4}-\FA{\CaseC}{12}=\FA{7}{12}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{20}+\FA{1}{4}=\FA{13}{20}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:asd-13}{Défi : trouve la fraction.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Écris $\dfrac{3}{4}$ comme la somme de deux fractions de dénominateur $8$ (plusieurs réponses sont possibles).
+\item La somme de $\dfrac{1}{3}$ et d'une autre fraction vaut $\dfrac{5}{6}$. Quelle est cette fraction ?
+\end{enumerate}
+ 
+ 
+ %-----------------------------------------------------------------------
+\subsection{Multiplier des fractions}
+ 
+\begin{regle}{Définition}
+Pour \textcolor{themeColor}{multiplier} deux fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux. Pas besoin de dénominateur commun !
+\[\dfrac{2}{3} \cdot \dfrac{4}{5}=\dfrac{2 \cdot 4}{3 \cdot 5}=\dfrac{8}{15}\]
+\end{regle}
+ 
+\vspace{20pt}
+\begin{astuce}{Stratégie}
+\textbf{Simplifie avant de calculer} : on peut simplifier un numérateur avec un dénominateur.
+\[\dfrac{3}{4} \cdot \dfrac{8}{9}=\dfrac{3 \cdot 8}{4 \cdot 9}=\dfrac{1 \cdot 2}{1 \cdot 3}=\dfrac{2}{3}\]
+Un nombre entier s'écrit avec le dénominateur $1$ : $5=\dfrac{5}{1}$.\\
+\textbf{Prendre une fraction d'une quantité}, c'est multiplier : $\dfrac{3}{5}$ de $40=\dfrac{3}{5} \cdot \dfrac{40}{1}=\dfrac{120}{5}=24$.
+\end{astuce}
+ 
+\vspace{20pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Étapes} & \cellcolor{themeNO!30}\textbf{Résultat} \\\hline
+$\dfrac{2}{3}\cdot\dfrac{4}{5}$ & $\dfrac{2 \cdot 4}{3 \cdot 5}$ & $\dfrac{8}{15}$ \\\hline
+$\dfrac{3}{4}\cdot\dfrac{8}{9}$ & $\dfrac{3 \cdot 8}{4 \cdot 9}=\dfrac{24}{36}$ & $\dfrac{2}{3}$ \\\hline
+$\dfrac{3}{5}\text{ de }40$ & $\dfrac{3}{5}\cdot\dfrac{40}{1}=\dfrac{120}{5}$ & $24$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:mul-1}{Calcule le produit. Le résultat est déjà irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}\cdot\FA{3}{5}$ \quad $\Longrightarrow$ \quad $\FA{1 \cdot 3}{2 \cdot 5}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{10}}$
+\item $\FA{2}{3}\cdot\FA{4}{5}$ \quad $\Longrightarrow$ \quad $\FA{2 \cdot 4}{3 \cdot \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{3}{7}\cdot\FA{2}{5}$ \quad $\Longrightarrow$ \quad $\FA{3 \cdot \CaseC}{7 \cdot \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{4}{9}\cdot\FA{1}{3}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC \cdot \CaseC}{\CaseC \cdot \CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{5}{6}\cdot\FA{1}{7}$ \quad $\Longrightarrow$
+\item $\FA{2}{5}\cdot\FA{3}{11}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}\cdot\FA{1}{5}$ \quad $\Longrightarrow$
+\item $\FA{4}{7}\cdot\FA{2}{3}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}\cdot\FA{2}{7}$ \quad $\Longrightarrow$
+\item $\FA{1}{4}\cdot\FA{5}{6}$ \quad $\Longrightarrow$
+\item $\FA{3}{10}\cdot\FA{1}{7}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:mul-2}{Calcule. Écris l'entier sous la forme d'une fraction de dénominateur $1$.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $3\cdot\FA{2}{5}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{1}}\cdot\FA{2}{5}=\FA{3 \cdot 2}{1 \cdot 5}=\FA{\textcolor{themeColor}{6}}{\textcolor{themeColor}{5}}$
+\item $4\cdot\FA{1}{7}$ \quad $\Longrightarrow$ \quad $\FA{4}{1}\cdot\FA{1}{7}=\FA{4 \cdot 1}{1 \cdot 7}=\FA{\CaseC}{\CaseC}$
+\item $5\cdot\FA{2}{9}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}\cdot\FA{2}{9}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $2\cdot\FA{3}{7}$ \quad $\Longrightarrow$
+\item $6\cdot\FA{1}{5}$ \quad $\Longrightarrow$
+\item $3\cdot\FA{4}{7}$ \quad $\Longrightarrow$
+\item $2\cdot\FA{5}{9}$ \quad $\Longrightarrow$
+\item $7\cdot\FA{1}{3}$ \quad $\Longrightarrow$
+\item $4\cdot\FA{3}{5}$ \quad $\Longrightarrow$
+\item $5\cdot\FA{2}{3}$ \quad $\Longrightarrow$
+\item $3\cdot\FA{5}{7}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:mul-3}{Calcule la fraction de la quantité. Le résultat est un nombre entier.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}\text{ de }8$ \quad $\Longrightarrow$ \quad $\FA{1}{2}\cdot\FA{\textcolor{themeColor}{8}}{\textcolor{themeColor}{1}}=\FA{1 \cdot 8}{2 \cdot 1}=\FA{\textcolor{themeColor}{8}}{\textcolor{themeColor}{2}}=\textcolor{themeColor}{4}$
+\item $\FA{1}{3}\text{ de }12$ \quad $\Longrightarrow$ \quad $\FA{1}{3}\cdot\FA{12}{1}=\FA{\CaseC}{\CaseC}=\CaseC$
+\item $\FA{2}{3}\text{ de }9$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\CaseC$
+\item $\FA{1}{4}\text{ de }20$ \quad $\Longrightarrow$
+\item $\FA{3}{4}\text{ de }12$ \quad $\Longrightarrow$
+\item $\FA{2}{5}\text{ de }15$ \quad $\Longrightarrow$
+\item $\FA{1}{5}\text{ de }30$ \quad $\Longrightarrow$
+\item $\FA{3}{5}\text{ de }20$ \quad $\Longrightarrow$
+\item $\FA{1}{6}\text{ de }18$ \quad $\Longrightarrow$
+\item $\FA{5}{6}\text{ de }12$ \quad $\Longrightarrow$
+\item $\FA{2}{7}\text{ de }21$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je simplifie}
+ 
+\Exo{ex:mul-4}{Calcule et donne le résultat sous forme de fraction irréductible. Tu peux simplifier avant de calculer.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{4}\cdot\FA{2}{9}$ \quad $\Longrightarrow$ \quad $\FA{3 \cdot 2}{4 \cdot 9}=\FA{\textcolor{themeColor}{6}}{\textcolor{themeColor}{36}}=\FA{\textcolor{themeColor}{1}}{\textcolor{themeColor}{6}}$
+\item $\FA{5}{6}\cdot\FA{3}{10}$ \quad $\Longrightarrow$ \quad $\FA{5 \cdot 3}{6 \cdot 10}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{4}{9}\cdot\FA{3}{8}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC \cdot \CaseC}{\CaseC \cdot \CaseC}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{7}{10}\cdot\FA{5}{14}$ \quad $\Longrightarrow$
+\item $\FA{6}{5}\cdot\FA{10}{9}$ \quad $\Longrightarrow$
+\item $\FA{8}{15}\cdot\FA{5}{12}$ \quad $\Longrightarrow$
+\item $\FA{9}{14}\cdot\FA{7}{12}$ \quad $\Longrightarrow$
+\item $\FA{5}{12}\cdot\FA{18}{25}$ \quad $\Longrightarrow$
+\item $\FA{16}{21}\cdot\FA{7}{8}$ \quad $\Longrightarrow$
+\item $\FA{15}{16}\cdot\FA{8}{25}$ \quad $\Longrightarrow$
+\item $\FA{14}{15}\cdot\FA{25}{28}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:mul-5}{Calcule la fraction de la quantité. Pense à simplifier : calcule d'abord la division, puis la multiplication.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{5}\text{ de }45$ \quad $\Longrightarrow$ \quad $\FA{3}{5}\cdot\FA{\textcolor{themeColor}{45}}{\textcolor{themeColor}{1}}=\FA{\textcolor{themeColor}{135}}{\textcolor{themeColor}{5}}=\textcolor{themeColor}{27}$
+\item $\FA{5}{8}\text{ de }56$ \quad $\Longrightarrow$ \quad $\FA{5}{8}\cdot\FA{56}{1}=\FA{\CaseC}{\CaseC}=\CaseC$
+\item $\FA{7}{10}\text{ de }250$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\CaseC}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\CaseC$
+\item $\FA{2}{3}\text{ de }90$ \quad $\Longrightarrow$
+\item $\FA{4}{9}\text{ de }72$ \quad $\Longrightarrow$
+\item $\FA{3}{8}\text{ de }64$ \quad $\Longrightarrow$
+\item $\FA{5}{6}\text{ de }48$ \quad $\Longrightarrow$
+\item $\FA{7}{12}\text{ de }84$ \quad $\Longrightarrow$
+\item $\FA{3}{7}\text{ de }91$ \quad $\Longrightarrow$
+\item $\FA{9}{10}\text{ de }150$ \quad $\Longrightarrow$
+\item $\FA{5}{9}\text{ de }63$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:mul-6}{Complète le tableau. Donne le résultat sous forme de fraction irréductible (ou d'un nombre entier).}
+ 
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30} & \cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Numérateurs} & \cellcolor{themeNO!30}\textbf{Dénominateurs} & \cellcolor{themeNO!30}\textbf{Résultat irréductible} \\\hline
+a) & $\FA{2}{3}\cdot\FA{9}{10}$ & $2 \cdot 9 = \textcolor{themeColor}{18}$ & $3 \cdot 10 = \textcolor{themeColor}{30}$ & $\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{5}}$ \\\hline
+b) & $\FA{4}{5}\cdot\FA{5}{8}$ & $4 \cdot 5 = \CaseC$ & $5 \cdot 8 = \textcolor{themeColor}{40}$ & $\FA{\CaseC}{\CaseC}$ \\\hline
+c) & $\FA{3}{7}\cdot\FA{14}{15}$ & $3 \cdot 14 = \CaseC$ & $7 \cdot 15 = \CaseC$ & $\FA{\CaseC}{\CaseC}$ \\\hline
+d) & $\FA{6}{11}\cdot\FA{5}{9}$ &  &  &  \\\hline
+e) & $\FA{8}{9}\cdot\FA{3}{4}$ &  &  &  \\\hline
+f) & $\FA{5}{6}\cdot\FA{12}{25}$ &  &  &  \\\hline
+g) & $\FA{7}{8}\cdot\FA{4}{21}$ &  &  &  \\\hline
+h) & $\FA{9}{10}\cdot\FA{5}{6}$ &  &  &  \\\hline
+i) & $\FA{3}{4}\cdot\FA{16}{9}$ &  &  &  \\\hline
+j) & $\FA{10}{21}\cdot\FA{7}{15}$ &  &  &  \\\hline
+k) & $\FA{12}{35}\cdot\FA{5}{18}$ &  &  &  \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+\newpage
+\Exo{ex:mul-7}{Le calcul est-il correct ? Réponds par oui ou non. Attention aux dénominateurs.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{3}\cdot\FA{4}{5}=\FA{8}{15}$ \quad $\Longrightarrow$ \quad $\FA{2 \cdot 4}{3 \cdot 5}=\FA{\textcolor{themeColor}{8}}{\textcolor{themeColor}{15}}$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{3}{7}\cdot\FA{2}{7}=\FA{6}{7}$ \quad $\Longrightarrow$ \quad $\FA{3 \cdot 2}{7 \cdot 7}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{1}{2}\cdot\FA{3}{5}=\FA{3}{10}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC \cdot \CaseC}{\CaseC \cdot \CaseC}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{4}{5}\cdot\FA{2}{3}=\FA{8}{5}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}\cdot\FA{1}{4}=\FA{5}{24}$ \quad $\Longrightarrow$
+\item $\FA{2}{9}\cdot\FA{3}{5}=\FA{5}{14}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}\cdot\FA{2}{3}=\FA{6}{24}$ \quad $\Longrightarrow$
+\item $\FA{7}{10}\cdot\FA{3}{4}=\FA{21}{40}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}\cdot\FA{2}{9}=\FA{10}{9}$ \quad $\Longrightarrow$
+\item $\FA{3}{5}\cdot\FA{5}{7}=\FA{15}{35}$ \quad $\Longrightarrow$
+\item $\FA{4}{7}\cdot\FA{3}{8}=\FA{12}{15}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:mul-8}{Calcule et donne le résultat sous forme de fraction irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{25}\cdot\FA{15}{16}$ \quad $\Longrightarrow$
+\item $\FA{21}{40}\cdot\FA{16}{35}$ \quad $\Longrightarrow$
+\item $\FA{18}{35}\cdot\FA{25}{27}$ \quad $\Longrightarrow$
+\item $\FA{33}{50}\cdot\FA{20}{99}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:mul-9}{Réponds par une phrase.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Dans une classe de $24$ élèves, $\dfrac{5}{8}$ font du sport après l'école. Combien d'élèves cela représente-t-il ?
+\item Un réservoir de $60$ L est rempli aux $\dfrac{3}{4}$. On utilise ensuite les $\dfrac{2}{5}$ de ce contenu. Combien de litres a-t-on utilisés ?
+\item Un fermier possède $120$ moutons. Les $\dfrac{3}{8}$ sont noirs, et le tiers des moutons noirs sont des agneaux. Combien y a-t-il d'agneaux noirs ?
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:mul-10}{Eva écrit : $\dfrac{2}{5} \cdot \dfrac{3}{5}=\dfrac{6}{5}$, car \og pour multiplier, on garde le dénominateur\fg{}.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Explique pourquoi c'est faux.
+\item Donne le bon résultat.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:mul-11}{Trouve le nombre manquant.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{3}\cdot\FA{\CaseC}{5}=\FA{4}{15}$ \quad $\Longrightarrow$
+\item $\FA{3}{\CaseC}\cdot\FA{4}{9}=\FA{2}{3}$ \quad $\Longrightarrow$
+\item $\FA{\CaseC}{4}\cdot\FA{6}{7}=\FA{3}{7}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:mul-12}{Calcule l'aire de chaque rectangle (aire $=$ longueur $\cdot$ largeur).}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Un rectangle mesure $\dfrac{2}{3}$ m sur $\dfrac{3}{8}$ m.
+\item Un rectangle mesure $\dfrac{5}{6}$ m sur $\dfrac{9}{10}$ m.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:mul-13}{Défi : trouve le nombre.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Par quel nombre faut-il multiplier $\dfrac{3}{4}$ pour obtenir $1$ ?
+\item Par quel nombre faut-il multiplier $\dfrac{2}{5}$ pour obtenir $1$ ?
+\end{enumerate}
+
+%-----------------------------------------------------------------------
+\subsection{Diviser des fractions}
+ 
+\begin{regle}{Définition}
+L'\textcolor{themeColor}{inverse} d'une fraction s'obtient en échangeant son numérateur et son dénominateur : l'inverse de $\dfrac{a}{b}$ est $\dfrac{b}{a}$. Le nombre $0$ n'a pas d'inverse.\\[5pt]
+\textcolor{themeColor}{Diviser} par une fraction, c'est multiplier par son inverse.
+\[\dfrac{2}{3} : \dfrac{5}{7}=\dfrac{2}{3} \cdot \dfrac{7}{5}=\dfrac{14}{15}\]
+\end{regle}
+ 
+\vspace{20pt}
+\begin{astuce}{Stratégie}
+Un nombre entier s'écrit avec le dénominateur $1$ : $5=\dfrac{5}{1}$, donc l'inverse de $5$ est $\dfrac{1}{5}$.
+\[\dfrac{3}{4} : 6=\dfrac{3}{4} \cdot \dfrac{1}{6}=\dfrac{3}{24}=\dfrac{1}{8} \qquad\qquad 6 : \dfrac{2}{3}=6 \cdot \dfrac{3}{2}=\dfrac{18}{2}=9\]
+Ensuite, on calcule comme pour une multiplication : on simplifie avant de calculer si possible.
+\end{astuce}
+ 
+\vspace{20pt}
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30}\textbf{Nombre} & \cellcolor{themeNO!30}\textbf{Inverse} \\\hline
+$\dfrac{3}{4}$ & $\dfrac{4}{3}$ \\\hline
+$5$ & $\dfrac{1}{5}$ \\\hline
+$\dfrac{1}{7}$ & $7$ \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 1 \quad $\bullet\circ\circ$ \quad Je me lance}
+ 
+\Exo{ex:div-1}{Écris l'inverse de chaque nombre.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{4}$ \quad $\Longrightarrow$ \quad $\FA{\textcolor{themeColor}{4}}{\textcolor{themeColor}{3}}$
+\item $\FA{5}{2}$ \quad $\Longrightarrow$ \quad $\FA{\CaseC}{\textcolor{themeColor}{5}}$
+\item $7$ \quad $\Longrightarrow$ \quad $7=\FA{7}{1}\;\Longrightarrow\;\FA{\CaseC}{\CaseC}$
+\item $\FA{1}{9}$ \quad $\Longrightarrow$
+\item $\FA{6}{5}$ \quad $\Longrightarrow$
+\item $\FA{2}{3}$ \quad $\Longrightarrow$
+\item $8$ \quad $\Longrightarrow$
+\item $\FA{1}{4}$ \quad $\Longrightarrow$
+\item $\FA{9}{10}$ \quad $\Longrightarrow$
+\item $\FA{11}{3}$ \quad $\Longrightarrow$
+\item $12$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:div-2}{Calcule le quotient : remplace la division par une multiplication par l'inverse. Le résultat est déjà irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}:\FA{1}{3}$ \quad $\Longrightarrow$ \quad $\FA{1}{2}\cdot\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{1}}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{2}}$
+\item $\FA{3}{5}:\FA{2}{7}$ \quad $\Longrightarrow$ \quad $\FA{3}{5}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{2}{7}:\FA{3}{4}$ \quad $\Longrightarrow$ \quad $\FA{2}{7}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{5}{6}:\FA{1}{7}$ \quad $\Longrightarrow$
+\item $\FA{2}{3}:\FA{5}{7}$ \quad $\Longrightarrow$
+\item $\FA{1}{4}:\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{3}{8}:\FA{1}{5}$ \quad $\Longrightarrow$
+\item $\FA{4}{7}:\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{2}{5}:\FA{7}{3}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}:\FA{2}{7}$ \quad $\Longrightarrow$
+\item $\FA{1}{6}:\FA{5}{7}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:div-3}{Calcule. Écris l'entier sous la forme d'une fraction de dénominateur $1$.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{1}{2}:3$ \quad $\Longrightarrow$ \quad $\FA{1}{2}\cdot\FA{\textcolor{themeColor}{1}}{\textcolor{themeColor}{3}}=\FA{\textcolor{themeColor}{1}}{\textcolor{themeColor}{6}}$
+\item $\FA{2}{5}:3$ \quad $\Longrightarrow$ \quad $\FA{2}{5}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $3:\FA{1}{2}$ \quad $\Longrightarrow$ \quad $\FA{3}{1}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\CaseC$
+\item $4:\FA{1}{3}$ \quad $\Longrightarrow$
+\item $\FA{3}{7}:2$ \quad $\Longrightarrow$
+\item $5:\FA{2}{3}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}:7$ \quad $\Longrightarrow$
+\item $2:\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{4}{9}:5$ \quad $\Longrightarrow$
+\item $6:\FA{1}{4}$ \quad $\Longrightarrow$
+\item $\FA{1}{8}:3$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 2 \quad $\bullet\bullet\circ$ \quad Je simplifie}
+ 
+\Exo{ex:div-4}{Calcule et donne le résultat sous forme de fraction irréductible (ou d'un nombre entier).}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{4}:\FA{9}{8}$ \quad $\Longrightarrow$ \quad $\FA{3}{4}\cdot\FA{\textcolor{themeColor}{8}}{\textcolor{themeColor}{9}}=\FA{\textcolor{themeColor}{24}}{\textcolor{themeColor}{36}}=\FA{\textcolor{themeColor}{2}}{\textcolor{themeColor}{3}}$
+\item $\FA{5}{6}:\FA{10}{9}$ \quad $\Longrightarrow$ \quad $\FA{5}{6}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{8}{15}:\FA{4}{5}$ \quad $\Longrightarrow$ \quad $\FA{8}{15}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $\FA{9}{10}:\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{7}{12}:\FA{14}{9}$ \quad $\Longrightarrow$
+\item $\FA{4}{9}:\FA{8}{15}$ \quad $\Longrightarrow$
+\item $\FA{5}{12}:\FA{15}{8}$ \quad $\Longrightarrow$
+\item $\FA{7}{10}:\FA{21}{25}$ \quad $\Longrightarrow$
+\item $\FA{9}{14}:\FA{3}{7}$ \quad $\Longrightarrow$
+\item $\FA{11}{15}:\FA{22}{9}$ \quad $\Longrightarrow$
+\item $\FA{6}{25}:\FA{9}{10}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:div-5}{Calcule et donne le résultat sous forme de fraction irréductible (ou d'un nombre entier).}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{5}:6$ \quad $\Longrightarrow$ \quad $\FA{3}{5}\cdot\FA{1}{6}=\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{30}}=\FA{\textcolor{themeColor}{1}}{\textcolor{themeColor}{10}}$
+\item $4:\FA{2}{3}$ \quad $\Longrightarrow$ \quad $\FA{4}{1}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\CaseC$
+\item $\FA{5}{2}:5$ \quad $\Longrightarrow$ \quad $\FA{5}{2}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$
+\item $6:\FA{3}{4}$ \quad $\Longrightarrow$
+\item $\FA{8}{9}:4$ \quad $\Longrightarrow$
+\item $9:\FA{3}{5}$ \quad $\Longrightarrow$
+\item $\FA{10}{3}:5$ \quad $\Longrightarrow$
+\item $12:\FA{8}{5}$ \quad $\Longrightarrow$
+\item $\FA{14}{15}:7$ \quad $\Longrightarrow$
+\item $15:\FA{5}{6}$ \quad $\Longrightarrow$
+\item $\FA{18}{7}:6$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\newpage
+\Exo{ex:div-6}{Complète le tableau. Donne le résultat sous forme de fraction irréductible (ou d'un nombre entier).}
+ 
+\def\arraystretch{3}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\cellcolor{themeNO!30} & \cellcolor{themeNO!30}\textbf{Calcul} & \cellcolor{themeNO!30}\textbf{Inverse du diviseur} & \cellcolor{themeNO!30}\textbf{Résultat irréductible} \\\hline
+a) & $\FA{2}{3}:\FA{4}{9}$ & $\FA{\textcolor{themeColor}{9}}{\textcolor{themeColor}{4}}$ & $\FA{\textcolor{themeColor}{3}}{\textcolor{themeColor}{2}}$ \\\hline
+b) & $\FA{5}{8}:\FA{15}{16}$ & $\FA{16}{15}$ & $\FA{\CaseC}{\CaseC}$ \\\hline
+c) & $\FA{7}{9}:\FA{14}{3}$ & $\FA{\CaseC}{\CaseC}$ & $\FA{\CaseC}{\CaseC}$ \\\hline
+d) & $\FA{3}{10}:\FA{9}{5}$ &  &  \\\hline
+e) & $\FA{12}{5}:\FA{4}{15}$ &  &  \\\hline
+f) & $\FA{5}{14}:\FA{10}{7}$ &  &  \\\hline
+g) & $\FA{16}{9}:\FA{8}{3}$ &  &  \\\hline
+h) & $\FA{21}{8}:\FA{7}{4}$ &  &  \\\hline
+i) & $\FA{9}{20}:\FA{3}{10}$ &  &  \\\hline
+j) & $\FA{4}{15}:\FA{8}{5}$ &  &  \\\hline
+k) & $\FA{25}{12}:\FA{5}{6}$ &  &  \\\hline
+\end{tabularx}
+\def\arraystretch{1}
+ 
+\newpage
+\Exo{ex:div-7}{Le calcul est-il correct ? Réponds par oui ou non. Attention : on multiplie par l'inverse du \emph{deuxième} nombre.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{2}{3}:\FA{5}{7}=\FA{14}{15}$ \quad $\Longrightarrow$ \quad $\FA{2}{3}\cdot\FA{\textcolor{themeColor}{7}}{\textcolor{themeColor}{5}}=\FA{\textcolor{themeColor}{14}}{\textcolor{themeColor}{15}}$ \quad : \quad \textcolor{themeColor}{oui}
+\item $\FA{2}{5}:\FA{3}{4}=\FA{3}{10}$ \quad $\Longrightarrow$ \quad $\FA{2}{5}\cdot\FA{\CaseC}{\CaseC}=\FA{\CaseC}{\CaseC}$ \quad : \quad \Case
+\item $\FA{1}{2}:\FA{1}{4}=2$ \quad $\Longrightarrow$ \quad $\FA{1}{2}\cdot\FA{\CaseC}{\CaseC}=\CaseC$ \quad : \quad \Case
+\item $\FA{3}{4}:\FA{3}{8}=\FA{9}{32}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}:\FA{5}{12}=2$ \quad $\Longrightarrow$
+\item $\FA{4}{9}:\FA{2}{3}=\FA{8}{27}$ \quad $\Longrightarrow$
+\item $\FA{3}{5}:6=\FA{1}{10}$ \quad $\Longrightarrow$
+\item $6:\FA{3}{4}=\FA{9}{2}$ \quad $\Longrightarrow$
+\item $\FA{7}{8}:\FA{7}{16}=2$ \quad $\Longrightarrow$
+\item $\FA{2}{7}:\FA{4}{5}=\FA{8}{35}$ \quad $\Longrightarrow$
+\item $\FA{9}{10}:\FA{3}{5}=\FA{3}{2}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+%-----------------------------------------------------------------------
+\newpage
+\subsection{Niveau 3 \quad $\bullet\bullet\bullet$ \quad Je vais plus loin}
+ 
+\Exo{ex:div-8}{Calcule et donne le résultat sous forme de fraction irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{12}{25}:\FA{18}{35}$ \quad $\Longrightarrow$
+\item $\FA{21}{40}:\FA{14}{25}$ \quad $\Longrightarrow$
+\item $\FA{18}{35}:\FA{27}{50}$ \quad $\Longrightarrow$
+\item $\FA{33}{50}:\FA{11}{20}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:div-9}{Réponds par une phrase.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Combien de bouteilles de $\dfrac{3}{4}$ L peut-on remplir avec $9$ L d'eau ?
+\item On partage les $\dfrac{5}{6}$ d'une pizza en $4$ parts égales. Quelle fraction de la pizza entière représente une part ?
+\item On coupe un ruban de $\dfrac{7}{2}$ m en morceaux de $\dfrac{7}{10}$ m. Combien de morceaux obtient-on ?
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:div-10}{Noa écrit : $\dfrac{2}{5} : \dfrac{3}{4}=\dfrac{2}{5} \cdot \dfrac{3}{4}=\dfrac{3}{10}$.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Où est l'erreur ?
+\item Donne le bon résultat.
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:div-11}{Trouve le nombre manquant.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\CaseC:\FA{2}{3}=\FA{9}{4}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}:\CaseC=\FA{5}{12}$ \quad $\Longrightarrow$
+\item $\FA{3}{4}:\CaseC=3$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\newpage
+\Exo{ex:div-12}{Bilan : chaque calcul ne contient qu'une seule opération. Repère laquelle, puis calcule. Donne le résultat sous forme irréductible.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\FA{3}{5}+\FA{1}{5}$ \quad $\Longrightarrow$
+\item $\FA{2}{3}+\FA{1}{4}$ \quad $\Longrightarrow$
+\item $\FA{5}{6}-\FA{1}{2}$ \quad $\Longrightarrow$
+\item $\FA{2}{5}\cdot\FA{15}{8}$ \quad $\Longrightarrow$
+\item $\FA{7}{8}:\FA{7}{4}$ \quad $\Longrightarrow$
+\item $4\cdot\FA{3}{10}$ \quad $\Longrightarrow$
+\item $\FA{5}{9}:10$ \quad $\Longrightarrow$
+\item $\FA{11}{12}-\FA{3}{8}$ \quad $\Longrightarrow$
+\end{enumerate}
+ 
+\bigskip
+\Exo{ex:div-13}{Défi : trouve la fraction ou le nombre.}
+ 
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Par quelle fraction faut-il diviser $\dfrac{3}{5}$ pour obtenir $\dfrac{9}{10}$ ?
+\item Calcule $\dfrac{7}{11} \cdot \dfrac{11}{7}$. Que remarques-tu ?
+\end{enumerate}
+ 
+ 

@@ -1,0 +1,117 @@
+% ---
+% titre: Droite numérique (placer, comparer, encadrer)
+% theme: NO
+% chapitre: Nombres rationnels
+% sous_chapitre: Placer, comparer et encadrer
+% niveau: [10e]
+% type: EX
+% tags: [c-droite-numerique, c-encadrement, c-comparaison, f-individuel, p-diagnostic]
+% difficulte: 1
+% source: latex
+% ---
+
+% Droite graduée de 16 cm : #1 = nombre à gauche, #2 = nombre à droite,
+% #3 = nombre d'intervalles, #4 = points de la correction (visibles avec \sol)
+\newcommand{\droite}[4]{%
+  \begin{tikzpicture}
+    \draw[->, >=stealth] (-0.4,0) -- (16.5,0);
+    \foreach \i in {0,...,#3} {\draw ({\i*16/#3},0.15) -- ({\i*16/#3},-0.15);}
+    \node[below] at (0,-0.2) {#1};
+    \node[below] at (16,-0.2) {#2};
+    #4
+  \end{tikzpicture}%
+}
+% Point de la correction : abscisse en cm, nom du point
+\newcommand{\pt}[2]{\draw[thick] (#1,0.3) -- (#1,-0.3); \node[above] at (#1,0.3) {\textbf{#2}};}
+
+\header{Droite numérique : placer, comparer, encadrer}
+
+
+\def\x{1.3cm}
+\def\arraystretch{2.2}
+\vfill
+{\bfseries\color{themeColor}Exercice 1.} Les nombres entiers
+
+\textbf{a)} Place sur la droite les points $A = 3$, $B = 8$ et $C = 5$.
+
+\begin{center}
+\droite{0}{10}{10}{\sol{}{\pt{4.8}{A}\pt{12.8}{B}\pt{8}{C}}}
+\end{center}
+
+\textbf{b)} Complète avec $<$ ou $>$ : \quad 7 \sol{\bl[\x]}{$>$} 4
+
+\textbf{c)} Encadre 6 par deux nombres entiers qui se suivent : \quad \sol{\bl[\x]}{5} $<$ 6 $<$ \sol{\bl[\x]}{7}
+
+\vfill
+{\bfseries\color{themeColor}Exercice 2.}  Les nombres à virgule
+
+\textbf{a)} Place sur la droite les points $A = 2{,}5$, $B = 4{,}1$ et $C = 0{,}8$.
+
+\begin{center}
+\droite{0}{5}{5}{\sol{}{\pt{8}{A}\pt{13.12}{B}\pt{2.56}{C}}}
+\end{center}
+
+\textbf{b)} Encadre 2,5 par deux nombres entiers qui se suivent : \quad \sol{\bl[\x]}{2} $<$ 2,5 $<$ \sol{\bl[\x]}{3}
+
+\textbf{c)} Lequel des points $A$, $B$ et $C$ est le plus proche de 0 ? \quad \sol{\bl[\x]}{$C$}
+
+\vfill
+{\bfseries\color{themeColor}Exercice 3.} On zoome.
+
+La droite va de 2 à 3. Il y a 10 intervalles égaux entre 2 et 3.
+
+\textbf{a)} Place les points $A = 2{,}3$ et $B = 2{,}8$.
+
+\begin{center}
+\droite{2}{3}{10}{\sol{}{\pt{4.8}{A}\pt{12.8}{B}}}
+\end{center}
+
+\textbf{b)} Place le point $C = 2{,}25$. Entre quelles graduations se trouve-t-il ?
+
+\sol{\bl[\x]}{2,2} $<$ 2,25 $<$ \sol{\bl[\x]}{2,3}
+
+\begin{center}
+\droite{2}{3}{10}{\sol{}{\pt{4}{C}}}
+\end{center}
+
+\textbf{c)} Encadre 2,25 par deux nombres entiers qui se suivent : \quad \sol{\bl[\x]}{2} $<$ 2,25 $<$ \sol{\bl[\x]}{3}
+
+\newpage
+{\bfseries\color{themeColor}Exercice 4.}  comparer et ranger
+
+\textbf{a)} Complète avec $<$, $>$ ou $=$ :
+
+\begin{tabularx}{\linewidth}{X c l @{\hspace{15pt}}|@{\hspace{15pt}} X c l @{\hspace{15pt}}|@{\hspace{15pt}} X c l}
+7 & \sol{\bl[\x]}{$>$} & 4 & 4,9 & \sol{\bl[\x]}{$<$} & 5 & 0,5 & \sol{\bl[\x]}{$>$} & 0,45 \\
+3,07 & \sol{\bl[\x]}{$<$} & 3,7 & 2,60 & \sol{\bl[\x]}{$=$} & 2,6 & 0,3 & \sol{\bl[\x]}{$>$} & 0,03 \\
+\end{tabularx}
+
+\def\arraystretch{1}
+\medskip
+\textbf{b)} Range du plus petit au plus grand : \quad 0,2 \; ; \; 0,25 \; ; \; 0,5 \; ; \; 0,05
+
+\medskip
+\sol{\bl[\x]}{0,05} $<$ \sol{\bl[\x]}{0,2} $<$ \sol{\bl[\x]}{0,25} $<$ \sol{\bl[\x]}{0,5}
+
+\vspace{20pt}
+{\bfseries\color{themeColor}Exercice 5.}  défi
+
+Cet exercice est difficile. Essaie quand même : tout ce que tu sais m'intéresse, même si ce n'est pas complet.
+
+\textbf{a)} Place les points $A = 0{,}75$, $B = \frac{1}{2}$, $C = 1{,}25$ et $D = \frac{3}{2}$.
+
+\begin{center}
+\droite{0}{2}{20}{\sol{}{\pt{6}{A}\pt{4}{B}\pt{10}{C}\pt{12}{D}}}
+\end{center}
+
+\textbf{b)} Range du plus petit au plus grand : \quad 0,75 \; ; \; $\frac{1}{2}$ \; ; \; 1,25 \; ; \; $\frac{1}{4}$
+
+\medskip
+\sol{\bl[\x]}{$\frac{1}{4}$} $<$ \sol{\bl[\x]}{$\frac{1}{2}$} $<$ \sol{\bl[\x]}{0,75} $<$ \sol{\bl[\x]}{1,25}
+
+\medskip
+\textbf{c)} Écris ce que tu sais déjà sur les fractions :
+
+\bl[\linewidth]
+
+\bl[\linewidth]

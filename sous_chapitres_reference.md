@@ -48,7 +48,7 @@ pour que le tri automatique fonctionne correctement.
 ---
 
 ## FA — Proportionnalité
-- Propriétés de la proportionnalité
+- Reconnaître une situation
 - Représenter une situation
 - Résoudre des problèmes
 

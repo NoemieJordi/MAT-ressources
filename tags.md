@@ -18,16 +18,21 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-addition` | Addition |
 | `c-calcul-angles` | Calcul d'angles |
 | `c-combinatoire` | Combinatoire |
+| `c-construction-diagramme` |   Construction de diagramme |
 | `c-conversion-unite` | Conversion d'unités |
 | `c-criteres-divisibilite` |   Critères de divisibilité |
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
+| `c-diagramme-cartesien` |   Diagramme cartésien |
+| `c-diagramme-colonnes` |   Diagramme en colonnes |
 | `c-nombres-decimaux` |   Nombres décimaux |
 | `c-diviseur` |   Diviseurs |
 | `c-division` |   Division |
 | `c-droite-numerique` |   Droite numérique |
+| `c-echelle` |   Echelle |
 | `c-equations` | Équations |
 | `c-fonctions` | Fonctions |
 | `c-fractions` | Fractions |
+| `c-c-lecture-diagramme` | Lecture de diagramme |
 | `c-livrets` |   Livrets |
 | `c-multiple` |   Multiples |
 | `c-multiplication` |   Multiplication |
@@ -48,6 +53,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-triangles-semblables` | Triangles semblables |
 | `c-trigonometrie` | Trigonométrie |
 | `c-valeur-absolue` | Valeur absolue |
+| `c-vocabulaire` | Vocabulaire mathématique |
 
 ---
 
@@ -81,7 +87,8 @@ Matériel ou logiciel nécessaire.
 | `o-affiche` | Affiche |
 | `o-bombe` | Bombe |
 | `o-calculatrice` | Calculatrice |
-| `o-cartes` | Cartes |
+| `o-cartes` | Cartes de jeu |
+| `o-cartesDecoupées` | Carte fait maison |
 | `o-carte-mentale` | Carte mentale |
 | `o-ciseaux` | Ciseaux / découpage |
 | `o-colle` | Colle |

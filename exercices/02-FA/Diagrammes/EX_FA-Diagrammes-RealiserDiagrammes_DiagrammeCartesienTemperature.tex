@@ -1,0 +1,68 @@
+% ---
+% titre: Températures moyennes en Suisse (diagramme cartésien)
+% theme: FA
+% chapitre: Diagrammes
+% sous_chapitre: Lire, interpréter et réaliser
+% niveau: [10e]
+% type: EX
+% tags: [c-diagramme-cartesien,c-construction-diagramme,c-proportionnalite,f-individuel,o-regle,p-entrainement]
+% difficulte: 1
+% source: latex
+% ---
+
+\header{Températures moyennes mensuelles}
+
+
+ Voici les températures moyennes mensuelles en Suisse en 2025.
+
+\vspace{10pt}\def\arraystretch{2}
+\begin{tabularx}{\linewidth}{|r*{12}{|>{\centering\arraybackslash}X}|}
+\hline
+\rowcolor{gray!20}\textbf{Mois} & \textbf{J} & \textbf{F} & \textbf{M} & \textbf{A} & \textbf{M} & \textbf{J} & \textbf{J} & \textbf{A} & \textbf{S} & \textbf{O} & \textbf{N} & \textbf{D}\\
+\hline
+\textbf{Temp. (\textdegree C)} & $-0,8$ & $0,0$ & $3,9$ & $6,6$ & $8,1$ & $16,1$ & $15,2$ & $16,4$ & $11,3$ & $7,4$ & $2,1$ & $-1,4$\\
+\hline
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{20pt}
+\textbf{Ce diagramme cartésien représente la température moyenne de chaque mois. Place précisément les points manquants, puis relie-les.}
+
+\vfill
+\begin{center}
+\begin{tikzpicture}[x=1.05cm, y=0.45cm]
+  % lignes principales (tous les 5 °C uniquement)
+  \foreach \y in {-5,0,5,10,15,20}{
+    \draw[gray!70] (0,\y) -- (12,\y);
+  }
+  % cadre et axes
+  \draw[thick] (0,-5) rectangle (12,20);
+  \draw[thick, ->] (0,0) -- (12.4,0);
+  \draw[thick, ->] (0,-5) -- (0,21);
+  % graduations de l'axe des ordonnées
+  \foreach \y in {-5,0,5,10,15,20}{
+    \node[left] at (0,\y) {$\y$};
+  }
+  \node[above] at (0,21) {Température (\textdegree C)};
+  % mois en abscisse
+  \foreach \x/\m in {1/Janvier,2/Février,3/Mars,4/Avril,5/Mai,6/Juin,7/Juillet,8/Août,9/Septembre,10/Octobre,11/Novembre,12/Décembre}{
+    \node[rotate=90, anchor=east] at (\x-0.5,-5.4) {\m};
+    \draw (\x-0.5,-5) -- (\x-0.5,-5.3);
+  }
+  % correction : croix en arrière-plan
+  \begin{pgfonlayer}{background}
+    \begin{scope}[color=\colSolution]
+      \foreach \x/\t in {2/0.0,3/3.9,4/6.6,5/8.1,6/16.1,7/15.2,9/11.3,10/7.4,11/2.1,12/-1.4}{
+        \node at (\x-0.5,\t) {\Large $\times$};
+      }
+    \end{scope}
+  \end{pgfonlayer}
+  % correction : courbe
+  \begin{scope}[color=\colSolution]
+    \draw[thick] (0.5,-0.8) -- (1.5,0.0) -- (2.5,3.9) -- (3.5,6.6) -- (4.5,8.1) -- (5.5,16.1) -- (6.5,15.2) -- (7.5,16.4) -- (8.5,11.3) -- (9.5,7.4) -- (10.5,2.1) -- (11.5,-1.4);
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+\vfill
+\newpage
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,20);\end{tikzpicture}
