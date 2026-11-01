@@ -437,20 +437,13 @@
     ],
     "type": "TH",
     "tags": [
-      "c-addition",
       "c-criteres-divisibilite",
-      "c-division",
-      "c-decomposition-facteurs-premiers",
-      "c-droite-numerique",
       "c-livrets",
-      "c-multiplication",
       "c-nombres-decimaux",
       "c-operations",
       "c-priorite-operations",
-      "c-nombres-premiers",
       "c-puissance",
       "c-ppmc",
-      "c-soustraction",
       "f-individuel",
       "p-flash-calcul"
     ],
@@ -2374,6 +2367,35 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609271710.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609271710.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PrioriteOperations_202609271710"
+  },
+  {
+    "titre": "9P - Nombres relatifs",
+    "theme": "NO",
+    "chapitre": "Nombres relatifs",
+    "sous_chapitre": "",
+    "niveau": [
+      "9e"
+    ],
+    "type": "PLANIF",
+    "tags": [
+      "c-nombres-relatifs",
+      "c-priorite-operations",
+      "c-operations",
+      "c-addition",
+      "c-division",
+      "c-multiplication",
+      "c-soustraction"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/PLANIF_NO-NbRelatifs-9VP.pdf",
+    "corrige_pdf": null,
+    "fichier": "PLANIF_NO-NbRelatifs-9VP"
   },
   {
     "titre": "Livre - Les fraction / les nombres rationnels",

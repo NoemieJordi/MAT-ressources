@@ -242,11 +242,6 @@ Attention: enlever le --preview si on ne veut pas l'ouverture des pdf modifiés
 
 ```bash
 cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
-
-git add site/tex/
-git commit -m "Mise à jour sources .tex"
-git push
-
 git add .
 git commit -m "Ajout: Nouveaux exercices"
 git push
