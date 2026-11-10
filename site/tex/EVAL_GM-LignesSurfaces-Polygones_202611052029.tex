@@ -1,0 +1,114 @@
+% ---
+% titre: Périmètre et aire de figures usuelles
+% theme: GM
+% chapitre: Lignes et surfaces
+% sous_chapitre: Lignes et surfaces
+% niveau: [9VP]
+% type: EVAL
+% tags: [c-perimetre, c-aire, c-figures-usuelles, p-question-TS]
+% difficulte: 2
+% corrige: true
+% ---
+
+\question
+Calcule le périmètre et l'aire des figures suivantes. Attention aux unités !
+
+\begin{parts}
+\vfill\part[3]\,
+
+\begin{minipage}{0.45\linewidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.55]
+	\tkzDefPoints{0/0/A,9/0/B,9/4/C,0/4/D}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzDrawSegment[draw=none, dim={9\,m,-15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,B)
+	\tkzDrawSegment[draw=none, dim={18\,dm,15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,D)
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[100pt]
+18\,dm = 1,8\,m \hfill \textbf{(1pt)}
+P = $2\cdot(9+1,8) = 21,6\,[\text{m}]$ \hfill \textbf{(1pt)}\\[6pt]
+A = L \cdot l = $9\cdot 1,8 = 16,2\,[\text{m}^2]$ \hfill \textbf{(1pt)}
+\end{solutionorgrid}
+\end{minipage}
+
+\vfill\part[2]\,
+
+\begin{minipage}{0.45\linewidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.4]
+	\tkzDefPoints{0/0/A,14/0/B,6/6/C,6/0/H}
+	\tkzDrawPolygon(A,B,C)
+	\tkzDrawSegment[draw=none, dim={14\,dm,-15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,B)
+	\tkzDrawSegment[draw=none, dim={11\,dm,-15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](B,C)
+	\tkzDrawSegment[draw=none, dim={10\,dm,15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,C)
+	\tkzDrawSegment[dim={6\,dm,120pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](C,H)
+	\tkzMarkRightAngle[size=0.8,draw](A,H,C)
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[100pt]
+P = $10+11+14 = 35\,[\text{dm}]$ \hfill \textbf{(1pt)}\\[6pt]
+A = $\dfrac{14\cdot 6}{2} = 42\,[\text{dm}^2]$ \hfill \textbf{(1pt)}
+\end{solutionorgrid}
+\end{minipage}
+
+
+\vfill\part[2]\,
+
+\begin{minipage}{0.45\linewidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.35]
+	\tkzDefPoints{0/0/A,6/4/B,12/0/C,6/-4/D,6/0/H}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzDrawSegment[draw=none, dim={{6,5\,mm},15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,B)
+	\tkzDrawSegment[dim={12\,mm,-55pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,C)
+	\tkzDrawSegment[dim={8\,mm,80pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](B,D)
+	\tkzMarkRightAngle[size=0.8,draw](A,H,B)
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[100pt]
+P = $4\cdot 6,5 = 26\,[\text{mm}]$ \hfill \textbf{(1pt)}\\[6pt]
+A = $\dfrac{12\cdot 8}{2} = 48\,[\text{mm}^2]$ \hfill \textbf{(1pt)}
+\end{solutionorgrid}
+\end{minipage}
+
+\vfill\part[2]\,
+
+\begin{minipage}{0.45\linewidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.3]
+	\tkzDefPoints{0/0/A,4/8/B,14/8/C,18/0/D,4/0/H}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzDrawSegment[draw=none, dim={18\,m,-15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,D)
+	\tkzDrawSegment[draw=none, dim={{8,5\,m},15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](C,D)
+	\tkzDrawSegment[draw=none, dim={10\,m,15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](B,C)
+	\tkzDrawSegment[draw=none, dim={9\,m,15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](A,B)
+	\tkzDrawSegment[dim={{8,5\,mm},-20pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](H,B)
+	\tkzMarkRightAngle[size=0.8,draw](A,H,B)\end{tikzpicture}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[100pt]
+P = $18+10+9+8,5 = 45,5\,[\text{m}]$ \hfill \textbf{(1pt)}\\[6pt]
+A = $\dfrac{(18+10)}{2}\cdot 8 = 112\,[\text{m}^2]$ \hfill \textbf{(2pt)}
+\end{solutionorgrid}
+\end{minipage}
+\end{parts}
+
+\begin{solution}[0pt]
+\textbf{-0,5pt} par oubli ou faute (nom, expression, calcul, réponse, unité)
+\end{solution}

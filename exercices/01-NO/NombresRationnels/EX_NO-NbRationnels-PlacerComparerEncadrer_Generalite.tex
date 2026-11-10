@@ -1,0 +1,239 @@
+% ---
+% titre: Dossier d'exercices - Critères de divisibilité
+% theme: NO
+% chapitre: Nombres rationnels
+% sous_chapitre: Représenter, comparer et encadrer
+% niveau: [10e]
+% type: EX
+% tags: [c-fractions,f-individuel,f-commun,p-approfondissement]
+% difficulte: 3
+% source: latex
+% ---
+
+\header{Fractions: généralité}
+
+{\bfseries\color{themeColor}Exercice 1.} Écris la fraction demandée.
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item Le numérateur est $5$ et le dénominateur est $8$. \quad $\Longrightarrow$
+\item onze tiers \quad $\Longrightarrow$
+\item Le dénominateur est $12$ et le numérateur est le nombre juste avant $12$. \quad $\Longrightarrow$
+\item Le numérateur est le double du dénominateur, qui vaut $4$. \quad $\Longrightarrow$
+\item Le numérateur et le dénominateur sont tous les deux égaux à $7$. \quad $\Longrightarrow$
+\end{enumerate}
+
+\vfill
+{\bfseries\color{themeColor}Exercice 2.} Calcule la fraction de l'ensemble : partage d'abord en groupes égaux (dénominateur), puis prends le bon nombre de groupes (numérateur).
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=30pt]
+\item $\dfrac{3}{4}$ de $20$ \quad $\Longrightarrow$
+\item $\dfrac{5}{6}$ de $18$ \quad $\Longrightarrow$
+\item $\dfrac{2}{9}$ de $36$ \quad $\Longrightarrow$
+\item $\dfrac{7}{10}$ de $50$ \quad $\Longrightarrow$
+\item $\dfrac{3}{8}$ de $40$ \quad $\Longrightarrow$
+\item $\dfrac{4}{5}$ de $35$ \quad $\Longrightarrow$
+\end{enumerate}
+
+
+\newpage
+{\bfseries\color{themeColor}Exercice 3.} Représente chaque fraction par un ou des rectangles.
+
+\vfill
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $\dfrac{9}{4}$ \\[4pt]
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (17,2.5);\end{tikzpicture}
+
+\item $\dfrac{11}{5}$ \\[4pt]
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (17,2.5);\end{tikzpicture}
+
+\item $\dfrac{17}{6}$\\[4pt]
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (17,2.5);\end{tikzpicture}
+
+\item $\dfrac{25}{8}$\\[4pt]
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (17,2.5);\end{tikzpicture}
+
+\item $\dfrac{13}{2}$\\[4pt]
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (17,2.5);\end{tikzpicture}
+
+\item $\dfrac{37}{10}$\\[4pt]
+\begin{tikzpicture}\draw[step=0.5cm, gray, very thin] (0,0) grid (17,2.5);\end{tikzpicture}
+\end{enumerate}
+
+\newpage
+% Droite graduée : minimum entier, maximum entier, dénominateur, unité en cm, points (numérateur/étiquette)
+\newcommand{\DroiteFr}[5]{%
+\begin{tikzpicture}[x=#4cm,baseline=-0.1cm]
+  \pgfmathtruncatemacro{\nmin}{#1*#3}
+  \pgfmathtruncatemacro{\nmax}{#2*#3}
+  \draw[->] (#1-0.25,0) -- (#2+0.3,0);
+  \foreach \i in {\nmin,...,\nmax}{\draw (\i/#3,-0.09) -- (\i/#3,0.09);}
+  \foreach \n in {#1,...,#2}{\draw[thick] (\n,-0.18) -- (\n,0.18); \node[below] at (\n,-0.2) {$\n$};}
+  \foreach \p/\l in {#5}{\fill[themeColor] (\p/#3,0) circle (2pt); \node[above] at (\p/#3,0.18) {$\l$};}
+\end{tikzpicture}}
+
+{\bfseries\color{themeColor}Exercice 3.} Fractions sur une droite graduée. Avant de lire ou de placer une fraction, regarde en combien de parts égales l'unité est partagée : c'est le dénominateur.
+
+\medskip
+\textcolor{themeColor}{Partie A} : lis la fraction qui correspond à chaque point. Ici, l'unité est partagée en $5$ parts égales, donc chaque graduation vaut $\dfrac{1}{5}$.
+
+\begin{center}
+\DroiteFr{-2}{2}{5}{2.2}{-3/A,2/B,7/C,-8/D}
+\end{center}
+
+\begin{multicols}{2}
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $A$ \quad $\Longrightarrow$ \quad $A=-\dfrac{\textcolor{themeColor}{3}}{\textcolor{themeColor}{5}}$ \quad ($3$ graduations à gauche de $0$)
+\item $B$ \quad $\Longrightarrow$ \quad $B=\dfrac{\CaseC}{5}$
+\item $C$ \quad $\Longrightarrow$
+\item $D$ \quad $\Longrightarrow$
+\end{enumerate}
+\end{multicols}
+
+\medskip
+\textcolor{themeColor}{Partie B} : lis la fraction qui correspond à chaque point. Cette fois, l'unité est partagée en $8$ parts égales.
+
+\begin{center}
+\DroiteFr{-1}{2}{8}{3.6}{3/E,-5/F,11/G,15/H}
+\end{center}
+
+\begin{multicols}{2}
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt, start=5]
+\item $E$ \quad $\Longrightarrow$ \quad $E=\dfrac{\textcolor{themeColor}{3}}{\textcolor{themeColor}{8}}$
+\item $F$ \quad $\Longrightarrow$ \quad $F=-\dfrac{\CaseC}{\CaseC}$
+\item $G$ \quad $\Longrightarrow$
+\item $H$ \quad $\Longrightarrow$
+\end{enumerate}
+\end{multicols}
+
+\newpage
+\textcolor{themeColor}{Partie C} : place chaque fraction sur la droite en faisant une croix, puis écris sa lettre au-dessus.
+
+\textit{Droite graduée en cinquièmes}
+
+\begin{center}
+\DroiteFr{-2}{2}{5}{2.2}{}
+\end{center}
+
+\begin{multicols}{2}
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+\item $I=-\dfrac{4}{5}$ \quad $\Longrightarrow$ \quad $4$ graduations à gauche de $0$
+\item $J=\dfrac{6}{5}$ \quad $\Longrightarrow$
+\item $K=-\dfrac{7}{5}$ \quad $\Longrightarrow$
+\item $L=\dfrac{9}{5}$ \quad $\Longrightarrow$
+\end{enumerate}
+\end{multicols}
+
+\bigskip
+\textit{Droite graduée en huitièmes}
+
+\begin{center}
+\DroiteFr{-1}{2}{8}{3.6}{}
+\end{center}
+
+\begin{multicols}{2}
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt, start=5]
+\item $M=\dfrac{7}{8}$ \quad $\Longrightarrow$ \quad $7$ graduations à droite de $0$
+\item $N=-\dfrac{3}{8}$ \quad $\Longrightarrow$
+\item $P=\dfrac{13}{8}$ \quad $\Longrightarrow$
+\item $Q=-\dfrac{9}{8}$ \quad $\Longrightarrow$
+\end{enumerate}
+\end{multicols}
+
+\medskip
+\textcolor{themeColor}{Partie D} : réponds.
+
+\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt, start=9]
+\item Entre quels deux nombres entiers consécutifs se trouve $\dfrac{13}{8}$ ? Et $-\dfrac{9}{8}$ ?
+\item Qui est le plus proche de $0$ : $-\dfrac{3}{8}$ ou $\dfrac{7}{8}$ ?
+\item Écris une fraction négative située entre $-1$ et $0$, dont le dénominateur est $5$.
+\end{enumerate}
+
+%\bigskip
+%{\bfseries\color{themeColor}Exercice 2.} Calcule la fraction de l'ensemble : partage d'abord en groupes égaux (dénominateur), puis prends le bon nombre de groupes (numérateur).
+%
+%\begin{multicols}{2}
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+%\item $\dfrac{3}{4}$ de $20$ \quad $\Longrightarrow$
+%\item $\dfrac{5}{6}$ de $18$ \quad $\Longrightarrow$
+%\item $\dfrac{2}{9}$ de $36$ \quad $\Longrightarrow$
+%\item $\dfrac{7}{10}$ de $50$ \quad $\Longrightarrow$
+%\item $\dfrac{3}{8}$ de $40$ \quad $\Longrightarrow$
+%\item $\dfrac{4}{5}$ de $35$ \quad $\Longrightarrow$
+%\end{enumerate}
+%\end{multicols}
+%
+%\bigskip
+%{\bfseries\color{themeColor}Exercice 3.} Retrouve l'ensemble de départ. On connaît la fraction et ce qu'elle représente : combien y avait-il d'éléments en tout ?
+%
+%\begin{multicols}{2}
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+%\item $\dfrac{1}{4}$ de \CaseC\ $=7$ \quad $\Longrightarrow$
+%\item $\dfrac{1}{6}$ de \CaseC\ $=5$ \quad $\Longrightarrow$
+%\item $\dfrac{3}{4}$ de \CaseC\ $=12$ \quad $\Longrightarrow$
+%\item $\dfrac{2}{5}$ de \CaseC\ $=14$ \quad $\Longrightarrow$
+%\item $\dfrac{5}{8}$ de \CaseC\ $=20$ \quad $\Longrightarrow$
+%\item $\dfrac{3}{7}$ de \CaseC\ $=21$ \quad $\Longrightarrow$
+%\end{enumerate}
+%\end{multicols}
+%
+%\newpage
+%{\bfseries\color{themeColor}Exercice 4.} Écris la fraction qui correspond à la partie coloriée et celle qui correspond à la partie non coloriée. Que remarques-tu quand tu additionnes les deux ?
+%
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=16pt]
+%\item \GrilleFig{4}{2}{3.6}{1.2}{5}{cyan!40} \qquad coloriée : $\dfrac{\CaseC}{\CaseC}$ \quad non coloriée : $\dfrac{\CaseC}{\CaseC}$
+%\item \DisqueFig{6}{5}{green!40} \qquad coloriée : $\dfrac{\CaseC}{\CaseC}$ \quad non coloriée : $\dfrac{\CaseC}{\CaseC}$
+%\item \GrilleFig{5}{2}{4.5}{1.6}{7}{violet!40} \qquad coloriée : $\dfrac{\CaseC}{\CaseC}$ \quad non coloriée : $\dfrac{\CaseC}{\CaseC}$
+%\item \DisqueFig{8}{3}{red!40} \qquad coloriée : $\dfrac{\CaseC}{\CaseC}$ \quad non coloriée : $\dfrac{\CaseC}{\CaseC}$
+%\end{enumerate}
+%
+%\bigskip
+%{\bfseries\color{themeColor}Exercice 5.} Compare les fractions sans chercher de dénominateur commun. Compare à $\dfrac{1}{2}$ ou à $1$, regarde si le numérateur ou le dénominateur est le même, ou regarde la part qui manque pour faire un entier. Place le signe $<$, $>$ ou $=$ dans le cercle.
+%
+%\begin{multicols}{2}
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=12pt]
+%\item $\dfrac{5}{9}$ \CercleSigne\ $\dfrac{1}{2}$
+%\item $\dfrac{3}{8}$ \CercleSigne\ $\dfrac{3}{5}$
+%\item $\dfrac{7}{6}$ \CercleSigne\ $1$
+%\item $\dfrac{4}{11}$ \CercleSigne\ $\dfrac{4}{9}$
+%\item $\dfrac{7}{15}$ \CercleSigne\ $\dfrac{1}{2}$
+%\item $\dfrac{9}{10}$ \CercleSigne\ $\dfrac{11}{12}$
+%\end{enumerate}
+%\end{multicols}
+%
+%\bigskip
+%{\bfseries\color{themeColor}Exercice 6.} Range les fractions de la plus petite à la plus grande.
+%
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+%\item $\dfrac{1}{2}$ \quad $\dfrac{1}{5}$ \quad $\dfrac{1}{3}$ \quad $\dfrac{1}{4}$ \quad $\Longrightarrow$
+%\item $\dfrac{2}{3}$ \quad $\dfrac{3}{4}$ \quad $\dfrac{1}{2}$ \quad $\Longrightarrow$
+%\item $\dfrac{5}{6}$ \quad $\dfrac{5}{8}$ \quad $\dfrac{5}{4}$ \quad $\Longrightarrow$
+%\item $\dfrac{3}{5}$ \quad $\dfrac{7}{10}$ \quad $\dfrac{1}{2}$ \quad $\Longrightarrow$
+%\end{enumerate}
+%
+%\newpage
+%{\bfseries\color{themeColor}Exercice 7.} Léa affirme : \og $\dfrac{1}{5}$ est plus grand que $\dfrac{1}{3}$, car $5$ est plus grand que $3$\fg{}.
+%
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+%\item Explique pourquoi c'est faux (tu peux t'aider d'un dessin).
+%\item Place le bon signe : $\dfrac{1}{5}$ \CercleSigne\ $\dfrac{1}{3}$.
+%\item Range de la plus petite à la plus grande : $\dfrac{1}{3}$ \quad $\dfrac{1}{10}$ \quad $\dfrac{1}{5}$ \quad $\dfrac{1}{8}$.
+%\end{enumerate}
+%
+%\bigskip
+%{\bfseries\color{themeColor}Exercice 8.} Problème : dans une classe de $24$ élèves, $\dfrac{3}{8}$ des élèves viennent à l'école à vélo, $\dfrac{1}{2}$ en bus et les autres à pied.
+%
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+%\item Combien d'élèves viennent à vélo ?
+%\item Combien d'élèves viennent en bus ?
+%\item Combien d'élèves viennent à pied ?
+%\item Quelle fraction de la classe vient à pied ? Écris-la avec le dénominateur $24$.
+%\end{enumerate}
+%
+%\bigskip
+%{\bfseries\color{themeColor}Exercice 9.} Défi.
+%
+%\begin{enumerate}[leftmargin=*,align=parleft, label=\alph*), itemsep=9pt]
+%\item Écris une fraction comprise entre $\dfrac{1}{3}$ et $\dfrac{1}{2}$.
+%\item Écris trois fractions de dénominateur $6$ comprises entre $2$ et $3$.
+%\item Écris une fraction plus grande que $\dfrac{3}{4}$ et plus petite que $1$, dont le dénominateur n'est pas $4$.
+%\end{enumerate}

@@ -24,7 +24,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
 | `c-diagramme-cartesien` |   Diagramme cartésien |
 | `c-diagramme-colonnes` |   Diagramme en colonnes |
-| `c-nombres-decimaux` |   Nombres décimaux |
+| `c-ensembles-nombres` |   Ensemble de nombres |
 | `c-diviseur` |   Diviseurs |
 | `c-division` |   Division |
 | `c-droite-numerique` |   Droite numérique |
@@ -36,8 +36,11 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-livrets` |   Livrets |
 | `c-multiple` |   Multiples |
 | `c-multiplication` |   Multiplication |
+| `c-nombres-decimaux` |   Nombres décimaux |
 | `c-nombres-premiers` | Nombres premiers |
+| `c-c-nombres-reels` | Nombres réels |
 | `c-nombres-relatifs` | Nombres relatifs |
+| `c-notation-scientifique` | Notation scientifique |
 | `c-operations` | 4 opérations |
 | `c-perimetre` | Calcul de périmètre |
 | `c-ppmc` | ppmc et pgdc |

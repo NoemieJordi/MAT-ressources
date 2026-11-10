@@ -2398,6 +2398,32 @@
     "fichier": "PLANIF_NO-NbRelatifs-9VP"
   },
   {
+    "titre": "Dossier d'exercices - Critères de divisibilité",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-fractions",
+      "f-individuel",
+      "f-commun",
+      "p-approfondissement"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": null,
+    "corrige_pdf": null,
+    "fichier": "EX_NO-NbRationnels-PlacerComparerEncadrer_Generalite"
+  },
+  {
     "titre": "Livre - Les fraction / les nombres rationnels",
     "theme": "NO",
     "chapitre": "Nombres rationnels",
@@ -2423,6 +2449,34 @@
     "pdf": "pdf/RES_NO-NbRationnels-ReprsenterComparerEncadrer_Livre8eme.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbRationnels-ReprsenterComparerEncadrer_Livre8eme"
+  },
+  {
+    "titre": "Amplification et simplification de fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Amplifier et simplifier",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-fractions",
+      "c-livrets",
+      "c-multiplication",
+      "c-division",
+      "f-individuel",
+      "p-approfondissement"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbRationnels-AmplifierSimplifier_AmplificationSimplification.pdf",
+    "corrige_pdf": "corr/EX_NO-NbRationnels-AmplifierSimplifier_AmplificationSimplification.pdf",
+    "fichier": "EX_NO-NbRationnels-AmplifierSimplifier_AmplificationSimplification"
   },
   {
     "titre": "Opérations avec des fractions",
@@ -2535,6 +2589,36 @@
     "pdf": "pdf/EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique.pdf",
     "corrige_pdf": "corr/EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique.pdf",
     "fichier": "EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique"
+  },
+  {
+    "titre": "10G2 - Nombres réels",
+    "theme": "NO",
+    "chapitre": "Nombres réels",
+    "sous_chapitre": "",
+    "niveau": [
+      "10e"
+    ],
+    "type": "PLANIF",
+    "tags": [
+      "c-nombres-reels",
+      "c-ensembles-nombres",
+      "c-fractions",
+      "c-puissance",
+      "c-racine",
+      "c-notation-scientifique",
+      "c-probabilites",
+      "c-nombres-decimaux"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/PLANIF_NO-NombresReels-10VG2.pdf",
+    "corrige_pdf": null,
+    "fichier": "PLANIF_NO-NombresReels-10VG2"
   },
   {
     "titre": "Bipalindromes",
@@ -3201,7 +3285,7 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": null,
+    "pdf": "pdf/PLANIF_FA-ProportionnaliteDiagrammes-10VG2.pdf",
     "corrige_pdf": null,
     "fichier": "PLANIF_FA-ProportionnaliteDiagrammes-10VG2"
   },
@@ -3485,6 +3569,109 @@
     "pdf": "pdf/RES_GM-LignesSurfaces-9VP_CorrigesReponsesSeules.pdf",
     "corrige_pdf": null,
     "fichier": "RES_GM-LignesSurfaces-9VP_CorrigesReponsesSeules"
+  },
+  {
+    "titre": "Aire d'un losange à partir du périmètre",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Lignes et surfaces",
+    "niveau": [
+      "9VP"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-perimetre",
+      "c-aire",
+      "c-losange",
+      "c-parallelogramme",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_GM-LignesSurfaces-Polygones_202611052206.pdf",
+    "corrige_pdf": "corr/EVAL_GM-LignesSurfaces-Polygones_202611052206.pdf",
+    "fichier": "EVAL_GM-LignesSurfaces-Polygones_202611052206"
+  },
+  {
+    "titre": "Aire d'une façade de maison (figure complexe)",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Lignes et surfaces",
+    "niveau": [
+      "9VP"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-perimetre",
+      "c-aire",
+      "c-figure-complexe",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_GM-LignesSurfaces-Polygones_202611052212.pdf",
+    "corrige_pdf": "corr/EVAL_GM-LignesSurfaces-Polygones_202611052212.pdf",
+    "fichier": "EVAL_GM-LignesSurfaces-Polygones_202611052212"
+  },
+  {
+    "titre": "Conversion d'unités",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Lignes et surfaces",
+    "niveau": [
+      "9VP"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-conversion-unite",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_GM-DiversMesures-LongueurSurface_202611052120.pdf",
+    "corrige_pdf": "corr/EVAL_GM-DiversMesures-LongueurSurface_202611052120.pdf",
+    "fichier": "EVAL_GM-DiversMesures-LongueurSurface_202611052120"
+  },
+  {
+    "titre": "Périmètre et aire de figures usuelles",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Lignes et surfaces",
+    "niveau": [
+      "9VP"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-perimetre",
+      "c-aire",
+      "c-figures-usuelles",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_GM-LignesSurfaces-Polygones_202611052029.pdf",
+    "corrige_pdf": "corr/EVAL_GM-LignesSurfaces-Polygones_202611052029.pdf",
+    "fichier": "EVAL_GM-LignesSurfaces-Polygones_202611052029"
   },
   {
     "titre": "Conversion d'unités",

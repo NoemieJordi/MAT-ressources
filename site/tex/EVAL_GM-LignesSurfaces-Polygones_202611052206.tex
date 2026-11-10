@@ -1,0 +1,40 @@
+% ---
+% titre: Aire d'un losange à partir du périmètre
+% theme: GM
+% chapitre: Lignes et surfaces
+% sous_chapitre: Lignes et surfaces
+% niveau: [9VP]
+% type: EVAL
+% tags: [c-perimetre, c-aire, c-losange, c-parallelogramme, p-question-TS]
+% difficulte: 2
+% corrige: true
+% ---
+
+\question[5]
+Le périmètre du losange ci-dessous est égal à 168 mm. Calcule son aire.
+
+\vspace{10pt}
+\begin{center}
+\begin{tikzpicture}[scale=0.8, rotate=20]
+	\tkzDefPoints{0/0/A,1.5/4/B,5.5/4/C,4/0/D,2/0/H,2/4/I}
+	\tkzDrawPolygon(A,B,C,D)
+	\tkzDrawSegment[dim={{3,5\,cm},-20pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](H,I)
+	\tkzMarkRightAngle[size=0.5,draw](A,H,I)
+\end{tikzpicture}
+\end{center}
+
+\vspace{10pt}{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[150pt]
+Côté du losange : $168 \div 4 = 42\,mm = 4,2\,cm$ \hfill \textbf{(2pt)}
+
+\vspace{10pt}
+Un losange est un parallélogramme particulier : son aire se calcule donc avec $A = c\cdot h$, où $c$ est un côté et $h$ la hauteur correspondante. \hfill
+
+\vspace{10pt}
+$A =  c\cdot h = 4,2\cdot 3,5 = 14,7\,cm^2$ \hfill \textbf{(2,5pt)}
+\end{solutionorgrid}
+
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{L'aire du losange vaut 14,7\,cm$^2$. \textbf{(0,5pt)}}
+\end{tcolorbox}

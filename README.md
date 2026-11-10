@@ -278,3 +278,35 @@ Git demande le nom d'utilisateur (NoemieJordi) et le mot de passe (token).
 
 - Les fichiers auxiliaires LaTeX (`.aux`, `.log`, `.synctex.gz`) sont ignorés par git
 - Les PDFs sont mis en cache — seuls les fichiers modifiés sont recompilés à chaque push
+
+## 🐞 Déboguer un fichier qui ne compile pas
+
+Quand un `.tex` échoue à la compilation, `debug_tex.py` le compile seul, avec les mêmes templates, couleurs de thème et images que `build.py`, et affiche les erreurs LaTeX.
+
+```bash
+cd ~/Documents/_Ecole/03-Cycle3/MAT/MAT-site
+python3 scripts/debug_tex.py NomDuFichier
+```
+
+Un bout du nom suffit (ex. `python3 scripts/debug_tex.py Labyrinthe`). Si plusieurs fichiers correspondent, le script les liste pour que tu précises.
+
+| Option | Effet |
+|--------|-------|
+| *(aucune)* | Compile la version élève et affiche les erreurs (lignes `!`) avec leur contexte |
+| `--corr` | Compile la version corrigé |
+| `--full` | Affiche le log complet |
+
+**Résultat :**
+- ✅ Compilation réussie
+- ❌ Échec : le chemin du log complet est affiché. Pour le lire en entier : `open <chemin du log>` ou relancer avec `--full`.
+
+**Erreurs fréquentes :**
+
+| Message dans le log | Cause probable |
+|---------------------|----------------|
+| `Undefined control sequence` | Commande absente des préambules (ex. `\textline` → utiliser `\bl`) |
+| `File '...' not found` | Image : mettre l'extension dans `\includegraphics` et garder l'image dans le même dossier que le `.tex` |
+| `Missing $ inserted` | Symbole mathématique hors du mode math |
+| `Runaway argument` / `File ended while scanning` | Accolade `{` ou environnement non fermé |
+
+> Le script ne modifie rien dans `site/` : il compile dans un dossier temporaire.
