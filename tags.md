@@ -24,6 +24,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-decomposition-facteurs-premiers` |   Décomposition en facteur premier |
 | `c-diagramme-cartesien` |   Diagramme cartésien |
 | `c-diagramme-colonnes` |   Diagramme en colonnes |
+| `c-echelle` |   Calcul d'échelle |
 | `c-ensembles-nombres` |   Ensemble de nombres |
 | `c-diviseur` |   Diviseurs |
 | `c-division` |   Division |
@@ -32,8 +33,10 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-equations` | Équations |
 | `c-fonctions` | Fonctions |
 | `c-fractions` | Fractions |
+| `c-hauteur` | Construction de hauteurs |
 | `c-c-lecture-diagramme` | Lecture de diagramme |
 | `c-livrets` |   Livrets |
+| `c-mediatrice` | Construction de médiatrices |
 | `c-multiple` |   Multiples |
 | `c-multiplication` |   Multiplication |
 | `c-nombres-decimaux` |   Nombres décimaux |
@@ -42,12 +45,15 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-nombres-relatifs` | Nombres relatifs |
 | `c-notation-scientifique` | Notation scientifique |
 | `c-operations` | 4 opérations |
+| `c-pente` | Calcul de pentes |
 | `c-perimetre` | Calcul de périmètre |
+| `c-pourcentage` | Pourcentage |
 | `c-ppmc` | ppmc et pgdc |
 | `c-priorite-operations` | Priorité des opérations |
 | `c-probleme` | Problèmes |
 | `c-probabilites` | Probabilités |
 | `c-proportionnalite` | Proportionnalité |
+| `c-propriete` | Propriétés |
 | `c-puissance` | Puissance |
 | `c-racine` | Racine |
 | `c-soustraction` | Soustraction |

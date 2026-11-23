@@ -142,6 +142,36 @@
     "fichier": "EVAL_9P_TS1_20230926"
   },
   {
+    "titre": "9P - TS1 - 20260929",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-diviseur",
+      "c-multiple",
+      "c-nombres-premiers",
+      "c-decomposition-facteurs-premiers",
+      "c-ppmc",
+      "c-operations",
+      "c-priorite-operations",
+      "p-TS"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_9P_TS1_20260929.pdf",
+    "corrige_pdf": "corr/EVAL_9P_TS1_20260929_corrige.pdf",
+    "fichier": "EVAL_9P_TS1_20260929"
+  },
+  {
     "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - entraînement",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -167,9 +197,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill"
   },
   {
     "titre": "Calcul flash: 10VG niv.1 - cycle 1 (semaines 1-6) - exercices",
@@ -197,9 +227,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul"
   },
   {
     "titre": "Calcul flash: 10VG niv.1 - cycle 2 (semaines 7-12) - entraînement",
@@ -227,9 +257,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalculDrill-Cycle2"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill-Cycle2"
   },
   {
     "titre": "Calcul flash: 10VG niv.1 - cycle 2 (semaines 7-12) - exercices",
@@ -257,9 +287,69 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-10VG1-CalculReflechiMental_FlashCalcul-Cycle2"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul-Cycle2"
+  },
+  {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 3 (semaines 13-18) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill-Cycle3.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill-Cycle3.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalculDrill-Cycle3"
+  },
+  {
+    "titre": "Calcul flash: 10VG niv.1 - cycle 3 (semaines 13-18) - exercices",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-doubles-moities",
+      "c-puissances-10",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul-Cycle3.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul-Cycle3.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-10VG1_FlashCalcul-Cycle3"
   },
   {
     "titre": "Calcul flash: 10VG niv.1 - cycles 1 à 6 - plannification",
@@ -310,9 +400,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 1 (semaines 1-6) - exercices",
@@ -340,9 +430,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - entraînement",
@@ -370,9 +460,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill-Cycle2.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalculDrill-Cycle2"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle2"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - exercices",
@@ -400,9 +490,65 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul-Cycle2.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-9VP-CalculReflechiMental_FlashCalcul-Cycle2"
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle2.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle2.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle2"
+  },
+  {
+    "titre": "Calcul flash: 9VP - cycle 3 (semaines 13-18) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-nombres-relatifs",
+      "c-droite-numerique",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3"
+  },
+  {
+    "titre": "Calcul flash: 9VP - cycle 3 (semaines 13-18) - exercices",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-priorite-operations",
+      "c-puissance",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle3.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle3.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle3"
   },
   {
     "titre": "Calcul flash: 9VP - cycles 1 à 6 - plannification",
@@ -474,6 +620,8 @@
       "c-operations",
       "c-soustraction",
       "c-nombres-decimaux",
+      "c-puissance",
+      "c-racine",
       "p-question-TS"
     ],
     "difficulte": 1,
@@ -1983,9 +2131,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-Consignes.pdf",
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-VocabulaireMathematique-9VP-Consignes.pdf",
     "corrige_pdf": null,
-    "fichier": "JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-Consignes"
+    "fichier": "JEU_NO-NbNaturelsDecimaux-VocabulaireMathematique-9VP-Consignes"
   },
   {
     "titre": "Lexique - Qui suis-je ? (feuille élève)",
@@ -2007,9 +2155,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheEleves.pdf",
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-VocabulaireMathematique-9VP-FicheEleves.pdf",
     "corrige_pdf": null,
-    "fichier": "JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheEleves"
+    "fichier": "JEU_NO-NbNaturelsDecimaux-VocabulaireMathematique-9VP-FicheEleves"
   },
   {
     "titre": "Lexique - Qui suis-je ? (fiches de tirage)",
@@ -2031,9 +2179,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheTirage.pdf",
+    "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-VocabulaireMathematique-9VP-FicheTirage.pdf",
     "corrige_pdf": null,
-    "fichier": "JEU_NO-NbNaturelsDecimaux-9VP-VocabulaireMathematique-FicheTirage"
+    "fichier": "JEU_NO-NbNaturelsDecimaux-VocabulaireMathematique-9VP-FicheTirage"
   },
   {
     "titre": "Livre - Les nombres décimaux relatifs",
@@ -2056,7 +2204,7 @@
     "categorie": "inspiration",
     "source_originale": null,
     "template": null,
-    "pdf": null,
+    "pdf": "pdf/RES_NO-NbRelatifs-RepresenterComparerEncadrer_Livre8eme.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbRelatifs-RepresenterComparerEncadrer_Livre8eme"
   },
@@ -2477,6 +2625,34 @@
     "pdf": "pdf/EX_NO-NbRationnels-AmplifierSimplifier_AmplificationSimplification.pdf",
     "corrige_pdf": "corr/EX_NO-NbRationnels-AmplifierSimplifier_AmplificationSimplification.pdf",
     "fichier": "EX_NO-NbRationnels-AmplifierSimplifier_AmplificationSimplification"
+  },
+  {
+    "titre": "Amplification et simplification de fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Amplifier et simplifier",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-fractions",
+      "c-livrets",
+      "c-multiplication",
+      "c-division",
+      "f-individuel",
+      "p-approfondissement"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbRationnels-ResoudreProblemes_ProblemesFraction.pdf",
+    "corrige_pdf": "corr/EX_NO-NbRationnels-ResoudreProblemes_ProblemesFraction.pdf",
+    "fichier": "EX_NO-NbRationnels-ResoudreProblemes_ProblemesFraction"
   },
   {
     "titre": "Opérations avec des fractions",
@@ -3013,6 +3189,38 @@
     "fichier": "EVAL_10G1_ETA1_20260924"
   },
   {
+    "titre": "10G1 - TS2 - 20261007",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-nombres-decimaux",
+      "c-nombres-relatifs",
+      "c-racine",
+      "c-puissance",
+      "c-proportionnalite",
+      "c-operations",
+      "c-priorite-operations",
+      "c-probleme",
+      "c-diagramme-colonnes",
+      "p-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_10G1_TS2_20261007.pdf",
+    "corrige_pdf": "corr/EVAL_10G1_TS2_20261007_corrige.pdf",
+    "fichier": "EVAL_10G1_TS2_20261007"
+  },
+  {
     "titre": "10G2 - ETA1 - 20260924",
     "theme": "FA",
     "chapitre": "Proportionnalité",
@@ -3042,6 +3250,54 @@
     "pdf": "pdf/EVAL_10G2_ETA1_20260924.pdf",
     "corrige_pdf": "corr/EVAL_10G2_ETA1_20260924_corrige.pdf",
     "fichier": "EVAL_10G2_ETA1_20260924"
+  },
+  {
+    "titre": "Exercices résolus - Les pentes",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-pente",
+      "c-pourcentage",
+      "c-conversion-unite",
+      "c-echelle"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_FA-Proportionnalite-ResoudreProblemes_PenteTheorieExercice.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_FA-Proportionnalite-ResoudreProblemes_PenteTheorieExercice"
+  },
+  {
+    "titre": "Je m'exerce - Problèmes de proportionnalité",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-proportionnalite",
+      "c-pourcentage",
+      "c-conversion-unite",
+      "c-echelle"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_FA-Proportionnalite-ResoudreProblemes_JeExerce.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_FA-Proportionnalite-ResoudreProblemes_JeExerce"
   },
   {
     "titre": "Problème d'échelle - distance entre deux villes",
@@ -3290,31 +3546,7 @@
     "fichier": "PLANIF_FA-ProportionnaliteDiagrammes-10VG2"
   },
   {
-    "titre": "Recette de crêpes (tableau de proportionnalité, quatrième proportionnelle)",
-    "theme": "FA",
-    "chapitre": "Proportionnalité",
-    "sous_chapitre": "Résoudre des problèmes de proportionnalité",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-proportionnalite",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031.pdf",
-    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031"
-  },
-  {
-    "titre": "Recette de crêpes (tableau de proportionnalité, quatrième proportionnelle)",
+    "titre": "Problème de proportionnalité- litres d'essence et kilomètres parcourus",
     "theme": "FA",
     "chapitre": "Proportionnalité",
     "sous_chapitre": "Résoudre des problèmes de proportionnalité",
@@ -3338,6 +3570,34 @@
     "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609302100"
   },
   {
+    "titre": "Problème de proportionnalité- recette de crêpes",
+    "theme": "FA",
+    "chapitre": "Proportionnalité",
+    "sous_chapitre": "Résoudre des problèmes de proportionnalité",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "proportionnalite",
+      "c-tableau-proportionnalite",
+      "c-coefficient",
+      "c-conversion-unites",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031.pdf",
+    "fichier": "EVAL_FA-Proportionnalite-ResoudreProblemes_202609302031"
+  },
+  {
     "titre": "Reconnaître une situation de proportionnalité (tableaux et situations)",
     "theme": "FA",
     "chapitre": "Proportionnalité",
@@ -3347,7 +3607,7 @@
     ],
     "type": "EVAL",
     "tags": [
-      "c-proportionnalite",
+      "proportionnalite",
       "p-question-TS"
     ],
     "difficulte": 1,
@@ -3413,33 +3673,6 @@
     "fichier": "EVAL_FA-Diagrammes-LireDiagrammes_202609301715"
   },
   {
-    "titre": "Réseaux sociaux des jeunes en Suisse (construction d'un diagramme en colonne)",
-    "theme": "FA",
-    "chapitre": "Diagrammes",
-    "sous_chapitre": "Lire, interpréter et réaliser",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-diagramme-colonnes",
-      "c-proportionnalite",
-      "c-echelle",
-      "o-regle",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "jamesfocus 2025 (zhaw), données james 2024",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_FA-Diagrammes-RealiserDiagrammes_202609301622.pdf",
-    "corrige_pdf": "corr/EVAL_FA-Diagrammes-RealiserDiagrammes_202609301622.pdf",
-    "fichier": "EVAL_FA-Diagrammes-RealiserDiagrammes_202609301622"
-  },
-  {
     "titre": "Températures moyennes en Suisse (diagramme cartésien)",
     "theme": "FA",
     "chapitre": "Diagrammes",
@@ -3466,6 +3699,57 @@
     "pdf": "pdf/EX_FA-Diagrammes-RealiserDiagrammes_DiagrammeCartesienTemperature.pdf",
     "corrige_pdf": "corr/EX_FA-Diagrammes-RealiserDiagrammes_DiagrammeCartesienTemperature.pdf",
     "fichier": "EX_FA-Diagrammes-RealiserDiagrammes_DiagrammeCartesienTemperature"
+  },
+  {
+    "titre": "Réseaux sociaux des jeunes en Suisse (construction d'un diagramme en colonne)",
+    "theme": "FA",
+    "chapitre": "Diagrammes",
+    "sous_chapitre": "Réaliser des diagrammes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-diagramme-colonnes",
+      "c-proportionnalite",
+      "c-echelle",
+      "o-regle",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "jamesfocus 2025 (zhaw), données james 2024",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_FA-Diagrammes-RealiserDiagrammes_202609301500.pdf",
+    "corrige_pdf": "corr/EVAL_FA-Diagrammes-RealiserDiagrammes_202609301500.pdf",
+    "fichier": "EVAL_FA-Diagrammes-RealiserDiagrammes_202609301500"
+  },
+  {
+    "titre": "Je m'exerce - Hauteurs et médiatrices",
+    "theme": "ES",
+    "chapitre": "Figures géométriques planes",
+    "sous_chapitre": "Droites remarquables du triangle",
+    "niveau": [],
+    "type": "RES",
+    "tags": [
+      "c-hauteur",
+      "c-mediatrice",
+      "c-probleme",
+      "c-propriete"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "inspiration",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/RES_ES-FiguresGeometriquesPlanes-DroitesRemarquablesTriangles_HauteursMediatrices.pdf",
+    "corrige_pdf": null,
+    "fichier": "RES_ES-FiguresGeometriquesPlanes-DroitesRemarquablesTriangles_HauteursMediatrices"
   },
   {
     "titre": "Triangles semblables",
@@ -3495,28 +3779,58 @@
     "fichier": "EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719"
   },
   {
-    "titre": "Conversion d'unités",
+    "titre": "9P - ETA2 (exercice) - 20261029",
     "theme": "GM",
     "chapitre": "Lignes et surfaces",
     "sous_chapitre": "Polygones",
     "niveau": [
       "9e"
     ],
-    "type": "EVAL",
+    "type": "RES",
     "tags": [
-      "c-calcul-aires",
-      "p-question-TS"
+      "c-aire",
+      "c-conversion-unite",
+      "c-perimetre",
+      "c-probleme",
+      "p-TS"
     ],
-    "difficulte": 1,
+    "difficulte": 3,
     "corrige": true,
-    "source": "latex",
+    "source": "pdf",
     "lien": null,
-    "categorie": null,
+    "categorie": "évaluation",
     "source_originale": null,
     "template": null,
-    "pdf": null,
-    "corrige_pdf": null,
-    "fichier": "EVAL_GM-LignesSurfaces-Polygones_202610290933"
+    "pdf": "pdf/EVAL_9P_ETA2ex_20261029.pdf",
+    "corrige_pdf": "corr/EVAL_9P_ETA2ex_20261029_corrige.pdf",
+    "fichier": "EVAL_9P_ETA2ex_20261029"
+  },
+  {
+    "titre": "9P - ETA2 - 20261106",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Polygones",
+    "niveau": [
+      "9e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-aire",
+      "c-conversion-unite",
+      "c-perimetre",
+      "c-probleme",
+      "p-TS"
+    ],
+    "difficulte": 3,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_9P_ETA2_20261106.pdf",
+    "corrige_pdf": "corr/EVAL_9P_ETA2_20261106_corrige.pdf",
+    "fichier": "EVAL_9P_ETA2_20261106"
   },
   {
     "titre": "9P - Lignes et surfaces",
@@ -3576,7 +3890,7 @@
     "chapitre": "Lignes et surfaces",
     "sous_chapitre": "Lignes et surfaces",
     "niveau": [
-      "9VP"
+      "9e"
     ],
     "type": "EVAL",
     "tags": [
@@ -3586,7 +3900,7 @@
       "c-parallelogramme",
       "p-question-TS"
     ],
-    "difficulte": 2,
+    "difficulte": 3,
     "corrige": true,
     "source": "latex",
     "lien": null,
@@ -3603,7 +3917,7 @@
     "chapitre": "Lignes et surfaces",
     "sous_chapitre": "Lignes et surfaces",
     "niveau": [
-      "9VP"
+      "9e"
     ],
     "type": "EVAL",
     "tags": [
@@ -3629,7 +3943,7 @@
     "chapitre": "Lignes et surfaces",
     "sous_chapitre": "Lignes et surfaces",
     "niveau": [
-      "9VP"
+      "9e"
     ],
     "type": "EVAL",
     "tags": [
@@ -3648,12 +3962,38 @@
     "fichier": "EVAL_GM-DiversMesures-LongueurSurface_202611052120"
   },
   {
+    "titre": "Périmètre et aire d'une figure complexe",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Lignes et surfaces",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-perimetre",
+      "c-aire",
+      "c-figure-complexe",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_GM-LignesSurfaces-Polygones_202610291012.pdf",
+    "corrige_pdf": "corr/EVAL_GM-LignesSurfaces-Polygones_202610291012.pdf",
+    "fichier": "EVAL_GM-LignesSurfaces-Polygones_202610291012"
+  },
+  {
     "titre": "Périmètre et aire de figures usuelles",
     "theme": "GM",
     "chapitre": "Lignes et surfaces",
     "sous_chapitre": "Lignes et surfaces",
     "niveau": [
-      "9VP"
+      "9e"
     ],
     "type": "EVAL",
     "tags": [
@@ -3662,7 +4002,33 @@
       "c-figures-usuelles",
       "p-question-TS"
     ],
-    "difficulte": 2,
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_GM-LignesSurfaces-Polygones_202610290933.pdf",
+    "corrige_pdf": "corr/EVAL_GM-LignesSurfaces-Polygones_202610290933.pdf",
+    "fichier": "EVAL_GM-LignesSurfaces-Polygones_202610290933"
+  },
+  {
+    "titre": "Périmètre et aire de figures usuelles",
+    "theme": "GM",
+    "chapitre": "Lignes et surfaces",
+    "sous_chapitre": "Lignes et surfaces",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-perimetre",
+      "c-aire",
+      "c-figures-usuelles",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
     "corrige": true,
     "source": "latex",
     "lien": null,

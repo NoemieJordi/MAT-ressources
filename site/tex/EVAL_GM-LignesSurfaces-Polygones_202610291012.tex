@@ -1,0 +1,84 @@
+% ---
+% titre: Périmètre et aire d'une figure complexe
+% theme: GM
+% chapitre: Lignes et surfaces
+% sous_chapitre: Lignes et surfaces
+% niveau: [9e]
+% type: EVAL
+% tags: [c-perimetre, c-aire, c-figure-complexe, p-question-TS]
+% difficulte: 2
+% corrige: true
+% ---
+
+\question
+Voici une figure $ABCDEFG$. Sachant que $ABCD$ est un parallélogramme: 
+
+\vfill
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    \tkzDefPoints{0/0/A,8/0/D,2.3/4/B,10.3/4/C,3/0/G,7/0/E,4/3/F,4/0/H,-1/0/I, -1/4/J}
+    \tkzDrawSegments(A,B B,C C,D D,E E,F F,G G,A)
+    \tkzDrawSegments[dashed](E,G)
+    %
+    \tkzLabelPoints[below](A,D,E,G)
+    \tkzLabelPoints[above](B,F,C)
+    %
+    \tkzDrawSegment[draw=none, dim={8\,m,20pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](B,C)
+    \tkzDrawSegment[draw=none, dim={{4,6\,m},15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](C,D)
+    \tkzDrawSegment[draw=none, dim={{4,2\,m},-15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](E,F)
+    \tkzDrawSegment[draw=none, dim={{3,5\,m},-15pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](F,G)
+    \tkzDrawSegment[draw=none, dim={3\,m,0pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](F,H)
+    \tkzDrawSegment[draw=none, dim={4\,m,20pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](E,G)
+    \tkzDrawSegment[draw=none, dim={4\,m,-20pt,midway}, dim style/.append style={black,dashed},dim fence style/.append style={draw=none}](I,J)
+    %
+    \tkzMarkRightAngle[size=0.3,draw,dashed](F,H,A)
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+\vfill\part[3\half]
+Calcule le périmètre de la figure ABCDEFG.
+
+\vspace{10pt}
+{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[200pt]
+Comme $ABCD$ est un parallélogramme: 
+
+\vspace{5pt}
+$CD \cong AB = 4,6\,\text{m}$ et $AD \cong BC = 8\,\text{m}$ \hfill \textbf{(1pt)}
+
+\vspace{10pt}
+$DE + GA = AD - GE = 8 - 4 = 4\,m$ \hfill \textbf{(1pt)}
+
+\vspace{5pt}
+$P_{ABCDEFG} = AB+BC+CD+(DE+GA)+EF+FG = 4,6+8+4,6+4+4,2+3,5 = 28,9\,m$ \hfill \textbf{(1pt)}
+\end{solutionorgrid}
+
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{Le périmètre de la figure vaut 28,9\,m. \textbf{(0,5pt)}}
+\end{tcolorbox}
+
+\newpage\part[3\half]
+Calcule l'aire de la figure ABCDEFG.
+
+\vspace{10pt}
+{\footnotesize\raggedleft Espace pour ta démarche et tes calculs\par}
+\begin{solutionorgrid}[200pt]
+La figure $ABCDEFG$ correspond au parallélogramme $ABCD$ dont on soustrait le triangle $GFE$.
+
+\vspace{5pt}
+$A_{ABCD} = AD \cdot h = 8 \cdot 4 = 32\,m^2$ \hfill \textbf{(1pt)}
+
+\vspace{5pt}
+$A_{GFE} = \dfrac{GE \cdot h}{2} = \dfrac{4\cdot 3}{2} = 6\,m^2$ \hfill \textbf{(1pt)}
+
+\vspace{5pt}
+$A_{ABCDEFG} = 32 - 6 = 26\,m^2$ \hfill \textbf{(1pt)}
+\end{solutionorgrid}
+
+\begin{tcolorbox}[enhanced jigsaw, interior hidden, colframe=box, parbox=false]%
+Réponse: 
+\sol{\vspace{20pt}}{L'aire de la figure vaut 26\,m$^2$. \textbf{(0,5pt)}}
+\end{tcolorbox}
+\end{parts}

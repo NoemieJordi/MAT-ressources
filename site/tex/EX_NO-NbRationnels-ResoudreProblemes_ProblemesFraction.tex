@@ -1,0 +1,187 @@
+% ---
+% titre: Amplification et simplification de fractions
+% theme: NO
+% chapitre: Nombres rationnels
+% sous_chapitre: Amplifier et simplifier
+% niveau: [10e]
+% type: EX
+% tags: [c-fractions, c-livrets, c-multiplication, c-division, f-individuel, p-approfondissement]
+% difficulte: 2
+% source: latex
+% ---
+
+\header{Fractions et pourcentages : problèmes}
+
+% Grille de hauteur #1 (en cm)
+\newcommand{\grille}[1]{\begin{tikzpicture}
+  \draw[step=0.5cm, gray, very thin] (0,0) grid (\textwidth,#1);
+\end{tikzpicture}}
+
+\definecolor{themeColor}{HTML}{C0392B}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\pagestyle{empty}
+
+\newcounter{cptexo}
+\newcommand{\Exo}[2]{%
+  \vspace{0.6em}\refstepcounter{cptexo}\label{exo:#1}%
+  {\bfseries\color{themeColor}Exercice \thecptexo.}\ #2\par}
+  
+\medskip
+Écris chaque calcul. Simplifie toujours les fractions quand c'est possible.
+
+\textbf{A. Exprimer une partie par une fraction}
+
+\vfill
+\Exo{choco}{Une tablette de chocolat a 10 carrés. Léa en mange 3. Quelle fraction de la tablette a-t-elle mangée ? Quelle fraction reste-t-il ?}
+\sol{\grille{4}}{\vspace{-30pt}\color{black}
+Mangé : $\textcolor{themeColor}{\dfrac{3}{10}}$
+
+Reste : $1 - \dfrac{3}{10} = \dfrac{\textcolor{themeColor}{10}}{10} - \dfrac{3}{10} = \textcolor{themeColor}{\dfrac{7}{10}}$
+}
+
+\vfill
+\Exo{classe}{Dans une classe de 24 élèves, il y a 9 filles. Quelle fraction de la classe représentent les filles ? Et les garçons ? (Simplifie.)}
+\sol{\grille{4}}{\vspace{-30pt}\color{black}
+Filles : $\dfrac{9}{24} = \dfrac{9 \div \textcolor{themeColor}{3}}{24 \div \textcolor{themeColor}{3}} = \textcolor{themeColor}{\dfrac{3}{8}}$
+
+Garçons : $1 - \dfrac{3}{8} = \dfrac{\textcolor{themeColor}{8}}{8} - \dfrac{3}{8} = \textcolor{themeColor}{\dfrac{5}{8}}$
+}
+
+\vfill
+\Exo{unites}{Quelle fraction représentent :\par
+\begin{enumerate}[label=\alph*), nosep, leftmargin=2em]
+\item 45 minutes d'une heure ?
+\item 30 cm d'un mètre ?
+\item 250 g d'un kilogramme ?
+\end{enumerate}}
+\sol{\grille{4}}{\vspace{-30pt}\color{black}
+a) $\dfrac{45}{\textcolor{themeColor}{60}} = \textcolor{themeColor}{\dfrac{3}{4}}$ \qquad
+b) $\dfrac{30}{\textcolor{themeColor}{100}} = \textcolor{themeColor}{\dfrac{3}{10}}$ \qquad
+c) $\dfrac{250}{\textcolor{themeColor}{1000}} = \textcolor{themeColor}{\dfrac{1}{4}}$
+}
+
+\newpage
+\textbf{B. Fraction d'une quantité}
+
+\vfill
+\Exo{quantite}{Calcule $\dfrac{3}{5}$ de 40 CHF.}
+\sol{\grille{2.5}}{\vspace{-30pt}\color{black}
+$\dfrac{3}{5} \cdot 40 = 40 \div 5 \cdot 3 = \textcolor{themeColor}{8} \cdot 3 = \textcolor{themeColor}{24}$ CHF
+}
+
+\vfill
+\Exo{tout}{Les $\dfrac{2}{7}$ d'une somme d'argent valent 18 CHF. Quelle est la somme totale ?}
+\sol{\grille{3}}{\vspace{-30pt}\color{black}
+\begin{align*}
+\frac{2}{7} &\to 18 \text{ CHF} \\
+\frac{1}{7} &\to 18 \div 2 = \textcolor{themeColor}{9} \text{ CHF} \\
+\frac{7}{7} &\to 9 \cdot 7 = \textcolor{themeColor}{63} \text{ CHF}
+\end{align*}
+}
+
+\vspace{50pt}
+\textbf{C. Additionner et soustraire des fractions}
+
+\Exo{livre}{Lucas lit $\dfrac{1}{4}$ de son livre le lundi et $\dfrac{2}{5}$ le mardi. Quelle fraction du livre a-t-il lue en tout ? Quelle fraction lui reste-t-il à lire ? Le livre a 240 pages : combien de pages lui reste-t-il ?}
+\sol{\grille{4.5}}{\vspace{-30pt}\color{black}
+\begin{align*}
+\frac{1}{4} + \frac{2}{5} &= \frac{\textcolor{themeColor}{5}}{20} + \frac{\textcolor{themeColor}{8}}{20} = \textcolor{themeColor}{\frac{13}{20}} \\
+1 - \frac{13}{20} &= \frac{20}{20} - \frac{13}{20} = \textcolor{themeColor}{\frac{7}{20}} \\
+\frac{7}{20} \cdot 240 &= 240 \div 20 \cdot 7 = \textcolor{themeColor}{12} \cdot 7 = \textcolor{themeColor}{84} \text{ pages}
+\end{align*}
+}
+
+\vfill
+\Exo{reservoir}{Un réservoir est rempli aux $\dfrac{5}{6}$. On utilise ensuite $\dfrac{1}{4}$ du réservoir. Quelle fraction du réservoir est encore remplie ?}
+\sol{\grille{3}}{\vspace{-30pt}\color{black}
+$\dfrac{5}{6} - \dfrac{1}{4} = \dfrac{\textcolor{themeColor}{10}}{12} - \dfrac{\textcolor{themeColor}{3}}{12} = \textcolor{themeColor}{\dfrac{7}{12}}$
+}
+
+\newpage
+\Exo{tarte}{Il reste les $\dfrac{3}{4}$ d'une tarte. Max mange le tiers de ce qui reste. Quelle fraction de la tarte entière Max a-t-il mangée ? Quelle fraction de la tarte reste-t-il ?}
+\sol{\grille{3.5}}{\vspace{-30pt}\color{black}
+Max : $\dfrac{1}{3} \cdot \dfrac{3}{4} = \dfrac{3}{12} = \textcolor{themeColor}{\dfrac{1}{4}}$
+
+Reste : $\dfrac{3}{4} - \dfrac{1}{4} = \dfrac{2}{4} = \textcolor{themeColor}{\dfrac{1}{2}}$
+}
+
+\vfill
+\Exo{budget}{Chaque mois, Sofia dépense $\dfrac{1}{3}$ de son salaire pour le loyer et $\dfrac{1}{4}$ pour les courses. Le reste est mis de côté. Son salaire est de 2400 CHF. Quelle fraction met-elle de côté ? Quelle somme cela représente-t-il ?}
+\sol{\grille{4.5}}{\vspace{-30pt}\color{black}
+\begin{align*}
+\frac{1}{3} + \frac{1}{4} &= \frac{\textcolor{themeColor}{4}}{12} + \frac{\textcolor{themeColor}{3}}{12} = \textcolor{themeColor}{\frac{7}{12}} \\
+1 - \frac{7}{12} &= \frac{12}{12} - \frac{7}{12} = \textcolor{themeColor}{\frac{5}{12}} \\
+\frac{5}{12} \cdot 2400 &= 2400 \div 12 \cdot 5 = \textcolor{themeColor}{200} \cdot 5 = \textcolor{themeColor}{1000} \text{ CHF}
+\end{align*}
+}
+
+\vspace{50pt}
+\textbf{D. Fractions et pourcentages}
+
+\Exo{conv}{Convertis.\par
+\begin{multicols}{2}
+\begin{enumerate}[label=\alph*), nosep, leftmargin=2em]
+\item $\dfrac{7}{20}$ en pourcentage
+\item $\dfrac{3}{8}$ en pourcentage
+\item $60~\%$ en fraction simplifiée
+\item $12{,}5~\%$ en fraction simplifiée
+\end{enumerate}
+\end{multicols}}
+\sol{\grille{4}}{\vspace{-30pt}\color{black}
+a) $\dfrac{7}{20} = \dfrac{7 \cdot \textcolor{themeColor}{5}}{20 \cdot \textcolor{themeColor}{5}} = \dfrac{35}{100} = \textcolor{themeColor}{35~\%}$
+
+b) $\dfrac{3}{8} = 3 \div 8 = 0{,}375 = \textcolor{themeColor}{37{,}5~\%}$
+
+c) $60~\% = \dfrac{60}{100} = \textcolor{themeColor}{\dfrac{3}{5}}$
+
+d) $12{,}5~\% = \dfrac{12{,}5}{100} = \dfrac{125}{1000} = \textcolor{themeColor}{\dfrac{1}{8}}$
+}
+
+\newpage
+\Exo{velo}{Dans une classe de 25 élèves, $40~\%$ viennent à l'école à vélo. Écris ce pourcentage sous forme de fraction simplifiée, puis calcule le nombre d'élèves concernés.}
+\sol{\grille{3.5}}{\vspace{-30pt}\color{black}
+$40~\% = \dfrac{40}{100} = \textcolor{themeColor}{\dfrac{2}{5}}$
+
+$\dfrac{2}{5} \cdot 25 = 25 \div 5 \cdot 2 = \textcolor{themeColor}{5} \cdot 2 = \textcolor{themeColor}{10}$ élèves
+}
+
+\vfill
+\Exo{ecole}{Dans une école de 600 élèves, $\dfrac{2}{5}$ viennent à vélo, $25~\%$ viennent à pied et les autres prennent le bus. Quelle fraction des élèves prend le bus ? Quel pourcentage ? Combien d'élèves cela fait-il ?}
+\sol{\grille{5}}{\vspace{-30pt}\color{black}
+\begin{align*}
+\frac{2}{5} &= \textcolor{themeColor}{40~\%} \\
+\text{Vélo + pied : } 40~\% + 25~\% &= \textcolor{themeColor}{65~\%} \\
+\text{Bus : } 100~\% - 65~\% &= \textcolor{themeColor}{35~\%} = \frac{35}{100} = \textcolor{themeColor}{\frac{7}{20}} \\
+\frac{7}{20} \cdot 600 &= 600 \div 20 \cdot 7 = \textcolor{themeColor}{30} \cdot 7 = \textcolor{themeColor}{210} \text{ élèves}
+\end{align*}
+}
+
+\Exo{pull}{Un pull coûte 80 CHF. Il est soldé d'abord de $\dfrac{1}{5}$, puis le nouveau prix est encore réduit de $25~\%$. Quel est le prix final ? Quelle fraction du prix initial a-t-on économisée ? Est-ce la même chose qu'un rabais de $20~\% + 25~\% = 45~\%$ ?}
+\sol{\grille{5.5}}{\vspace{-30pt}\color{black}
+Après $\dfrac{1}{5}$ : $80 - \dfrac{1}{5} \cdot 80 = 80 - \textcolor{themeColor}{16} = \textcolor{themeColor}{64}$ CHF
+
+Après $25~\%$ : $64 - \dfrac{1}{4} \cdot 64 = 64 - \textcolor{themeColor}{16} = \textcolor{themeColor}{48}$ CHF
+
+Économie : $80 - 48 = 32$ CHF, soit $\dfrac{32}{80} = \textcolor{themeColor}{\dfrac{2}{5}} = \textcolor{themeColor}{40~\%}$
+
+$40~\% \neq 45~\%$ : ce n'est pas la même chose, car les $25~\%$ portent sur un prix déjà réduit.
+}
+
+\Exo{abo}{Un abonnement passe de 40 CHF à 50 CHF par mois. Quelle fraction du prix initial représente l'augmentation ? Exprime-la en pourcentage.}
+\sol{\grille{3.5}}{\vspace{-30pt}\color{black}
+Augmentation : $50 - 40 = \textcolor{themeColor}{10}$ CHF
+
+$\dfrac{10}{40} = \textcolor{themeColor}{\dfrac{1}{4}} = \dfrac{25}{100} = \textcolor{themeColor}{25~\%}$
+}
+
+\Exo{choeur}{Dans une classe de 40 élèves, $\dfrac{3}{5}$ sont des filles. Dans le chœur de l'école, on trouve $\dfrac{1}{4}$ des filles et $50~\%$ des garçons de la classe. Combien d'élèves de la classe chantent dans le chœur ? Quelle fraction (simplifiée) puis quel pourcentage de la classe cela représente-t-il ?}
+\sol{\grille{6}}{\vspace{-30pt}\color{black}
+\begin{align*}
+\text{Filles : } \frac{3}{5} \cdot 40 &= \textcolor{themeColor}{24} \qquad \text{Garçons : } 40 - 24 = \textcolor{themeColor}{16} \\
+\text{Chœur (filles) : } \frac{1}{4} \cdot 24 &= \textcolor{themeColor}{6} \\
+\text{Chœur (garçons) : } 50~\% \cdot 16 &= 16 \div 2 = \textcolor{themeColor}{8} \\
+\text{Total : } 6 + 8 &= \textcolor{themeColor}{14} \text{ élèves} \\
+\frac{14}{40} &= \textcolor{themeColor}{\frac{7}{20}} = \frac{35}{100} = \textcolor{themeColor}{35~\%}
+\end{align*}
+}
