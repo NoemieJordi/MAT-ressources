@@ -465,6 +465,36 @@
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle2"
   },
   {
+    "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - entraînement",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-division",
+      "c-livrets",
+      "c-multiplication",
+      "c-operations",
+      "c-priorite-operations",
+      "c-puissance",
+      "f-individuel",
+      "p-flash-calcul"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3.pdf",
+    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3.pdf",
+    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3"
+  },
+  {
     "titre": "Calcul flash: 9VP - cycle 2 (semaines 7-12) - exercices",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -493,32 +523,6 @@
     "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle2.pdf",
     "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle2.pdf",
     "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalcul-Cycle2"
-  },
-  {
-    "titre": "Calcul flash: 9VP - cycle 3 (semaines 13-18) - entraînement",
-    "theme": "NO",
-    "chapitre": "Nombres naturels et décimaux",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "9e"
-    ],
-    "type": "EX",
-    "tags": [
-      "c-nombres-relatifs",
-      "c-droite-numerique",
-      "f-individuel",
-      "p-flash-calcul"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3.pdf",
-    "corrige_pdf": "corr/EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3.pdf",
-    "fichier": "EX_NO-NbNaturelsDecimaux-CalculReflechiMental-9VP_FlashCalculDrill-Cycle3"
   },
   {
     "titre": "Calcul flash: 9VP - cycle 3 (semaines 13-18) - exercices",
@@ -3777,6 +3781,33 @@
     "pdf": "pdf/EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719.pdf",
     "corrige_pdf": "corr/EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719.pdf",
     "fichier": "EVAL_ES-FiguresGeometriquesPlanes-TrianglesSemblables_202505011719"
+  },
+  {
+    "titre": "9P - Figures géométriques planes",
+    "theme": "ES",
+    "chapitre": "Figures géométriques planes",
+    "sous_chapitre": "",
+    "niveau": [
+      "9e"
+    ],
+    "type": "PLANIF",
+    "tags": [
+      "c-figures-planes",
+      "c-angles",
+      "c-triangles",
+      "c-quadrilateres",
+      "c-constructions"
+    ],
+    "difficulte": 1,
+    "corrige": false,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/PLANIF_ES-FigGeomPlanes-9VP.pdf",
+    "corrige_pdf": null,
+    "fichier": "PLANIF_ES-FigGeomPlanes-9VP"
   },
   {
     "titre": "9P - ETA2 (exercice) - 20261029",
