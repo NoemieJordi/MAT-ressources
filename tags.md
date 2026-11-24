@@ -16,8 +16,10 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 |-----|-------------|
 | `c-aire` | Calcul d'aire |
 | `c-addition` | Addition |
+| `c-angles` | Mesure d'angles |
 | `c-calcul-angles` | Calcul d'angles |
 | `c-combinatoire` | Combinatoire |
+| `c-construction` |   Construction de figures géométriques |
 | `c-construction-diagramme` |   Construction de diagramme |
 | `c-conversion-unite` | Conversion d'unités |
 | `c-criteres-divisibilite` |   Critères de divisibilité |
@@ -31,6 +33,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-droite-numerique` |   Droite numérique |
 | `c-echelle` |   Echelle |
 | `c-equations` | Équations |
+| `c-figures-planes` | Figures géométriques planes |
 | `c-fonctions` | Fonctions |
 | `c-fractions` | Fractions |
 | `c-hauteur` | Construction de hauteurs |
@@ -55,10 +58,12 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-proportionnalite` | Proportionnalité |
 | `c-propriete` | Propriétés |
 | `c-puissance` | Puissance |
+| `c-quadrilateres` | Quadrilatères |
 | `c-racine` | Racine |
 | `c-soustraction` | Soustraction |
 | `c-statistiques` | Statistiques |
 | `c-thales` | Théorème de Thalès |
+| `c-triangles` | Triangles |
 | `c-triangles-semblables` | Triangles semblables |
 | `c-trigonometrie` | Trigonométrie |
 | `c-valeur-absolue` | Valeur absolue |
