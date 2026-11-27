@@ -1,0 +1,63 @@
+% ---
+% titre: Représenter une fraction
+% theme: NO
+% chapitre: Nombres rationnels
+% sous_chapitre: Représenter, comparer et encadrer
+% niveau: [10e]
+% type: EVAL
+% tags: [c-fractions, c-representer, p-question-TS]
+% difficulte: 1
+% corrige: true
+% ---
+
+\newcommand{\GrilleFig}[6]{%
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+\pgfmathsetmacro{\gfw}{#3/#1}
+\pgfmathsetmacro{\gfh}{#4/#2}
+\foreach \gfr in {0,...,\numexpr#2-1\relax}{
+  \foreach \gfc in {0,...,\numexpr#1-1\relax}{
+    \pgfmathtruncatemacro{\gfi}{\gfr*#1+\gfc}
+    \ifnum\gfi<#5\relax\def\gffill{#6}\else\def\gffill{white}\fi
+    \draw[fill=\gffill] (\gfc*\gfw,-\gfr*\gfh) rectangle ++(\gfw,-\gfh);
+  }}
+\end{tikzpicture}}
+
+\newcommand{\DisqueFig}[3]{%
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+\foreach \dfs in {0,...,\numexpr#1-1\relax}{
+  \pgfmathsetmacro{\dfa}{90-360/#1*\dfs}
+  \pgfmathsetmacro{\dfb}{90-360/#1*(\dfs+1)}
+  \ifnum\dfs<#2\relax\def\dffill{#3}\else\def\dffill{white}\fi
+  \draw[fill=\dffill] (0,0) -- (\dfa:1) arc[start angle=\dfa, end angle=\dfb, radius=1] -- cycle;
+}
+\end{tikzpicture}}
+
+
+\question
+\begin{parts}
+\part[2] Colorie la fraction indiquée de chaque figure.
+
+\vspace{10pt}
+\def\arraystretch{1.5}
+\begin{tabularx}{\linewidth}{XX}
+$\dfrac{3}{5}$ \quad \GrilleFig{5}{1}{4.5}{1.2}{0}{white} &$\dfrac{5}{8}$ \quad \GrilleFig{4}{2}{3.6}{1.2}{0}{white} \\[26pt]
+$\dfrac{2}{3}$ \quad \DisqueFig{3}{0}{white} &$\dfrac{3}{8}$ \quad \DisqueFig{8}{0}{white} \\
+\end{tabularx}
+\def\arraystretch{1}
+
+\vspace{15pt}
+\part[2]  Écris la fraction correspondant à la partie coloriée.
+
+\vspace{10pt}
+\def\arraystretch{1.5}
+\begin{tabularx}{\linewidth}{XcX}
+\GrilleFig{5}{1}{4.5}{1.2}{4}{themeColor!40} \quad $\Longrightarrow$ \sol{\;\bl}{$\dfrac{4}{5}$} && \DisqueFig{4}{3}{themeColor!40} \quad $\Longrightarrow$ \sol{\;\bl}{$\dfrac{3}{4}$} \\[26pt]
+\GrilleFig{3}{2}{3.6}{1.6}{4}{themeColor!40} \quad $\Longrightarrow$ \sol{\;\bl}{$\dfrac{4}{6}$} && \GrilleFig{5}{2}{4.5}{1.6}{7}{themeColor!40} \quad $\Longrightarrow$ \sol{\;\bl}{$\dfrac{7}{10}$} \\
+\end{tabularx}
+\def\arraystretch{1}
+
+\begin{solution}[0pt]
+\textbf{0.5pt par réponse}\\[4pt]
+\textcolor{themeColor}{Partie A.} a) $3$ cases sur $5$ \quad b) $5$ cases sur $8$ \quad c) $2$ parts sur $3$ \quad d) $3$ parts sur $8$
+\end{solution}
+\end{parts}

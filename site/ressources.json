@@ -775,6 +775,57 @@
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609271658"
   },
   {
+    "titre": "Calculs avec des puissances",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-soustraction",
+      "c-division",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609201106.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609201106.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609201106"
+  },
+  {
+    "titre": "Calculs de puissance",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609121501.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609121501.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609121501"
+  },
+  {
     "titre": "Calculs décimaux à poser en colonne (séries A, B et C)",
     "theme": "NO",
     "chapitre": "Nombres naturels et décimaux",
@@ -916,6 +967,30 @@
     "pdf": "pdf/JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15.pdf",
     "corrige_pdf": null,
     "fichier": "JEU_NO-NbNaturelsDecimaux-CalculReflechiMental_FlashCardsLivret2-15"
+  },
+  {
+    "titre": "Comparaisons de puissances",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756"
   },
   {
     "titre": "Jeu de Pythagore",
@@ -1154,6 +1229,80 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609201320.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609201320.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-CalculReflechiMental_202609201320"
+  },
+  {
+    "titre": "Puissances et racines",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432"
+  },
+  {
+    "titre": "Puissances et racines",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "9e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743"
+  },
+  {
+    "titre": "Puissances et racines",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648"
   },
   {
     "titre": "Affiche - critères de divisibilité",
@@ -1819,6 +1968,31 @@
     "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609201445.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609201445.pdf",
     "fichier": "EVAL_NO-NbNaturelsDecimaux-PpmcPgdc_202609201445"
+  },
+  {
+    "titre": "Notation scientifique (bonus)",
+    "theme": "NO",
+    "chapitre": "Nombres naturels et décimaux",
+    "sous_chapitre": "Notation scientifique",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-puissance",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-NotationScientifique_202611250716.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-NotationScientifique_202611250716.pdf",
+    "fichier": "EVAL_NO-NbNaturelsDecimaux-NotationScientifique_202611250716"
   },
   {
     "titre": "Calculs de priorités des opérations (séries A, B et C)",
@@ -2550,6 +2724,31 @@
     "fichier": "PLANIF_NO-NbRelatifs-9VP"
   },
   {
+    "titre": "Comparer des fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-comparer",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611242053.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611242053.pdf",
+    "fichier": "EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611242053"
+  },
+  {
     "titre": "Dossier d'exercices - Critères de divisibilité",
     "theme": "NO",
     "chapitre": "Nombres rationnels",
@@ -2574,6 +2773,56 @@
     "pdf": null,
     "corrige_pdf": null,
     "fichier": "EX_NO-NbRationnels-PlacerComparerEncadrer_Generalite"
+  },
+  {
+    "titre": "Fraction d'une quantité (représenter)",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-representer",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241730.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241730.pdf",
+    "fichier": "EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241730"
+  },
+  {
+    "titre": "Lire une fraction",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-vocabulaire",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241717.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241717.pdf",
+    "fichier": "EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241717"
   },
   {
     "titre": "Livre - Les fraction / les nombres rationnels",
@@ -2601,6 +2850,56 @@
     "pdf": "pdf/RES_NO-NbRationnels-ReprsenterComparerEncadrer_Livre8eme.pdf",
     "corrige_pdf": null,
     "fichier": "RES_NO-NbRationnels-ReprsenterComparerEncadrer_Livre8eme"
+  },
+  {
+    "titre": "Représenter une fraction",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-representer",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241815.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241815.pdf",
+    "fichier": "EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241815"
+  },
+  {
+    "titre": "Vocabulaire des fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Représenter, comparer et encadrer",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-vocabulaire",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241709.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241709.pdf",
+    "fichier": "EVAL_NO-NbRationnels-RepresenterComparerEncadrer_202611241709"
   },
   {
     "titre": "Amplification et simplification de fractions",
@@ -2659,6 +2958,110 @@
     "fichier": "EX_NO-NbRationnels-ResoudreProblemes_ProblemesFraction"
   },
   {
+    "titre": "Amplifier et simplifier",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Amplifier et simplifier",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-amplifier",
+      "c-simplifier",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-AmplifierSimplifier_202611242235.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-AmplifierSimplifier_202611242235.pdf",
+    "fichier": "EVAL_NO-NbRationnels-AmplifierSimplifier_202611242235"
+  },
+  {
+    "titre": "Fractions irréductibles",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Amplifier et simplifier",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-simplifier",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-AmplifierSimplifier_202611242244.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-AmplifierSimplifier_202611242244.pdf",
+    "fichier": "EVAL_NO-NbRationnels-AmplifierSimplifier_202611242244"
+  },
+  {
+    "titre": "Addition et soustraction de fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-addition",
+      "c-soustraction",
+      "p-question-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-AdditionSoustraction_202611242248.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-AdditionSoustraction_202611242248.pdf",
+    "fichier": "EVAL_NO-NbRationnels-AdditionSoustraction_202611242248"
+  },
+  {
+    "titre": "Addition et soustraction de fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Addition et soustraction",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-addition",
+      "c-soustraction",
+      "c-nombres-decimaux",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-AdditionSoustraction_202611250637.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-AdditionSoustraction_202611250637.pdf",
+    "fichier": "EVAL_NO-NbRationnels-AdditionSoustraction_202611250637"
+  },
+  {
     "titre": "Opérations avec des fractions",
     "theme": "NO",
     "chapitre": "Nombres rationnels",
@@ -2686,6 +3089,90 @@
     "pdf": "pdf/EVAL_NO-NbRationnels-AdditionSoustraction_202608072136.pdf",
     "corrige_pdf": "corr/EVAL_NO-NbRationnels-AdditionSoustraction_202608072136.pdf",
     "fichier": "EVAL_NO-NbRationnels-AdditionSoustraction_202608072136"
+  },
+  {
+    "titre": "Multiplication et division de fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Multiplication et division",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-multiplication",
+      "c-division",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-MultiplicationDivision_202611250640.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-MultiplicationDivision_202611250640.pdf",
+    "fichier": "EVAL_NO-NbRationnels-MultiplicationDivision_202611250640"
+  },
+  {
+    "titre": "Priorité des opérations avec des fractions",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Priorité des opérations",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-fractions",
+      "c-operations",
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-division",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-PrioriteOperations_202611250658.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-PrioriteOperations_202611250658.pdf",
+    "fichier": "EVAL_NO-NbRationnels-PrioriteOperations_202611250658"
+  },
+  {
+    "titre": "Problème de fractions - classe et sports",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "Résoudre des problèmes",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EVAL",
+    "tags": [
+      "c-addition",
+      "c-soustraction",
+      "c-multiplication",
+      "c-fractions",
+      "c-operations",
+      "c-probleme",
+      "p-question-TS"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_NO-NbRationnels-Probleme_202611250702.pdf",
+    "corrige_pdf": "corr/EVAL_NO-NbRationnels-Probleme_202611250702.pdf",
+    "fichier": "EVAL_NO-NbRationnels-Probleme_202611250702"
   },
   {
     "titre": "Problème de fractions - révisions d'examen",
@@ -2769,6 +3256,62 @@
     "pdf": "pdf/EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique.pdf",
     "corrige_pdf": "corr/EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique.pdf",
     "fichier": "EX_NO-NbRationnels-PlacerComparerEncadrer_DroiteNumerique"
+  },
+  {
+    "titre": "Fractions: 10H - Amplifier (dossier d'autonomie)",
+    "theme": "NO",
+    "chapitre": "Nombres rationnels",
+    "sous_chapitre": "",
+    "niveau": [
+      "10e"
+    ],
+    "type": "EX",
+    "tags": [
+      "c-fractions",
+      "c-amplifier",
+      "c-fractions-equivalentes",
+      "f-individuel",
+      "p-autonomie"
+    ],
+    "difficulte": 2,
+    "corrige": true,
+    "source": "latex",
+    "lien": null,
+    "categorie": null,
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie.pdf",
+    "corrige_pdf": "corr/EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie.pdf",
+    "fichier": "EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie"
+  },
+  {
+    "titre": "11G1 - TS1 - 20201007",
+    "theme": "NO",
+    "chapitre": "Nombres réels",
+    "sous_chapitre": "Calcul réfléchi et mental",
+    "niveau": [
+      "11e"
+    ],
+    "type": "RES",
+    "tags": [
+      "c-puissance",
+      "c-racine",
+      "c-fractions",
+      "c-nombres-relatifs",
+      "c-operations",
+      "c-priorite-operations",
+      "p-TS"
+    ],
+    "difficulte": 1,
+    "corrige": true,
+    "source": "pdf",
+    "lien": null,
+    "categorie": "évaluation",
+    "source_originale": null,
+    "template": null,
+    "pdf": "pdf/EVAL_11G1_TS1_20201007.pdf",
+    "corrige_pdf": "corr/EVAL_11G1_TS1_20201007_corrige.pdf",
+    "fichier": "EVAL_11G1_TS1_20201007"
   },
   {
     "titre": "10G2 - Nombres réels",
@@ -2956,211 +3499,6 @@
     "pdf": "pdf/EX_NO-SituationsAleatoires-Probabilite_Labyrinthe.pdf",
     "corrige_pdf": "corr/EX_NO-SituationsAleatoires-Probabilite_Labyrinthe_corrige.pdf",
     "fichier": "EX_NO-SituationsAleatoires-Probabilite_Labyrinthe"
-  },
-  {
-    "titre": "11G1 - TS1 - 20201007",
-    "theme": "NO",
-    "chapitre": "Nombres rééls",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "11e"
-    ],
-    "type": "RES",
-    "tags": [
-      "c-puissance",
-      "c-racine",
-      "c-fractions",
-      "c-nombres-relatifs",
-      "c-operations",
-      "c-priorite-operations",
-      "p-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "pdf",
-    "lien": null,
-    "categorie": "évaluation",
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_11G1_TS1_20201007.pdf",
-    "corrige_pdf": "corr/EVAL_11G1_TS1_20201007_corrige.pdf",
-    "fichier": "EVAL_11G1_TS1_20201007"
-  },
-  {
-    "titre": "Calculs avec des puissances",
-    "theme": "NO",
-    "chapitre": "Puissances et racines",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "9e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-puissance",
-      "c-soustraction",
-      "c-division",
-      "p-question-TS"
-    ],
-    "difficulte": 2,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609201106.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609201106.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609201106"
-  },
-  {
-    "titre": "Calculs de puissance",
-    "theme": "NO",
-    "chapitre": "Puissances et racines",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-puissance",
-      "c-racine",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609121501.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609121501.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609121501"
-  },
-  {
-    "titre": "Calculs de puissances et racines",
-    "theme": "NO",
-    "chapitre": "Puissances et racines",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-puissance",
-      "c-racine",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609021432"
-  },
-  {
-    "titre": "Comparaisons de puissances",
-    "theme": "NO",
-    "chapitre": "Puissances et racines",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "9e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-puissance",
-      "p-question-TS"
-    ],
-    "difficulte": 2,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171756"
-  },
-  {
-    "titre": "Fractions: 10H - Amplifier (dossier d'autonomie)",
-    "theme": "NO",
-    "chapitre": "Fractions",
-    "sous_chapitre": "Amplifier",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EX",
-    "tags": [
-      "c-fractions",
-      "c-amplifier",
-      "c-fractions-equivalentes",
-      "f-individuel",
-      "p-autonomie"
-    ],
-    "difficulte": 2,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie.pdf",
-    "corrige_pdf": "corr/EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie.pdf",
-    "fichier": "EX_NO-NombresRationnels-AmplifierSimplifier_DossierAutonomie"
-  },
-  {
-    "titre": "Puissances et racines",
-    "theme": "NO",
-    "chapitre": "Puissances et racines",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "9e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-puissance",
-      "p-question-TS"
-    ],
-    "difficulte": 1,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609171743"
-  },
-  {
-    "titre": "Puissances et racines",
-    "theme": "NO",
-    "chapitre": "Puissances et racines",
-    "sous_chapitre": "Calcul réfléchi et mental",
-    "niveau": [
-      "10e"
-    ],
-    "type": "EVAL",
-    "tags": [
-      "c-puissance",
-      "c-racine",
-      "p-question-TS"
-    ],
-    "difficulte": 2,
-    "corrige": true,
-    "source": "latex",
-    "lien": null,
-    "categorie": null,
-    "source_originale": null,
-    "template": null,
-    "pdf": "pdf/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
-    "corrige_pdf": "corr/EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648.pdf",
-    "fichier": "EVAL_NO-NbNaturelsDecimaux-PuissancesRacines_202609230648"
   },
   {
     "titre": "10G1 - ETA1 - 20260924",
@@ -3805,9 +4143,9 @@
     "categorie": null,
     "source_originale": null,
     "template": null,
-    "pdf": "pdf/PLANIF_ES-FigGeomPlanes-9VP.pdf",
+    "pdf": "pdf/PLANIF_ES-FiguresGeometriquesPlanes-9VP.pdf",
     "corrige_pdf": null,
-    "fichier": "PLANIF_ES-FigGeomPlanes-9VP"
+    "fichier": "PLANIF_ES-FiguresGeometriquesPlanes-9VP"
   },
   {
     "titre": "9P - ETA2 (exercice) - 20261029",

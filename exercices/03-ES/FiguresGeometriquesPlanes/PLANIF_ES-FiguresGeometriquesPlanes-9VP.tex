@@ -301,7 +301,7 @@ circ/.style={circle, fill=themeColor, text=white, font=\bfseries\Large, minimum 
 \croix{0.5,0} \node[above] at (0.5,0) {$A$};
 \croix{2.3,0} \node[above] at (2.3,0) {$B$};
 \end{tikzpicture}\\\hline
-\textbf{Segment} & Portion de droite limitée par \textcolor{themeColor}{deux points}, appelés les extrémités.\newline Notation~: segment $AB$. Sa longueur se note $AB$.
+\textbf{Segment} & Portion de droite limitée par \textcolor{themeColor}{deux points}, appelés les extrémités.\newline Notation~: segment $\overline{AB}$. Sa longueur se note $\overline{AB}$.
 &
 \begin{tikzpicture}[scale=0.9, baseline=-0.5ex]
 \draw[thick] (0.5,0) -- (3.7,0);
@@ -439,7 +439,7 @@ C'est la longueur du segment qui joint les deux points.
 \draw[thick, themeColor] (0,0) -- (3.5,0);
 \croix{0,0} \node[below left] at (0,0) {$A$};
 \croix{3.5,0} \node[below right] at (3.5,0) {$B$};
-\node[themeColor, below] at (1.75,0) {$AB=4$ cm};
+\node[themeColor, below] at (1.75,0) {$\overline{AB}=4$ cm};
 \end{tikzpicture}\hfil
 &
 \hfil
@@ -451,7 +451,7 @@ C'est la longueur du segment qui joint les deux points.
 \draw[dashed, gray] (1.5,2) -- (2.8,0);
 \draw[thick, themeColor] (1.5,2) -- (1.5,0);
 \draw (1.5,0) ++(0.18,0) -- ++(0,0.18) -- ++(-0.18,0);
-\node[themeColor, left] at (1.5,1) {$AH$};
+\node[themeColor, left] at (1.5,1) {$\overline{AH}$};
 \end{tikzpicture}\hfil
 &
 \hfil
@@ -464,6 +464,7 @@ C'est la longueur du segment qui joint les deux points.
 \draw[dashed, gray] (2.6,0) -- (3.3,2);
 \draw (1,0) ++(0.18,0) -- ++(0,0.18) -- ++(-0.18,0);
 \draw (1,2) ++(0.18,0) -- ++(0,-0.18) -- ++(-0.18,0);
+\node[themeColor, left] at (1,1) {$\overline{HH'}$};
 \end{tikzpicture}\hfil
 \\\hline
 \end{tabularx}
@@ -478,9 +479,9 @@ Un \textcolor{themeColor}{cercle} est l'ensemble des points du plan situés à l
 
 \vspace{8pt}
 \noindent\begin{minipage}[c]{0.52\linewidth}
-\textcolor{themeColor}{\textbf{Rayon}}~: segment qui joint le centre à un point du cercle (exemple~: $OM$).\par\vspace{4pt}
-\textcolor{themeColor}{\textbf{Corde}}~: segment dont les deux extrémités sont des points du cercle (exemple~: $BC$).\par\vspace{4pt}
-\textcolor{themeColor}{\textbf{Diamètre}}~: corde qui passe par le centre (exemple~: $NP$). C'est la plus longue corde et sa longueur est le double du rayon.\par\vspace{4pt}
+\textcolor{themeColor}{\textbf{Rayon}}~: segment qui joint le centre à un point du cercle (exemple~: $\overline{OM}$).\par\vspace{4pt}
+\textcolor{themeColor}{\textbf{Corde}}~: segment dont les deux extrémités sont des points du cercle (exemple~: $\overline{BC}$).\par\vspace{4pt}
+\textcolor{themeColor}{\textbf{Diamètre}}~: corde qui passe par le centre (exemple~: $\overline{NP}$). C'est la plus longue corde et sa longueur est le double du rayon.\par\vspace{4pt}
 \textcolor{themeColor}{\textbf{Arc de cercle}}~: partie du cercle comprise entre deux points. Notation~: $\overset{\frown}{BC}$.\par\vspace{4pt}
 \textcolor{themeColor}{\textbf{Disque}}~: ensemble des points situés sur le cercle et à l'intérieur de celui-ci.
 \end{minipage}\hfill
@@ -606,7 +607,7 @@ Un \textcolor{themeColor}{cercle} est l'ensemble des points du plan situés à l
 \newpage
 \begin{astuce}{Parallèle avec un compas et une règle}
 \begin{enumerate}[leftmargin=*, itemsep=2pt, topsep=2pt]
-    \item Choisir un point $B$ sur la droite $d$ et ouvrir le compas de la longueur $BA$.
+    \item Choisir un point $B$ sur la droite $d$ et ouvrir le compas de la longueur $\overline{BA}$.
     \item Avec le compas centré en $B$, tracer un arc de cercle qui coupe $d$ en un point $C$.
     \item Sans changer l'ouverture, tracer un arc de cercle centré en $A$, puis un autre centré en $C$ : ils se coupent en un point $D$.
     \item Tracer la droite $AD$ : elle est parallèle à $d$ (le quadrilatère $ABCD$ est un losange).
@@ -650,7 +651,7 @@ Un \textcolor{themeColor}{angle} est une portion de plan limitée par deux demi-
 \end{center}
 
 \begin{astuce}{Notation}
-Un angle se note avec trois lettres, le \textcolor{themeColor}{sommet} au milieu~: $\widehat{AOB}$ ou $\widehat{BOA}$.\\[2pt]
+Un angle se note avec trois lettres, le \textcolor{themeColor}{sommet} au milieu~: $\widehat{BOA}$.\\[2pt]
 On peut aussi le désigner par une lettre grecque~: $\alpha$, $\beta$, $\gamma$, \ldots\\[2pt]
 L'unité usuelle de mesure des angles est le \textcolor{themeColor}{degré}, noté $^\circ$.
 \end{astuce}
@@ -834,10 +835,10 @@ Un \textcolor{themeColor}{quadrilatère} est un \textcolor{themeColor}{polygone}
 \end{center}
 
 \begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt, label=$\triangleright$]
-    \item Les côtés $AB$ et $DC$, ainsi que $AD$ et $BC$, sont des \textcolor{themeColor}{côtés opposés}.
-    \item Les côtés $AB$ et $BC$ sont des \textcolor{themeColor}{côtés consécutifs}.
-    \item Les angles $\widehat{DAB}$ et $\widehat{BCD}$, ainsi que $\widehat{ABC}$ et $\widehat{CDA}$, sont des \textcolor{themeColor}{angles opposés}.
-    \item Une \textcolor{themeColor}{diagonale} est un segment qui relie deux sommets opposés ($AC$ et $BD$).
+    \item Les côtés $\overline{AB}$ et $\overline{DC}$, ainsi que $\overline{AD}$ et $\overline{BC}$, sont des \textcolor{themeColor}{côtés opposés}.
+    \item Les côtés $\overline{AB}$ et $\overline{BC}$ sont des \textcolor{themeColor}{côtés consécutifs}.
+    \item Les angles $\widehat{BAD}$ et $\widehat{DCB}$, ainsi que $\widehat{CBA}$ et $\widehat{ADC}$, sont des \textcolor{themeColor}{angles opposés}.
+    \item Une \textcolor{themeColor}{diagonale} est un segment qui relie deux sommets opposés ($\overline{AC}$ et $\overline{BD}$).
 \end{itemize}
 
 \begin{regle}{Propriété}
@@ -975,7 +976,7 @@ Pour calculer un angle, on utilise les propriétés des figures. Chaque calcul d
 \end{regle}
 
 \vspace{10pt}
-\noindent\textbf{Exemple 1}\quad Dans le triangle $ABC$ isocèle en $A$, $\widehat{ABC}=35^\circ$. Calculer $\widehat{BAC}$.
+\noindent\textbf{Exemple 1}\quad Dans le triangle $ABC$ isocèle en $A$, $\widehat{CBA}=35^\circ$. Calculer $\widehat{BAC}$.
 
 \vspace{6pt}
 \begin{center}
@@ -996,12 +997,12 @@ Pour calculer un angle, on utilise les propriétés des figures. Chaque calcul d
 
 \vspace{4pt}
 \renewcommand{\arraystretch}{1.6}
-\just{$\widehat{ABC}=\widehat{ACB}=35^\circ$}{$\triangle_{ABC}$ isocèle en $A$}\\
-\just{$\widehat{BAC}=180-2\cdot 35=110^\circ$}{$\Sigma$ angles $\triangle_{ABC}$}
+\just{$\widehat{CBA}=\widehat{ACB}=35^\circ$}{$\triangle_{ABC}$ isocèle en $A$}\\
+\just{$\widehat{BAC}=180-2\cdot 35=110^\circ$}{somme angles $\triangle_{ABC}$}
 \renewcommand{\arraystretch}{1}
 
 \vspace{14pt}
-\noindent\textbf{Exemple 2}\quad Dans le parallélogramme $ABCD$, $\widehat{DAB}=70^\circ$. Calculer $\widehat{ABC}$.
+\noindent\textbf{Exemple 2}\quad Dans le parallélogramme $ABCD$, $\widehat{BAD}=70^\circ$. Calculer $\widehat{CBA}$.
 
 \vspace{6pt}
 \begin{center}
@@ -1025,9 +1026,9 @@ Pour calculer un angle, on utilise les propriétés des figures. Chaque calcul d
 
 \vspace{4pt}
 \renewcommand{\arraystretch}{1.6}
-\just{$\widehat{BCD}=\widehat{DAB}=70^\circ$}{angles opposés du parallélogramme $ABCD$ isométriques}\\
-\just{$\widehat{ABC}+\widehat{CDA}=360-2\cdot 70=220^\circ$}{$\Sigma$ angles $\square_{ABCD}$}\\
-\just{$\widehat{ABC}=\widehat{CDA}=220:2=110^\circ$}{angles opposés du parallélogramme $ABCD$ isométriques}
+\just{$\widehat{DCB}=\widehat{BAD}=70^\circ$}{angles opposés du parallélogramme $ABCD$ isométriques}\\
+\just{$\widehat{CBA}+\widehat{ADC}=360-2\cdot 70=220^\circ$}{somme angles $\square_{ABCD}$}\\
+\just{$\widehat{CBA}=\widehat{ADC}=220:2=110^\circ$}{angles opposés du parallélogramme $ABCD$ isométriques}
 \renewcommand{\arraystretch}{1}
 
 \vspace{14pt}
@@ -1038,15 +1039,15 @@ Pour calculer un angle, on utilise les propriétés des figures. Chaque calcul d
 \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}m{6.7cm}|}
 \hline
 \cellcolor{themeColor!30}\textbf{Propriété utilisée} & \cellcolor{themeColor!30}\textbf{Justification à écrire}\\\hline
-La somme des mesures des angles d'un triangle vaut $180^\circ$. & $\Sigma$ angles $\triangle_{ABC}$\\\hline
-La somme des mesures des angles d'un quadrilatère vaut $360^\circ$. & $\Sigma$ angles $\square_{MNOP}$\\\hline
-Un triangle isocèle a deux angles isométriques. & triangle $IJK$ isocèle en $J$\\\hline
-Un triangle équilatéral a trois angles de $60^\circ$. & triangle $QRS$ équilatéral\\\hline
-Un triangle rectangle a un angle droit. & triangle $DEF$ rectangle en $E$\\\hline
+La somme des mesures des angles d'un triangle vaut $180^\circ$. & somme angles $\triangle_{ABC}$\\\hline
+La somme des mesures des angles d'un quadrilatère vaut $360^\circ$. & somme angles $\square_{MNOP}$\\\hline
+Un triangle isocèle a deux angles isométriques. & $\triangle_{IJK}$ isocèle en $J$\\\hline
+Un triangle équilatéral a trois angles de $60^\circ$. & $\triangle_{QRS}$ équilatéral\\\hline
+Un triangle rectangle a un angle droit. & $\triangle_{DEF}$ rectangle en $E$\\\hline
 Un trapèze isocèle a deux paires d'angles isométriques. & trapèze $ABCD$ isocèle\\\hline
 Un parallélogramme a ses angles opposés isométriques. & angles opposés du parallélogramme $STUV$ isométriques\\\hline
 Un rectangle et un carré ont quatre angles droits. & rectangle $EFGH$\\\hline
-Les diagonales d'un losange sont perpendiculaires. & diagonales du losange $DEFG$ perpendiculaire\\\hline
+Les diagonales d'un losange sont perpendiculaires. & diagonales du losange $DEFG$ perpendiculaires\\\hline
 \end{tabularx}
 \normalsize
 \def\arraystretch{1}\setlength{\extrarowheight}{0pt}
@@ -1099,7 +1100,7 @@ Un \textcolor{themeColor}{croquis} est un dessin fait à main levée, sans instr
 \vspace{10pt}
 \noindent\begin{minipage}[t]{0.48\linewidth}
 \textbf{Exemple 1}\\[3pt]
-Le rectangle $ABCD$ tel que $AB=6$ cm et $BC=3$ cm.
+Le rectangle $ABCD$ tel que $\overline{AB}=6$ cm et $\overline{BC}=3$ cm.
 
 \vspace{4pt}
 \centering
@@ -1126,7 +1127,7 @@ Le rectangle $ABCD$ tel que $AB=6$ cm et $BC=3$ cm.
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\linewidth}
 \textbf{Exemple 2}\\[3pt]
-Le triangle $ABC$ isocèle en $A$ tel que $BC=5$ cm et $\widehat{ABC}=40^\circ$.
+Le triangle $ABC$ isocèle en $A$ tel que $\overline{BC}=5$ cm et $\widehat{ABC}=40^\circ$.
 
 \vspace{4pt}
 \centering

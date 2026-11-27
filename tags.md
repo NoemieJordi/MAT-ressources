@@ -60,6 +60,7 @@ Tags transversaux qui couvrent plusieurs sous-chapitres ou thèmes.
 | `c-puissance` | Puissance |
 | `c-quadrilateres` | Quadrilatères |
 | `c-racine` | Racine |
+| `c-c-representer` | Représenter un concept mathématique |
 | `c-soustraction` | Soustraction |
 | `c-statistiques` | Statistiques |
 | `c-thales` | Théorème de Thalès |
